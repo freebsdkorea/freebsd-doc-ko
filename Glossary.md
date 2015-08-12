@@ -57,6 +57,7 @@ FreeBSD는 영문 그대로 표기하고 '프리비에스디' 등의 한글 표�
 ### S
 ### T
 * The FreeBSD Foundation -> FreeBSD 재단
+
 ### U
 * UNIX -> 유닉스
 
