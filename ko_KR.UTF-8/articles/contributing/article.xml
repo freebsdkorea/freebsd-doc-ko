@@ -1,0 +1,1175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//FreeBSD//DTD DocBook XML V5.0-Based Extension//EN"
+	"http://www.FreeBSD.org/XML/share/xml/freebsd50.dtd">
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:lang="ko">
+  <info><title>Contributing to FreeBSD</title>
+    
+
+    <abstract>
+      <para>이 글은 개인이나 단체가 FreeBSD 프로젝트에 기여할 수 있는
+        여러 가지 방법들을 소개합니다.</para>
+     </abstract>
+
+    <authorgroup>
+      <author><personname><firstname>Jordan</firstname><surname>Hubbard</surname></personname></author>
+      <author><personname><firstname>Sam</firstname><surname>Lawrance</surname></personname></author>
+      <author><personname><firstname>Mark</firstname><surname>Linimon</surname></personname></author>
+    </authorgroup>
+
+    <legalnotice xml:id="trademarks" role="trademarks">
+      &tm-attrib.freebsd;
+      &tm-attrib.ieee;
+      &tm-attrib.general;
+    </legalnotice>
+
+    <pubdate>$FreeBSD: head/ko_KR.UTF-8/articles/contributing/article.xml 46486 2015-04-06 05:52:24Z eadler $</pubdate>
+
+    <releaseinfo>$FreeBSD: head/ko_KR.UTF-8/articles/contributing/article.xml 46486 2015-04-06 05:52:24Z eadler $</releaseinfo>
+  </info>
+
+  <indexterm><primary>contributing</primary></indexterm>
+
+  <para>그러니까 &os;에 기여하고 싶으시다는 말씀이군요?  훌륭합니다!
+    &os;는 살아남기 위해 그 사용자들의 기여에
+    <emphasis>의존하고</emphasis> 있습니다.  여러분의 기여는 단순히
+    고맙게 받아들여질 뿐만 아니라, &os;의 지속적인 성장에 필수적이기도 합니다.</para>
+
+  <para>&os;는 다양한 연령층과 기술적 전문 지식을 가진 전 세계의
+    기여자들에 의해 개발되고 있는데, 기여자들의 규모는 크고 또 계속
+    늘어나고 있습니다.  이 사람들이 할 수 있는 일보다 일거리는 항상 더
+    많이 존재하고, 더 많은 도움은 언제나 감사하게 받아들여지고 있습니다.</para>
+
+  <para>자원봉사자로서, 여러분은 여러분이 하고 싶은 일에만 참여하면
+    됩니다.  그러나, 우리는 여러분이 &os; 커뮤니티의 다른 멤버들이
+    여러분에게 어떤 일을 할 것을 기대하고 있는지 미리 알아볼 것을
+    요청합니다.  여러분은 봉사에 참여하기로 마음먹기 전에 이에 대해
+    고려해 보고 싶으실 수도 있겠군요.</para>
+
+  <para>&os; 프로젝트는 단순히 커널 또는 몇몇의 유틸리티들이 아니라,
+    운영체제 환경 전체를 책임지고 있습니다.  그렇기 때문에, 우리의
+    <filename>TODO</filename> 목록은 다양한 분야의 일거리들을 수록하고
+    있습니다: 문서화 작업, 베타 테스트와 프리젠테이션에서부터 시스템
+    인스톨러 그리고 아주 특화된 종류의 커널 개발에 이르기까지 등등.
+    어떤 분야에 어떤 수준의 기술을 가지고 있더라도, 거의 확실하게
+    프로젝트에 도움을 줄 수 있을 것입니다.</para>
+
+  <para>FreeBSD에 관련된 사업을 하고 있는 기업들도 우리에게 연락할
+    것이 권장됩니다.  여러분의 제품이 동작하게 할 특별한 확장이
+    필요한가요?  너무 특이하지만 않다면, 우리는 여러분의 요청을
+    받아들일 것입니다.  부가 가치 제품으로 작업하고 있나요?  우리에게
+    알려 주세요!  우리는 부분적으로 협력할 수 있을지도 모릅니다.  자유
+    소프트웨어 세계는 소프트웨어가 어떻게 개발되고, 판매되고, 또
+    유지되는지에 대한 기존의 많은 전제들에 도전하고 있고, 우리는
+    최소한 여러분에게 또 다른 관점을 제시하고 싶습니다.</para>
+
+  <sect1 xml:id="contrib-what">
+    <title>어떤 도움이 필요한가요?</title>
+
+    <para>아래에 제시된 작업 및 보조 프로젝트들의 목록은 여러
+      <filename>TODO</filename> 항목들과 사용자 요청들을 나타내고 있습니다.</para>
+
+    <sect2 xml:id="non-programmer-tasks">
+      <title>진행중인 비-프로그래밍 작업들</title>
+
+      <para>FreeBSD에 관여하는 사람들 중에는 프로그래머가 아닌
+        사람들도 많습니다.  프로젝트에는 문서 작성자, 웹 디자이너,
+	기타 도움을 주는 사람들도 포함되어 있습니다. 이들이 기여하는
+	데에는 시간 투자와 배우려는 의지만 있으면 됩니다.</para>
+
+      <orderedlist>
+	<listitem>
+	  <para>FAQ와 Handbook을 주기적으로 읽어 보세요.  만약
+	    무언가가 어색하게 설명되어 있거나, 너무 오래 되었거나
+	    심지어 완전히 잘못되어 있다면, 우리에게 알려 주세요.  직접
+	    고친 내용을 보내 주신다면 더욱 좋습니다(Docbook은 배우기
+	    어렵지 않습니다만, 그냥 ASCII 형식으로 보내 주셔도 괜찮습니다).</para>
+	</listitem>
+
+	<listitem>
+	  <para>FreeBSD 문서를 여러분의 모국어로 번역하는 것을 도와
+	    주세요.  만약 문서가 이미 여러분의 언어로 존재한다면, 다른
+	    문서를 추가적으로 번역하거나 번역본이 최신 상태인지를
+	    점검해 보는 것도 좋습니다.  먼저 FreeBSD Documentation
+	    Project Primer의 <link
+	    xlink:href="&url.books.fdp-primer;/translations.html">Translations
+	    FAQ</link>를 살펴 보세요.  여러분은 모든 FreeBSD 문서를 다
+	    번역하는 데 헌신할 필요는 없습니다 &mdash; 자원봉사자로서,
+	    여러분은 원하는 만큼 많은 또는 적은 양을 번역할 수
+	    있습니다.  한번 누군가가 번역을 시작하면, 다른 사람들은
+	    거의 항상 그 노력에 동참합니다.  만약 여러분이 문서의
+	    일부만을 번역할 시간 또는 노력밖에 없다면, 설치 과정
+	    부분을 번역해 주세요.</para>
+	</listitem>
+
+	<listitem>
+	  <para>&a.questions;를 종종 (또는 심지어 정기적으로) 읽어
+	    주세요.  여러분의 전문 지식을 나누고 사람들이 문제를
+	    해결하도록 도와 주는 일은 대단히 만족스러울 수 있습니다;
+	    여러분은 심지어 종종 스스로 새로운 것을 배울 수도
+	    있습니다!  이 포럼들은 할 일들의 아이디어의 원천이 되기도 합니다.</para>
+	</listitem>
+      </orderedlist>
+    </sect2>
+
+    <sect2 xml:id="ongoing-programmer-tasks">
+      <title>진행중인 프로그래머 작업들</title>
+
+      <para>여기에 수록된 일들 대다수는 상당한 시간 투자 또는 FreeBSD
+        커널에 대한 깊이 있는 지식, 심지어 둘 다를 요구합니다.
+	그러나, <quote>심심풀이 해커</quote>들을 위한 유용한 작업들도
+	많이 있습니다.</para>
+
+      <orderedlist>
+	<listitem>
+	  <para>만약 여러분이 FreeBSD-CURRENT를 돌리고 있고 인터넷
+	    연결이 괜찮다면, 하루에 한 번씩 전체 릴리즈를 빌드하는
+	    <systemitem
+		class="fqdomainname">current.FreeBSD.org</systemitem>이
+	    있습니다&mdash;종종 최신 릴리즈를 설치해 보고 과정에서
+	    오류가 발생하면 제보해 주세요.</para>
+	</listitem>
+
+	<listitem>
+	  <para>&a.bugs;를 읽어 보세요.  여러분이 조언을 해줄 수
+	    있거나 패치를 테스트해볼 수 있는 문제들이 있을 수
+	    있습니다.  또는 심지어 그것들 중 하나를 스스로 고쳐볼 수도 있겠지요.</para>
+	</listitem>
+
+	<listitem>
+	  <para>만약 여러분이 -CURRENT에서는 고쳐졌지만 상당한 시간이
+	    지난 후(대체로 약 2주 정도)에도 -STABLE에 반영되지 않은
+	    버그를 알고 있다면, commiter에게 예의 바른 알림을 보내 주세요.</para>
+	</listitem>
+
+	<listitem>
+	  <para>contributed software를 소스 트리의
+	    <filename>src/contrib</filename>으로 옮겨 주세요.</para>
+	</listitem>
+
+	<listitem>
+	  <para><filename>src/contrib</filename>의 소스 코드를 최신
+	    상태로 유지시켜 주세요.</para>
+	</listitem>
+
+	<listitem>
+	  <para>추가적 경고 표시를 활성화한 뒤 소스 트리 (또는 그
+	    일부) 빌드를 해 보고 경고가 나타나는 내용을 수정해 주세요.</para>
+	</listitem>
+
+	<listitem>
+	  <para><function>gets()</function>을 사용하거나
+	    <filename>malloc.h</filename>을 include하는 등 deprecate된
+	    방법을 사용하는 ports가 있으면 경고를 수정해 주세요.</para>
+	</listitem>
+
+	<listitem>
+	  <para>여러분이 &os;에 맞도록 패치한 ports에 기여했다면, 그
+	    패치를 원 저자에게 보내 주세요 (이렇게 하면 그들이 다음
+	    버전을 출시할 때 여러분이 할 일이 훨씬 간편해질 것입니다).</para>
+	</listitem>
+
+	<listitem>
+	  <para>&posix;와 같은 공식 표준들을 살펴 보세요.  그리고
+	    FreeBSD가 그러한 표준이 요구하는 조건에 충족되는지 확인해
+	    보세요.  만약 그렇지 못하다면, 특히 표준의 사소하거나
+	    불분명한 부분에서의 경우에, 그에 대한 PR을 보내 주세요.
+	    가능하다면, 어떻게 고치는지를 찾아서 PR에 패치를 포함시켜
+	    주세요.  만약 표준이 잘못되었다고 생각된다면, 해당 표준을
+	    관리하는 단체에 문의해 보세요.</para>
+	</listitem>
+
+	<listitem>
+	  <para>이 목록에 추가할 다른 일들을 제안해 주세요!</para>
+	</listitem>
+      </orderedlist>
+    </sect2>
+
+    <sect2>
+      <title>PR 데이터베이스로 할 것들</title>
+
+      <indexterm>
+	<primary>problem reports database</primary>
+      </indexterm>
+
+      <para><link
+		xlink:href="https://bugs.FreeBSD.org/search/">FreeBSD
+        PR list</link>는 FreeBSD 사용자에 의해 제출된 모든 문제점
+	보고와 개선 사항 요청을 담고 있습니다.  PR 데이터베이스는
+	프로그래머 작업과 비-프로그래머 작업을 모두 포함합니다.
+	PR들을 살펴보고, 흥미로운 것이 있는지 살펴 보세요.  이들 중
+	일부는 매우 간단해서 누군가 살펴보고 PR에 포함된 수정 사항이
+	제대로 되어 있는지만 확인하면 됩니다.  다른 것들은 더
+	복잡하거나, 심지어는 수정 사항이 아예 포함되지 않아 있을 수도 있습니다.</para>
+
+      <para>다른 누군가가 맡고 있지 않은 PR부터 시작하세요.  만약 다른
+        누군가가 PR을 맡고 있는데 여러분이 해결할 수 있는 것처럼
+        보인다면, 맡고 있는 사람에게 이메일을 보내서 여러분이 작업해도
+	좋은지 요청해 보세요&mdash;그들은 이미 테스트받을 준비가 되어
+	있는 패치를 가지고 있거나, 여러분과 의논할 만한 아이디어를
+	가지고 있을 수도 있습니다.</para>
+    </sect2>
+
+    <sect2>
+      <title>진행중인 ports 작업들</title>
+
+      <para>Ports Collection은 끝없이 진행되고 있는 작업입니다.
+        우리는 사용자들에게 사용하기 쉽고, 최신 상태로 유지되며, 높은
+	품질의 제3자 소프트웨어 저장소를 제공하고 싶어합니다.  우리는
+	이 목표를 달성하기 위해 약간의 시간과 노력을 투자해 도와줄
+	사람들이 필요합니다.</para>
+
+      <para>누구나 참여할 수 있고, 참여하는 방법은 여러 가지가
+        있습니다.  ports에 기여하는 것은 프로젝트에 무언가를
+	<quote>되돌려 주는</quote> 것을 돕는 훌륭한 방법입니다.
+	여러분이 책임감 있는 역할을 찾고 있든지, 아니면 비 오는 날 할
+	만한 재미난 일거리를 찾고 있든지 간에, 우리는 여러분이 도와
+	준다면 무척이나 기쁠 것입니다!</para>
+
+      <para>ports tree를 최신 상태로 유지하고 잘 동작할 수 있도록
+        유지하기 위해 할 수 있는 여러 쉬운 방법들이 있습니다:</para>
+
+      <itemizedlist>
+	<listitem>
+	  <para>멋지거나 유용한 소프트웨어를 찾아 <link
+	    xlink:href="&url.books.porters-handbook;">port를
+	  만들어</link> 주세요.</para>
+	</listitem>
+
+	<listitem>
+	  <para>관리자가 없는 ports들이 많이 있습니다.  관리자가 되어
+	  <link linkend="adopt-port">port를 관리</link>해 주세요.</para>
+	</listitem>
+
+	<listitem>
+	  <para>만약 여러분이 port를 만들었거나 관리하기로
+	    마음먹었다면, <link linkend="maintain-port">관리자로서
+	    무엇을 해야 하는지</link>에 대해 알아 보세요.</para>
+	</listitem>
+
+	<listitem>
+	  <para>좀더 빠르게 끝낼 수 있는 일을 찾고 있다면 <link
+	    linkend="fix-broken">버그 또는 작동하지 않는 port를
+	    수정해</link> 주세요.</para>
+	</listitem>
+      </itemizedlist>
+    </sect2>
+
+    <sect2>
+      <title>Ideas 페이지에 있는 항목 중 하나를 선택하세요</title>
+
+      <para>&os; 프로젝트에 기여하고 싶어하는 사람들은 <link
+        xlink:href="http://wiki.freebsd.org/IdeaPage">자원봉사자를
+        위한 &os; 계획과 아이디어 목록</link>을 살펴볼 수 있습니다.
+	이 목록은 정기적으로 갱신되며 프로그래머 작업과 비-프로그래머
+	작업에 대한 항목들이 설명과 함께 제시되어 있습니다.</para>
+    </sect2>
+  </sect1>
+
+  <sect1 xml:id="contrib-how">
+    <title>어떻게 기여할 수 있나요</title>
+
+    <para>시스템에 기여하는 방법은 대개 다음의 5가지 중 한 가지 또는
+      그 이상에 해당됩니다:</para>
+
+    <sect2 xml:id="contrib-general">
+      <title>버그 보고와 일반적 조언</title>
+
+      <para><emphasis>일반적인</emphasis> 기술적 관심사에 대한
+        아이디어나 제안은 &a.hackers;에 메일을 보내야 합니다.
+	마찬가지로, 그러한 내용에 관심이 있는 (그리고
+	<emphasis>수많은</emphasis> 메일들을 견뎌낼 인내심이 있는)
+	사람들은 &a.hackers;를 구독하면 됩니다.  이와 더불어 다른
+	메일링 리스트에 대한 더 많은 정보는 <link
+	xlink:href="&url.books.handbook;/eresources.html#ERESOURCES-MAIL">The
+	FreeBSD Handbook</link>에서 찾아볼 수 있습니다.</para>
+
+      <para>만일 여러분이 버그를 찾아냈거나 특별한 수정을 제출하고자
+        한다면, <link
+	xlink:href="https://bugs.FreeBSD.org/submit/">bug submission
+	form</link>을 이용해 주세요.  bug report의 각 항목을 완성하기
+	위해 노력해 주세요.  패치의 크기가 65KB를 넘지 않는다면,
+	report에 직접 패치를 첨부해 주세요.  패치가 소스 트리에
+	적용되기에 적합하다면 report의 synopsys 부분에
+	<literal>[PATCH]</literal>를 적어 주세요.  패치를 첨부할 때,
+	복사-붙여넣기를 이용하면 탭이 공백(space)으로 바뀌어 적용이
+	불가능해기지 때문에 복사-붙여넣기 방식으로 첨부하면
+	<emphasis>안 됩니다</emphasis>.  패치가 20KB보다 훨씬 크다면,
+	업로드하기 전에 (&man.gzip.1;이나 &man.bzip2.1; 등을 이용하여)
+	압축하는 것을 고려해 보세요.</para>
+
+      <para>report를 제출한 이후에, 여러분은 tracking number가 있는
+        확인 메일을 받을 겁니다.  이 문제에 대한 상세한 사항을
+	업데이트할 수 있도록 tracking number를 보관해 두세요.</para>
+
+      <para>좋은 problem report를 작성하기 위해서는 <link
+      xlink:href="&url.articles.problem-reports;/article.html">이
+        article</link>을 참고하세요.</para>
+    </sect2>
+
+    <sect2>
+      <title>문서 수정하기</title>
+
+      <indexterm>
+	<primary>문서 제출하기</primary>
+      </indexterm>
+
+      <para>문서의 편집은 &a.doc;에 의해 관리됩니다.  전체적인 방법에
+        대해서는 <link
+      xlink:href="&url.books.fdp-primer;/index.html">FreeBSD
+        Documentation Project Primer</link>를 참고해 주세요.  다른
+	버그 리포트와 같은 방법을 사용해서 제출 및 편집(사소한 것이라도
+	환영합니다!) 내용을 보내 주세요.</para>
+    </sect2>
+
+    <sect2>
+      <title>기존 소스 코드 수정하기</title>
+
+      <indexterm><primary>FreeBSD-CURRENT</primary></indexterm>
+
+      <para>기존의 소스 코드에 무언가를 추가하거나 수정하는 것은
+        까다로운 작업이며 여러분이 FreeBSD 개발의 최신 상태로부터
+	얼마나 멀리 떨어져 있느냐에 따라 크게 영향을 받습니다.
+	시스템에 대해 활동적으로 작업하는 개발자들의 여러 편의를 위해
+	만들어진 <quote>FreeBSD-CURRENT</quote>라는 특별한 on-going
+	릴리즈가 있습니다.  FreeBSD-CURRENT를 설치하고 사용하는 방법에
+	대한 정보는 <link
+	xlink:href="&url.books.handbook;/current-stable.html">The
+	FreeBSD Handbook</link>에서 찾아볼 수 있습니다.</para>
+
+      <para>오래된 소스로 작업하는 것은 불행히도 여러분의 수정이 종종
+        이미 필요없게 되거나 FreeBSD에 적용되기에 어려울 수도 있다는
+	것을 의미합니다.  시스템의 최신 상태에 대한 논의가 이루어지는
+	&a.announce;와 &a.current; 리스트를 구독하면, 이러한 가능성을
+	최소화할 수 있습니다.</para>
+
+      <para>Assuming that you can manage to secure fairly up-to-date
+        sources to base your changes on, the next step is to produce a
+	set of diffs to send to the FreeBSD maintainers.  이는
+	&man.diff.1; 명령어를 이용하여 이루어집니다.</para> 
+
+      <para>패치를 제출하는 데 선호되는 &man.diff.1; 형식은
+        <command>diff -u</command>에 의해 생성되는 unify된 출력입니다.</para>
+
+      <indexterm>
+	<primary><command>diff</command></primary>
+      </indexterm>
+
+      <screen>&prompt.user; <userinput>diff -u oldfile newfile</userinput></screen>
+
+      <para>또는</para>
+
+      <screen>&prompt.user; <userinput>diff -u -r -N olddir newdir</userinput></screen>
+
+      <para>는 주어진 소스 파일 또는 디렉토리에 대한 unified diff를
+        생성할 것입니다.</para>
+
+      <para>&man.diff.1;에 더 많은 정보가 있습니다.</para>
+
+      <para>여러분이 diff 파일을 만들었다면 (그리고 &man.patch.1;
+        명령어로 확인했다면), &os;에 반영하기 위해 버그 리포트의
+	형식으로 제출해야 합니다.  diff를 그냥 &a.hackers;에 보내지
+	<emphasis>마세요</emphasis>!  그것들은 잊혀질지도 모릅니다.
+	우리는 여러분의 제출을 무척이나 감사히 여기고 있습니다만
+	(이것은 자원봉사에 의해 이루어집니다!); 우리는 바쁘기 때문에,
+	때때로 바로 작업에 착수할 수 없을 수도 있습니다.  그것은
+	우리가 할 때까지 PR 데이터베이스에 남아 있을 것입니다.  제출할
+	때 리포트의 synopsis에 <literal>[PATCH]</literal>을 포함시켜서
+	패치라는 것을 알려 주세요.</para>
+
+      <para>적합하다고 생각되는 경우에 (예를 들어 새 파일을
+        추가했거나, 기존의 파일을 삭제했거나, 파일의 이름을 바꾼
+	경우), 그 바꾼 내용을 <command>tar</command> 파일로 첨부해
+	주세요.  &man.shar.1;으로 생성된 아카이브도 괜찮습니다.</para>
+
+      <para>만약 여러분의 수정이 잠재적으로 민감할 수 있는 사항을
+        포함하고 있다면, 예를 들어 배포와 관련된 라이선스 문제에 대해
+	확신이 없는 경우라면, 버그 리포트로 제출하는 대신 &a.core;
+	팀에 직접 보내 주세요.  &a.core; 팀은 FreeBSD에 대해 관한 많은
+	일을 매일 하는 사람들의 작은 모임입니다.  이들은
+	<emphasis>매우 바쁘기</emphasis> 때문에, 꼭 필요한 경우에만
+	메일을 보내 주세요.</para>
+
+      <para>코딩 스타일에 대해서는 &man.intro.9;와 &man.style.9;를
+        참조해 주세요.  여러분이 코드를 제출하기 전에 이 정보에 대해
+	 최소한 알고 있었다면 우리는 감사할 것입니다.</para>
+    </sect2>
+
+    <sect2>
+      <title>New Code or Major Value-Added Packages</title>
+
+      <para>In the case of a significant contribution of a large body
+	work, or the addition of an important new feature to FreeBSD,
+	it becomes almost always necessary to either send changes as
+	tar files or upload them to a web or FTP site for
+	other people to access.  If you do not have access to a web or
+	FTP site, ask on an appropriate FreeBSD mailing list for
+	someone to host the changes for you.</para>
+
+      <para>When working with large amounts of code, the touchy
+	subject of copyrights also invariably comes up.  &os;
+	prefers free software licenses such as BSD or ISC.
+	Copyleft licenses such as GPLv2 are sometimes permitted.  The
+	complete listing can be found on the <link
+	xlink:href="&url.base;/internal/software-license.html">core team
+	licensing policy</link> page.</para>
+    </sect2>
+
+    <sect2>
+      <title>금전 또는 하드웨어</title>
+
+      <para>우리는 FreeBSD 프로젝트를 발전시키기 위한 기부를 받는 것을
+        매우 기쁘게 여기고 있으며, 우리와 같이 자원봉사 노력을 할
+	때에, 약간의 기부도 많은 일을 해낼 수 있습니다!  우리는
+	일반적으로 필요한 장비를 직접 구입할 여유가 없기 때문에, 지원
+	가능한 장비를 확대하기 위해 하드웨어를 기부받는 것 역시 매우
+        중요합니다.</para>
+      
+      <sect3 xml:id="donations">
+	<title>재단에 기부하기</title>
+
+	<para>FreeBSD 재단은 FreeBSD 프로젝트의 목표를 발전시키기 위해
+	  설립된 비영리, 비과세의 단체입니다.  501(c)3의 회원으로서,
+	  FreeBSD 재단은 Colorado 주 소득세뿐만 아니라 미국 연방
+	  소득세도 면제받습니다.  비과세 단체에 기부하는 것은 종종
+	  과세 대상인 연방 소득으로부터 공제받을 수 있습니다.</para>
+
+	<para>기부하기 위해서는 다음의 주소로 수표를 보내 주시면 됩니다:
+	  <address>
+	    The FreeBSD Foundation
+	    <street>P.O. Box 20247</street>,
+	    <city>Boulder</city>,
+	    <state>CO</state> <postcode>80308</postcode>
+	    <country>USA</country>
+	  </address></para>
+
+	<para>FreeBSD 재단은 이제 Paypal을 통한 온라인 기부도 받고
+	  있습니다.  기부하기 위해서는, 재단 <link
+	  xlink:href="http://www.freebsdfoundation.org">웹
+	  사이트</link>를 방문해 주세요.</para>
+
+	<para>FreeBSD 재단에 대한 더 많은 정보는 <link
+	  xlink:href="http://people.FreeBSD.org/~jdp/foundation/announcement.html">The
+	  FreeBSD Foundation -- an Introduction</link>에서 찾아볼 수
+	  있습니다.  이메일로 재단에 연락하려면,
+	  <email>bod@FreeBSDFoundation.org</email>을 이용하세요.</para>
+      </sect3>
+
+      <sect3>
+	<title>하드웨어 기부하기</title>
+
+	<indexterm><primary>donations</primary></indexterm>
+
+	<para>FreeBSD 프로젝트는 유용하게 사용될 수 있는 하드웨어의
+	  기부를 기쁘게 받아들이고 있습니다.  만일 여러분이 하드웨어
+	  기부에 관심이 있다면, <link
+	  xlink:href="&url.base;/donation/">Donations Liaison
+	  Office</link>에 연락해 주세요.</para>
+      </sect3>
+    </sect2>
+  </sect1>
+
+  <sect1 xml:id="ports-contributing">
+    <title>ports에 기여하기</title>
+
+    <sect2 xml:id="adopt-port">
+      <title>관리되지 않는 port를 책임지기</title>
+
+      <sect3>
+	<title>관리되지 않는 port 선택하기</title>
+
+	<para>관리되지 않는 ports를 책임지는 것은 참여하기에 좋은
+	  방법입니다.  관리되지 않는 ports는 누군가가 자원봉사로
+	  작업할 때에만 업데이트되고 고쳐집니다.  관리되지 않는
+	  ports는 많이 있습니다.  여러분이 정기적으로 사용하는 port를
+	  책임지는 것부터 시작해 보면 좋을 것입니다.</para>
+
+	<para>관리되지 않는 ports는 그 <varname>MAINTAINER</varname>이
+	  <literal>ports@FreeBSD.org</literal>로 설정되어 있습니다.
+	  관리되지 않는 ports와 현재 문제점 및 problem reports에 대한
+	  목록은 <link
+	  xlink:href="http://portsmon.FreeBSD.org/portsconcordanceformaintainer.py?maintainer=ports%40FreeBSD.org">Ports
+	  Monitoring System</link>에서 찾아볼 수 있습니다.</para>
+
+	<para>어떤 ports는 그 의존성 관계 때문에 다른 많은 ports에
+	  영향을 미칠 수 있습니다.  일반적으로, 우리는 사람들이 그러한
+	  ports들을 관리하기 전에 약간의 경험을 해볼 것을 원합니다.</para>
+
+	<para><filename>INDEX</filename>라고 이름붙여진 ports의 마스터
+	  인덱스를 살펴보면 port의 의존성 관계를 파악할 수 있습니다.
+	  (파일의 이름은 &os;의 릴리즈에 따라 다를 수 있습니다; 예를
+	  들어, <filename>INDEX-8</filename>.)  일부 ports는 기본
+	  <filename>INDEX</filename> 빌드에는 포함되지 않는 부가적인
+	  의존성 관계를 가지고 있습니다.  우리는 여러분이 다른 ports의
+	  <filename>Makefile</filename>을 살펴봄으로써 이러한 ports를
+	  찾아낼 수 있기를 기대합니다.</para>
+      </sect3>
+
+      <sect3>
+	<title>port를 책임지는 방법</title>
+
+	<para>우선 <link linkend="maintain-port">관리자로서의
+	  책임</link>에 대해 명확히 이해해야 합니다.  또 <link
+	  xlink:href="&url.books.porters-handbook;">Porter's
+	  Handbook</link>을 읽어 보세요.  <emphasis>여러분이 편안하게
+	  다룰 수 있을 범위를 넘어서서 무리할 필요는
+	  없습니다.</emphasis></para>
+
+	<para>여러분은 원한다면 관리되지 않는 port의 관리 권한을
+	  언제든지 요청할 수 있습니다.  그냥
+	  <varname>MAINTAINER</varname>을 여러분의 이메일 주소로
+	  설정하고 해당 내용을 PR(Problem Report)로 보내 주세요.
+	  port에 빌드 에러가 있거나 업데이트가 필요하다면, 같은 PR에
+	  그러한 수정 내용을 포함해도 좋습니다.  This will help
+	  because many committers are less willing to assign
+	  maintainership to someone who does not have a known track
+	  record with &os;.  Submitting PRs that fix build errors or
+	  update ports are the best ways to establish one.</para>
+
+	<para>File your PR with category <literal>ports</literal> and
+	  class <literal>change-request</literal>.  A committer will
+	  examine your PR, commit the changes, and finally close the
+	  PR.  Sometimes this process can take a little while
+	  (committers are volunteers, too :).</para>
+      </sect3>
+    </sect2>
+
+    <sect2 xml:id="maintain-port">
+      <title>The challenge for port maintainers</title>
+
+      <para>This section will give you an idea of why ports need to be
+	maintained and outline the responsibilities of a port
+	maintainer.</para>
+
+      <sect3 xml:id="why-maintenance">
+	<title>Why ports require maintenance</title>
+
+	<para>Creating a port is a once-off task.  Ensuring that a
+	  port is up to date and continues to build and run requires
+	  an ongoing maintenance effort.  Maintainers are the people
+	  who dedicate some of their time to meeting these goals.</para>
+
+	<para>The foremost reason ports need maintenance is to bring
+	  the latest and greatest in third party software to the &os;
+	  community.  An additional challenge is to keep individual
+	  ports working within the Ports Collection framework as it
+	  evolves.</para>
+
+	<para>As a maintainer, you will need to manage the following
+	  challenges:</para>
+
+	<itemizedlist>
+	  <listitem>
+	    <formalpara>
+	      <title>New software versions and updates.</title>
+
+	      <para>New versions and updates of existing ported
+		software become available all the time, and these need
+		to be incorporated into the Ports Collection in order
+		to provide up-to-date software.</para>
+	    </formalpara>
+	  </listitem>
+
+	  <listitem>
+	    <formalpara>
+	      <title>Changes to dependencies.</title>
+
+	      <para>If significant changes are made to the dependencies
+		of your port, it may need to be updated so that it will
+		continue to work correctly.</para>
+	    </formalpara>
+	  </listitem>
+
+	  <listitem>
+	    <formalpara>
+	      <title>Changes affecting dependent ports.</title>
+
+	      <para>If other ports depend on a port that you maintain,
+		changes to your port may require coordination with
+		other maintainers.</para>
+	    </formalpara>
+	  </listitem>
+
+	  <listitem>
+	    <formalpara>
+	      <title>Interaction with other users, maintainers and
+		developers.</title>
+
+	      <para>Part of being a maintainer is taking on a support
+		role.  You are not expected to provide general support
+		(but we welcome it if you choose to do so).  What you
+		should provide is a point of coordination for
+		&os;-specific issues regarding your ports.</para>
+	    </formalpara>
+	  </listitem>
+
+	  <listitem>
+	    <formalpara>
+	      <title>Bug hunting.</title>
+
+	      <para>A port may be affected by bugs which are specific
+		to &os;.  You will need to investigate, find, and fix
+		these bugs when they are reported.  Thoroughly testing
+		a port to identify problems before they make their way
+		into the Ports Collection is even better.</para>
+	    </formalpara>
+	  </listitem>
+
+	  <listitem>
+	    <formalpara>
+	      <title>Changes to ports infrastructure and policy.</title>
+
+	      <para>Occasionally the systems that are used to build
+		ports and packages are updated or a new recommendation
+		affecting the infrastructure is made.  You should be
+		aware of these changes in case your ports are affected
+		and require updating.</para>
+	    </formalpara>
+	  </listitem>
+
+	  <listitem>
+	    <formalpara>
+	      <title>Changes to the base system.</title>
+
+	      <para>&os; is under constant development.  Changes to
+		software, libraries, the kernel or even policy changes
+		can cause flow-on change requirements to ports.</para>
+	    </formalpara>
+	  </listitem>
+	</itemizedlist>
+      </sect3>
+
+      <sect3>
+	<title>Maintainer responsibilities</title>
+
+	<sect4>
+	  <title>Keep your ports up to date</title>
+
+	  <para>This section outlines the process to follow to keep your
+	    ports up to date.</para>
+
+	  <para>This is an overview.  More information about upgrading a
+	    port is available in the
+	    <link xlink:href="&url.books.porters-handbook;">
+	      Porter's Handbook</link>.</para>
+
+	  <procedure>
+	    <step>
+	      <title>Watch for updates</title>
+
+	      <para>Monitor the upstream vendor for new versions,
+		updates and security fixes for the software.
+		Announcement mailing lists or news web pages are useful
+		for doing this.  Sometimes users will contact you and
+		ask when your port will be updated.  If you are busy
+		with other things or for any reason just cannot update
+		it at the moment, ask if they will help you by
+		submitting an update.</para>
+
+	      <para>You may also receive automated email from the
+		<literal>&os; Ports Version Check</literal> informing
+		you that a newer version of your port's distfile is
+		available.  More information about that system
+		(including how to stop future emails) will be provided
+		in the message.</para>
+	    </step>
+
+	    <step>
+	      <title>Incorporate changes</title>
+
+	      <para>When they become available, incorporate the changes
+		into the port.  You need to be able to generate a patch
+		between the original port and your updated port.</para>
+	    </step>
+
+	    <step>
+	      <title>Review and test</title>
+
+	      <para>Thoroughly review and test your changes:</para>
+
+	      <itemizedlist>
+		<listitem>
+		  <para>Build, install and test your port on as many
+		    platforms and architectures as you can.  It is
+		    common for a port to work on one branch or platform
+		    and fail on another.</para>
+		</listitem>
+
+		<listitem>
+		  <para>Make sure your port's dependencies are complete.
+		    The recommended way of doing this is by installing
+		    your own ports <application>tinderbox</application>.
+		    See <link linkend="resources">resources</link>
+		    for more information.</para>
+		</listitem>
+
+		<listitem>
+		  <para>Check that the packing list is up to date.  This
+		    involves adding in any new files and directories and
+		    removing unused entries.</para>
+		</listitem>
+
+		<listitem>
+		  <para>Verify your port using &man.portlint.1; as a
+		    guide.  See <link linkend="resources">resources</link> for important
+		    information about using
+		    <application>portlint</application>.</para>
+		</listitem>
+
+		<listitem>
+		  <para>Consider whether changes to your port might
+		    cause any other ports to break.  If this is the
+		    case, coordinate the changes with the maintainers of
+		    those ports.  This is especially important if your
+		    update changes the shared library version; in this
+		    case, at the very least, the dependent ports will
+		    need to get a <varname>PORTREVISION</varname> bump
+		    so that they will automatically be upgraded by
+		    automated tools such as
+		    <application>portmaster</application> or
+		    &man.portupgrade.1;.</para>
+		</listitem>
+	      </itemizedlist>
+	    </step>
+
+	    <step>
+	      <title>Submit changes</title>
+
+	      <para>Send your update by submitting a PR with an
+		explanation of the changes and a patch containing the
+		differences between the original port and the updated
+		one.  Please refer to <link xlink:href="&url.articles.problem-reports;">Writing FreeBSD
+		  Problem Reports</link> for information on how to
+		write a really good PR.</para>
+
+	      <note>
+		<para>Please do not submit a &man.shar.1; archive of the
+		  entire port; instead, use &man.diff.1;
+		  <literal>-ruN</literal>.  In this way, committers can
+		  much more easily see exactly what changes are being
+		  made.  The Porter's Handbook section on <link xlink:href="&url.books.porters-handbook;/port-upgrading.html">Upgrading</link>
+		  has more information.</para>
+	      </note>
+	    </step>
+
+	    <step>
+	      <title>Wait</title>
+
+	      <para>At some stage a committer will deal with your PR.
+		It may take minutes, or it may take weeks &mdash; so
+		please be patient.</para>
+	    </step>
+
+	    <step>
+	      <title>Give feedback</title>
+
+	      <para>If a committer finds a problem with your changes,
+		they will most likely refer it back to you.  A prompt
+		response will help get your PR committed faster, and
+		is better for maintaining a thread of conversation
+		when trying to resolve any problems.</para>
+	    </step>
+
+	    <step>
+	      <title>And Finally</title>
+
+	      <para>Your changes will be committed and your port will
+		have been updated.  The PR will then be closed by the
+		committer.  That's it!</para>
+	    </step>
+	  </procedure>
+	</sect4>
+
+	<sect4>
+	  <title>Ensure your ports continue to build correctly</title>
+
+	  <para>This section is about discovering and fixing problems
+	    that stop your ports from building correctly.</para>
+
+	  <para>&os; only guarantees that the Ports Collection works on
+	    the <literal>-STABLE</literal> branches.
+	    In
+	    theory, you should be able to get by with running the latest
+	    release of each stable branch (since the ABIs are not
+	    supposed to change) but if you can run the branch, that is
+	    even better.</para>
+
+	  <para>Since the majority of &os; installations run on
+	    PC-compatible machines (what is termed the
+	    <literal>i386</literal> architecture), we expect you to keep
+	    the port working on that architecture.  We prefer that ports
+	    also work on the <literal>amd64</literal> architecture
+	    running native.  It is completely fair to ask for help if
+	    you do not have one of these machines.</para>
+
+	  <note>
+	    <para>The usual failure modes for
+	      non-<literal>x86</literal> machines are that the original
+	      programmers assumed that, for instance, pointers are
+	      <literal>int</literal>s, or that a relatively lax older
+	      <application>gcc</application> compiler was being used.
+	      More and more, application authors are reworking their
+	      code to remove these assumptions &mdash; but if the author
+	      is not actively maintaining their code, you may need to do
+	      this yourself.</para>
+	  </note>
+
+	  <para>These are the tasks you need to perform to ensure your
+	    port is able to be built:</para>
+
+	  <procedure>
+	    <step>
+	      <title>Watch for build failures</title>
+
+	      <para>Check your mail for mail from
+		<literal>pkg-fallout@FreeBSD.org</literal> 
+		and the <link xlink:href="http://portscout.FreeBSD.org">distfiles scanner</link>
+		to see if any of the port which are failing to build
+		are out of date.</para>
+	    </step>
+
+	    <step>
+	      <title>Collect information</title>
+
+	      <para>Once you are aware of a problem, collect information
+		to help you fix it.  Build errors reported by
+		<literal>pkg-fallout</literal> are accompanied by logs
+		which will show you where the build failed.  If the
+		failure was reported to you by a user, ask them to send
+		you information which may help in diagnosing the
+		problem, such as:</para>
+
+	      <itemizedlist>
+		<listitem>
+		  <para>Build logs</para>
+		</listitem>
+
+		<listitem>
+		  <para>The commands and options used to build the
+		    port (including options set in
+		    <filename>/etc/make.conf</filename>)</para>
+		</listitem>
+
+		<listitem>
+		  <para>A list of packages installed on their system
+		    as shown by &man.pkg.info.1;</para>
+		</listitem>
+
+		<listitem>
+		  <para>The version of &os; they are running as
+		    shown by &man.uname.1;<command> -a</command></para>
+		</listitem>
+
+		<listitem>
+		  <para>When their ports collection was last
+		    updated</para>
+		</listitem>
+
+		<listitem>
+		  <para>When their ports tree amd
+		  <filename>INDEX</filename> was last updated</para>
+		</listitem>
+	      </itemizedlist>
+	    </step>
+
+	    <step>
+	      <title>Investigate and find a solution</title>
+
+	      <para>Unfortunately there is no straightforward process to
+		follow to do this.  Remember, though: if you are stuck,
+		ask for help!  The &a.ports; is a good place to start,
+		and the upstream developers are often very
+		helpful.</para>
+	    </step>
+
+	    <step>
+	      <title>Submit changes</title>
+
+	      <para>Just as with updating a port, you should now
+		incorporate changes, review and test, submit your
+		changes in a PR, and provide feedback if
+		required.</para>
+	    </step>
+
+	    <step>
+	      <title>Send patches to upstream authors</title>
+
+	      <para>In some cases, you will have to make patches to the
+		port to make it run on FreeBSD.  Some (but not all)
+		upstream authors will accept such patches back into
+		their code for the next release.  If so, this may even
+		help their users on other BSD-based systems as well and
+		perhaps save duplicated effort.  Please consider sending
+		any applicable patches to the authors as a
+		courtesy.</para>
+	    </step>
+	  </procedure>
+	</sect4>
+
+	<sect4>
+
+	  <title>Investigate bug reports and PRs related to your
+	    port</title>
+
+	  <para>This section is about discovering and fixing
+	    bugs.</para>
+
+	  <para>&os;-specific bugs are generally caused by assumptions
+	    about the build and runtime environments that do not apply
+	    to &os;.  You are less likely to encounter a problem of this
+	    type, but it can be more subtle and difficult to
+	    diagnose.</para>
+
+	  <para>These are the tasks you need to perform to ensure your
+	    port continues to work as intended:</para>
+
+	  <procedure>
+	    <step>
+	      <title>Respond to bug reports</title>
+
+	      <para>Bugs may be reported to you through email via the
+		<link xlink:href="https://bugs.FreeBSD.org/search/">
+		Problem Report database</link>.  Bugs may also be
+		reported directly to you by users.</para>
+
+	      <para>You should respond to PRs and other reports within
+		14 days, but please try not to take that long.  Try to
+		respond as soon as possible, even if it is just to say
+		you need some more time before you can work on the
+		PR.</para>
+
+	      <para>If you have not responded after 14 days, any
+		committer may commit from a PR that you have not
+		responded to via a
+		<literal>maintainer-timeout</literal>.</para>
+	    </step>
+
+	    <step>
+	      <title>Collect information</title>
+
+	      <para>If the person reporting the bug has not also
+		provided a fix, you need to collect the information that
+		will allow you to generate one.</para>
+
+	      <para>If the bug is reproducible, you can collect most of
+		the required information yourself.  If not, ask the
+		person who reported the bug to collect the information
+		for you, such as:</para>
+
+	      <itemizedlist>
+		<listitem>
+		  <para>A detailed description of their actions,
+		    expected program behavior and actual behavior</para>
+		</listitem>
+
+		<listitem>
+		  <para>Copies of input data used to trigger the
+		    bug</para>
+		</listitem>
+
+		<listitem>
+		  <para>Information about their build and execution
+		    environment &mdash; for example, a list of installed
+		    packages and the output of &man.env.1;</para>
+		</listitem>
+
+		<listitem>
+		  <para>Core dumps</para>
+		</listitem>
+
+		<listitem>
+		  <para>Stack traces</para>
+		</listitem>
+	      </itemizedlist>
+	    </step>
+
+	    <step>
+	      <title>Eliminate incorrect reports</title>
+
+	      <para>Some bug reports may be incorrect.  For example,
+		the user may have simply misused the program; or their
+		installed packages may be out of date and require
+		updating.  Sometimes a reported bug is not specific to
+		&os;.  In this case report the bug to the upstream
+		developers.  If the bug is within your capabilities to
+		fix, you can also patch the port so that the fix is
+		applied before the next upstream release.</para>
+	    </step>
+
+	    <step>
+	      <title>Find a solution</title>
+
+	      <para>As with build errors, you will need to sort out a
+		fix to the problem.  Again, remember to ask if you are
+		stuck!</para>
+	    </step>
+
+	    <step>
+	      <title>Submit or approve changes</title>
+
+	      <para>Just as with updating a port, you should now
+		incorporate changes, review and test, and submit your
+		changes in a PR (or send a follow-up if a PR already
+		exists for the problem).  If another user has submitted
+		changes in the PR, you can also send a follow-up saying
+		whether or not you approve the changes.</para>
+	    </step>
+	  </procedure>
+	</sect4>
+
+	<sect4>
+	  <title>Providing support</title>
+
+	  <para>Part of being a maintainer is providing support &mdash;
+	    not for the software in general &mdash; but for the port and
+	    any &os;-specific quirks and problems.  Users may contact
+	    you with questions, suggestions, problems and patches.  Most
+	    of the time their correspondence will be specific to
+	    &os;.</para>
+
+	  <para>Occasionally you may have to invoke your skills in
+	    diplomacy, and kindly point users seeking general support to
+	    the appropriate resources.  Less frequently you will
+	    encounter a person asking why the <literal>RPM</literal>s
+	    are not up to date or how can they get the software to run
+	    under Foo Linux.  Take the opportunity to tell them that
+	    your port is up to date (if it is, of course!), and suggest
+	    that they try &os;.</para>
+
+	  <para>Sometimes users and developers will decide that you are
+	    a busy person whose time is valuable and do some of the work
+	    for you.  For example, they might:</para>
+
+	  <itemizedlist>
+	    <listitem>
+	      <para>submit a PR or send you patches to update your
+		port,</para>
+	    </listitem>
+
+	    <listitem>
+	      <para>investigate and perhaps provide a fix to a PR,
+		or</para>
+	    </listitem>
+
+	    <listitem>
+	      <para>otherwise submit changes to your port.</para>
+	    </listitem>
+	  </itemizedlist>
+
+	  <para>In these cases your main obligation is to respond in a
+	    timely manner.  Again, the timeout for non-responsive
+	    maintainers is 14 days.  After this period changes may be
+	    committed unapproved.  They have taken the trouble to do
+	    this for you; so please try to at least respond promptly.
+	    Then review, approve, modify or discuss their changes with
+	    them as soon as possible.</para>
+
+	  <para>If you can make them feel that their contribution is
+	    appreciated (and it should be) you will have a better chance
+	    persuading them to do more things for you in the future
+	    <!-- smiley -->:-).</para>
+	</sect4>
+      </sect3>
+    </sect2>
+
+    <sect2 xml:id="fix-broken">
+      <title>Finding and fixing a broken port</title>
+
+      <para>There are two really good places to find a port that needs
+	some attention.</para>
+
+      <para>You can use the <link xlink:href="http://bugs.freebsd.org/search">web
+	  interface</link> to the Problem Report database to search
+	through and view unresolved PRs.  The majority of ports PRs are
+	updates, but with a little searching and skimming over synopses
+	you should be able to find something interesting to work on (the
+	<literal>sw-bug</literal> class is a good place to
+	start).</para>
+
+      <para>The other place is the <link xlink:href="http://portsmon.FreeBSD.org/">&os; Ports Monitoring
+	  System</link>.  In particular look for unmaintained ports
+	with build errors and ports that are marked
+	<varname>BROKEN</varname>.  It is OK to send changes for a
+	maintained port as well, but remember to ask the maintainer in
+	case they are already working on the problem.</para>
+
+      <para>Once you have found a bug or problem, collect information,
+	investigate and fix!  If there is an existing PR, follow up to
+	that.  Otherwise create a new PR.  Your changes will be reviewed
+	and, if everything checks out, committed.</para>
+    </sect2>
+
+    <sect2 xml:id="mortal-coil">
+      <title>When to call it quits</title>
+
+      <para>As your interests and commitments change, you may find that
+	you no longer have time to continue some (or all) of your ports
+	contributions.  That is fine!  Please let us know if you are no
+	longer using a port or have otherwise lost time or interest in
+	being a maintainer.  In this way we can go ahead and allow other
+	people to try to work on existing problems with the port without
+	waiting for your response.  Remember, &os; is a volunteer
+	project, so if maintaining a port is no fun anymore, it is
+	probably time to let someone else do it!</para>
+
+      <para>In any case, the Ports Management Team
+	(<literal>portmgr</literal>) reserves the right to reset your
+	maintainership if you have not actively maintained your port in
+	some time.  (Currently, this is set to 3 months.)  By this, we
+	mean that there are unresolved problems or pending updates that
+	have not been worked on during that time.</para>
+    </sect2>
+
+    <sect2 xml:id="resources">
+      <title>Resources for ports maintainers and contributors</title>
+
+      <para>The <link xlink:href="&url.books.porters-handbook;">Porter's
+	  Handbook</link> is your hitchhiker's guide to the ports
+	system.  Keep it handy!</para>
+
+      <para><link xlink:href="&url.articles.problem-reports;">Writing FreeBSD
+	  Problem Reports</link> describes how to best formulate and
+	submit a PR.  In 2005 more than eleven thousand ports PRs were
+	submitted!  Following this article will greatly assist us in
+	reducing the time needed to handle your PRs.</para>
+
+      <para>The <link xlink:href="http://www.FreeBSD.org/cgi/query-pr-summary.cgi?query">
+	  Problem Report database</link>.</para>
+
+      <para>The <link xlink:href="http://portsmon.FreeBSD.org/">FreeBSD Ports
+	  Monitoring System</link> can show you cross-referenced
+	information about ports such as build errors and problem
+	reports.  If you are a maintainer you can use it to check on the
+	build status of your ports.  As a contributor you can use it to
+	find broken and unmaintained ports that need to be fixed.</para>
+
+      <para>The <link xlink:href="http://portscout.FreeBSD.org">FreeBSD Ports
+	  distfile scanner</link> can show you ports for which the
+	distfiles are not fetchable.  You can check on your own ports or
+	use it to find ports that need their
+	<varname>MASTER_SITES</varname> updated.</para>
+
+      <para><package>ports-mgmt/poudriere</package> is the most
+	thorough way to test a port through the entire cycle of
+	installation, packaging, and deinstallation.
+	documentation is located at the
+	<link xlink:href="https://fossil.etoilebsd.net/poudriere/">poudriere home page</link></para>
+
+      <para>&man.portlint.1; is an application which can be used to
+	verify that your port conforms to many important stylistic and
+	functional guidelines.  <application>portlint</application> is a
+	simple heuristic application, so you should use it
+	<emphasis>only as a guide</emphasis>.  If
+	<application>portlint</application> suggests changes which seem
+	unreasonable, consult the <link xlink:href="&url.books.porters-handbook;">Porter's Handbook</link>
+	or ask for advice.</para>
+
+      <para>The &a.ports; is for general ports-related discussion.  It
+	is a good place to ask for help.  You can <link xlink:href="http://lists.freebsd.org/mailman/listinfo">subscribe, or
+	  read and search the list archives</link>.  Reading the
+	archives of the &a.ports-bugs; and the &a.cvs-ports; may also be
+	of interest.</para>
+    </sect2>
+  </sect1>
+
+  <index/>
+</article>
