@@ -12,4 +12,5 @@ FreeBSD 프로젝트는 그 운영체제 자체도 훌륭하지만, 체계적으
 번역 작업에 참여하고 싶으시다면 Introduction.md 파일을 참조해 주세요.
 
 한국어 번역본 ftp://ftp.freebsd.org/pub/FreeBSD/doc/ko_KR.UTF-8/
+
 xml 소스  https://svnweb.freebsd.org/doc/head/ko_KR.UTF-8/
