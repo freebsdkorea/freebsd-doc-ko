@@ -4,7 +4,7 @@
 <!--
      The FreeBSD Korean Documentation Project
 
-     $FreeBSD$
+     $FreeBSD: head/ko_KR.UTF-8/articles/bsdl-gpl/article.xml 47294 2015-08-21 13:44:39Z blackend $
      Original Revision: r43184
 -->
 
@@ -32,9 +32,9 @@
       &tm-attrib.general;
     </legalnotice>
 
-    <pubdate>$FreeBSD$</pubdate>
+    <pubdate>$FreeBSD: head/ko_KR.UTF-8/articles/bsdl-gpl/article.xml 47294 2015-08-21 13:44:39Z blackend $</pubdate>
 
-    <releaseinfo>$FreeBSD$</releaseinfo>
+    <releaseinfo>$FreeBSD: head/ko_KR.UTF-8/articles/bsdl-gpl/article.xml 47294 2015-08-21 13:44:39Z blackend $</releaseinfo>
   </info>
 
   <sect1 xml:id="intro">

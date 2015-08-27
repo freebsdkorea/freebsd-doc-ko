@@ -1,6 +1,6 @@
 # The FreeBSD Korean Documentation Project
 #
-# $FreeBSD: head/ko_KR.UTF-8/articles/bsdl-gpl/Makefile 39631 2012-10-01 09:53:01Z gabor $
+# $FreeBSD: head/ko_KR.UTF-8/articles/bsdl-gpl/Makefile 47294 2015-08-21 13:44:39Z blackend $
 #
 # BSDL vs GPL article.
 #
