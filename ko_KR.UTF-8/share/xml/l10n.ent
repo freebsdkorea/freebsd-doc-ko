@@ -4,7 +4,7 @@
 
      The FreeBSD Korean Documentation Project
      
-     $FreeBSD: head/en_US.ISO8859-1/share/xml/l10n.ent 38826 2012-05-17 19:12:14Z hrs $
+     $FreeBSD$
      Original revision: r38826
 -->
 
@@ -15,7 +15,7 @@
 <!ENTITY doc.html.charset "utf-8">
 
 <!ENTITY doc.langcode.en "ko_KR.UTF-8">
-<!ENTITY doc.langcode    "&doc.langcode.en;">
+<!ENTITY doc.langcode    "&doc.langcode.ko;">
 
 <!-- PUBLIC "-//FreeBSD//ENTITIES FreeBSD L10N Entities//EN" -->
 

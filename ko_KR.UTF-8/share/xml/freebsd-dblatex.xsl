@@ -1,6 +1,12 @@
 <?xml version='1.0'?>
 
-<!-- $FreeBSD: head/ja_JP.eucJP/share/xml/freebsd-dblatex.xsl 43181 2013-11-13 06:10:37Z hrs $ -->
+<!--
+     The FreeBSD Korean Documentation Project
+
+     $FreeBSD$
+     Original revision: r47317
+     from The FreeBSD Japanese Documentation Project
+-->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 version='1.0'>
@@ -10,7 +16,7 @@
   </xsl:text>
   <xsl:text>\setsansfont{NanumGothic}
   </xsl:text>
-  <xsl:text>\setmonofont{NanumGothicCoding}
+  <xsl:text>\setmonofont{DejaVu Sans Mono}
   </xsl:text>
   </xsl:param>
 
