@@ -26,15 +26,16 @@ git이나 PO 등에 익숙하지 않으시다면, 그냥 번역본 파일을 보
 
 Engineering에서는 번역된 내용을 규격에 맞게 다듬고 빌드한 뒤 결과를 공식 트리에 반영하는 일을 합니다. 다음과 같은 사항을 준비해 주세요:
 
-* fdp-primer의 [1.2. Quick Start](https://www.freebsd.org/doc/en_US.ISO8859-1/books/fdp-primer/overview-quick-start.html) 부분을 참고하여 textproc/docproj를 설치하고, working copoy를 checkout해 주세요.
+1. fdp-primer의 [1.2. Quick Start](https://www.freebsd.org/doc/en_US.ISO8859-1/books/fdp-primer/overview-quick-start.html) 부분을 참고하여 textproc/docproj를 설치하고, working copoy를 checkout해 주세요.
 그 밖의 내용은 [11. Translations](https://www.freebsd.org/doc/en_US.ISO8859-1/books/fdp-primer/translations.html), [12. Writing Style](https://www.freebsd.org/doc/en_US.ISO8859-1/books/fdp-primer/writing-style.html) 그리고 [PO Translation](http://wonkity.com/~wblock/tmp/translation/po-translations.html)을 참고하시면 됩니다.
-* 번역이 완료된 PO 파일에 대해 번역본 xml 파일을 만들고 규격에 맞춰 다듬어 주세요. [13. Editor Configuration](https://www.freebsd.org/doc/en_US.ISO8859-1/books/fdp-primer/editor-config.html)이 도움이 될 수 있을 것입니다.
-* 문서를 다듬는 작업이 완료되면, 빌드를 해 보고 결과물이 만족스러운지 확인합니다.
-* 전체적인 완성도가 제출해도 좋을 정도에 도달했다면, PR을 통해 번역 결과를 제출합니다. 이 과정은 FreeBSD 한국어 문서 프로젝트 외부와 소통하는 일이기 때문에, 혼자서 진행하기보다 프로젝트 멤버와의 협의 후에 이루어지는 것이 바람직합니다.
+2. 번역이 완료된 PO 파일에 대해 번역본 xml 파일을 만들고 규격에 맞춰 다듬어 주세요. [13. Editor Configuration](https://www.freebsd.org/doc/en_US.ISO8859-1/books/fdp-primer/editor-config.html)이 도움이 될 수 있을 것입니다.
+3. 문서를 다듬는 작업이 완료되면, 빌드를 해 보고 결과물이 만족스러운지 확인합니다.
+4. 전체적인 완성도가 제출해도 좋을 정도에 도달했다면, PR을 통해 번역 결과를 제출합니다. 이 과정은 FreeBSD 한국어 문서 프로젝트 외부와 소통하는 일이기 때문에, 혼자서 진행하기보다 프로젝트 멤버와의 협의 후에 이루어지는 것이 바람직합니다.
 
 ## FAQ
 
 Q. 새로운 문서의 번역을 시작하고 싶어요.
+
 A. [PO Translation의 Quick Start](http://wonkity.com/~wblock/tmp/translation/po-translations-quick-start.html)를 참조하세요. 잘 모르겠다면, 프로젝트의 다른 사람에게 도움을 요청하세요.
 
 ## Contact
