@@ -1,8 +1,14 @@
-# The FreeBSD Korean Documentation Project Todo List
+# FKDP Todo List
 
 이 파일은 FreeBSD Korean Documentation Project에서 우선적으로
 수행되어야 할 작업들을 나열합니다. 번역 작업에 참여하고 있는
 사람이라면 누구나 자유롭게 편집해도 좋습니다.
+
+## 전반적인 구조 개편
+
+한국어 문서를 번역, 빌드하기 위해 필요한 다른 파일들을 이
+repository에 추가하여 별도로 다른 working copy를 관리할
+필요가 없도록 하는 것이 바람직해 보입니다.
 
 ## Makefile 등 문서 빌드에 필요한 각종 파일들 검토
 각 디렉토리의 Makefile 및 Makefile.inc, 그리고 ko_KR.UTF-8
