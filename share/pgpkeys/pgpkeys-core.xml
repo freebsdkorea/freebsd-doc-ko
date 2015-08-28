@@ -1,0 +1,52 @@
+<!--
+     The FreeBSD Documentation Project
+
+     $FreeBSD: head/share/pgpkeys/pgpkeys-core.xml 45237 2014-07-09 11:40:15Z pgj $
+-->
+
+    <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-core-gavin">
+      <title>&a.gavin.email;</title>
+      &pgpkey.gavin;
+    </sect2>
+
+    <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-core-theraven">
+      <title>&a.theraven.email;</title>
+      &pgpkey.theraven;
+    </sect2>
+
+    <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-core-bapt">
+      <title>&a.bapt.email;</title>
+      &pgpkey.bapt;
+    </sect2>
+
+    <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-core-emaste">
+      <title>&a.emaste.email;</title>
+      &pgpkey.emaste;
+    </sect2>
+
+    <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-core-gnn">
+      <title>&a.gnn.email;</title>
+      &pgpkey.gnn;
+    </sect2>
+
+    <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-core-hrs">
+      <title>&a.hrs.email;</title>
+      &pgpkey.hrs;
+    </sect2>
+
+    <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-core-glebius">
+      <title>&a.glebius.email;</title>
+      &pgpkey.glebius;
+    </sect2>
+
+    <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-core-peter">
+      <title>&a.peter.email;</title>
+      &pgpkey.peter;
+    </sect2>
+
+    <!-- XXX: rwatson does not have a PGP key in the repository
+    <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-core-rwatson">
+      <title>&a.rwatson.email;</title>
+      &pgpkey.rwatson;
+    </sect2>
+    -->

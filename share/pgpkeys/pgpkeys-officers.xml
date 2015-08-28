@@ -1,0 +1,25 @@
+<!--
+     The FreeBSD Documentation Project
+
+     $FreeBSD: head/share/pgpkeys/pgpkeys-officers.xml 43126 2013-11-07 16:37:11Z gabor $
+-->
+
+    <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-security-officer">
+      <title>&a.security-officer;</title>
+      &pgpkey.security-officer;
+    </sect2>
+
+    <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-secteam-secretary">
+      <title>&a.secteam-secretary;</title>
+      &pgpkey.secteam-secretary;
+    </sect2>
+
+    <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-core-secretary">
+      <title>&a.core-secretary;</title>
+      &pgpkey.core-secretary;
+    </sect2>
+
+    <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-portmgr-secretary">
+      <title>&a.portmgr-secretary;</title>
+      &pgpkey.portmgr-secretary;
+    </sect2>

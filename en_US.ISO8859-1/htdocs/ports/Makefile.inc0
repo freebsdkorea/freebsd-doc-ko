@@ -1,0 +1,17 @@
+# $FreeBSD: head/en_US.ISO8859-1/htdocs/ports/Makefile.inc0 38826 2012-05-17 19:12:14Z hrs $
+
+.if exists(../Makefile.conf)
+.include "../Makefile.conf"
+.endif
+.if exists(../Makefile.inc)
+.include "../Makefile.inc"
+.endif
+.if exists(Makefile.inc)
+.include "Makefile.inc"
+.endif
+
+.if exists(Makefile.gen)
+.include "Makefile.gen"
+.endif
+
+.include "${DOC_PREFIX}/share/mk/web.site.mk"

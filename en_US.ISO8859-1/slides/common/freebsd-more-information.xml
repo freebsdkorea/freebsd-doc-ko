@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- $FreeBSD: head/en_US.ISO8859-1/slides/common/freebsd-more-information.xml 39534 2012-09-14 12:11:19Z gabor $ -->
+
+<foil id="freebsd-mmore-information">
+  <title>More Information</title>
+
+  <itemizedlist>
+    <listitem><ulink url="http://www.FreeBSD.org"></ulink></listitem>
+    <listitem><ulink url="http://www.FreeBSD.org/handbook">FreeBSD Handbook</ulink></listitem>
+    <listitem><ulink url="http://www.FreeBSDMall.com">FreeBSD Mall, Inc.</ulink></listitem>
+  </itemizedlist>
+</foil>

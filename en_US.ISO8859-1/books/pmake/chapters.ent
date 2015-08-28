@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--
+     Creates entities for each chapter in the PMake Tutorial.
+
+     $FreeBSD: head/en_US.ISO8859-1/books/pmake/chapters.ent 41645 2013-05-17 18:49:52Z gabor $
+-->
+
+<!ENTITY pmake.legalnotice SYSTEM "legalnotice.xml">
+<!ENTITY chap.intro       SYSTEM "intro/chapter.xml">
+<!ENTITY chap.basics      SYSTEM "basics/chapter.xml">
+<!ENTITY chap.shortcuts   SYSTEM "shortcuts/chapter.xml">
+<!ENTITY chap.gods        SYSTEM "gods/chapter.xml">
+<!ENTITY chap.answers     SYSTEM "answers/chapter.xml">
+<!ENTITY glossary         SYSTEM "glossary/glossary.xml">

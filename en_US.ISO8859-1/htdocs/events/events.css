@@ -1,0 +1,18 @@
+/* $FreeBSD: head/en_US.ISO8859-1/htdocs/events/events.css 38826 2012-05-17 19:12:14Z hrs $ */
+
+div.topic {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+div.discussion {
+	margin-left: 1cm;
+}
+
+strong.speaker {
+	color: #660000;
+}
+
+strong.action {
+	color: red;
+}

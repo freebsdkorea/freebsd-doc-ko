@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//FreeBSD//DTD XHTML 1.0 Transitional-Based Extension//EN"
+"http://www.FreeBSD.org/XML/share/xml/xhtml10-freebsd.dtd" [
+<!ENTITY title "Web Resources">
+]>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <title>&title;</title>
+
+      <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">$FreeBSD: head/en_US.ISO8859-1/htdocs/community/webresources.xml 45274 2014-07-13 21:33:03Z gavin $</cvs:keyword>
+    </head>
+
+    <body class="navinclude.community">
+
+		<p>Our web pages remain one of the best sources of information, and
+		  are also mirrored at many sites around the world.  Try connecting to
+		  www.<b>yourcountry</b>.FreeBSD.org (e.g. <a
+		    href="http://www.de.FreeBSD.org/">www.de.FreeBSD.org</a> for
+		  Germany or <a
+		    href="http://www.au.FreeBSD.org/">www.au.FreeBSD.org</a> for
+		  Australia), or select a mirror from the drop-down list on the
+		  <a href="&base;/index.html">front page</a>.</p>
+
+		<p>The FreeBSD web pages are translated into several
+		  languages.  Links to the translated versions of these web
+		  pages can be found on the <a href="&base;/index.html">front
+		  page</a>.</p>
+
+	    <p>Several other non-English resources exist:</p>
+
+		<ul>
+		  <li><a href="http://bsd.hu/">Hungarian</a></li>
+
+		  <li><a href="http://www.gufi.org/">Italian</a></li>
+
+		  <li><a href="http://www.jp.FreeBSD.org/">Japanese</a></li>
+
+		  <li><a
+		    href="&base;/doc/ru_RU.KOI8-R/books/faq/index.html">Russian FAQ</a></li>
+		</ul>
+
+	     <p>For information on recent FreeBSD progress and releases, see the
+		  <a href="&base;/news/newsflash.html">Newsflash</a> page.</p>
+
+
+</body>
+</html>

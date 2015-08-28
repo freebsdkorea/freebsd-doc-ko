@@ -1,0 +1,11 @@
+/*
+ * FreeBSD Global Style - Large Text Version
+ *
+ * $FreeBSD: head/en_US.ISO8859-1/htdocs/layout/css/fixed_large.css 38826 2012-05-17 19:12:14Z hrs $
+ */
+
+@import url("fixed.css");
+
+body {
+  font-size: 93%;
+}
