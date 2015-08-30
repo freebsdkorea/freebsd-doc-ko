@@ -2,8 +2,15 @@
 <!DOCTYPE article PUBLIC "-//FreeBSD//DTD DocBook XML V5.0-Based Extension//EN"
 	"http://www.FreeBSD.org/XML/share/xml/freebsd50.dtd">
 <article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:lang="ko">
-  <info><title>Contributing to FreeBSD</title>
-    
+<!--
+     The FreeBSD Korean Documentation Project
+
+     $FreeBSD$
+     Original Revision: r46486
+-->
+
+  <info>
+    <title>Contributing to FreeBSD</title>
 
     <abstract>
       <para>이 글은 개인이나 단체가 FreeBSD 프로젝트에 기여할 수 있는
@@ -11,9 +18,24 @@
      </abstract>
 
     <authorgroup>
-      <author><personname><firstname>Jordan</firstname><surname>Hubbard</surname></personname></author>
-      <author><personname><firstname>Sam</firstname><surname>Lawrance</surname></personname></author>
-      <author><personname><firstname>Mark</firstname><surname>Linimon</surname></personname></author>
+      <author>
+	<personname>
+	  <firstname>Jordan</firstname>
+	  <surname>Hubbard</surname>
+	</personname>
+      </author>
+      <author>
+	<personname>
+	  <firstname>Sam</firstname>
+	  <surname>Lawrance</surname>
+	</personname>
+      </author>
+      <author>
+	<personname>
+	  <firstname>Mark</firstname>
+	  <surname>Linimon</surname>
+	</personname>
+      </author>
     </authorgroup>
 
     <legalnotice xml:id="trademarks" role="trademarks">
@@ -22,9 +44,9 @@
       &tm-attrib.general;
     </legalnotice>
 
-    <pubdate>$FreeBSD: head/ko_KR.UTF-8/articles/contributing/article.xml 46486 2015-04-06 05:52:24Z eadler $</pubdate>
+    <pubdate>$FreeBSD$</pubdate>
 
-    <releaseinfo>$FreeBSD: head/ko_KR.UTF-8/articles/contributing/article.xml 46486 2015-04-06 05:52:24Z eadler $</releaseinfo>
+    <releaseinfo>$FreeBSD$</releaseinfo>
   </info>
 
   <indexterm><primary>contributing</primary></indexterm>
@@ -66,7 +88,8 @@
     <title>어떤 도움이 필요한가요?</title>
 
     <para>아래에 제시된 작업 및 보조 프로젝트들의 목록은 여러
-      <filename>TODO</filename> 항목들과 사용자 요청들을 나타내고 있습니다.</para>
+      <filename>TODO</filename> 항목들과 사용자 요청들을 나타내고
+      있습니다.</para>
 
     <sect2 xml:id="non-programmer-tasks">
       <title>진행중인 비-프로그래밍 작업들</title>
@@ -82,7 +105,8 @@
 	    무언가가 어색하게 설명되어 있거나, 너무 오래 되었거나
 	    심지어 완전히 잘못되어 있다면, 우리에게 알려 주세요.  직접
 	    고친 내용을 보내 주신다면 더욱 좋습니다(Docbook은 배우기
-	    어렵지 않습니다만, 그냥 ASCII 형식으로 보내 주셔도 괜찮습니다).</para>
+	    어렵지 않습니다만, 그냥 ASCII 형식으로 보내 주셔도
+	    괜찮습니다).</para>
 	</listitem>
 
 	<listitem>
@@ -188,12 +212,12 @@
       <title>PR 데이터베이스로 할 것들</title>
 
       <indexterm>
-	<primary>problem reports database</primary>
+	<primary>problem reports 데이터베이스</primary>
       </indexterm>
 
       <para><link
-		xlink:href="https://bugs.FreeBSD.org/search/">FreeBSD
-        PR list</link>는 FreeBSD 사용자에 의해 제출된 모든 문제점
+	  xlink:href="https://bugs.FreeBSD.org/search/">FreeBSD
+          PR list</link>는 FreeBSD 사용자에 의해 제출된 모든 문제점
 	보고와 개선 사항 요청을 담고 있습니다.  PR 데이터베이스는
 	프로그래머 작업과 비-프로그래머 작업을 모두 포함합니다.
 	PR들을 살펴보고, 흥미로운 것이 있는지 살펴 보세요.  이들 중
@@ -519,43 +543,44 @@
 	  <varname>MAINTAINER</varname>을 여러분의 이메일 주소로
 	  설정하고 해당 내용을 PR(Problem Report)로 보내 주세요.
 	  port에 빌드 에러가 있거나 업데이트가 필요하다면, 같은 PR에
-	  그러한 수정 내용을 포함해도 좋습니다.  This will help
-	  because many committers are less willing to assign
-	  maintainership to someone who does not have a known track
-	  record with &os;.  Submitting PRs that fix build errors or
-	  update ports are the best ways to establish one.</para>
+	  그러한 수정 내용을 포함해도 좋습니다.  많은 committer들은
+	  &os;에 남긴 흔적이 없는 누군가에게 관리 권한을 부여하고
+	  싶어하지 않기 때문에, 이는 도움이 되는 행동일 것입니다.
+	  빌드 오류를 고치거나 포트를 업데이트하는 PR을 제출하는 것은
+	  이러한 흔적을 남기는 가장 좋은 방법입니다.
 
-	<para>File your PR with category <literal>ports</literal> and
-	  class <literal>change-request</literal>.  A committer will
-	  examine your PR, commit the changes, and finally close the
-	  PR.  Sometimes this process can take a little while
-	  (committers are volunteers, too :).</para>
+	<para>여러분의 PR을 <literal>ports</literal> 카테고리와
+	  <literal>change-request</literal> 클래스로 설정한 뒤 제출해
+	  주세요.  Committer가 여러분의 PR을 검토하고, 수정 사항을
+	  commit하고, 마침내 PR을 종료시킬 것입니다.  이 과정은 종종
+	  시간이 걸릴 수도 있습니다(committer들 역시
+	  자원봉사자들입니다 :).</para>
       </sect3>
     </sect2>
 
     <sect2 xml:id="maintain-port">
-      <title>The challenge for port maintainers</title>
+      <title>포트 관리자를 위한 도전 과제</title>
 
-      <para>This section will give you an idea of why ports need to be
-	maintained and outline the responsibilities of a port
-	maintainer.</para>
+      <para>이 항목은 포트가 관리되어야 하는 이유 및 포트 관리자의
+        책임에 대해 설명해줄 것입니다.</para>
 
       <sect3 xml:id="why-maintenance">
-	<title>Why ports require maintenance</title>
+	<title>포트의 관리가 필요한 이유</title>
 
-	<para>Creating a port is a once-off task.  Ensuring that a
-	  port is up to date and continues to build and run requires
-	  an ongoing maintenance effort.  Maintainers are the people
-	  who dedicate some of their time to meeting these goals.</para>
+	<para>포트를 만드는 일은 일회성 작업입니다.  포트가 최신
+	  상태인지, 그리고 빌드 및 실행이 문제없이 되는지를 확인하는
+	  일은 지속적인 관리 노력이 필요합니다.  관리자는 그들의 시간
+	  중 일부를 이 목표를 달성하는 데 투자하는
+	  사람들입니다.</para>
 
-	<para>The foremost reason ports need maintenance is to bring
-	  the latest and greatest in third party software to the &os;
-	  community.  An additional challenge is to keep individual
+	<para>포트에 관리가 필요한 가장 주요한 이유는 &os; 커뮤니티에
+	  최신의 많은 3rd party 소프트웨어를 제공하기 위함입니다.
+	  An additional challenge is to keep individual
 	  ports working within the Ports Collection framework as it
 	  evolves.</para>
 
-	<para>As a maintainer, you will need to manage the following
-	  challenges:</para>
+	<para>관리자로서, 여러분은 다음의 도전 과제들을 담당할 필요가
+	  있습니다:</para>
 
 	<itemizedlist>
 	  <listitem>
@@ -581,18 +606,17 @@
 
 	  <listitem>
 	    <formalpara>
-	      <title>Changes affecting dependent ports.</title>
+	      <title>종속된 포트에 영향을 미치는 수정 사항들.</title>
 
-	      <para>If other ports depend on a port that you maintain,
-		changes to your port may require coordination with
-		other maintainers.</para>
+	      <para>만일 여러분이 관리하는 포트에 다른 포트가 의존하고
+	        있다면, 여러분은 여러분의 포트를 수정하기 위해 다른
+	        관리자들과 공동 작업을 해야 할 수도 있습니다.</para>
 	    </formalpara>
 	  </listitem>
 
 	  <listitem>
 	    <formalpara>
-	      <title>Interaction with other users, maintainers and
-		developers.</title>
+	      <title>다른 사용자, 관리자 및 개발자와의 소통.</title>
 
 	      <para>Part of being a maintainer is taking on a support
 		role.  You are not expected to provide general support
