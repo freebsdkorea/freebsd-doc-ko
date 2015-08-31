@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2015-08-29 10:47+0900\n"
-"PO-Revision-Date: 2015-08-29 11:23+0900\n"
+"PO-Revision-Date: 2015-08-31 10:29+0900\n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -120,274 +120,274 @@ msgstr "FAQ와 Handbook을 주기적으로 읽어 보세요.  만약 무언가�
 #. (itstool) path: listitem/para
 #: article.translate.xml:99
 msgid "Help translate FreeBSD documentation into your native language. If documentation already exists for your language, you can help translate additional documents or verify that the translations are up-to-date. First take a look at the <link xlink:href=\"@@URL_RELPREFIX@@/doc/ko_KR.UTF-8/books/fdp-primer/translations.html\">Translations FAQ</link> in the FreeBSD Documentation Project Primer. You are not committing yourself to translating every single FreeBSD document by doing this — as a volunteer, you can do as much or as little translation as you desire. Once someone begins translating, others almost always join the effort. If you only have the time or energy to translate one part of the documentation, please translate the installation instructions."
-msgstr ""
+msgstr "FreeBSD 문서를 여러분의 모국어로 번역하는 것을 도와 주세요.  만약 문서가 이미 여러분의 언어로 존재한다면, 다른 문서를 추가적으로 번역하거나 번역본이 최신 상태인지를 점검해 보는 것도 좋습니다.  먼저 FreeBSD Documentation Project Primer의 <link xlink:href=\"&url.books.fdp-primer;/translations.html\">Translations FAQ</link>를 살펴 보세요.  여러분은 모든 FreeBSD 문서를 다 번역하는 데 헌신할 필요는 없습니다 &mdash; 자원봉사자로서, 여러분은 원하는 만큼 많은 또는 적은 양을 번역할 수 있습니다.  한번 누군가가 번역을 시작하면, 다른 사람들은 거의 항상 그 노력에 동참합니다.  만약 여러분이 문서의 일부만을 번역할 시간 또는 노력밖에 없다면, 설치 과정 부분을 번역해 주세요."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:115
 msgid "Read the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-questions\">FreeBSD general questions mailing list</link> occasionally (or even regularly). It can be very satisfying to share your expertise and help people solve their problems; sometimes you may even learn something new yourself! These forums can also be a source of ideas for things to work on."
-msgstr ""
+msgstr "<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-questions\">FreeBSD general questions mailing list</link>를 종종 (또는 심지어 정기적으로) 읽어 주세요.  여러분의 전문 지식을 나누고 사람들이 문제를 해결하도록 도와 주는 일은 대단히 만족스러울 수 있습니다; 여러분은 심지어 종종 스스로 새로운 것을 배울 수도 있습니다!  이 포럼들은 할 일들의 아이디어의 원천이 되기도 합니다."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:126
 msgid "Ongoing Programmer Tasks"
-msgstr ""
+msgstr "진행중인 프로그래머 작업들"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:128
 msgid "Most of the tasks listed here require either a considerable investment of time, or an in-depth knowledge of the FreeBSD kernel, or both. However, there are also many useful tasks which are suitable for <quote>weekend hackers</quote>."
-msgstr ""
+msgstr "여기에 수록된 일들 대다수는 상당한 시간 투자 또는 FreeBSD 커널에 대한 깊이 있는 지식, 심지어 둘 다를 요구합니다.  그러나, <quote>심심풀이 해커</quote>들을 위한 유용한 작업들도 많이 있습니다."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:136
 msgid "If you run FreeBSD-CURRENT and have a good Internet connection, there is a machine <systemitem class=\"fqdomainname\">current.FreeBSD.org</systemitem> which builds a full release once a day—every now and again, try to install the latest release from it and report any failures in the process."
-msgstr ""
+msgstr "만약 여러분이 FreeBSD-CURRENT를 돌리고 있고 인터넷 연결이 괜찮다면, 하루에 한 번씩 전체 릴리즈를 빌드하는 <systemitem class=\"fqdomainname\">current.FreeBSD.org</systemitem>이 있습니다&mdash;종종 최신 릴리즈를 설치해 보고 과정에서 오류가 발생하면 제보해 주세요."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:145
 msgid "Read the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-bugs\">FreeBSD problem reports mailing list</link>. There might be a problem you can comment constructively on or with patches you can test. Or you could even try to fix one of the problems yourself."
-msgstr ""
+msgstr "<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-bugs\">FreeBSD problem reports mailing list</link>를 읽어 보세요.  여러분이 조언을 해줄 수 있거나 패치를 테스트해볼 수 있는 문제들이 있을 수 있습니다.  또는 심지어 그것들 중 하나를 스스로 고쳐볼 수도 있겠지요."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:152
 msgid "If you know of any bug fixes which have been successfully applied to -CURRENT but have not been merged into -STABLE after a decent interval (normally a couple of weeks), send the committer a polite reminder."
-msgstr ""
+msgstr "만약 여러분이 -CURRENT에서는 고쳐졌지만 상당한 시간이 지난 후(대체로 약 2주 정도)에도 -STABLE에 반영되지 않은 버그를 알고 있다면, commiter에게 예의 바른 알림을 보내 주세요."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:159
 msgid "Move contributed software to <filename>src/contrib</filename> in the source tree."
-msgstr ""
+msgstr "contributed software를 소스 트리의 <filename>src/contrib</filename>으로 옮겨 주세요."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:165
 msgid "Make sure code in <filename>src/contrib</filename> is up to date."
-msgstr ""
+msgstr "<filename>src/contrib</filename>의 소스 코드를 최신 상태로 유지시켜 주세요."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:171
 msgid "Build the source tree (or just part of it) with extra warnings enabled and clean up the warnings."
-msgstr ""
+msgstr "추가적 경고 표시를 활성화한 뒤 소스 트리 (또는 그 일부) 빌드를 해 보고 경고가 나타나는 내용을 수정해 주세요."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:176
 msgid "Fix warnings for ports which do deprecated things like using <function>gets()</function> or including <filename>malloc.h</filename>."
-msgstr ""
+msgstr "<function>gets()</function>을 사용하거나 <filename>malloc.h</filename>을 include하는 등 deprecate된 방법을 사용하는 ports가 있으면 경고를 수정해 주세요."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:182
 msgid "If you have contributed any ports and you had to make FreeBSD-specific changes, send your patches back to the original authors (this will make your life easier when they bring out the next version)."
-msgstr ""
+msgstr "여러분이 FreeBSD에 맞도록 패치한 ports에 기여했다면, 그 패치를 원 저자에게 보내 주세요 (이렇게 하면 그들이 다음 버전을 출시할 때 여러분이 할 일이 훨씬 간편해질 것입니다)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:189
 msgid "Get copies of formal standards like <trademark class=\"registered\">POSIX</trademark>. Compare FreeBSD's behavior to that required by the standard. If the behavior differs, particularly in subtle or obscure corners of the specification, send in a PR about it. If you are able, figure out how to fix it and include a patch in the PR. If you think the standard is wrong, ask the standards body to consider the question."
-msgstr ""
+msgstr "<trademark class=\"registered\">POSIX</trademark>와 같은 공식 표준들을 살펴 보세요.  그리고 FreeBSD가 그러한 표준이 요구하는 조건에 충족되는지 확인해 보세요.  만약 그렇지 못하다면, 특히 표준의 사소하거나 불분명한 부분에서의 경우에, 그에 대한 PR을 보내 주세요.  가능하다면, 어떻게 고치는지를 찾아서 PR에 패치를 포함시켜 주세요.  만약 표준이 잘못되었다고 생각된다면, 해당 표준을 관리하는 단체에 문의해 보세요."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:200
 msgid "Suggest further tasks for this list!"
-msgstr ""
+msgstr "이 목록에 추가할 다른 일들을 제안해 주세요!"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:206
 msgid "Work through the PR Database"
-msgstr ""
+msgstr "PR 데이터베이스로 할 것들"
 
 #. (itstool) path: sect2/indexterm
 #: article.translate.xml:208
 msgid "<primary>problem reports database</primary>"
-msgstr ""
+msgstr "<primary>problem reports 데이터베이스</primary>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:212
 msgid "The <link xlink:href=\"https://bugs.FreeBSD.org/search/\">FreeBSD PR list</link> shows all the current active problem reports and requests for enhancement that have been submitted by FreeBSD users. The PR database includes both programmer and non-programmer tasks. Look through the open PRs, and see if anything there takes your interest. Some of these might be very simple tasks that just need an extra pair of eyes to look over them and confirm that the fix in the PR is a good one. Others might be much more complex, or might not even have a fix included at all."
-msgstr ""
+msgstr "<link xlink:href=\"https://bugs.FreeBSD.org/search/\">FreeBSD PR list</link>는 FreeBSD 사용자에 의해 제출된 모든 문제점 보고와 개선 사항 요청을 담고 있습니다.  PR 데이터베이스는 프로그래머 작업과 비-프로그래머 작업을 모두 포함합니다.  PR들을 살펴보고, 흥미로운 것이 있는지 살펴 보세요.  이들 중 일부는 매우 간단해서 누군가 살펴보고 PR에 포함된 수정 사항이 제대로 되어 있는지만 확인하면 됩니다.  다른 것들은 더 복잡하거나, 심지어는 수정 사항이 아예 포함되지 않아 있을 수도 있습니다."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:223
 msgid "Start with the PRs that have not been assigned to anyone else. If a PR is assigned to someone else, but it looks like something you can handle, email the person it is assigned to and ask if you can work on it—they might already have a patch ready to be tested, or further ideas that you can discuss with them."
-msgstr ""
+msgstr "다른 누군가가 맡고 있지 않은 PR부터 시작하세요.  만약 다른 누군가가 PR을 맡고 있는데 여러분이 해결할 수 있는 것처럼 보인다면, 맡고 있는 사람에게 이메일을 보내서 여러분이 작업해도 좋은지 요청해 보세요&mdash;그들은 이미 테스트받을 준비가 되어 있는 패치를 가지고 있거나, 여러분과 의논할 만한 아이디어를 가지고 있을 수도 있습니다."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:232
 msgid "Ongoing Ports Tasks"
-msgstr ""
+msgstr "진행중인 ports 작업들"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:234
 msgid "The Ports Collection is a perpetual work in progress. We want to provide our users with an easy to use, up to date, high quality repository of third party software. We need people to donate some of their time and effort to help us achieve this goal."
-msgstr ""
+msgstr "Ports Collection은 끝없이 진행되고 있는 작업입니다.  우리는 사용자들에게 사용하기 쉽고, 최신 상태로 유지되며, 높은 품질의 제3자 소프트웨어 저장소를 제공하고 싶어합니다.  우리는 이 목표를 달성하기 위해 약간의 시간과 노력을 투자해 도와줄 사람들이 필요합니다."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:240
 msgid "Anyone can get involved, and there are lots of different ways to do so. Contributing to ports is an excellent way to help <quote>give back</quote> something to the project. Whether you are looking for an ongoing role, or a fun challenge for a rainy day, we would love to have your help!"
-msgstr ""
+msgstr "누구나 참여할 수 있고, 참여하는 방법은 여러 가지가 있습니다.  ports에 기여하는 것은 프로젝트에 무언가를 <quote>되돌려 주는</quote> 것을 돕는 훌륭한 방법입니다.  여러분이 책임감 있는 역할을 찾고 있든지, 아니면 비 오는 날 할 만한 재미난 일거리를 찾고 있든지 간에, 우리는 여러분이 도와 준다면 무척이나 기쁠 것입니다!"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:246
 msgid "There are a number of easy ways you can contribute to keeping the ports tree up to date and in good working order:"
-msgstr ""
+msgstr "ports tree를 최신 상태로 유지하고 잘 동작할 수 있도록 유지하기 위해 할 수 있는 여러 쉬운 방법들이 있습니다:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:252
 msgid "Find some cool or useful software and <link xlink:href=\"@@URL_RELPREFIX@@/doc/ko_KR.UTF-8/books/porters-handbook\">create a port</link> for it."
-msgstr ""
+msgstr "멋지거나 유용한 소프트웨어를 찾아 <link xlink:href=\"&url.books.porters-handbook;\">port를 만들어</link> 주세요."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:258
 msgid "There are a large number of ports that have no maintainer. Become a maintainer and <link linkend=\"adopt-port\">adopt a port</link>."
-msgstr ""
+msgstr "관리자가 없는 ports들이 많이 있습니다.  관리자가 되어 <link linkend=\"adopt-port\">port를 관리</link>해 주세요."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:264
 msgid "If you have created or adopted a port, be aware of <link linkend=\"maintain-port\">what you need to do as a maintainer</link>."
-msgstr ""
+msgstr "만약 여러분이 port를 만들었거나 관리하기로 마음먹었다면, <link linkend=\"maintain-port\">관리자로서 무엇을 해야 하는지</link>에 대해 알아 보세요."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:270
 msgid "When you are looking for a quick challenge you could <link linkend=\"fix-broken\">fix a bug or a broken port</link>."
-msgstr ""
+msgstr "좀더 빠르게 끝낼 수 있는 일을 찾고 있다면 <link linkend=\"fix-broken\">버그 또는 작동하지 않는 port를 수정해</link> 주세요."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:278
 msgid "Pick one of the items from the Ideas page"
-msgstr ""
+msgstr "Ideas 페이지에 있는 항목 중 하나를 선택하세요"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:280
 msgid "The <link xlink:href=\"http://wiki.freebsd.org/IdeasPage\">FreeBSD list of projects and ideas for volunteers</link> is also available for people willing to contribute to the FreeBSD project. The list is being regularly updated and contains items for both programmers and non-programmers with information about each project."
-msgstr ""
+msgstr "FreeBSD 프로젝트에 기여하고 싶어하는 사람들은 <link xlink:href=\"http://wiki.freebsd.org/IdeaPage\">자원봉사자를 위한 FreeBSD 계획과 아이디어 목록</link>을 살펴볼 수 있습니다.  이 목록은 정기적으로 갱신되며 프로그래머 작업과 비-프로그래머 작업에 대한 항목들이 설명과 함께 제시되어 있습니다."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:290
 msgid "How to Contribute"
-msgstr ""
+msgstr "어떻게 기여할 수 있나요"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:292
 msgid "Contributions to the system generally fall into one or more of the following 5 categories:"
-msgstr ""
+msgstr "시스템에 기여하는 방법은 대개 다음의 5가지 중 한 가지 또는 그 이상에 해당됩니다:"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:296
 msgid "Bug Reports and General Commentary"
-msgstr ""
+msgstr "버그 보고와 일반적 조언"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:298
 msgid "An idea or suggestion of <emphasis>general</emphasis> technical interest should be mailed to the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-hackers\">FreeBSD technical discussions mailing list</link>. Likewise, people with an interest in such things (and a tolerance for a <emphasis>high</emphasis> volume of mail!) may subscribe to the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-hackers\">FreeBSD technical discussions mailing list</link>. See <link xlink:href=\"@@URL_RELPREFIX@@/doc/ko_KR.UTF-8/books/handbook/eresources.html#ERESOURCES-MAIL\">The FreeBSD Handbook</link> for more information about this and other mailing lists."
-msgstr ""
+msgstr "<emphasis>일반적인</emphasis> 기술적 관심사에 대한 아이디어나 제안은 &a.hackers;에 메일을 보내야 합니다.  마찬가지로, 그러한 내용에 관심이 있는 (그리고 <emphasis>수많은</emphasis> 메일들을 견뎌낼 인내심이 있는) 사람들은 &a.hackers;를 구독하면 됩니다.  이와 더불어 다른 메일링 리스트에 대한 더 많은 정보는 <link xlink:href=\"&url.books.handbook;/eresources.html#ERESOURCES-MAIL\">The FreeBSD Handbook</link>에서 찾아볼 수 있습니다."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:306
 msgid "If you find a bug or are submitting a specific change, please report it using the <link xlink:href=\"https://bugs.FreeBSD.org/submit/\">bug submission form</link>. Try to fill-in each field of the bug report. Unless they exceed 65KB, include any patches directly in the report. If the patch is suitable to be applied to the source tree put <literal>[PATCH]</literal> in the synopsis of the report. When including patches, <emphasis>do not</emphasis> use cut-and-paste because cut-and-paste turns tabs into spaces and makes them unusable. When patches are a lot larger than 20KB, consider compressing them (eg. with <citerefentry><refentrytitle>gzip</refentrytitle><manvolnum>1</manvolnum></citerefentry> or <citerefentry><refentrytitle>bzip2</refentrytitle><manvolnum>1</manvolnum></citerefentry>) prior to uploading them."
-msgstr ""
+msgstr "만일 여러분이 버그를 찾아냈거나 특별한 수정을 제출하고자 한다면, <link xlink:href=\"https://bugs.FreeBSD.org/submit/\">bug submission form</link>을 이용해 주세요.  bug report의 각 항목을 완성하기 위해 노력해 주세요.  패치의 크기가 65KB를 넘지 않는다면, report에 직접 패치를 첨부해 주세요.  패치가 소스 트리에 적용되기에 적합하다면 report의 synopsys 부분에 <literal>[PATCH]</literal>를 적어 주세요.  패치를 첨부할 때, 복사-붙여넣기를 이용하면 탭이 공백(space)으로 바뀌어 적용이 불가능해기지 때문에 복사-붙여넣기 방식으로 첨부하면 <emphasis>안 됩니다</emphasis>.  패치가 20KB보다 훨씬 크다면, 업로드하기 전에 (&man.gzip.1;이나 &man.bzip2.1; 등을 이용하여) 압축하는 것을 고려해 보세요."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:319
 msgid "After filing a report, you should receive confirmation along with a tracking number. Keep this tracking number so that you can update us with details about the problem."
-msgstr ""
+msgstr "report를 제출한 이후에, 여러분은 tracking number가 있는 확인 메일을 받을 겁니다.  이 문제에 대한 상세한 사항을 업데이트할 수 있도록 tracking number를 보관해 두세요."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:323
 msgid "See also <link xlink:href=\"@@URL_RELPREFIX@@/doc/ko_KR.UTF-8/articles/problem-reports/article.html\">this article</link> on how to write good problem reports."
-msgstr ""
+msgstr "좋은 problem report를 작성하기 위해서는 <link xlink:href=\"&url.articles.problem-reports;/article.html\">이 article</link>을 참고하세요."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:329
 msgid "Changes to the Documentation"
-msgstr ""
+msgstr "문서 수정하기"
 
 #. (itstool) path: sect2/indexterm
 #: article.translate.xml:331
 msgid "<primary>documentation submissions</primary>"
-msgstr ""
+msgstr "<primary>문서 제출하기</primary>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:335
 msgid "Changes to the documentation are overseen by the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc\">FreeBSD documentation project mailing list</link>. Please look at the <link xlink:href=\"@@URL_RELPREFIX@@/doc/ko_KR.UTF-8/books/fdp-primer/index.html\">FreeBSD Documentation Project Primer</link> for complete instructions. Send submissions and changes (even small ones are welcome!) using the same method any other bug report."
-msgstr ""
+msgstr "문서의 편집은 &a.doc;에 의해 관리됩니다.  전체적인 방법에 대해서는 <link xlink:href=\"&url.books.fdp-primer;/index.html\">FreeBSD Documentation Project Primer</link>를 참고해 주세요.  다른 버그 리포트와 같은 방법을 사용해서 제출 및 편집(사소한 것이라도 환영합니다!) 내용을 보내 주세요."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:345
 msgid "Changes to Existing Source Code"
-msgstr ""
+msgstr "기존 소스 코드 수정하기"
 
 #. (itstool) path: sect2/indexterm
 #: article.translate.xml:347
 msgid "<primary>FreeBSD-CURRENT</primary>"
-msgstr ""
+msgstr "<primary>FreeBSD-CURRENT</primary>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:349
 msgid "An addition or change to the existing source code is a somewhat trickier affair and depends a lot on how far out of date you are with the current state of FreeBSD development. There is a special on-going release of FreeBSD known as <quote>FreeBSD-CURRENT</quote> which is made available in a variety of ways for the convenience of developers working actively on the system. See <link xlink:href=\"@@URL_RELPREFIX@@/doc/ko_KR.UTF-8/books/handbook/current-stable.html\">The FreeBSD Handbook</link> for more information about getting and using FreeBSD-CURRENT."
-msgstr ""
+msgstr "기존의 소스 코드에 무언가를 추가하거나 수정하는 것은 까다로운 작업이며 여러분이 FreeBSD 개발의 최신 상태로부터 얼마나 멀리 떨어져 있느냐에 따라 크게 영향을 받습니다.  시스템에 대해 활동적으로 작업하는 개발자들의 여러 편의를 위해 만들어진 <quote>FreeBSD-CURRENT</quote>라는 특별한 on-going 릴리즈가 있습니다.  FreeBSD-CURRENT를 설치하고 사용하는 방법에 대한 정보는 <link xlink:href=\"&url.books.handbook;/current-stable.html\">The FreeBSD Handbook</link>에서 찾아볼 수 있습니다."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:359
 msgid "Working from older sources unfortunately means that your changes may sometimes be too obsolete or too divergent for easy re-integration into FreeBSD. Chances of this can be minimized somewhat by subscribing to the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-announce\">FreeBSD announcements mailing list</link> and the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-current\">FreeBSD-CURRENT mailing list</link> lists, where discussions on the current state of the system take place."
-msgstr ""
+msgstr "오래된 소스로 작업하는 것은 불행히도 여러분의 수정이 종종 이미 필요없게 되거나 FreeBSD에 적용되기에 어려울 수도 있다는 것을 의미합니다.  시스템의 최신 상태에 대한 논의가 이루어지는 &a.announce;와 &a.current; 리스트를 구독하면, 이러한 가능성을 최소화할 수 있습니다."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:366
 msgid "Assuming that you can manage to secure fairly up-to-date sources to base your changes on, the next step is to produce a set of diffs to send to the FreeBSD maintainers. This is done with the <citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></citerefentry> command."
-msgstr ""
+msgstr "Assuming that you can manage to secure fairly up-to-date sources to base your changes on, the next step is to produce a set of diffs to send to the FreeBSD maintainers.  이는 &man.diff.1; 명령어를 이용하여 이루어집니다."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:371
 msgid "The preferred <citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></citerefentry> format for submitting patches is the unified output format generated by <command>diff -u</command>."
-msgstr ""
+msgstr "패치를 제출하는 데 선호되는 &man.diff.1; 형식은 <command>diff -u</command>에 의해 생성되는 unify된 출력입니다."
 
 #. (itstool) path: sect2/indexterm
 #: article.translate.xml:375
 msgid "<primary><command>diff</command></primary>"
-msgstr ""
+msgstr "<primary><command>diff</command></primary>"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:379
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>diff -u oldfile newfile</userinput>"
-msgstr ""
+msgstr "&prompt.user; <userinput>diff -u oldfile newfile</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:381
 msgid "or"
-msgstr ""
+msgstr "또는"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:383
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>diff -u -r -N olddir newdir</userinput>"
-msgstr ""
+msgstr "&prompt.user; <userinput>diff -u -r -N olddir newdir</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:385
 msgid "would generate a set of unified diffs for the given source file or directory hierarchy."
-msgstr ""
+msgstr "는 주어진 소스 파일 또는 디렉토리에 대한 unified diff를 생성할 것입니다."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:388
 msgid "See <citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></citerefentry> for more information."
-msgstr ""
+msgstr "&man.diff.1;에 더 많은 정보가 있습니다."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:390
 msgid "Once you have a set of diffs (which you may test with the <citerefentry><refentrytitle>patch</refentrytitle><manvolnum>1</manvolnum></citerefentry> command), you should submit them for inclusion with FreeBSD as a bug report. <emphasis>Do not</emphasis> just send the diffs to the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-hackers\">FreeBSD technical discussions mailing list</link> or they will get lost! We greatly appreciate your submission (this is a volunteer project!); because we are busy, we may not be able to address it immediately, but it will remain in the PR database until we do. Indicate your submission by including <literal>[PATCH]</literal> in the synopsis of the report."
-msgstr ""
+msgstr "여러분이 diff 파일을 만들었다면 (그리고 &man.patch.1; 명령어로 확인했다면), &os;에 반영하기 위해 버그 리포트의 형식으로 제출해야 합니다.  diff를 그냥 &a.hackers;에 보내지 <emphasis>마세요</emphasis>!  그것들은 잊혀질지도 모릅니다.  우리는 여러분의 제출을 무척이나 감사히 여기고 있습니다만 (이것은 자원봉사에 의해 이루어집니다!); 우리는 바쁘기 때문에, 때때로 바로 작업에 착수할 수 없을 수도 있습니다.  그것은 우리가 할 때까지 PR 데이터베이스에 남아 있을 것입니다.  제출할 때 리포트의 synopsis에 <literal>[PATCH]</literal>을 포함시켜서 패치라는 것을 알려 주세요."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:402
 msgid "If you feel it appropriate (e.g. you have added, deleted, or renamed files), bundle your changes into a <command>tar</command> file. Archives created with <citerefentry><refentrytitle>shar</refentrytitle><manvolnum>1</manvolnum></citerefentry> are also welcome."
-msgstr ""
+msgstr "적합하다고 생각되는 경우에 (예를 들어 새 파일을 추가했거나, 기존의 파일을 삭제했거나, 파일의 이름을 바꾼 경우), 그 바꾼 내용을 <command>tar</command> 파일로 첨부해 주세요.  &man.shar.1;으로 생성된 아카이브도 괜찮습니다."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:408
 msgid "If your change is of a potentially sensitive nature, such as if you are unsure of copyright issues governing its further distribution then you should send it to Core Team <email>core@FreeBSD.org</email> directly rather than submitting as a bug report. The Core Team <email>core@FreeBSD.org</email> reaches a much smaller group of people who do much of the day-to-day work on FreeBSD. Note that this group is also <emphasis>very busy</emphasis> and so you should only send mail to them where it is truly necessary."
-msgstr ""
+msgstr "만약 여러분의 수정이 잠재적으로 민감할 수 있는 사항을 포함하고 있다면, 예를 들어 배포와 관련된 라이선스 문제에 대해 확신이 없는 경우라면, 버그 리포트로 제출하는 대신 &a.core; 팀에 직접 보내 주세요.  &a.core; 팀은 FreeBSD에 대해 관한 많은 일을 매일 하는 사람들의 작은 모임입니다.  이들은 <emphasis>매우 바쁘기</emphasis> 때문에, 꼭 필요한 경우에만 메일을 보내 주세요."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:417
 msgid "Please refer to <citerefentry><refentrytitle>intro</refentrytitle><manvolnum>9</manvolnum></citerefentry> and <citerefentry><refentrytitle>style</refentrytitle><manvolnum>9</manvolnum></citerefentry> for some information on coding style. We would appreciate it if you were at least aware of this information before submitting code."
-msgstr ""
+msgstr "코딩 스타일에 대해서는 &man.intro.9;와 &man.style.9;를 참조해 주세요.  여러분이 코드를 제출하기 전에 이 정보에 대해 최소한 알고 있었다면 우리는 감사할 것입니다."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:424
@@ -407,22 +407,22 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:443
 msgid "Money or Hardware"
-msgstr ""
+msgstr "금전 또는 하드웨어"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:445
 msgid "We are always very happy to accept donations to further the cause of the FreeBSD Project and, in a volunteer effort like ours, a little can go a long way! Donations of hardware are also very important to expanding our list of supported peripherals since we generally lack the funds to buy such items ourselves."
-msgstr ""
+msgstr "우리는 FreeBSD 프로젝트를 발전시키기 위한 기부를 받는 것을 매우 기쁘게 여기고 있으며, 우리와 같이 자원봉사 노력을 할 때에, 약간의 기부도 많은 일을 해낼 수 있습니다!  우리는 일반적으로 필요한 장비를 직접 구입할 여유가 없기 때문에, 지원 가능한 장비를 확대하기 위해 하드웨어를 기부받는 것 역시 매우 중요합니다."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:453
 msgid "Donating Funds"
-msgstr ""
+msgstr "재단에 기부하기"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:455
 msgid "The FreeBSD Foundation is a non-profit, tax-exempt foundation established to further the goals of the FreeBSD Project. As a 501(c)3 entity, the Foundation is generally exempt from US federal income tax as well as Colorado State income tax. Donations to a tax-exempt entity are often deductible from taxable federal income."
-msgstr ""
+msgstr "FreeBSD 재단은 FreeBSD 프로젝트의 목표를 발전시키기 위해 설립된 비영리, 비과세의 단체입니다.  501(c)3의 회원으로서, FreeBSD 재단은 Colorado 주 소득세뿐만 아니라 미국 연방 소득세도 면제받습니다.  비과세 단체에 기부하는 것은 종종 과세 대상인 연방 소득으로부터 공제받을 수 있습니다."
 
 #. (itstool) path: para/address
 #: article.translate.xml:463
@@ -440,117 +440,117 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: article.translate.xml:462
 msgid "Donations may be sent in check form to: <_:address-1/>"
-msgstr ""
+msgstr "기부하기 위해서는 다음의 주소로 수표를 보내 주시면 됩니다:"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:471
 msgid "The FreeBSD Foundation is now able to accept donations through the web with PayPal. To place a donation, please visit the Foundation <link xlink:href=\"http://www.freebsdfoundation.org\">web site</link>."
-msgstr ""
+msgstr "FreeBSD 재단은 이제 Paypal을 통한 온라인 기부도 받고 있습니다.  기부하기 위해서는, 재단 <link xlink:href=\"http://www.freebsdfoundation.org\">웹 사이트</link>를 방문해 주세요."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:477
 msgid "More information about the FreeBSD Foundation can be found in <link xlink:href=\"http://people.FreeBSD.org/~jdp/foundation/announcement.html\">The FreeBSD Foundation -- an Introduction</link>. To contact the Foundation by email, write to <email>bod@FreeBSDFoundation.org</email>."
-msgstr ""
+msgstr "FreeBSD 재단에 대한 더 많은 정보는 <link xlink:href=\"http://people.FreeBSD.org/~jdp/foundation/announcement.html\">The FreeBSD Foundation -- an Introduction</link>에서 찾아볼 수 있습니다.  이메일로 재단에 연락하려면, <email>bod@FreeBSDFoundation.org</email>을 이용하세요."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:485
 msgid "Donating Hardware"
-msgstr ""
+msgstr "하드웨어 기부하기"
 
 #. (itstool) path: sect3/indexterm
 #: article.translate.xml:487
 msgid "<primary>donations</primary>"
-msgstr ""
+msgstr "<primary>donations</primary>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:489
 msgid "The FreeBSD Project happily accepts donations of hardware that it can find good use for. If you are interested in donating hardware, please contact the <link xlink:href=\"@@URL_RELPREFIX@@/donations/\">Donations Liaison Office</link>."
-msgstr ""
+msgstr "FreeBSD 프로젝트는 유용하게 사용될 수 있는 하드웨어의 기부를 기쁘게 받아들이고 있습니다.  만일 여러분이 하드웨어 기부에 관심이 있다면, <link xlink:href=\"&url.base;/donation/\">Donations Liaison Office</link>에 연락해 주세요."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:499
 msgid "Contributing to ports"
-msgstr ""
+msgstr "ports에 기여하기"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:502
 msgid "Adopting an unmaintained port"
-msgstr ""
+msgstr "관리되지 않는 port를 책임지기"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:505
 msgid "Choosing an unmaintained port"
-msgstr ""
+msgstr "관리되지 않는 port 선택하기"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:507
 msgid "Taking over maintainership of ports that are unmaintained is a great way to get involved. Unmaintained ports are only updated and fixed when somebody volunteers to work on them. There are a large number of unmaintained ports. It is a good idea to start with adopting a port that you use regularly."
-msgstr ""
+msgstr "관리되지 않는 ports를 책임지는 것은 참여하기에 좋은 방법입니다.  관리되지 않는 ports는 누군가가 자원봉사로 작업할 때에만 업데이트되고 고쳐집니다.  관리되지 않는 ports는 많이 있습니다.  여러분이 정기적으로 사용하는 port를 책임지는 것부터 시작해 보면 좋을 것입니다."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:514
 msgid "Unmaintained ports have their <varname>MAINTAINER</varname> set to <literal>ports@FreeBSD.org</literal>. A list of unmaintained ports and their current errors and problem reports can be seen at the <link xlink:href=\"http://portsmon.FreeBSD.org/portsconcordanceformaintainer.py?maintainer=ports%40FreeBSD.org\">FreeBSD Ports Monitoring System</link>."
-msgstr ""
+msgstr "관리되지 않는 ports는 그 <varname>MAINTAINER</varname>이 <literal>ports@FreeBSD.org</literal>로 설정되어 있습니다.  관리되지 않는 ports와 현재 문제점 및 problem reports에 대한 목록은 <link xlink:href=\"http://portsmon.FreeBSD.org/portsconcordanceformaintainer.py?maintainer=ports%40FreeBSD.org\">Ports Monitoring System</link>에서 찾아볼 수 있습니다."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:521
 msgid "Some ports affect a large number of others due to dependencies and slave port relationships. Generally, we want people to have some experience before they maintain such ports."
-msgstr ""
+msgstr "어떤 ports는 그 의존성 관계 때문에 다른 많은 ports에 영향을 미칠 수 있습니다.  일반적으로, 우리는 사람들이 그러한 ports들을 관리하기 전에 약간의 경험을 해볼 것을 원합니다."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:526
 msgid "You can find out whether or not a port has dependencies or slave ports by looking at a master index of ports called <filename>INDEX</filename>. (The name of the file varies by release of FreeBSD; for instance, <filename>INDEX-8</filename>.) Some ports have conditional dependencies that are not included in a default <filename>INDEX</filename> build. We expect you to be able to recognize such ports by looking through other ports' <filename>Makefile</filename>s."
-msgstr ""
+msgstr "<filename>INDEX</filename>라고 이름붙여진 ports의 마스터 인덱스를 살펴보면 port의 의존성 관계를 파악할 수 있습니다.  (파일의 이름은 &os;의 릴리즈에 따라 다를 수 있습니다; 예를 들어, <filename>INDEX-8</filename>.)  일부 ports는 기본 <filename>INDEX</filename> 빌드에는 포함되지 않는 부가적인 의존성 관계를 가지고 있습니다.  우리는 여러분이 다른 ports의 <filename>Makefile</filename>을 살펴봄으로써 이러한 ports를 찾아낼 수 있기를 기대합니다."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:538
 msgid "How to adopt the port"
-msgstr ""
+msgstr "port를 책임지는 방법"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:540
 msgid "First make sure you understand your <link linkend=\"maintain-port\">responsibilities as a maintainer</link>. Also read the <link xlink:href=\"@@URL_RELPREFIX@@/doc/ko_KR.UTF-8/books/porters-handbook\">Porter's Handbook</link>. <emphasis>Please do not commit yourself to more than you feel you can comfortably handle.</emphasis>"
-msgstr ""
+msgstr "우선 <link linkend=\"maintain-port\">관리자로서의 책임</link>에 대해 명확히 이해해야 합니다.  또 <link xlink:href=\"&url.books.porters-handbook;\">Porter's Handbook</link>을 읽어 보세요.  <emphasis>여러분이 편안하게 다룰 수 있을 범위를 넘어서서 무리할 필요는 없습니다.</emphasis>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:548
 msgid "You may request maintainership of any unmaintained port as soon as you wish. Simply set <varname>MAINTAINER</varname> to your own email address and send a PR (Problem Report) with the change. If the port has build errors or needs updating, you may wish to include any other changes in the same PR. This will help because many committers are less willing to assign maintainership to someone who does not have a known track record with FreeBSD. Submitting PRs that fix build errors or update ports are the best ways to establish one."
-msgstr ""
+msgstr "여러분은 원한다면 관리되지 않는 port의 관리 권한을 언제든지 요청할 수 있습니다.  그냥 <varname>MAINTAINER</varname>을 여러분의 이메일 주소로 설정하고 해당 내용을 PR(Problem Report)로 보내 주세요.  port에 빌드 에러가 있거나 업데이트가 필요하다면, 같은 PR에 그러한 수정 내용을 포함해도 좋습니다.  많은 committer들은 &os;에 남긴 흔적이 없는 누군가에게 관리 권한을 부여하고 싶어하지 않기 때문에, 이는 도움이 되는 행동일 것입니다.  빌드 오류를 고치거나 포트를 업데이트하는 PR을 제출하는 것은 이러한 흔적을 남기는 가장 좋은 방법입니다."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:558
 msgid "File your PR with category <literal>ports</literal> and class <literal>change-request</literal>. A committer will examine your PR, commit the changes, and finally close the PR. Sometimes this process can take a little while (committers are volunteers, too :)."
-msgstr ""
+msgstr "여러분의 PR을 <literal>ports</literal> 카테고리와 <literal>change-request</literal> 클래스로 설정한 뒤 제출해 주세요.  Committer가 여러분의 PR을 검토하고, 수정 사항을 commit하고, 마침내 PR을 종료시킬 것입니다.  이 과정은 종종 시간이 걸릴 수도 있습니다(committer들 역시 자원봉사자들입니다 :)."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:567
 msgid "The challenge for port maintainers"
-msgstr ""
+msgstr "포트 관리자를 위한 도전 과제"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:569
 msgid "This section will give you an idea of why ports need to be maintained and outline the responsibilities of a port maintainer."
-msgstr ""
+msgstr "이 항목은 포트가 관리되어야 하는 이유 및 포트 관리자의 책임에 대해 설명해줄 것입니다."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:574
 msgid "Why ports require maintenance"
-msgstr ""
+msgstr "포트의 관리가 필요한 이유"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:576
 msgid "Creating a port is a once-off task. Ensuring that a port is up to date and continues to build and run requires an ongoing maintenance effort. Maintainers are the people who dedicate some of their time to meeting these goals."
-msgstr ""
+msgstr "포트를 만드는 일은 일회성 작업입니다.  포트가 최신 상태인지, 그리고 빌드 및 실행이 문제없이 되는지를 확인하는 일은 지속적인 관리 노력이 필요합니다.  관리자는 그들의 시간 중 일부를 이 목표를 달성하는 데 투자하는 사람들입니다."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:581
 msgid "The foremost reason ports need maintenance is to bring the latest and greatest in third party software to the FreeBSD community. An additional challenge is to keep individual ports working within the Ports Collection framework as it evolves."
-msgstr ""
+msgstr "포트에 관리가 필요한 가장 주요한 이유는 &os; 커뮤니티에 최신의 많은 3rd party 소프트웨어를 제공하기 위함입니다.  An additional challenge is to keep individual ports working within the Ports Collection framework as it evolves."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:587
 msgid "As a maintainer, you will need to manage the following challenges:"
-msgstr ""
+msgstr "관리자로서, 여러분은 다음의 도전 과제들을 담당할 필요가 있습니다:"
 
 #. (itstool) path: formalpara/title
 #: article.translate.xml:593
@@ -575,17 +575,17 @@ msgstr ""
 #. (itstool) path: formalpara/title
 #: article.translate.xml:614
 msgid "Changes affecting dependent ports."
-msgstr ""
+msgstr "종속된 포트에 영향을 미치는 수정 사항들."
 
 #. (itstool) path: formalpara/para
 #: article.translate.xml:616
 msgid "If other ports depend on a port that you maintain, changes to your port may require coordination with other maintainers."
-msgstr ""
+msgstr "만일 여러분이 관리하는 포트에 다른 포트가 의존하고 있다면, 여러분은 여러분의 포트를 수정하기 위해 다른 관리자들과 공동 작업을 해야 할 수도 있습니다."
 
 #. (itstool) path: formalpara/title
 #: article.translate.xml:624
 msgid "Interaction with other users, maintainers and developers."
-msgstr ""
+msgstr "다른 사용자, 관리자 및 개발자와의 소통."
 
 #. (itstool) path: formalpara/para
 #: article.translate.xml:627
