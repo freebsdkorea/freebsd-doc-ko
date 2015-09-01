@@ -3,9 +3,8 @@
 <!--
      The FreeBSD Korean Documentation Project
 
-     $FreeBSD$
+     $FreeBSD: head/ko_KR.UTF-8/share/xml/freebsd-fo.xsl 47333 2015-09-01 13:49:40Z wblock $
      Original revision: r47317
-     from The FreeBSD Japanese Documentation Project
 -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
