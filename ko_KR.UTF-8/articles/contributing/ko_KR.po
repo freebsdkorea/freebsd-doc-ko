@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2015-08-29 10:47+0900\n"
-"PO-Revision-Date: 2015-08-31 10:29+0900\n"
+"PO-Revision-Date: 2015-09-09 20:05+0900\n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -14,12 +14,12 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr ""
+msgstr "Hoyoung Kim <trig4800@gmail.com>, 2015"
 
 #. (itstool) path: info/title
 #: article.translate.xml:4
 msgid "Contributing to FreeBSD"
-msgstr ""
+msgstr "FreeBSD에 기여하기"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:8
@@ -29,17 +29,17 @@ msgstr "이 글은 개인이나 단체가 FreeBSD 프로젝트에 기여할 수 
 #. (itstool) path: authorgroup/author
 #: article.translate.xml:14
 msgid "<personname><firstname>Jordan</firstname><surname>Hubbard</surname></personname>"
-msgstr ""
+msgstr "<personname><firstname>Jordan</firstname><surname>Hubbard</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: article.translate.xml:15
 msgid "<personname><firstname>Sam</firstname><surname>Lawrance</surname></personname>"
-msgstr ""
+msgstr "<personname><firstname>Sam</firstname><surname>Lawrance</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: article.translate.xml:16
 msgid "<personname><firstname>Mark</firstname><surname>Linimon</surname></personname>"
-msgstr ""
+msgstr "<personname><firstname>Mark</firstname><surname>Linimon</surname></personname>"
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:20
@@ -392,17 +392,17 @@ msgstr "코딩 스타일에 대해서는 &man.intro.9;와 &man.style.9;를 참�
 #. (itstool) path: sect2/title
 #: article.translate.xml:424
 msgid "New Code or Major Value-Added Packages"
-msgstr ""
+msgstr "새로운 코드 또는 주요한 부가가치 패키지들"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:426
 msgid "In the case of a significant contribution of a large body work, or the addition of an important new feature to FreeBSD, it becomes almost always necessary to either send changes as tar files or upload them to a web or FTP site for other people to access. If you do not have access to a web or FTP site, ask on an appropriate FreeBSD mailing list for someone to host the changes for you."
-msgstr ""
+msgstr "큰 규모의 작업에서 상당한 기여를 하는 경우에, 혹은 FreeBSD에 새롭고 중요한 기능을 추가하는 경우에, 수정한 내용을 다른 사람이 액세스할 수 있도록 tar 파일 형식으로 보내거나 웹/FTP 사이트에 업로드하는 것은 거의 언제나 필요합니다.  만약 여러분이 액세스할 수 있는 웹 또는 FTP 사이트가 없다면, 적절한 FreeBSD 메일링 리스트에 여러분의 수정사항을 호스팅해줄 것을 요청하세요."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:434
 msgid "When working with large amounts of code, the touchy subject of copyrights also invariably comes up. FreeBSD prefers free software licenses such as BSD or ISC. Copyleft licenses such as GPLv2 are sometimes permitted. The complete listing can be found on the <link xlink:href=\"@@URL_RELPREFIX@@/internal/software-license.html\">core team licensing policy</link> page."
-msgstr ""
+msgstr "많은 양의 코드에 대해 작업할 때, 저작권에 대한 민감한 주제 역시 언제나 나타납니다.  FreeBSD는 BSD 또는 ISC 형식의 오픈 소스 라이선스를 선호합니다.  GPLv2와 같은 카피레프트 라이센스 역시 종종 허용됩니다.  전체적인 목록은 <link xlink:href=\"&url.base;/internal/software-license.html\">코어 팀 라이선스 정책</link> 페이지에서 찾아볼 수 있습니다."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:443
@@ -436,6 +436,13 @@ msgid ""
 "\t    <country>USA</country>\n"
 "\t  "
 msgstr ""
+"\n"
+"\t    The FreeBSD Foundation\n"
+"\t    <street>P.O. Box 20247</street>,\n"
+"\t    <city>Boulder</city>,\n"
+"\t    <state>CO</state> <postcode>80308</postcode>\n"
+"\t    <country>USA</country>\n"
+"\t  "
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:462
@@ -555,7 +562,7 @@ msgstr "관리자로서, 여러분은 다음의 도전 과제들을 담당할 �
 #. (itstool) path: formalpara/title
 #: article.translate.xml:593
 msgid "New software versions and updates."
-msgstr ""
+msgstr "새로운 소프트웨어 버전 및 업데이트."
 
 #. (itstool) path: formalpara/para
 #: article.translate.xml:595
@@ -565,12 +572,12 @@ msgstr ""
 #. (itstool) path: formalpara/title
 #: article.translate.xml:604
 msgid "Changes to dependencies."
-msgstr ""
+msgstr "종속된 포트가 수정되었을 경우."
 
 #. (itstool) path: formalpara/para
 #: article.translate.xml:606
 msgid "If significant changes are made to the dependencies of your port, it may need to be updated so that it will continue to work correctly."
-msgstr ""
+msgstr "여러분의 포트에 종속된 포트가 크게 수정되었을 경우, 여러분의 포트 역시 올바르게 동작하기 위해 업데이트되어야 할 수 있습니다."
 
 #. (itstool) path: formalpara/title
 #: article.translate.xml:614
@@ -590,17 +597,17 @@ msgstr "다른 사용자, 관리자 및 개발자와의 소통."
 #. (itstool) path: formalpara/para
 #: article.translate.xml:627
 msgid "Part of being a maintainer is taking on a support role. You are not expected to provide general support (but we welcome it if you choose to do so). What you should provide is a point of coordination for FreeBSD-specific issues regarding your ports."
-msgstr ""
+msgstr "관리자로서의 역할 중 하나는 지원자의 역할입니다.  일반적인 지원을 제공해야 할 필요는 없습니다 (여러분이 그렇게 한다면 우리는 환영할 것입니다).  여러분이 제공해야 하는 것은 FreeBSD 환경에서 여러분의 포트에 나타나는 특정한 문제들의 해결에 도움을 주는 것입니다."
 
 #. (itstool) path: formalpara/title
 #: article.translate.xml:637
 msgid "Bug hunting."
-msgstr ""
+msgstr "버그 추적하기."
 
 #. (itstool) path: formalpara/para
 #: article.translate.xml:639
 msgid "A port may be affected by bugs which are specific to FreeBSD. You will need to investigate, find, and fix these bugs when they are reported. Thoroughly testing a port to identify problems before they make their way into the Ports Collection is even better."
-msgstr ""
+msgstr "포트는 FreeBSD 환경에서 특정하게 나타나는 버그의 영향을 받을 수도 있습니다.  여러분은 그러한 버그들이 제보되었을 때 조사하고, 찾아내고, 이들을 고쳐야 합니다.  포트 컬렉션에 넣기 전에 포트를 전체적으로 테스트해보는 것은 더욱 좋습니다."
 
 #. (itstool) path: formalpara/title
 #: article.translate.xml:649
@@ -615,27 +622,27 @@ msgstr ""
 #. (itstool) path: formalpara/title
 #: article.translate.xml:661
 msgid "Changes to the base system."
-msgstr ""
+msgstr "베이스 시스템의 수정."
 
 #. (itstool) path: formalpara/para
 #: article.translate.xml:663
 msgid "FreeBSD is under constant development. Changes to software, libraries, the kernel or even policy changes can cause flow-on change requirements to ports."
-msgstr ""
+msgstr "FreeBSD는 지속적으로 개발되고 있습니다.  소프트웨어, 라이브러리, 커널 또는 심지어 정책이 바뀌면 포트 역시 자연스럽게 수정이 필요해질 수 있습니다."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:672
 msgid "Maintainer responsibilities"
-msgstr ""
+msgstr "관리자로서의 책임"
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:675
 msgid "Keep your ports up to date"
-msgstr ""
+msgstr "여러분의 포트를 최신 상태로 유지하세요"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:677
 msgid "This section outlines the process to follow to keep your ports up to date."
-msgstr ""
+msgstr "이 항목은 여러분의 포트를 최신 상태로 유지시키기 위한 과정을 설명하고 있습니다."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:680
@@ -645,7 +652,7 @@ msgstr ""
 #. (itstool) path: step/title
 #: article.translate.xml:687
 msgid "Watch for updates"
-msgstr ""
+msgstr "업데이트를 지켜보세요"
 
 #. (itstool) path: step/para
 #: article.translate.xml:689
@@ -670,22 +677,22 @@ msgstr ""
 #. (itstool) path: step/title
 #: article.translate.xml:715
 msgid "Review and test"
-msgstr ""
+msgstr "검토하고 테스트해보세요"
 
 #. (itstool) path: step/para
 #: article.translate.xml:717
 msgid "Thoroughly review and test your changes:"
-msgstr ""
+msgstr "여러분의 수정 사항 전체를 검토하고 테스트해보세요:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:721
 msgid "Build, install and test your port on as many platforms and architectures as you can. It is common for a port to work on one branch or platform and fail on another."
-msgstr ""
+msgstr "가능한 많은 플랫폼과 아키텍처에서 여러분의 포트를 빌드, 설치 그리고 테스트해보세요.  하나의 브랜치 혹은 플랫폼에서 잘 작동하던 포트가 다른 곳에서 실패하는 것은 드문 일이 아닙니다."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:728
 msgid "Make sure your port's dependencies are complete. The recommended way of doing this is by installing your own ports <application>tinderbox</application>. See <link linkend=\"resources\">resources</link> for more information."
-msgstr ""
+msgstr "여러분의 포트의 의존성 관계가 완전한지 점검해 주세요.  권장되는 방법은 여러분의 포트를 <application>tinderbox</application>로 설치해 보는 것입니다.  더 자세한 정보를 위해서는 <link linkend=\"resources\">resources</link>를 참조해 주세요."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:736
@@ -705,7 +712,7 @@ msgstr ""
 #. (itstool) path: step/title
 #: article.translate.xml:765 article.translate.xml:915
 msgid "Submit changes"
-msgstr ""
+msgstr "수정 내용 제출하기"
 
 #. (itstool) path: step/para
 #: article.translate.xml:767

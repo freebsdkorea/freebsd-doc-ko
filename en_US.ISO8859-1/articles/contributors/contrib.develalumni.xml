@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!-- $FreeBSD: head/en_US.ISO8859-1/articles/contributors/contrib.develalumni.xml 46886 2015-06-28 09:19:29Z matthew $ -->
+<!-- $FreeBSD: head/en_US.ISO8859-1/articles/contributors/contrib.develalumni.xml 47328 2015-08-30 04:15:51Z farrokhi $ -->
 <itemizedlist xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
 
     <listitem>
@@ -656,10 +656,6 @@
 
     <listitem>
       <para>&a.mohans.email; (2006 - 2007)</para>
-    </listitem>
-
-    <listitem>
-      <para>&a.farrokhi.email; (2006 - 2007)</para>
     </listitem>
 
     <listitem>

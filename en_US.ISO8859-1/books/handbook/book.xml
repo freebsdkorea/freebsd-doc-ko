@@ -4,7 +4,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 47275 2015-08-19 01:55:52Z gjb $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 47376 2015-09-06 20:16:18Z wblock $
 -->
 
 <!ENTITY % chapters SYSTEM "chapters.ent">
@@ -24,9 +24,9 @@
       <orgname>The FreeBSD Documentation Project</orgname>
     </author>
 
-    <pubdate>$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 47275 2015-08-19 01:55:52Z gjb $</pubdate>
+    <pubdate>$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 47376 2015-09-06 20:16:18Z wblock $</pubdate>
 
-    <releaseinfo>$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 47275 2015-08-19 01:55:52Z gjb $</releaseinfo>
+    <releaseinfo>$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 47376 2015-09-06 20:16:18Z wblock $</releaseinfo>
 
     <copyright>
       <year>1995</year>
@@ -89,7 +89,7 @@
     <abstract>
       <para>Welcome to FreeBSD! This handbook covers the installation
 	and day to day use of
-	<emphasis>FreeBSD &rel2.current;-RELEASE</emphasis>, and
+	<emphasis>FreeBSD &rel2.current;-RELEASE</emphasis> and
 	<emphasis>FreeBSD &rel.current;-RELEASE</emphasis>.  This
 	manual is a <emphasis>work in progress</emphasis> and is the
 	work of many individuals.  As such, some sections may become

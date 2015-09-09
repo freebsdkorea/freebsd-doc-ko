@@ -25,7 +25,7 @@
     OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
     EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-    $FreeBSD: head/en_US.ISO8859-1/books/fdp-primer/working-copy/chapter.xml 47050 2015-07-22 21:57:34Z wblock $
+    $FreeBSD: head/en_US.ISO8859-1/books/fdp-primer/working-copy/chapter.xml 47372 2015-09-05 14:07:28Z wblock $
 -->
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="working-copy">
   <title>The Working Copy</title>
@@ -92,7 +92,7 @@
     <para>A checkout of the source code to work on manual pages is
       very similar:</para>
 
-    <screen>&prompt.user; <userinput>svn checkout <replaceable>https://svn0.us-west.FreeBSD.org/base/head</replaceable> <replaceable>~/src</replaceable></userinput></screen>
+    <screen>&prompt.user; <userinput>svn checkout https://svn.FreeBSD.org/base/head <replaceable>~/src</replaceable></userinput></screen>
   </sect1>
 
   <sect1 xml:id="working-copy-updating">

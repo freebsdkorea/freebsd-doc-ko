@@ -2,7 +2,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/makefiles/chapter.xml 47319 2015-08-28 00:47:41Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/makefiles/chapter.xml 47383 2015-09-08 14:05:27Z mat $
 -->
 <chapter xmlns="http://docbook.org/ns/docbook"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
@@ -2053,7 +2053,7 @@ USE_GITHUB=	yes</programlisting>
       </example>
 
       <sect3>
-	<title>Fetching Multiple Files From GitHub</title>
+	<title>Fetching Multiple Files from GitHub</title>
 
 	<para>The <varname>USE_GITHUB</varname> framework also
 	  supports fetching multiple distribution files from
@@ -4087,7 +4087,7 @@ FOO_CONFIGURE_ENABLE=	foo</programlisting>
 	<programlisting>OPTIONS_DEFINE=	OPT1
 OPTIONS_SUB=	yes</programlisting>
 
-	<para> is equivalent to:</para>
+	<para>is equivalent to:</para>
 
 	<programlisting>OPTIONS_DEFINE=	OPT1
 
@@ -4630,6 +4630,10 @@ LIB_DEPENDS+=	liba.so:${PORTSDIR}/devel/a
 	  </listitem>
 
 	  <listitem>
+	    <para><varname>DESKTOP_ENTRIES</varname></para>
+	  </listitem>
+
+	  <listitem>
 	    <para><varname>DISTFILES</varname></para>
 	  </listitem>
 
@@ -4707,6 +4711,10 @@ LIB_DEPENDS+=	liba.so:${PORTSDIR}/devel/a
 
 	  <listitem>
 	    <para><varname>PORTDOCS</varname></para>
+	  </listitem>
+
+	  <listitem>
+	    <para><varname>PORTEXAMPLES</varname></para>
 	  </listitem>
 
 	  <listitem>

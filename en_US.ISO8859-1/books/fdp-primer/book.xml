@@ -33,7 +33,7 @@
      ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE
      POSSIBILITY OF SUCH DAMAGE.
 
-     $FreeBSD: head/en_US.ISO8859-1/books/fdp-primer/book.xml 44895 2014-05-21 09:23:53Z hrs $
+     $FreeBSD: head/en_US.ISO8859-1/books/fdp-primer/book.xml 47339 2015-09-02 20:30:53Z wblock $
 -->
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
   <info><title>FreeBSD Documentation Project Primer for New
@@ -63,9 +63,9 @@
       <holder role="mailto:doceng@FreeBSD.org">DocEng</holder>
     </copyright>
 
-    <pubdate role="rcs">$FreeBSD: head/en_US.ISO8859-1/books/fdp-primer/book.xml 44895 2014-05-21 09:23:53Z hrs $</pubdate>
+    <pubdate role="rcs">$FreeBSD: head/en_US.ISO8859-1/books/fdp-primer/book.xml 47339 2015-09-02 20:30:53Z wblock $</pubdate>
 
-    <releaseinfo>$FreeBSD: head/en_US.ISO8859-1/books/fdp-primer/book.xml 44895 2014-05-21 09:23:53Z hrs $</releaseinfo>
+    <releaseinfo>$FreeBSD: head/en_US.ISO8859-1/books/fdp-primer/book.xml 47339 2015-09-02 20:30:53Z wblock $</releaseinfo>
 
     &legalnotice;
 
@@ -258,6 +258,7 @@ The time is 09:18</screen></entry>
   &chap.docbook-markup;
   &chap.stylesheets;
   &chap.translations;
+  &chap.po-translations;
   &chap.writing-style;
   &chap.editor-config;
   &chap.see-also;

@@ -13,7 +13,7 @@
 <head>
       <title>&title;</title>
 
-      <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">$FreeBSD: head/en_US.ISO8859-1/htdocs/releases/10.2R/schedule.xml 47220 2015-08-14 00:38:57Z gjb $</cvs:keyword>
+      <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">$FreeBSD: head/en_US.ISO8859-1/htdocs/releases/10.2R/schedule.xml 47341 2015-09-02 21:08:03Z gjb $</cvs:keyword>
     </head>
 
     <body class="navinclude.download">
@@ -148,7 +148,7 @@
     <tr>
       <td>Turn over to the secteam</td>
       <td>-</td>
-      <td>-</td>
+      <td>2&nbsp;September&nbsp;2015</td>
       <td>&local.branch.releng; branch is handed over to the
 	&os;&nbsp; Security Officer Team in one or two weeks after the
 	announcement.</td>

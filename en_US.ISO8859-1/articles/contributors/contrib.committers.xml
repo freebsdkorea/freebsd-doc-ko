@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!-- $FreeBSD: head/en_US.ISO8859-1/articles/contributors/contrib.committers.xml 47143 2015-08-01 17:20:01Z junovitch $ -->
+<!-- $FreeBSD: head/en_US.ISO8859-1/articles/contributors/contrib.committers.xml 47328 2015-08-30 04:15:51Z farrokhi $ -->
 <!--
 	NOTE TO NEW COMMITTERS: Core and committers lists are sorted in
 	alphabetical order by last name. Please keep in mind that fact while
@@ -364,6 +364,10 @@
 
     <listitem>
       <para>&a.scf.email;</para>
+    </listitem>
+
+    <listitem>
+      <para>&a.farrokhi.email;</para>
     </listitem>
 
     <listitem>

@@ -69,7 +69,7 @@
       &tm-attrib.general;
     </legalnotice>
 
-    <releaseinfo>$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 47276 2015-08-19 02:01:14Z gjb $</releaseinfo>
+    <releaseinfo>$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 47371 2015-09-05 14:00:56Z wblock $</releaseinfo>
 
     <abstract>
       <para>This is the Frequently Asked Questions
@@ -1178,7 +1178,7 @@
 	  <para>Full instructions on this procedure and a little bit
 	    more about installation issues in general can be found in
 	    the <link
-	      xlink:href="&url.books.handbook;/install.html">Handbook
+	      xlink:href="&url.books.handbook;/bsdinstall.html">Handbook
 	      entry on installing &os;</link>.</para>
 	</answer>
       </qandaentry>
@@ -1216,12 +1216,9 @@
 	</question>
 
 	<answer>
-	  <para>Installation instructions for versions since
-	    &os;&nbsp;9.0 can be found at <link
+	  <para>Installation instructions
+	    can be found at <link
 	      xlink:href="&url.books.handbook;/bsdinstall.html">Handbook
-	      entry on installing &os;</link>.  Older instructions can
-	    be found in the <link
-	      xlink:href="&url.books.handbook;/install.html">legacy
 	      entry on installing &os;</link>.</para>
 	</answer>
       </qandaentry>

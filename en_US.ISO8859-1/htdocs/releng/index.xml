@@ -15,7 +15,7 @@
   <head>
       <title>&title;</title>
 
-      <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">$FreeBSD: head/en_US.ISO8859-1/htdocs/releng/index.xml 47218 2015-08-13 23:53:28Z gjb $</cvs:keyword>
+      <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">$FreeBSD: head/en_US.ISO8859-1/htdocs/releng/index.xml 47343 2015-09-02 21:15:03Z gjb $</cvs:keyword>
     </head>
 
     <body class="navinclude.developers">
@@ -90,7 +90,7 @@
     <tr>
       <td><tt>releng/10.2</tt></td>
       <td>Frozen</td>
-      <td>&contact.re;</td>
+      <td>&contact.so;</td>
       <td>FreeBSD 10.2 supported errata fix branch.</td>
     </tr>
 

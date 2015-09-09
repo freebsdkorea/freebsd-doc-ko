@@ -28,7 +28,7 @@
      ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE
      POSSIBILITY OF SUCH DAMAGE.
 
-     $FreeBSD: head/en_US.ISO8859-1/books/fdp-primer/xhtml-markup/chapter.xml 43126 2013-11-07 16:37:11Z gabor $
+     $FreeBSD: head/en_US.ISO8859-1/books/fdp-primer/xhtml-markup/chapter.xml 47391 2015-09-09 02:14:13Z wblock $
 -->
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="xhtml-markup">
   <title><acronym>XHTML</acronym> Markup</title>
@@ -182,7 +182,7 @@
 	element, <tag>p</tag>.</para>
 
       <example>
-	<title><tag>p</tag></title>
+	<title><tag>p</tag> Example</title>
 
 	<para>Usage:</para>
 
@@ -198,7 +198,7 @@
 	document that will appear in a separate paragraph.</para>
 
       <example>
-	<title><tag>blockquote</tag></title>
+	<title><tag>blockquote</tag> Example</title>
 
 	<para>Usage:</para>
 
@@ -243,7 +243,7 @@
 
       <example>
 	<title><tag>ul</tag> and
-	  <tag>ol</tag></title>
+	  <tag>ol</tag> Example</title>
 
 	<para>Usage:</para>
 
@@ -309,7 +309,7 @@
 	element.</para>
 
       <example>
-	<title><tag>pre</tag></title>
+	<title><tag>pre</tag> Example</title>
 
 	<para>For example, the <tag>pre</tag> tags could be
 	  used to mark up an email message:</para>
@@ -480,7 +480,7 @@
 
       <example>
 	<title><tag>em</tag> and
-	  <tag>strong</tag></title>
+	  <tag>strong</tag> Example</title>
 
 	<para>Usage:</para>
 
@@ -497,7 +497,7 @@
 	(for <quote>teletype</quote>).</para>
 
       <example>
-	<title><tag>tt</tag></title>
+	<title><tag>tt</tag> Example</title>
 
 	<para>Usage:</para>
 

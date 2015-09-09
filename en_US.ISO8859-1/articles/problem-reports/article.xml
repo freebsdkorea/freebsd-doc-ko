@@ -17,9 +17,9 @@
       &tm-attrib.general;
     </legalnotice>
 
-    <pubdate>$FreeBSD: head/en_US.ISO8859-1/articles/problem-reports/article.xml 46642 2015-05-01 21:32:39Z rene $</pubdate>
+    <pubdate>$FreeBSD: head/en_US.ISO8859-1/articles/problem-reports/article.xml 47367 2015-09-04 14:43:09Z mat $</pubdate>
 
-    <releaseinfo>$FreeBSD: head/en_US.ISO8859-1/articles/problem-reports/article.xml 46642 2015-05-01 21:32:39Z rene $</releaseinfo>
+    <releaseinfo>$FreeBSD: head/en_US.ISO8859-1/articles/problem-reports/article.xml 47367 2015-09-04 14:43:09Z mat $</releaseinfo>
 
     <abstract>
       <para>This article describes how to best formulate and submit a
@@ -128,7 +128,7 @@
 	    xlink:href="&url.books.porters-handbook;/port-upgrading.html">Porter's
 	    Handbook</link> will yield the best results.  (You might
 	  also wish to read <link
-	    xlink:href="&url.articles.contributing-ports;/article.html">Contributing
+	    xlink:href="&url.articles.contributing;/ports-contributing.html">Contributing
 	    to the FreeBSD Ports Collection</link>.)</para>
       </listitem>
     </itemizedlist>
