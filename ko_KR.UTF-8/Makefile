@@ -3,7 +3,7 @@
 # Original Revision: 1.7
 
 SUBDIR = articles
-#SUBDIR+= books
+SUBDIR+= books
 
 COMPAT_SYMLINK = ko
 
