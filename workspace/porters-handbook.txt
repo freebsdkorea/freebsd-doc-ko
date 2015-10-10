@@ -1,0 +1,160 @@
+﻿Chapter 1. 소개
+
+FreeBSD 포트 컬렉션은 거의 모든 사람이 FreeBSD에 애플리케이션("포트")을 설치하는 방법입니다.  FreeBSD의 다른 모든 요소들과 마찬가지로, 이는 주로 자원봉사자들의 노력에 의한 것입니다.  이 문서를 읽을 때 이러한 사항을 기억하는 것이 중요합니다.
+
+FreeBSD에서는, 누구나 새로운 포트를 제출하거나, 기존의 관리되지 않는 포트를 자진해서 관리할 수 있습니다.  특별한 commit 권한은 필요하지 않습니다.
+
+Chapter 2. 새로운 포트 만들기
+
+새로운 포트를 만들거나, 기존의 포트를 업그레이드하는 일에 관심이 있나요? 훌륭합니다!
+
+아래에 소개될 내용은 FreeBSD의 새로운 포트를 만드는 안내 지침입니다.  기존의 포트를 업그레이드하기 위해서는, 이것을 읽고 나서 Chapter 10. 포트 업그레이드하기를 읽어 주세요.
+
+이 문서가 충분히 자세하지 않다면, 모든 포트의 Makefile들에 include되는 /usr/ports/Mk/bsd.port.mk를 참조해 주세요.  Even those not hacking Makefiles daily can gain much knowledge from it.  게다가, 구체적인 질문이 있다면 FreeBSD ports mailing list에 보내 주세요.
+
+Note:
+
+Only a fraction of the variables (VAR) that can be overridden are mentioned in this document. Most (if not all) are documented at the start of /usr/ports/Mk/bsd.port.mk; the others probably ought to be.  이 파일이 비표준 탭 설정을 사용한다는 사실에 유의하세요: Emacs와 Vim은 파일을 로드할 때 이 설정을 인식할 것입니다.  vi(1)과 ex(1)의 경우 파일이 로드되었을 때 :set tabstop=4를 타이핑해주어서 올바른 값을 사용하도록 설정해줄 수 있습니다.
+
+시작하기에 좋은 쉬운 무언가를 찾고 있나요?  list of requested ports에서 그것들 중 하나(또는 그 이상)에 대해 작업할 수 있는지 살펴 보세요.
+
+Chapter 3. 빠른 포팅
+
+이 항목은 빠르게 새로운 포트를 만드는 방법을 설명합니다.  이 빠른 방법이 적절하지 않은 애플리케이션에 대해서는, Chapter 4. 느린 포팅에 설명된 "느린 포팅" 과정 전체를 살펴 보세요.
+
+먼저, 원본 tarball을 얻은 뒤 DISTDIR에 두세요.  기본값은 /usr/ports/distfiles입니다.
+
+Note:
+
+이 과정은 소프트웨어가 별다른 수정 없이 바로 컴파일된다는 것을 전제하고 있습니다.  다시 말해, 애플리케이션을 FreeBSD 시스템에서 사용하기 위해 수정 사항이 전혀 필요하지 않아야 합니다.  만약에 무언가가 수정될 필요가 있다면, Chapter 4. 느린 포팅을 참조하세요.
+
+Note:
+
+포팅 작업을 시작하기 전에 /etc/make.conf에 DEVELOPER make(1) 변수를 설정할 것이 권장됩니다.
+
+    # echo DEVELOPER=yes >> /etc/make.conf
+
+이 설정은 make할 때 deprecation 경고를 보여 주고 품질 검사를 활성화시키는 "개발자 모드"를 나타냅니다.
+
+3.1. Makefile 작성하기
+
+가장 간단한 Makefile은 이렇게 보입니다:
+
+# $FreeBSD$
+
+PORTNAME=	oneko
+PORTVERSION=	1.1b
+CATEGORIES=	games
+MASTER_SITES=	ftp://ftp.cs.columbia.edu/archives/X11R5/contrib/
+
+MAINTAINER=	youremail@example.com
+COMMENT=	Cat chasing a mouse all over the screen
+
+.include <bsd.port.mk>
+
+Note:
+
+특정한 경우에, 이미 존재하는 포트의 Makefile의 헤더에는 포트의 이름과 생성 날짜 등에 대한 추가적인 라인이 존재할 수 있습니다.  이 부가적인 정보는 obsolete하다고 선언되었으며, 점차 없애고 있습니다.
+
+구성을 이해하기 위해 노력해 보세요.  $FreeBSD$ 라인의 내용에 대해서는 걱정하지 마세요.  포트가 메인 포트 트리에 반영될 때 Subversion이 자동으로 이 내용을 채워 줄 것입니다.  보다 자세한 예제는 sample Makefile 항목에 있습니다.
+
+3.2. Description 파일 작성하기
+
+모든 포트에는, 그것들이 실제로 패키지이든 아니든, 두 개의 설명description 파일이 필요합니다.  pkg-descr와 pkg-plist가 그것들입니다.  pkg- 접두어는 이것들을 다른 파일들과 구분해 줍니다.
+
+3.2.1. pkg-descr
+
+이것은 포트에 대한 보다 긴 설명입니다.  포트가 하는 일을 하나 또는 여러 개의 문단으로 정확히, 충분하게 설명하고 있습니다.
+
+Note:
+
+이것은 설명서 혹은 포트를 어떻게 사용하거나 컴파일하는지에 대한 자세한 설명은 아닙니다!  README 또는 manpage에서 내용을 복사할 때에는 주의해 주세요.  대개의 경우 이것들은 포트에 대한 정확한 설명이 아니거나 적절하지 않은 포맷으로 되어 있습니다.  예를 들어, manpage는 규격화된 공백을 가지고 있어, 고정폭 글꼴에서 특히 나쁘게 보입니다.
+
+잘 쓰여진 pkg-descr는 소프트웨어가 무엇을 하는지, 어떤 경우에 유용한지, 또는 특별히 좋은 기능은 무엇인지에 대해 이해하기 위해 사용자가 별도의 문서를 찾아보거나 웹사이트를 방문할 필요가 없도록 포트에 대해 충분히 완전하게 설명합니다.  그래픽 툴킷, 무거운 종속성, 런타임 환경, 또는 구현 언어와 같이 특정하게 필요한 요소를 언급하는 것은 사용자가 포트를 사용할지 결정하는 데 도움을 줍니다.
+
+공식 WWW 홈페이지의 URL을 포함하세요.  웹사이트 주소들 중 하나(가장 일반적인 것을 선택해 주세요)의 앞쪽에 WWW: (이후에 하나의 공백)를 적어서 자동화된 도구들이 올바르게 동작할 수 있도록 해 주세요.  URI가 웹사이트 또는 디렉토리의 루트라면, 슬래시 기호로 끝나야 합니다.
+
+Note:
+
+만약 포트에 대한 웹페이지가 사용 가능하지 않으면, 먼저 인터넷에서 검색해 보아 공식 사이트가 옮겨졌거나, 이름이 바뀌었거나, 또는 다른 곳에서 호스트되고 있는지 알아봐 주세요.
+
+이 예제는 pkg-descr가 어떻게 보이는지를 나타냅니다:
+
+This is a port of oneko, in which a cat chases a poor mouse all over
+the screen.
+ :
+(etc.)
+
+WWW: http://www.oneko.org/
+
+3.2.2. pkg-plist
+
+이 파일은 포트에 의해 설치되는 모든 파일들의 목록을 나타냅니다.  이는 "패킹
+리스트"라고도 불리는데, 여기에 수록된 파일들을 패킹함으로써 패키지가 생성되기
+때문입니다.  경로명은 (주로 /usr/local에 해당하는) installation prefix에 대한
+상대 경로입니다.
+
+여기에 간단한 예시가 있습니다:
+
+bin/oneko
+man/man1/oneko.1.gz
+lib/X11/app-defaults/Oneko
+lib/X11/oneko/cat1.xpm
+lib/X11/oneko/cat2.xpm
+lib/X11/oneko/mouse.xpm
+
+패킹 리스트에 대한 자세한 사항을 위해서는 pkg-create(8) manual page를
+참조하세요.
+
+Note:
+
+모든 파일명을 사전순으로 정렬할 것을 권장합니다.  이렇게 하면 포트를
+업그레이드할 때 변경된 사항을 검증하는 것을 훨씬 쉽게 만들어 줍니다.
+
+Tip:
+
+수동으로 패킹 리스트를 작성하는 것은 대단히 지루한 작업이 될 수 있습니다.
+만약 포트가 많은 파일들을 설치한다면, 자동으로 패킹 리스트 작성하기가 시간을
+절약해줄 수 있을 겁니다.
+
+포트에서 pkg-plist가 생략될 수 있는 경우는 단 한가지뿐입니다.  포트가 적은
+수의 파일들만 설치하는 경우, 포트의 Makefile 안에 있는 PLIST_FILES에 그 목록을
+나열할 수 있습니다.  예를 들어, 우리는 위에 언급된 oneko 포트의 Makefile에
+아래의 줄을 추가함으로써 pkg-plist 파일을 생략할 수도 있습니다:
+
+PLIST_FILES=	bin/oneko \
+		man/man1/oneko.1.gz \
+		lib/X11/app-defaults/Oneko \
+		lib/X11/oneko/cat1.xpm \
+		lib/X11/oneko/cat2.xpm \
+		lib/X11/oneko/mouse.xpm
+
+Note:
+
+PLIST_FILES는 남용되어서는 안 됩니다.  어떤 파일의 출처를 찾아볼 때, 사람들은
+대개 포트 트리의 pkg-plist 파일들을 grep하는 것을 시도합니다.  Makefile의
+PLIST_FILES에 파일들을 나열하는 것은 이러한 검색을 더 어렵게 만듭니다.
+
+Tip:
+
+포트가 빈 디렉토리의 생성을 필요로 할 경우, 또는 설치 과정에서 $(PREFIX)
+외부에 디렉토리를 생성할 필요가 있을 경우, 추가적인 정보를 위해서 Section
+7.2.1. "Cleaning Up Empty Directories"를 참조하세요.
+
+포트의 파일과 디렉토리를 이런 방법으로 나열하면 pkg-create(8)에 설명된
+키워드와 Section 7.6, “Expanding Package List with Keywords”를
+사용할 수 없습니다.  그러므로, 이 방법은 간단한 포트에만 적합하며 더욱
+간단히 만들고자 할 때에만 사용되어야 합니다.  동시에, 이 방법은 포트
+컬렉션의 파일 수를 줄이는 이점이 있습니다.  pkg-plist에 의존하기 전에
+이 방법을 사용하는 것을 고려해 보세요.
+
+나중에 우리는 보다 복잡한 작업을 위해 pkg-plist와 PLIST_FILES를
+사용하는 방법에 대해 알아볼 것입니다.
+
+3.3. 체크섬 파일 만들기
+
+make checksum을 사용하세요.  포트의 make rule이 자동으로 distinfo 파일을
+생성해줄 것입니다.
+
+3.4. 포트 테스트하기
+
