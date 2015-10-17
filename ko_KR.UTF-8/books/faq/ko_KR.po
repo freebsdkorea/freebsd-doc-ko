@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2015-09-09 21:10+0900\n"
-"PO-Revision-Date: 2015-09-09 21:18+0900\n"
+"PO-Revision-Date: 2015-10-12 17:27+0900\n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"X-Generator: Poedit 1.8.4\n"
+"X-Generator: Poedit 1.8.5\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -24,12 +24,12 @@ msgstr "FreeBSD 9.<replaceable>X</replaceable>와 10.<replaceable>X</replaceable
 #. (itstool) path: info/author
 #: book.translate.xml:26
 msgid "<orgname>The FreeBSD Documentation Project</orgname>"
-msgstr ""
+msgstr "<orgname>The FreeBSD Documentation Project</orgname>"
 
 #. (itstool) path: info/copyright
 #: book.translate.xml:28
 msgid "<year>1995</year> <year>1996</year> <year>1997</year> <year>1998</year> <year>1999</year> <year>2000</year> <year>2001</year> <year>2002</year> <year>2003</year> <year>2004</year> <year>2005</year> <year>2006</year> <year>2007</year> <year>2008</year> <year>2009</year> <year>2010</year> <year>2011</year> <year>2012</year> <year>2013</year> <year>2014</year> <year>2015</year> <holder>The FreeBSD Documentation Project</holder>"
-msgstr ""
+msgstr "<year>1995</year> <year>1996</year> <year>1997</year> <year>1998</year> <year>1999</year> <year>2000</year> <year>2001</year> <year>2002</year> <year>2003</year> <year>2004</year> <year>2005</year> <year>2006</year> <year>2007</year> <year>2008</year> <year>2009</year> <year>2010</year> <year>2011</year> <year>2012</year> <year>2013</year> <year>2014</year> <year>2015</year> <holder>The FreeBSD Documentation Project</holder>"
 
 #. (itstool) path: legalnotice/title
 #: book.translate.xml:56
@@ -159,42 +159,42 @@ msgstr "FreeBSD는 전세계의 회사, 인터넷 서비스 제공자, 연구자
 #. (itstool) path: answer/para
 #: book.translate.xml:188
 msgid "For more detailed information on FreeBSD, refer to the <link xlink:href=\"@@URL_RELPREFIX@@/doc/ko_KR.UTF-8/books/handbook/index.html\">FreeBSD Handbook</link>."
-msgstr ""
+msgstr "FreeBSD에 대한 보다 자세한 정보를 원한다면, <link xlink:href=\"@@URL_RELPREFIX@@/doc/ko_KR.UTF-8/books/handbook/index.html\">FreeBSD Handbook</link>을 참조하세요."
 
 #. (itstool) path: question/para
 #: book.translate.xml:196
 msgid "What is the goal of the FreeBSD Project?"
-msgstr ""
+msgstr "FreeBSD 프로젝트의 목표는 무엇인가요?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:200
 msgid "The goal of the FreeBSD Project is to provide a stable and fast general purpose operating system that may be used for any purpose without strings attached."
-msgstr ""
+msgstr "FreeBSD 프로젝트의 목표는 어떤 목적으로든 아무런 조건 없이 사용할 수 있는 안정적이고 빠른 다목적 운영 체제를 제공하는 것입니다."
 
 #. (itstool) path: question/para
 #: book.translate.xml:208
 msgid "Does the FreeBSD license have any restrictions?"
-msgstr ""
+msgstr "FreeBSD 라이선스가 제약하는 사항이 있나요?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:212
 msgid "Yes. Those restrictions do not control how the code is used, but how to treat the FreeBSD Project itself. The license itself is available at <link xlink:href=\"http://www.FreeBSD.org/copyright/freebsd-license.html\">license</link> and can be summarized like this:"
-msgstr ""
+msgstr "네.  이것들은 코드가 어떻게 사용되어야 하는지가 아니라, FreeBSD 프로젝트 그 자체를 어떻게 대해야 하는지에 대한 제약 사항입니다.  라이선스 자체는 <link xlink:href=\"http://www.FreeBSD.org/copyright/freebsd-license.html\">라이선스</link>에서 볼 수 있으며 다음과 같이 요약될 수 있습니다:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:220
 msgid "Do not claim that you wrote this."
-msgstr ""
+msgstr "여러분이 이것을 만들었다고 주장하지 마십시오."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:224
 msgid "Do not sue us if it breaks."
-msgstr ""
+msgstr "이것이 제대로 동작하지 않는다고 우리를 고소하지 마십시오."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:228
 msgid "Do not remove or modify the license."
-msgstr ""
+msgstr "라이선스를 제거하거나 수정하지 마십시오."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:232
@@ -209,7 +209,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:258
 msgid "Can FreeBSD replace my current operating system?"
-msgstr ""
+msgstr "FreeBSD가 현재의 제 운영 체제를 대체할 수 있나요?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:262
@@ -219,7 +219,7 @@ msgstr ""
 #. (itstool) path: answer/para
 #: book.translate.xml:265
 msgid "Most people do not actually use an operating system. They use applications. The applications are what really use the operating system. FreeBSD is designed to provide a robust and full-featured environment for applications. It supports a wide variety of web browsers, office suites, email readers, graphics programs, programming environments, network servers, and much more. Most of these applications can be managed through the <link xlink:href=\"http://www.FreeBSD.org/ports/\">Ports Collection</link>."
-msgstr ""
+msgstr "대부분의 사람들은 사실 운영 체제를 활용하지 않습니다.  그들은 애플리케이션을 활용합니다.  운영 체제를 활용하는 것은 사실 애플리케이션입니다.  FreeBSD는 애플리케이션을 위한 안정적인 다기능 환경을 제공하도록 디자인되었습니다.  이것은 다양한 종류의 웹 브라우저, 오피스 프로그램, 이메일 리더, 그래픽 트로그램, 프로그래밍 환경, 네트워크 서버 등등 많은 것들을 지원합니다.  이러한 애플리케이션들의 대다수는 <link xlink:href=\"http://www.FreeBSD.org/ports/\">포트 컬렉션</link>을 이용해 관리될 수 있습니다."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:276
@@ -234,12 +234,12 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:300
 msgid "Why is it called FreeBSD?"
-msgstr ""
+msgstr "왜 FreeBSD라고 불리나요?"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:306
 msgid "It may be used free of charge, even by commercial users."
-msgstr ""
+msgstr "FreeBSD는 심지어 상용 목적으로도 아무런 조건 없이 사용할 수 있습니다."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:311
@@ -259,7 +259,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:338
 msgid "What are the differences between FreeBSD and NetBSD, OpenBSD, and other open source BSD operating systems?"
-msgstr ""
+msgstr "FreeBSD와 NetBSD, OpenBSD, 그리고 다른 오픈 소스 BSD 운영 체제 사이의 차이점은 무엇인가요?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:344
@@ -294,7 +294,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:383
 msgid "What is the latest version of FreeBSD?"
-msgstr ""
+msgstr "FreeBSD의 최신 버전은 무엇인가요?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:387
@@ -329,7 +329,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:434
 msgid "What is <emphasis>FreeBSD-CURRENT</emphasis>?"
-msgstr ""
+msgstr "<emphasis>FreeBSD-CURRENT</emphasis>는 무엇인가요?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:438

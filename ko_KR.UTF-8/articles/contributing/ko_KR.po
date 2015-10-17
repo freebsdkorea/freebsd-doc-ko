@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2015-08-29 10:47+0900\n"
-"PO-Revision-Date: 2015-10-07 09:18+0900\n"
+"PO-Revision-Date: 2015-10-16 19:15+0900\n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"X-Generator: Poedit 1.8.4\n"
+"X-Generator: Poedit 1.8.5\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -567,7 +567,7 @@ msgstr "새로운 소프트웨어 버전 및 업데이트."
 #. (itstool) path: formalpara/para
 #: article.translate.xml:595
 msgid "New versions and updates of existing ported software become available all the time, and these need to be incorporated into the Ports Collection in order to provide up-to-date software."
-msgstr ""
+msgstr "포팅된 소프트웨어에 대해서는 언제든지 새로운 버전과 업데이트가 있을 수 있고, 최신의 소프트웨어를 제공하기 위해서 이들은 포트 컬렉션에 포함될 필요가 있습니다."
 
 #. (itstool) path: formalpara/title
 #: article.translate.xml:604
@@ -612,12 +612,12 @@ msgstr "포트는 FreeBSD 환경에서 특정하게 나타나는 버그의 영�
 #. (itstool) path: formalpara/title
 #: article.translate.xml:649
 msgid "Changes to ports infrastructure and policy."
-msgstr ""
+msgstr "포트의 기반 및 정책의 수정"
 
 #. (itstool) path: formalpara/para
 #: article.translate.xml:651
 msgid "Occasionally the systems that are used to build ports and packages are updated or a new recommendation affecting the infrastructure is made. You should be aware of these changes in case your ports are affected and require updating."
-msgstr ""
+msgstr "때때로 포트와 패키지를 빌드하는 데 사용되는 시스템이 업데이트되거나 그 기반에 영향을 미치는 새로운 제안이 나오기도 합니다.  여러분은 여러분의 포트가 영향을 받아 업데이트를 필요로 하게 될 경우를 위해 이러한 변화에 대해 알고 있어야 합니다."
 
 #. (itstool) path: formalpara/title
 #: article.translate.xml:661
@@ -647,7 +647,7 @@ msgstr "이 항목은 여러분의 포트를 최신 상태로 유지시키기 �
 #. (itstool) path: sect4/para
 #: article.translate.xml:680
 msgid "This is an overview. More information about upgrading a port is available in the <link xlink:href=\"@@URL_RELPREFIX@@/doc/ko_KR.UTF-8/books/porters-handbook\"> Porter's Handbook</link>."
-msgstr ""
+msgstr "이것은 개괄적인 내용입니다.  포트를 업그레이드하는 것에 대한 더 자세한 정보는 <link xlink:href=\"@@URL_RELPREFIX@@/doc/ko_KR.UTF-8/books/porters-handbook\"> Porter's Handbook</link>에서 찾아볼 수 있습니다."
 
 #. (itstool) path: step/title
 #: article.translate.xml:687
@@ -657,22 +657,22 @@ msgstr "업데이트를 지켜보세요"
 #. (itstool) path: step/para
 #: article.translate.xml:689
 msgid "Monitor the upstream vendor for new versions, updates and security fixes for the software. Announcement mailing lists or news web pages are useful for doing this. Sometimes users will contact you and ask when your port will be updated. If you are busy with other things or for any reason just cannot update it at the moment, ask if they will help you by submitting an update."
-msgstr ""
+msgstr "소프트웨어의 새로운 버전, 업데이트 그리고 보안 수정 사항을 위해 upstream vendor를 주시하세요.  이를 위해서 announcement 메일링 리스트 또는 뉴스 웹 페이지가 도움이 될 것입니다.  사용자들이 종종 여러분에게 연락해서 여러분의 포트가 언제 업데이트될 것인지에 대해 문의할 수 있습니다.  만약 여러분이 다른 이유로 바쁘거나 지금 업데이트할 수 없는 어떤 이유가 있다면, 그들에게 업데이트 제출을 도와줄 수 있는지 요청해 보세요."
 
 #. (itstool) path: step/para
 #: article.translate.xml:698
 msgid "You may also receive automated email from the <literal>FreeBSD Ports Version Check</literal> informing you that a newer version of your port's distfile is available. More information about that system (including how to stop future emails) will be provided in the message."
-msgstr ""
+msgstr "여러분은 또한 <literal>FreeBSD Ports Version Check</literal>로부터 여러분의 포트에 대한 새 버전의 distfile이 사용 가능하다는 자동 이메일을 받을 수도 있습니다.  그 시스템에 대한 (앞으로의 이메일을 그만 받는 방법을 포함한) 더 많은 정보는 해당 메시지에 제공될 것입니다."
 
 #. (itstool) path: step/title
 #: article.translate.xml:707
 msgid "Incorporate changes"
-msgstr ""
+msgstr "수정 사항을 적용시키기"
 
 #. (itstool) path: step/para
 #: article.translate.xml:709
 msgid "When they become available, incorporate the changes into the port. You need to be able to generate a patch between the original port and your updated port."
-msgstr ""
+msgstr "변경 사항이 사용 가능해지면, 포트에 적용시켜 주세요.  원본 포트와 업데이트된 포트 사이의 패치를 생성할 수 있어야 할 것입니다."
 
 #. (itstool) path: step/title
 #: article.translate.xml:715
@@ -697,17 +697,17 @@ msgstr "여러분의 포트의 의존성 관계가 완전한지 점검해 주세
 #. (itstool) path: listitem/para
 #: article.translate.xml:736
 msgid "Check that the packing list is up to date. This involves adding in any new files and directories and removing unused entries."
-msgstr ""
+msgstr "패킹 리스트가 최신 상태인지 확인하세요.  이는 새로운 파일 및 디렉토리를 추가하는 일과 사용되지 않는 내용을 제거하는 일을 포함합니다."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:742
 msgid "Verify your port using <citerefentry vendor=\"ports\"><refentrytitle>portlint</refentrytitle><manvolnum>1</manvolnum></citerefentry> as a guide. See <link linkend=\"resources\">resources</link> for important information about using <application>portlint</application>."
-msgstr ""
+msgstr "<citerefentry vendor=\"ports\"><refentrytitle>portlint</refentrytitle><manvolnum>1</manvolnum></citerefentry>를 이용하여 여러분의 포트를 검토하세요.  <application>portlint</application>를 사용하는 방법에 대한 중요한 사항을 위해서는 <link linkend=\"resources\">resources</link>를 참조하세요."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:749
 msgid "Consider whether changes to your port might cause any other ports to break. If this is the case, coordinate the changes with the maintainers of those ports. This is especially important if your update changes the shared library version; in this case, at the very least, the dependent ports will need to get a <varname>PORTREVISION</varname> bump so that they will automatically be upgraded by automated tools such as <application>portmaster</application> or <citerefentry vendor=\"ports\"><refentrytitle>portupgrade</refentrytitle><manvolnum>1</manvolnum></citerefentry>."
-msgstr ""
+msgstr "여러분의 포트에 대한 수정 사항이 다른 포트를 고장내는 일이 있을지에 대해 고려해 주세요.  만약 그럴 가능성이 있는 경우에는, 해당 포트의 관리자와 수정 내용을 조율해 주세요.  이는 여러분의 업데이트가 shared library의 버전에 수정을 가하는 경우에 특히 중요합니다; 이 경우, 적어도, 종속된 포트는 <varname>PORTREVISION</varname> bump를 얻어서 <application>portmaster</application> 또는 <citerefentry vendor=\"ports\"><refentrytitle>portupgrade</refentrytitle><manvolnum>1</manvolnum></citerefentry>와 같은 자동화된 도구에 의해 자동으로 업데이트될 수 있도록 할 필요가 있습니다."
 
 #. (itstool) path: step/title
 #: article.translate.xml:765 article.translate.xml:915
@@ -717,42 +717,42 @@ msgstr "수정 내용 제출하기"
 #. (itstool) path: step/para
 #: article.translate.xml:767
 msgid "Send your update by submitting a PR with an explanation of the changes and a patch containing the differences between the original port and the updated one. Please refer to <link xlink:href=\"@@URL_RELPREFIX@@/doc/ko_KR.UTF-8/articles/problem-reports\">Writing FreeBSD Problem Reports</link> for information on how to write a really good PR."
-msgstr ""
+msgstr "수정 사항에 대한 설명 및 원본과 수정본 사이의 변경 내역을 포함한 패치를 담은 PR을 통해 여러분의 업데이트를 보내 주세요.  좋은 PR을 작성하는 방법에 대한 내용은 <link xlink:href=\"@@URL_RELPREFIX@@/doc/ko_KR.UTF-8/articles/problem-reports\">Writing FreeBSD Problem Reports</link>를 참조해 주세요."
 
 #. (itstool) path: note/para
 #: article.translate.xml:775
 msgid "Please do not submit a <citerefentry><refentrytitle>shar</refentrytitle><manvolnum>1</manvolnum></citerefentry> archive of the entire port; instead, use <citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></citerefentry> <literal>-ruN</literal>. In this way, committers can much more easily see exactly what changes are being made. The Porter's Handbook section on <link xlink:href=\"@@URL_RELPREFIX@@/doc/ko_KR.UTF-8/books/porters-handbook/port-upgrading.html\">Upgrading</link> has more information."
-msgstr ""
+msgstr "포트 전체에 대한 <citerefentry><refentrytitle>shar</refentrytitle><manvolnum>1</manvolnum></citerefentry> 아카이브를 제출하지는 말아 주세요; 그 대신에, <citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></citerefentry> <literal>-ruN</literal>를 사용해 주세요.  이렇게 하면, 정확히 무엇이 수정되었는지 committer들이 훨씬 쉽게 파악할 수 있습니다.  Porter's Handbook에 있는 <link xlink:href=\"@@URL_RELPREFIX@@/doc/ko_KR.UTF-8/books/porters-handbook/port-upgrading.html\">Upgrading</link> 항목에서 더 많은 정보를 찾아볼 수 있습니다."
 
 #. (itstool) path: step/title
 #: article.translate.xml:785
 msgid "Wait"
-msgstr ""
+msgstr "기다리세요"
 
 #. (itstool) path: step/para
 #: article.translate.xml:787
 msgid "At some stage a committer will deal with your PR. It may take minutes, or it may take weeks — so please be patient."
-msgstr ""
+msgstr "때가 되면 committer가 여러분의 PR을 담당할 것입니다.  이는 몇 분, 또는 몇 주가 소요될 수 있습니다 — 그러므로 그동안 기다려 주세요."
 
 #. (itstool) path: step/title
 #: article.translate.xml:793
 msgid "Give feedback"
-msgstr ""
+msgstr "피드백을 해 주세요"
 
 #. (itstool) path: step/para
 #: article.translate.xml:795
 msgid "If a committer finds a problem with your changes, they will most likely refer it back to you. A prompt response will help get your PR committed faster, and is better for maintaining a thread of conversation when trying to resolve any problems."
-msgstr ""
+msgstr "만약 committer가 여러분의 수정 사항에서 문제점을 찾아내면, 그들은 대체로 여러분에게 다시 알려줄 것입니다.  신속한 답변은 여러분의 PR이 빨리 commit되는 데 도움이 되고, 어떤 문제를 해결하고자 할 때 대화의 흐름을 유지하는 데에도 좋습니다."
 
 #. (itstool) path: step/title
 #: article.translate.xml:803
 msgid "And Finally"
-msgstr ""
+msgstr "그리고 마지막으로"
 
 #. (itstool) path: step/para
 #: article.translate.xml:805
 msgid "Your changes will be committed and your port will have been updated. The PR will then be closed by the committer. That's it!"
-msgstr ""
+msgstr "여러분의 수정 사항이 commit되고 여러분의 포트가 업데이트될 것입니다.  그런 다음 PR은 committer에 의해 닫힐 것입니다.  그것으로 끝입니다!"
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:813
@@ -787,17 +787,17 @@ msgstr ""
 #. (itstool) path: step/title
 #: article.translate.xml:851
 msgid "Watch for build failures"
-msgstr ""
+msgstr "빌드 실패를 주시하세요"
 
 #. (itstool) path: step/para
 #: article.translate.xml:853
 msgid "Check your mail for mail from <literal>pkg-fallout@FreeBSD.org</literal> and the <link xlink:href=\"http://portscout.FreeBSD.org\">distfiles scanner</link> to see if any of the port which are failing to build are out of date."
-msgstr ""
+msgstr "빌드에 실패하거나 오래된 포트가 있는지 살펴보기 위해 <literal>pkg-fallout@FreeBSD.org</literal>와 <link xlink:href=\"http://portscout.FreeBSD.org\">distfiles scanner</link>로부터의 메일을 확인해 주세요."
 
 #. (itstool) path: step/title
 #: article.translate.xml:861 article.translate.xml:977
 msgid "Collect information"
-msgstr ""
+msgstr "정보를 모으세요"
 
 #. (itstool) path: step/para
 #: article.translate.xml:863
@@ -807,52 +807,52 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: article.translate.xml:873
 msgid "Build logs"
-msgstr ""
+msgstr "빌드 로그"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:877
 msgid "The commands and options used to build the port (including options set in <filename>/etc/make.conf</filename>)"
-msgstr ""
+msgstr "포트를 빌드하는 데 사용되는 명령어 및 옵션들 (<filename>/etc/make.conf</filename>에 세팅된 옵션들을 포함)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:883
 msgid "A list of packages installed on their system as shown by <citerefentry><refentrytitle>pkg_info</refentrytitle><manvolnum>1</manvolnum></citerefentry>"
-msgstr ""
+msgstr "<citerefentry><refentrytitle>pkg_info</refentrytitle><manvolnum>1</manvolnum></citerefentry>를 통해 보여지는, 그들의 시스템에 설치된 패키지들의 목록"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:888
 msgid "The version of FreeBSD they are running as shown by <citerefentry><refentrytitle>uname</refentrytitle><manvolnum>1</manvolnum></citerefentry><command> -a</command>"
-msgstr ""
+msgstr "<citerefentry><refentrytitle>uname</refentrytitle><manvolnum>1</manvolnum></citerefentry><command> -a</command>을 통해 보여지는, 그들의 현재 FreeBSD의 버전"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:893
 msgid "When their ports collection was last updated"
-msgstr ""
+msgstr "그들의 포트 컬렉션이 마지막으로 업데이트된 때"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:898
 msgid "When their ports tree amd <filename>INDEX</filename> was last updated"
-msgstr ""
+msgstr "그들의 포트 트리와 <filename>INDEX</filename>가 마지막으로 업데이트된 때"
 
 #. (itstool) path: step/title
 #: article.translate.xml:905
 msgid "Investigate and find a solution"
-msgstr ""
+msgstr "문제점을 조사하고 해결책을 찾아보세요"
 
 #. (itstool) path: step/para
 #: article.translate.xml:907
 msgid "Unfortunately there is no straightforward process to follow to do this. Remember, though: if you are stuck, ask for help! The <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports\">FreeBSD ports mailing list</link> is a good place to start, and the upstream developers are often very helpful."
-msgstr ""
+msgstr "불행히도 이를 위한 간단한 프로세스는 없습니다.  그렇지만, 기억하세요: 뭔가 잘 안 풀린다면, 도움을 요청하세요!  <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports\">FreeBSD 포트 메일링 리스트</link>는 시작하기에 좋은 곳이고, 상부의 개발자들은 대개 대단히 잘 도와줍니다."
 
 #. (itstool) path: step/para
 #: article.translate.xml:917
 msgid "Just as with updating a port, you should now incorporate changes, review and test, submit your changes in a PR, and provide feedback if required."
-msgstr ""
+msgstr "포트를 업데이트할 때와 마찬가지로, 여러분은 이제 수정 사항을 적용하고, 검토하고 테스트하고, PR로 수정 사항을 제출하고, 필요하다면 피드백을 제공해야 합니다."
 
 #. (itstool) path: step/title
 #: article.translate.xml:924
 msgid "Send patches to upstream authors"
-msgstr ""
+msgstr "상부의 저자에게 패치를 보내 주세요"
 
 #. (itstool) path: step/para
 #: article.translate.xml:926
@@ -862,7 +862,7 @@ msgstr ""
 #. (itstool) path: sect4/title
 #: article.translate.xml:940
 msgid "Investigate bug reports and PRs related to your port"
-msgstr ""
+msgstr "여러분의 포트에 관련된 버그 보고와 PR을 살펴 보세요"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:943
@@ -882,7 +882,7 @@ msgstr ""
 #. (itstool) path: step/title
 #: article.translate.xml:957
 msgid "Respond to bug reports"
-msgstr ""
+msgstr "버그 보고에 응답하세요"
 
 #. (itstool) path: step/para
 #: article.translate.xml:959
@@ -937,17 +937,17 @@ msgstr ""
 #. (itstool) path: step/title
 #: article.translate.xml:1016
 msgid "Eliminate incorrect reports"
-msgstr ""
+msgstr "잘못된 보고를 배제하기"
 
 #. (itstool) path: step/para
 #: article.translate.xml:1018
 msgid "Some bug reports may be incorrect. For example, the user may have simply misused the program; or their installed packages may be out of date and require updating. Sometimes a reported bug is not specific to FreeBSD. In this case report the bug to the upstream developers. If the bug is within your capabilities to fix, you can also patch the port so that the fix is applied before the next upstream release."
-msgstr ""
+msgstr "일부 버그 제보는 잘못되었을 수도 있습니다.  예를 들어, 사용자가 단순히 프로그램을 잘못 사용했을 수 있습니다; 또는 그들이 설치한 패키지가 오래되었고 업데이트를 필요로 하는 경우일 수도 있습니다.  종종 제보된 버그는 FreeBSD에 국한되는 것이 아닐 수도 있습니다.  이 경우에는 upstream 개발자에게 버그를 제보해 주세요.  만약 여러분이 고칠 수 있을 만한 버그라면, 다음 upstream 릴리즈가 배포되기 전에 여러분이 직접 포트를 패치해서 수정 사항을 적용시켜도 됩니다."
 
 #. (itstool) path: step/title
 #: article.translate.xml:1029
 msgid "Find a solution"
-msgstr ""
+msgstr "해결책을 찾아보기"
 
 #. (itstool) path: step/para
 #: article.translate.xml:1031
@@ -957,7 +957,7 @@ msgstr ""
 #. (itstool) path: step/title
 #: article.translate.xml:1037
 msgid "Submit or approve changes"
-msgstr ""
+msgstr "수정 사항을 제출하거나 승인하기"
 
 #. (itstool) path: step/para
 #: article.translate.xml:1039
@@ -967,12 +967,12 @@ msgstr ""
 #. (itstool) path: sect4/title
 #: article.translate.xml:1050
 msgid "Providing support"
-msgstr ""
+msgstr "지원 제공하기"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1052
 msgid "Part of being a maintainer is providing support — not for the software in general — but for the port and any FreeBSD-specific quirks and problems. Users may contact you with questions, suggestions, problems and patches. Most of the time their correspondence will be specific to FreeBSD."
-msgstr ""
+msgstr "관리자로서의 역할 중 하나는 지원을 제공하는 것입니다 — 이는 소프트웨어 자체에 대한 일반적인 지원이 아니라 — 포트 그리고 FreeBSD에 특정한 특이 사항과 문제점에 대한 지원을 의미합니다.  사용자들은 질문, 제안, 문제점 그리고 패치에 대해서 여러분에게 연락할 수 있습니다.  대부분의 경우 그러한 연락들은 FreeBSD에 특정한 내용들일 것입니다."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1059
@@ -982,42 +982,42 @@ msgstr ""
 #. (itstool) path: sect4/para
 #: article.translate.xml:1068
 msgid "Sometimes users and developers will decide that you are a busy person whose time is valuable and do some of the work for you. For example, they might:"
-msgstr ""
+msgstr "종종 사용자와 개발자들은 여러분을 (여러분의 시간을 귀중히 여기는) 바쁜 사람으로 여기고 여러분을 위해 약간의 일을 해줄 수도 있습니다.  예를 들어, 그들은 다음과 같은 일들을 해줄 수도 있습니다:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1074
 msgid "submit a PR or send you patches to update your port,"
-msgstr ""
+msgstr "여러분의 포트를 업데이트하는 PR을 제출하거나 패치를 보내주는 일,"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1079
 msgid "investigate and perhaps provide a fix to a PR, or"
-msgstr ""
+msgstr "조사하고 아마도 PR에 고친 내용을 제공하는 일, 또는"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1084
 msgid "otherwise submit changes to your port."
-msgstr ""
+msgstr "아니면 여러분의 포트에 대한 수정 사항을 제출하는 일."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1088
 msgid "In these cases your main obligation is to respond in a timely manner. Again, the timeout for non-responsive maintainers is 14 days. After this period changes may be committed unapproved. They have taken the trouble to do this for you; so please try to at least respond promptly. Then review, approve, modify or discuss their changes with them as soon as possible."
-msgstr ""
+msgstr "이러한 경우에 여러분의 주요 의무는 적절한 때에 응답하는 것입니다.  다시 한번 강조합니다, 관리자의 무응답에 대한 제한 시간은 14일입니다.  이 기간이 지마면 수정 사항은 미승인 상태(unapproved)로 commit될 것입니다.  그들은 여러분을 위해 이 일을 하는 수고를 했습니다; 그러므로 최소한 신속하게 답변할 수 있도록 노력해 주세요.  그리고 나서 가급적 빨리 이를 검토하고, 승인하고, 그들과 함께 수정 사항을 다듬거나 이에 대해 논의해 주세요."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1096
 msgid "If you can make them feel that their contribution is appreciated (and it should be) you will have a better chance persuading them to do more things for you in the future :-)."
-msgstr ""
+msgstr "만약 여러분이 그들의 기여에 감사를 표한다면 (물론 그래야 합니다만) 앞으로 그들이 여러분을 위해 더 많은 일을 해줄 수도 있을 것입니다 :-)."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1105
 msgid "Finding and fixing a broken port"
-msgstr ""
+msgstr "고장난 포트를 찾아내고 고치기"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1107
 msgid "There are two really good places to find a port that needs some attention."
-msgstr ""
+msgstr "관심이 필요한 포트를 찾아보기에 정말 좋은 두 개의 장소가 있습니다."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1110
@@ -1037,59 +1037,59 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:1132
 msgid "When to call it quits"
-msgstr ""
+msgstr "그만두어야 할 때"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1134
 msgid "As your interests and commitments change, you may find that you no longer have time to continue some (or all) of your ports contributions. That is fine! Please let us know if you are no longer using a port or have otherwise lost time or interest in being a maintainer. In this way we can go ahead and allow other people to try to work on existing problems with the port without waiting for your response. Remember, FreeBSD is a volunteer project, so if maintaining a port is no fun anymore, it is probably time to let someone else do it!"
-msgstr ""
+msgstr "여러분의 흥미와 상황이 변함에 따라, 여러분은 여러분의 포트에 대한 일부 (또는 모든) 기여를 계속할 시간이 없을 수도 있습니다.  괜찮습니다!  만약 여러분이 더이상 포트를 사용하지 않거나 투자할 시간이 없거나 관리자로서의 흥미를 잃었다면 우리에게 알려 주세요.  그러면 우리는 일을 진행하면서 여러분의 답변을 기다리지 않고 포트의 문제들에 다른 사람들이 작업하도록 허락할 수 있습니다.  기억하세요, FreeBSD는 자원봉사자들에 의한 프로젝트입니다, 그러므로 포트를 관리하는 일이 이제 재미없다면, 다른 누군가에게 넘겨줄 때입니다!"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1144
 msgid "In any case, the Ports Management Team (<literal>portmgr</literal>) reserves the right to reset your maintainership if you have not actively maintained your port in some time. (Currently, this is set to 3 months.) By this, we mean that there are unresolved problems or pending updates that have not been worked on during that time."
-msgstr ""
+msgstr "어느 경우에든지, 여러분이 일정 기간동안 여러분의 포트를 활동적으로 관리하지 않았다면 포트 관리 팀(<literal>portmgr</literal>)은 여러분의 관리 권한을 초기화시킬 권한을 가지고 있습니다.  (현재, 이 기간은 3개월로 정해져 있습니다.)  이것은, 이 기간동안 해결되지 않은 문제나 미루어진 업데이트가 있다는 것을 의미합니다."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1153
 msgid "Resources for ports maintainers and contributors"
-msgstr ""
+msgstr "포트 관리자와 기여자를 위한 자료"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1155
 msgid "The <link xlink:href=\"@@URL_RELPREFIX@@/doc/ko_KR.UTF-8/books/porters-handbook\">Porter's Handbook</link> is your hitchhiker's guide to the ports system. Keep it handy!"
-msgstr ""
+msgstr "<link xlink:href=\"@@URL_RELPREFIX@@/doc/ko_KR.UTF-8/books/porters-handbook\">Porter's Handbook</link>은 포트 시스템을 여행하는 히치하이커를 위한 안내서입니다.  곁에 두고 자주 살펴 보세요!"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1159
 msgid "<link xlink:href=\"@@URL_RELPREFIX@@/doc/ko_KR.UTF-8/articles/problem-reports\">Writing FreeBSD Problem Reports</link> describes how to best formulate and submit a PR. In 2005 more than eleven thousand ports PRs were submitted! Following this article will greatly assist us in reducing the time needed to handle your PRs."
-msgstr ""
+msgstr "<link xlink:href=\"@@URL_RELPREFIX@@/doc/ko_KR.UTF-8/articles/problem-reports\">Writing FreeBSD Problem Reports</link>은 훌륭한 PR을 작성하고 제출하는 방법에 대해서 설명합니다.  2005년에는 11000개 이상의 포트 PR이 제출되었습니다!  이 글을 따라하는 것은 여러분의 PR을 다루는 데 필요한 시간을 절약해 준다는 점에서 큰 도움이 됩니다."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1165
 msgid "The <link xlink:href=\"http://www.FreeBSD.org/cgi/query-pr-summary.cgi?query\"> Problem Report database</link>."
-msgstr ""
+msgstr "<link xlink:href=\"http://www.FreeBSD.org/cgi/query-pr-summary.cgi?query\"> Problem Report database</link>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1168
 msgid "The <link xlink:href=\"http://portsmon.FreeBSD.org/\">FreeBSD Ports Monitoring System</link> can show you cross-referenced information about ports such as build errors and problem reports. If you are a maintainer you can use it to check on the build status of your ports. As a contributor you can use it to find broken and unmaintained ports that need to be fixed."
-msgstr ""
+msgstr "<link xlink:href=\"http://portsmon.FreeBSD.org/\">FreeBSD Ports Monitoring System</link>은 빌드 에러 또는 problem report와 같이 포트에 대한 상호 참조 정보를 보여줄 수 있습니다.  여러분이 관리자라면 이러한 정보를 여러분의 포트의 빌드 상태를 확인하는 데 사용할 수 있습니다.  contributor로서 여러분은 제대로 동작하지 않고 관리되지 않아서 고쳐질 필요가 있는 포트를 찾아보는 데 사용할 수 있습니다."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1175
 msgid "The <link xlink:href=\"http://portscout.FreeBSD.org\">FreeBSD Ports distfile scanner</link> can show you ports for which the distfiles are not fetchable. You can check on your own ports or use it to find ports that need their <varname>MASTER_SITES</varname> updated."
-msgstr ""
+msgstr "<link xlink:href=\"http://portscout.FreeBSD.org\">FreeBSD Ports distfile scanner</link>는 distfiles를 다운로드할 수 없는 포트를 보여줍니다.  여러분은 이를 여러분의 포트를 확인해 보거나 <varname>MASTER_SITES</varname>이 업데이트될 필요가 있는 포트를 찾아보는 데 사용할 수 있습니다."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1181
 msgid "<package>ports-mgmt/poudriere</package> is the most thorough way to test a port through the entire cycle of installation, packaging, and deinstallation. documentation is located at the <link xlink:href=\"https://fossil.etoilebsd.net/poudriere/\">poudriere home page</link>"
-msgstr ""
+msgstr "<package>ports-mgmt/poudriere</package>는 포트의 설치, 패키징, 그리고 제거까지의 전 과정을 전체적으로 테스트해볼 수 있는 방법입니다.  관련된 문서는 <link xlink:href=\"https://fossil.etoilebsd.net/poudriere/\">poudriere home page</link>에서 찾아볼 수 있습니다."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1187
 msgid "<citerefentry vendor=\"ports\"><refentrytitle>portlint</refentrytitle><manvolnum>1</manvolnum></citerefentry> is an application which can be used to verify that your port conforms to many important stylistic and functional guidelines. <application>portlint</application> is a simple heuristic application, so you should use it <emphasis>only as a guide</emphasis>. If <application>portlint</application> suggests changes which seem unreasonable, consult the <link xlink:href=\"@@URL_RELPREFIX@@/doc/ko_KR.UTF-8/books/porters-handbook\">Porter's Handbook</link> or ask for advice."
-msgstr ""
+msgstr "<citerefentry vendor=\"ports\"><refentrytitle>portlint</refentrytitle><manvolnum>1</manvolnum></citerefentry>는 여러분의 포트가 많은 중요한 외형적 그리고 기능적 지침을 준수하고 있는지를 검증하는 데 사용되는 애플리케이션입니다.  <application>portlint</application>는 단순한 휴리스틱 애플리케이션이기 때문에, 여러분은 이를 <emphasis>지침서의 역할로만</emphasis> 사용해야 합니다.  만약 <application>portlint</application>가 합리적이지 않아 보이는 수정을 제안한다면, <link xlink:href=\"@@URL_RELPREFIX@@/doc/ko_KR.UTF-8/books/porters-handbook\">Porter's Handbook</link>를 참고하거나 도움을 요청하세요."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1196
 msgid "The <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports\">FreeBSD ports mailing list</link> is for general ports-related discussion. It is a good place to ask for help. You can <link xlink:href=\"http://lists.freebsd.org/mailman/listinfo\">subscribe, or read and search the list archives</link>. Reading the archives of the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports-bugs\">FreeBSD ports bugs mailing list</link> and the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/cvs-ports\">FreeBSD CVS ports commit list</link> may also be of interest."
-msgstr ""
+msgstr "<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports\">FreeBSD ports mailing list</link>는 포트와 관련된 일반적인 논의가 이루어지는 곳입니다.  여기는 도움을 요청하기에 좋은 장소입니다.  여러분은 <link xlink:href=\"http://lists.freebsd.org/mailman/listinfo\">구독하거나, 리스트 아카이브를 읽어보고 검색해볼 수 있습니다</link>.  <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports-bugs\">FreeBSD ports bugs mailing list</link>와 <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/cvs-ports\">FreeBSD CVS ports commit list</link>의 아카이브를 읽어보는 것도 흥미로울 수 있습니다."
