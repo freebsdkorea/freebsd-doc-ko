@@ -2,7 +2,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/security/chapter.xml 47124 2015-07-28 17:22:22Z jmg $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/security/chapter.xml 47444 2015-09-27 21:42:43Z bcr $
 -->
 <chapter xmlns="http://docbook.org/ns/docbook"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
@@ -152,7 +152,7 @@
     <para>Systems and networks can be accessed without permission,
       sometimes by accident, or by remote attackers, and in some
       cases, via corporate espionage or former employees.  As a user,
-      it is important to prepare for and admit when a mistake has lead
+      it is important to prepare for and admit when a mistake has led
       to a security breach and report possible issues to the security
       team.  As an administrator, it is important to know of the
       threats and be prepared to mitigate them.</para>

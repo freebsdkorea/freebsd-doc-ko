@@ -16,7 +16,7 @@
      author to assign us the copyright.  For now, it is valuable
      content so it should stay.
 
-     $FreeBSD: head/en_US.ISO8859-1/books/developers-handbook/x86/chapter.xml 44678 2014-04-28 20:13:07Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/developers-handbook/x86/chapter.xml 47454 2015-09-28 22:10:41Z allanjude $
 -->
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="x86">
 
@@ -66,8 +66,8 @@ online course in assembly language, see Randall Hyde's
 <link xlink:href="http://webster.cs.ucr.edu/">Art
 of Assembly Language</link>; or if you prefer
 a printed book, take a look at Jeff Duntemann's
-<link xlink:href="http://www.int80h.org/cgi-bin/isbn?isbn=0471375233">Assembly
-Language Step-by-Step</link>). However,
+Assembly
+Language Step-by-Step (ISBN: 0471375233). However,
 once the chapter is finished, any assembly language programmer
 will be able to write programs for FreeBSD
 quickly and efficiently.

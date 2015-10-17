@@ -13,7 +13,7 @@
                  builds for the other languages, and we will poke fun of you
                  in public.
 
-     $FreeBSD: head/share/xml/authors.ent 47314 2015-08-27 02:56:18Z gjb $
+     $FreeBSD: head/share/xml/authors.ent 47595 2015-10-16 14:32:43Z bjk $
 -->
 
 <!-- FreeBSD Committers -->
@@ -189,6 +189,9 @@
 <!ENTITY a.attilio "Attilio Rao">
 <!ENTITY a.attilio.email "&a.attilio; <email xmlns='http://docbook.org/ns/docbook'>attilio@FreeBSD.org</email>">
 
+<!ENTITY a.araujo "Marcelo Araujo">
+<!ENTITY a.araujo.email "&a.araujo; <email xmlns='http://docbook.org/ns/docbook'>araujo@FreeBSD.org</email>">
+
 <!ENTITY a.avatar "Tai-hwa Liang">
 <!ENTITY a.avatar.email "&a.avatar; <email xmlns='http://docbook.org/ns/docbook'>avatar@FreeBSD.org</email>">
 
@@ -200,6 +203,9 @@
 
 <!ENTITY a.avl "Alexander Logvinov">
 <!ENTITY a.avl.email "&a.avl; <email xmlns='http://docbook.org/ns/docbook'>avl@FreeBSD.org</email>">
+
+<!ENTITY a.avos "Andriy Voskoboinyk">
+<!ENTITY a.avos.email "&a.avos; <email xmlns='http://docbook.org/ns/docbook'>avos@FreeBSD.org</email>">
 
 <!ENTITY a.awebster "Andrew Webster">
 <!ENTITY a.awebster.email "&a.awebster; <email xmlns='http://docbook.org/ns/docbook'>awebster@pubnix.net</email>">

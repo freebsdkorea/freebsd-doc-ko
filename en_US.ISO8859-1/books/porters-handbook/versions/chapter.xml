@@ -2,7 +2,7 @@
 
 <!--
      The FreeBSD Documentation Project
-     $FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/versions/chapter.xml 47364 2015-09-04 13:32:22Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/versions/chapter.xml 47593 2015-10-16 08:58:28Z mav $
 -->
 
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink=
@@ -5326,6 +5326,15 @@
 	</row>
 
 	<row>
+	  <entry>1002501</entry>
+	  <entry>8 October, 2015</entry>
+	  <entry>10-STABLE after merge of ZFS changes that affected
+	    the internal interface of zfeature_info structure (rev
+	    <revnumber>28857</revnumber>).</entry>
+	</row>
+
+
+	<row>
 	  <entry>1100000</entry>
 	  <entry>October 10, 2013</entry>
 	  <entry>11.0-CURRENT
@@ -5939,6 +5948,21 @@
 	  <entry>August 18, 2015</entry>
 	  <entry>11.0-CURRENT after import of jemalloc 4.0.0
 	    (rev <revnumber>286866</revnumber>).</entry>
+	</row>
+
+	<row>
+	  <entry>1100080</entry>
+	  <entry>October 5, 2015</entry>
+	  <entry>11.0-CURRENT after upgrading clang, llvm, lldb,
+	    compiler-rt and libc++ to 3.7.0 (rev
+	    <revnumber>288943</revnumber>).</entry> 
+	</row>
+
+	<row>
+	  <entry>1100081</entry>
+	  <entry>October 16, 2015</entry>
+	  <entry>11.0-CURRENT after undating ZFS to support resumable
+	    send/receive (rev <revnumber>r289362</revnumber>).</entry>
 	</row>
 
       </tbody>

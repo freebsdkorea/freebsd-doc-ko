@@ -2,7 +2,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/developers-handbook/tools/chapter.xml 46406 2015-04-01 06:25:57Z eadler $
+     $FreeBSD: head/en_US.ISO8859-1/books/developers-handbook/tools/chapter.xml 47513 2015-10-05 21:45:11Z jgh $
 -->
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="tools">
   <info><title>Programming Tools</title>
@@ -221,9 +221,8 @@
 	    <para>Logo is a language that is easy to learn, and has
 	      been used as an introductory programming language in
 	      various courses.  It is an excellent tool to work with
-	      when teaching programming in small ages, as it makes the
-	      creation of elaborate geometric shapes an easy task even
-	      for very small children.</para>
+	      when teaching programming to smaller age groups, as it makes
+	      creation of elaborate geometric shapes an easy task.</para>
 
 	    <para>The latest version of Logo for &os; is available from
 	      the Ports Collection in

@@ -8,7 +8,7 @@ that might make this chapter too large.
 -->
 <!--
      The FreeBSD Documentation Project
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/dtrace/chapter.xml 47087 2015-07-26 08:42:11Z dru $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/dtrace/chapter.xml 47550 2015-10-14 00:16:22Z junovitch $
 -->
 <!-- XXXTR: Should probably put links and resources here.  I'm
         nervous about this chapter as it may require a partial
@@ -56,7 +56,7 @@ that might make this chapter too large.
       provider, and to insert static probes into userland programs for
       later tracing.  Some ports, such as
       <package>databases/postgres-server</package> and
-      <package>lang/php5</package> have a &dtrace; option to enable
+      <package>lang/php56</package> have a &dtrace; option to enable
       static probes.  &os; 10.0-RELEASE has reasonably good userland
       &dtrace; support, but it is not considered production ready.  In
       particular, it is possible to crash traced programs.</para>

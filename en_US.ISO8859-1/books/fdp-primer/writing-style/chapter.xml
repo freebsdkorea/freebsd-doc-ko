@@ -28,7 +28,7 @@
      ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE
      POSSIBILITY OF SUCH DAMAGE.
 
-     $FreeBSD: head/en_US.ISO8859-1/books/fdp-primer/writing-style/chapter.xml 45974 2014-11-13 17:07:42Z jgh $
+     $FreeBSD: head/en_US.ISO8859-1/books/fdp-primer/writing-style/chapter.xml 47469 2015-10-01 14:55:39Z wblock $
 -->
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="writing-style">
   <title>Writing Style</title>
@@ -196,7 +196,7 @@
 	  <para>For example, commands:</para>
 
 	  <informalexample>
-	    <para>Wrong: Use the command <command>svn</command> to
+	    <para>Wrong: Use the <command>svn</command> command to
 	      update sources.</para>
 	  </informalexample>
 

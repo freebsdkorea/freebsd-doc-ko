@@ -8,11 +8,11 @@
 
   This file, and any imported stylesheets are licensed under the BSD license.
 
-  $FreeBSD: head/en_US.ISO8859-1/htdocs/layout/css/fixed.css 45135 2014-06-27 20:36:10Z gjb $
+  $FreeBSD: head/en_US.ISO8859-1/htdocs/layout/css/fixed.css 47419 2015-09-16 23:44:23Z gjb $
 */
 
 @import url("global.css");
-@import url("layout.css?20140627");
+@import url("layout.css?20150916");
 @import url("text.css");
 @import url("navigation.css");
 @import url("table.css");

@@ -2,7 +2,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/pkg-files/chapter.xml 45579 2014-09-09 15:51:33Z mat $
+     $FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/pkg-files/chapter.xml 47397 2015-09-09 13:08:02Z mat $
 -->
 
 <chapter xmlns="http://docbook.org/ns/docbook"
@@ -179,7 +179,8 @@
       <varname>LOCALBASE</varname>, <varname>DATADIR</varname>,
       <varname>DOCSDIR</varname>, <varname>EXAMPLESDIR</varname>,
       <varname>WWWDIR</varname>, and <varname>ETCDIR</varname>.  Any
-      line beginning with <literal>@comment </literal> will be deleted
+      line beginning with <literal>@comment</literal> followed by a
+      space, will be deleted
       from resulting files after a variable substitution.</para>
 
     <para>This example replaces

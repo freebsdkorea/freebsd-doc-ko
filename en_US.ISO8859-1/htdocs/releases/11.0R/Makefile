@@ -1,4 +1,4 @@
-# $FreeBSD: head/en_US.ISO8859-1/htdocs/releases/11.0R/Makefile 46298 2015-02-26 21:57:14Z gjb $
+# $FreeBSD: head/en_US.ISO8859-1/htdocs/releases/11.0R/Makefile 47527 2015-10-09 15:41:29Z gjb $
 
 .if exists(../Makefile.conf)
 .include "../Makefile.conf"
@@ -7,7 +7,8 @@
 .include "../Makefile.inc"
 .endif
 
-DOCS=	schedule.xml \
+DOCS=	index.xml \
+	schedule.xml \
 	todo.xml
 
 DATA=	docbook.css

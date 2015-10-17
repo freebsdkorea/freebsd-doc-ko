@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <advisories>
     <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">
-      $FreeBSD: head/share/xml/advisories.xml 47340 2015-09-02 21:00:38Z delphij $
+      $FreeBSD: head/share/xml/advisories.xml 47456 2015-09-29 18:14:20Z delphij $
     </cvs:keyword>
 
   <year>
@@ -9,6 +9,14 @@
 
     <month>
       <name>9</name>
+
+      <day>
+        <name>29</name>
+
+        <advisory>
+          <name>FreeBSD-SA-15:24.rpcbind</name>
+        </advisory>
+      </day>
 
       <day>
         <name>2</name>

@@ -2,7 +2,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/eresources/chapter.xml 46832 2015-06-16 04:42:19Z allanjude $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/eresources/chapter.xml 47452 2015-09-28 19:28:24Z gjb $
 -->
 <appendix xmlns="http://docbook.org/ns/docbook"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
@@ -638,6 +638,12 @@
 	    <row>
 	      <entry>&a.translators.name;</entry>
 	      <entry>Translating &os; documents and programs</entry>
+	    </row>
+
+	    <row>
+	      <entry>&a.transport.name;</entry>
+	      <entry>Discussions of transport level network protocols
+		in &os;</entry>
 	    </row>
 
 	    <row>
@@ -2012,6 +2018,22 @@
 	      This could include the state of Clang and GCC, but also
 	      pieces of software such as assemblers, linkers and
 	      debuggers.</para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term>&a.transport.name;</term>
+
+	  <listitem>
+	    <para><emphasis>Discussions of transport level network
+		protocols in &os;</emphasis></para>
+
+	    <para>The transport mailing list exists for the discussion
+	      of issues and designs around the transport level
+	      protocols in the &os; network stack, including TCP,
+	      SCTP and UDP.  Other networking topics, including
+	      driver specific and network protocol issues should be
+	      discussed on the &a.net;.</para>
 	  </listitem>
 	</varlistentry>
 

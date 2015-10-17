@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!--
      The FreeBSD Documentation Project
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/mac/chapter.xml 46052 2014-12-02 14:36:52Z bcr $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/mac/chapter.xml 47487 2015-10-02 14:31:38Z dru $
 -->
 <chapter xmlns="http://docbook.org/ns/docbook"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
@@ -663,7 +663,7 @@ test: biba/high</screen>
   <sect1 xml:id="mac-policies">
     <title>Available MAC Policies</title>
 
-    <para>Beginning with &os;&nbsp;8.0, the default &os; kernel
+    <para>The default &os; kernel
       includes <literal>options MAC</literal>.  This means that every
       module included with the <acronym>MAC</acronym> framework can be
       loaded with <command>kldload</command> as a run-time kernel

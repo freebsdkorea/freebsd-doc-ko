@@ -15,7 +15,7 @@
   <head>
       <title>&title;</title>
 
-      <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">$FreeBSD: head/en_US.ISO8859-1/htdocs/releng/index.xml 47343 2015-09-02 21:15:03Z gjb $</cvs:keyword>
+      <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">$FreeBSD: head/en_US.ISO8859-1/htdocs/releng/index.xml 47524 2015-10-08 13:35:11Z gjb $</cvs:keyword>
     </head>
 
     <body class="navinclude.developers">
@@ -47,6 +47,12 @@
       <th>Date</th>
       <th>Event</th>
       <th>Information</th>
+    </tr>
+
+    <tr>
+      <td>March&nbsp;2016</td>
+      <td>&os;&nbsp;10.3</td>
+      <td><a href="&base;/releases/10.3R/schedule.html">Target Schedule</a></td>
     </tr>
 
     <tr>

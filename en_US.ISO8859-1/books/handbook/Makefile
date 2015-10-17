@@ -1,5 +1,5 @@
 #
-# $FreeBSD: head/en_US.ISO8859-1/books/handbook/Makefile 47275 2015-08-19 01:55:52Z gjb $
+# $FreeBSD: head/en_US.ISO8859-1/books/handbook/Makefile 47551 2015-10-14 04:10:21Z bjk $
 #
 # Build the FreeBSD Handbook.
 #
@@ -93,6 +93,11 @@ IMAGES_EN+= mail/pine2.scr
 IMAGES_EN+= mail/pine3.scr
 IMAGES_EN+= mail/pine4.scr
 IMAGES_EN+= mail/pine5.scr
+IMAGES_EN+= install/example-dir1.eps
+IMAGES_EN+= install/example-dir2.eps
+IMAGES_EN+= install/example-dir3.eps
+IMAGES_EN+= install/example-dir4.eps
+IMAGES_EN+= install/example-dir5.eps
 IMAGES_EN+= security/ipsec-network.pic
 IMAGES_EN+= security/ipsec-crypt-pkt.pic
 IMAGES_EN+= security/ipsec-encap-pkt.pic

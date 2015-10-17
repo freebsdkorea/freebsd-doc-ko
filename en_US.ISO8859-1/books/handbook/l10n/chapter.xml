@@ -2,7 +2,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/l10n/chapter.xml 47082 2015-07-25 16:32:50Z dru $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/l10n/chapter.xml 47400 2015-09-10 14:20:57Z wblock $
 -->
 <chapter xmlns="http://docbook.org/ns/docbook"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
@@ -317,8 +317,7 @@ me:\
 	    new users or specified for an individual user.</para>
 
 	  <para>If all new users use the same language, set
-	    <literal>defaultclass =
-	      <replaceable>language</replaceable></literal> in
+	    <literal>defaultclass=<replaceable>language</replaceable></literal> in
 	    <filename>/etc/adduser.conf</filename>.</para>
 
 	  <para>To override this setting when creating a user, either

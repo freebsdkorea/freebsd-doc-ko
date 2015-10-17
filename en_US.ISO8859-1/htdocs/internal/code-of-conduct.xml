@@ -8,14 +8,10 @@
   <head>
     <title>&title;</title>
 
-    <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">$FreeBSD: head/en_US.ISO8859-1/htdocs/internal/code-of-conduct.xml 47141 2015-08-01 09:28:08Z matthew $</cvs:keyword>
+    <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">$FreeBSD: head/en_US.ISO8859-1/htdocs/internal/code-of-conduct.xml 47523 2015-10-08 10:00:13Z matthew $</cvs:keyword>
   </head>
 
   <body class="navinclude.docs">
-
-    <blockquote> Those in the &os; community should have a right to
-      be free from hate speech, harassment and abuse, but not a right
-      not to be offended.</blockquote>
 
     <h2>Introduction</h2>
 
@@ -96,7 +92,7 @@
       with the &os; project.</p>
 
     <p>We will not tolerate any member of the community, either
-      publically or privately giving aid or encouragement to any
+      publicly or privately, giving aid or encouragement to any
       third party to behave in such a way towards any members of
       the &os; community.</p>
 

@@ -2,7 +2,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/serialcomms/chapter.xml 46821 2015-06-12 15:08:26Z bcr $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/serialcomms/chapter.xml 47492 2015-10-02 21:21:52Z jgh $
 -->
 <chapter xmlns="http://docbook.org/ns/docbook"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
@@ -1077,7 +1077,7 @@ ttyu5   "/usr/libexec/getty std.19200"  vt100  on insecure</programlisting>
       </indexterm>
 
       <para>There are two schools of thought regarding dial-up modems.
-	One confiuration method is to set the modems and systems so
+	One configuration method is to set the modems and systems so
 	that no matter at what speed a remote user dials in, the
 	dial-in <acronym>RS-232</acronym> interface runs at a locked
 	speed.  The benefit of this configuration is that the remote

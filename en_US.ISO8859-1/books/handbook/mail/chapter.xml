@@ -2,7 +2,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/mail/chapter.xml 47092 2015-07-26 09:17:32Z dru $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/mail/chapter.xml 47505 2015-10-05 13:05:43Z dru $
 -->
 <chapter xmlns="http://docbook.org/ns/docbook"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
@@ -42,7 +42,7 @@
       </listitem>
 
       <listitem>
-	<para>Where basic <application>sendmail</application>
+	<para>Where basic <application>Sendmail</application>
 	  configuration files are located in &os;.</para>
       </listitem>
 
@@ -59,7 +59,7 @@
       <listitem>
 	<para>How to install and configure an alternate Mail Transfer
 	  Agent, replacing
-	  <application>sendmail</application>.</para>
+	  <application>Sendmail</application>.</para>
       </listitem>
 
       <listitem>
@@ -359,7 +359,7 @@ FreeBSD.org mail is handled by 10 mx1.FreeBSD.org</screen>
 	    addresses can be found in the &os; sample configuration,
 	    <filename>/etc/mail/access.sample</filename>:</para>
 
-	  <programlisting># $FreeBSD: head/en_US.ISO8859-1/books/handbook/mail/chapter.xml 47092 2015-07-26 09:17:32Z dru $
+	  <programlisting># $FreeBSD: head/en_US.ISO8859-1/books/handbook/mail/chapter.xml 47505 2015-10-05 13:05:43Z dru $
 #
 # Mail relay access control list.  Default is to reject mail unless the
 # destination is local, or listed in /etc/mail/local-host-names
@@ -690,7 +690,7 @@ daily_submit_queuerun="NO"</programlisting>
       <para>The default <filename>/etc/mail/mailer.conf</filename>
 	looks like this:</para>
 
-      <programlisting># $FreeBSD: head/en_US.ISO8859-1/books/handbook/mail/chapter.xml 47092 2015-07-26 09:17:32Z dru $
+      <programlisting># $FreeBSD: head/en_US.ISO8859-1/books/handbook/mail/chapter.xml 47505 2015-10-05 13:05:43Z dru $
 #
 # Execute the "real" sendmail program, named /usr/libexec/sendmail/sendmail
 #
@@ -1060,18 +1060,12 @@ freefall		MX	20	who.cdrom.com</programlisting>
 	<listitem>
 	  <para>Add the hosts to
 	    <filename>/etc/mail/local-host-names</filename> when
-	    using the <literal>FEATURE(use_cw_file)</literal>.  For
-	    versions of <application>Sendmail</application> earlier
-	    than 8.10, edit <filename>/etc/sendmail.cw</filename>
-	    instead.</para>
+	    using the <literal>FEATURE(use_cw_file)</literal>.</para>
 	</listitem>
 
 	<listitem>
 	  <para>Add a <literal>Cwyour.host.com</literal> line to
-	    <filename>/etc/sendmail.cf</filename>.  For
-	    <application>Sendmail</application> 8.10 or higher, add
-	    that line to
-	    <filename>/etc/mail/sendmail.cf</filename>.</para>
+	    <filename>/etc/sendmail.cf</filename>.</para>
 	</listitem>
       </itemizedlist>
     </sect2>
@@ -1292,7 +1286,7 @@ define(`confDELIVERY_MODE',`deferred')dnl</programlisting>
 	<screen>&prompt.root; <userinput>service saslauthd start</userinput></screen>
 
 	<para>This daemon serves as a broker for
-	  <application>sendmail</application> to authenticate against
+	  <application>Sendmail</application> to authenticate against
 	  the &os; &man.passwd.5; database.  This saves the trouble of
 	  creating a new set of usernames and passwords for each user
 	  that needs to use <acronym>SMTP</acronym> authentication,

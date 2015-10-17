@@ -2,7 +2,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/plist/chapter.xml 46669 2015-05-08 12:19:09Z mat $
+     $FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/plist/chapter.xml 47542 2015-10-12 12:03:57Z mat $
 -->
 
 <chapter xmlns="http://docbook.org/ns/docbook"
@@ -27,8 +27,8 @@
       numeric revision of the operating system (for example,
       <literal>4.9</literal>).  <literal>%%PERL_VERSION%%</literal>
       and <literal>%%PERL_VER%%</literal> is the full version number
-      of <command>perl</command> (for example, <literal>5.8.9</literal>).
-      Several other
+      of <command>perl</command> (for example,
+      <literal>5.8.9</literal>).  Several other
       <literal>%%<replaceable>VARS</replaceable>%%</literal> related
       to port's documentation files are described in <link
 	linkend="install-documentation">the relevant
@@ -54,8 +54,8 @@ PLIST_SUB=	OCTAVE_VERSION=${OCTAVE_VERSION}</programlisting>
     <para>in the <filename>Makefile</filename> and use
       <literal>%%OCTAVE_VERSION%%</literal> wherever the version shows
       up in <filename>pkg-plist</filename>.  When
-      the port is upgraded, it will not be necessary to edit dozens (or in some
-      cases, hundreds) of lines in
+      the port is upgraded, it will not be necessary to edit dozens
+      (or in some cases, hundreds) of lines in
       <filename>pkg-plist</filename>.</para>
 
     <para>If files are installed conditionally on the options
@@ -113,7 +113,8 @@ OPTIONS_SUB=	yes</programlisting>
 
     <para>From time to time, using <varname>OPTIONS_SUB</varname>
       is not enough.  In those cases, adding a specific
-      <literal><replaceable>TAG</replaceable></literal> to <varname>PLIST_SUB</varname>
+      <literal><replaceable>TAG</replaceable></literal> to
+      <varname>PLIST_SUB</varname>
       inside the <filename>Makefile</filename> with a special
       value of <literal>@comment</literal>, makes package tools to
       ignore the line.  For instance, if some files are only installed
@@ -175,13 +176,13 @@ PLIST_SUB+=	X11I386="@comment "
       <filename>PREFIX/etc</filename> (or elsewhere) do
       <emphasis>not</emphasis> list them in
       <filename>pkg-plist</filename>.  That will cause
-      <command>pkg delete</command> to remove files that have been carefully
-      edited by the user, and a re-installation will wipe them
-      out.</para>
+      <command>pkg delete</command> to remove files that have been
+      carefully edited by the user, and a re-installation will wipe
+      them out.</para>
 
     <para>Instead, install sample files with a
       <filename><replaceable>filename</replaceable>.sample</filename>
-      extension. The <literal>@sample</literal> macro automates this,
+      extension.  The <literal>@sample</literal> macro automates this,
       see <xref linkend="plist-keywords-sample"/> for what it does
       exactly.  For each sample file, add a line to
       <filename>pkg-plist</filename>:</para>
@@ -190,8 +191,9 @@ PLIST_SUB+=	X11I386="@comment "
 
     <para>If there is a very good reason not to install a working
       configuration file by default, only list the sample filename in
-      <filename>pkg-plist</filename>, without the <literal>@sample
-	</literal> part, and add a <link
+      <filename>pkg-plist</filename>, without the
+      <literal>@sample</literal> followed by a space part, and add a
+      <link
 	linkend="porting-message">message</link> pointing out that the
       user must copy and edit the file before the software will
       work.</para>
@@ -210,31 +212,19 @@ PLIST_SUB+=	X11I386="@comment "
     <note>
       <para>The sample configuration files should always have the
 	<filename>.sample</filename> suffix.  If for some historical
-	reason using the standard suffix is not possible, use
+	reason using the standard suffix is not possible, or if the
+	sample files come from some other directory, use
 	this construct:</para>
 
-      <programlisting>@unexec if cmp -s %D/etc/orbit.conf-dist %D/etc/orbit.conf; then rm -f %D/etc/orbit.conf; fi
-etc/orbit.conf-dist
-@exec if [ ! -f %D/etc/orbit.conf ] ; then cp -p %D/%F %B/orbit.conf; fi</programlisting>
+      <programlisting>@sample etc/orbit.conf-dist etc/orbit.conf</programlisting>
 
-      <para>The order of these lines is important.  On deinstallation,
-	the sample file is compared to the actual configuration file.
-	If these files are identical, no changes have been made by the
-	user and the actual file can be safely deleted.  Because the
-	sample file must still exist for the comparison, the
-	<literal>@unexec</literal> line comes before the sample
-	configuration file name.  On installation, if an actual
-	configuration file is not already present, the sample file is
-	copied to the actual file.  The sample file must be present
-	before it can be copied, so the <literal>@exec</literal> line
-	comes after the sample configuration file name.</para>
+      <para>or</para>
 
-      <para>To debug any issues, temporarily remove the
-	<literal>-s</literal> flag to &man.cmp.1; for more
-	output.</para>
+      <programlisting>@sample %%EXAMPLESDIR%%/orbit.conf etc/orbit.conf</programlisting>
 
-      <para>See &man.pkg-create.8; for more information on
-	<literal>%D</literal> and related substitution markers.</para>
+      <para>The format is <literal>@sample
+	  <replaceable>sample-file</replaceable>
+	  <replaceable>actual-config-file</replaceable></literal>.</para>
     </note>
   </sect1>
 
@@ -270,8 +260,9 @@ etc/orbit.conf-dist
       the package list changes drastically based upon optional
       features of the port (and thus maintaining a static package list
       is infeasible), or ports which change the package list based
-      upon the version of dependent software used.  For example, ports which
-      generate docs with <application>Javadoc</application>.</para>
+      upon the version of dependent software used.  For example, ports
+      which generate docs with
+      <application>Javadoc</application>.</para>
   </sect1>
 
   <sect1 xml:id="plist-autoplist">
@@ -325,13 +316,42 @@ etc/orbit.conf-dist
 	after installation and deinstallation.</para>
     </sect2>
 
+    <sect2 xml:id="plist-keywords-fc">
+      <title><literal>@fc</literal>
+	<replaceable>directory</replaceable></title>
+
+      <para>Add a <literal>@dir</literal> entry for the directory
+	passed as an argument, and run <command>fc-cache -fs</command>
+	on that directory after installation and
+	deinstallation.</para>
+    </sect2>
+
     <sect2 xml:id="plist-keywords-fcfontsdir">
       <title><literal>@fcfontsdir</literal>
 	<replaceable>directory</replaceable></title>
 
       <para>Add a <literal>@dir</literal> entry for the
 	directory passed as an argument, and run <command>fc-cache
-	  -s</command>, <command>mkfontscale</command> and
+	  -fs</command>, <command>mkfontscale</command> and
+	<command>mkfontdir</command> on that directory after
+	installation and deinstallation.  Additionally, on
+	deinstallation, it removes the
+	<filename>fonts.scale</filename> and
+	<filename>fonts.dir</filename> cache files if they are
+	empty.  This keyword is equivalent to adding both <link
+	  linkend="plist-keywords-fc"><literal>@fc</literal>
+	  <replaceable>directory</replaceable></link> and <link
+	  linkend="plist-keywords-fontsdir"><literal>@fontsdir</literal>
+	  <replaceable>directory</replaceable></link>.</para>
+    </sect2>
+
+    <sect2 xml:id="plist-keywords-fontsdir">
+      <title><literal>@fontsdir</literal>
+	<replaceable>directory</replaceable></title>
+
+      <para>Add a <literal>@dir</literal> entry for the
+	directory passed as an argument, and run
+	<command>mkfontscale</command> and
 	<command>mkfontdir</command> on that directory after
 	installation and deinstallation.  Additionally, on
 	deinstallation, it removes the
@@ -378,17 +398,21 @@ etc/orbit.conf-dist
 
     <sect2 xml:id="plist-keywords-sample">
       <title><literal>@sample</literal>
-	<replaceable>file</replaceable></title>
+	<replaceable>file</replaceable>
+	[<replaceable>file</replaceable>]</title>
 
-      <para>Add the file passed as argument to the plist.</para>
+      <para>This is used to handle installation of configuration
+	files, through example files bundled with the package.  The
+	<quote>actual</quote>, non-sample, file is either the second
+	filename, if present, or the first filename without the
+	<filename>.sample</filename> extension.</para>
 
-      <para>On installation, check for a <quote>real</quote> file with
-	just the base name (the name without the
-	<filename>.sample</filename> extension).  If the real file is
-	not found, copy the sample file to the base file name.  On
-	deinstallation, remove the configuration file if it has not
-	been modified.  See <xref linkend="plist-config"/> for more
-	information.</para>
+      <para>This does three things.  First, add the first file passed
+	as argument, the sample file, to the plist.  Then, on
+	installation, if the actual file is not found, copy the sample
+	file to the actual file.  And finally, on deinstallation,
+	remove the actual file if it has not been modified.  See <xref
+	  linkend="plist-config"/> for more information.</para>
     </sect2>
 
     <sect2 xml:id="plist-keywords-shared-mime-info">
@@ -412,6 +436,21 @@ etc/orbit.conf-dist
 	<filename>/etc/shells</filename>.</para>
     </sect2>
 
+    <sect2 xml:id="plist-keywords-terminfo">
+      <title><literal>@terminfo</literal></title>
+
+      <para>Do not use by itself.  If the port installs
+	<filename><replaceable>*</replaceable>.terminfo</filename>
+	files, add <link linkend="uses-terminfo">USES=terminfo</link>
+	to its <filename>Makefile</filename>.</para>
+
+      <para>On installation and deinstallation, if
+	<command>tic</command> is present, refresh
+	<filename>${PREFIX}/share/misc/terminfo.db</filename> from the
+	<filename><replaceable>*</replaceable>.terminfo</filename>
+	files in <filename>${PREFIX}/share/misc</filename>.</para>
+    </sect2>
+
     <sect2 xml:id="plist-keywords-base">
       <title>Base Keywords</title>
 
@@ -431,21 +470,67 @@ etc/orbit.conf-dist
 	<programlisting>@(,games,2755) sbin/daemon</programlisting>
       </sect3>
 
-      <sect3 xml:id="plist-keywords-base-cwd">
-	<title><literal>@cwd</literal>
-	  [<replaceable>directory</replaceable>] (Deprecated)</title>
-
-	<para>Set the internal directory pointer to point to
-	  directory.  All subsequent filenames are assumed relative to
-	  this directory.</para>
-      </sect3>
-
       <sect3 xml:id="plist-keywords-base-exec">
-	<title><literal>@exec</literal>
+	<title><literal>@preexec</literal>
+	  <replaceable>command</replaceable>,
+	  <literal>@postexec</literal>
+	  <replaceable>command</replaceable>,
+	  <literal>@preunexec</literal>
+	  <replaceable>command</replaceable>,
+	  <literal>@postunexec</literal>
 	  <replaceable>command</replaceable></title>
 
 	<para>Execute <replaceable>command</replaceable> as part of
-	  the unpacking process.  If command contains any of these
+	  the package installation or deinstallation process.</para>
+
+	<variablelist>
+	  <varlistentry>
+	    <term><literal>@preexec</literal>
+	      <replaceable>command</replaceable></term>
+
+	    <listitem>
+	      <para>Execute <replaceable>command</replaceable> as part
+		of the <filename>pre-install</filename>
+		scripts.</para>
+	    </listitem>
+	  </varlistentry>
+
+	  <varlistentry>
+	    <term><literal>@postexec</literal>
+	      <replaceable>command</replaceable></term>
+
+	    <listitem>
+	      <para>Execute <replaceable>command</replaceable> as part
+		of the <filename>post-install</filename>
+		scripts.</para>
+	    </listitem>
+	  </varlistentry>
+
+	  <varlistentry>
+	    <term><literal>@preunexec</literal>
+	      <replaceable>command</replaceable></term>
+
+	    <listitem>
+	      <para>Execute <replaceable>command</replaceable> as part
+		of the <filename>pre-deinstall</filename>
+		scripts.</para>
+	    </listitem>
+	  </varlistentry>
+
+	  <varlistentry>
+	    <term><literal>@postunexec</literal>
+	      <replaceable>command</replaceable></term>
+
+	    <listitem>
+	      <para>Execute <replaceable>command</replaceable> as part
+		of the <filename>post-deinstall</filename>
+		scripts.</para>
+	    </listitem>
+	  </varlistentry>
+	</variablelist>
+
+	<para>If <replaceable>command</replaceable> contains
+	  any of these
 	  sequences somewhere in it, they are expanded
 	  inline.  For these examples, assume that
 	  <literal>@cwd</literal> is set to
@@ -495,22 +580,6 @@ etc/orbit.conf-dist
 	    </listitem>
 	  </varlistentry>
 	</variablelist>
-      </sect3>
-
-      <sect3 xml:id="plist-keywords-base-unexec">
-	<title><literal>@unexec</literal>
-	  <replaceable>command</replaceable></title>
-
-	<para>Execute <replaceable>command</replaceable> as part of
-	  the deinstallation process.  Expansion of special
-	  <literal>%</literal> sequences is the same as for
-	  <literal>@exec</literal>.  This command is not executed
-	  during the package add, as <literal>@exec</literal> is, but
-	  rather when the package is deleted.  This is useful for
-	  deleting links and other ancillary files that were created
-	  as a result of adding the package, but not directly known to
-	  the package's table of contents (and hence not automatically
-	  removable).</para>
       </sect3>
 
       <sect3 xml:id="plist-keywords-base-mode">
@@ -576,6 +645,17 @@ etc/orbit.conf-dist
 	  mode.</para>
       </sect3>
 
+      <sect3 xml:id="plist-keywords-base-exec-deprecated">
+	<title><literal>@exec</literal>
+	  <replaceable>command</replaceable>,
+	  <literal>@unexec</literal>
+	  <replaceable>command</replaceable> (Deprecated)</title>
+
+	<para>Execute <replaceable>command</replaceable> as part of
+	  the installation or deinstallation process.  Please use
+	  <xref linkend="plist-keywords-base-exec"/> instead.</para>
+      </sect3>
+
       <sect3 xml:id="plist-keywords-base-dirrm">
 	<title><literal>@dirrm</literal>
 	  <replaceable>directory</replaceable> (Deprecated)</title>
@@ -604,200 +684,268 @@ etc/orbit.conf-dist
 	directory.  The settings for each keyword are stored in a
 	<acronym>UCL</acronym> file named
 	<filename><replaceable>keyword</replaceable>.ucl</filename>.
-	The file must contain at least one of the next
-	sections:</para>
+	The file must contain at least one of these sections:</para>
 
-      <variablelist>
-	<varlistentry xml:id="plist-keywords-attributes">
-	  <term><literal>attributes</literal></term>
+      <itemizedlist>
+	<listitem>
+	  <para><literal>attributes</literal></para>
+	</listitem>
 
-	  <listitem>
-	    <para>Changes the owner, group, or mode used by the
-	      keyword.  Contains an associative array where the
-	      possible keys are <literal>owner</literal>,
-	      <literal>group</literal>, and <literal>mode</literal>.
-	      The values are, respectively, a user name, a group name,
-	      and a file mode.  For example:</para>
+	<listitem>
+	  <para><literal>action</literal></para>
+	</listitem>
 
-	    <programlisting>attributes: { owner: "games", group: "games", mode: 0555 }</programlisting>
-	  </listitem>
-	</varlistentry>
+	<listitem>
+	  <para><literal>pre-install</literal></para>
+	</listitem>
 
-	<varlistentry xml:id="plist-keywords-action">
-	  <term><literal>action</literal></term>
+	<listitem>
+	  <para><literal>post-install</literal></para>
+	</listitem>
 
-	  <listitem>
-	    <para>Defines what happens to the keyword's parameter.
-	      Contains an array where the possible values are:</para>
+	<listitem>
+	  <para><literal>pre-deinstall</literal></para>
+	</listitem>
 
-	    <variablelist>
-	      <varlistentry>
-		<term><literal>setprefix</literal></term>
+	<listitem>
+	  <para><literal>post-deinstall</literal></para>
+	</listitem>
 
-		<listitem>
-		  <para>Set the prefix for the next plist
-		    entries.</para>
-		</listitem>
-	      </varlistentry>
+	<listitem>
+	  <para><literal>pre-upgrade</literal></para>
+	</listitem>
 
-	      <varlistentry>
-		<term><literal>dir</literal></term>
+	<listitem>
+	  <para><literal>post-upgrade</literal></para>
+	</listitem>
+      </itemizedlist>
 
-		<listitem>
-		  <para>Register a directory to be created on
-		    install and removed on deinstall.</para>
-		</listitem>
-	      </varlistentry>
+      <sect3 xml:id="plist-keywords-attributes">
+	<title><literal>attributes</literal></title>
 
-	      <varlistentry>
-		<term><literal>dirrm</literal></term>
+	<para>Changes the owner, group, or mode used by the keyword.
+	  Contains an associative array where the possible keys are
+	  <literal>owner</literal>, <literal>group</literal>, and
+	  <literal>mode</literal>.  The values are, respectively, a
+	  user name, a group name, and a file mode.  For
+	  example:</para>
 
-		<listitem>
-		  <para>Register a directory to be deleted on
-		    deinstall.  Deprecated.</para>
-		</listitem>
-	      </varlistentry>
+	<programlisting>attributes: { owner: "games", group: "games", mode: 0555 }</programlisting>
+      </sect3>
 
-	      <varlistentry>
-		<term><literal>dirrmtry</literal></term>
+      <sect3 xml:id="plist-keywords-action">
+	<title><literal>action</literal></title>
 
-		<listitem>
-		  <para>Register a directory to try and deleted on
-		    deinstall.  Deprecated.</para>
-		</listitem>
-	      </varlistentry>
+	<para>Defines what happens to the keyword's parameter.
+	  Contains an array where the possible values are:</para>
 
-	      <varlistentry>
-		<term><literal>file</literal></term>
+	<variablelist>
+	  <varlistentry>
+	    <term><literal>setprefix</literal></term>
 
-		<listitem>
-		  <para>Register a file.</para>
-		</listitem>
-	      </varlistentry>
+	    <listitem>
+	      <para>Set the prefix for the next plist entries.</para>
+	    </listitem>
+	  </varlistentry>
 
-	      <varlistentry>
-		<term><literal>setmode</literal></term>
+	  <varlistentry>
+	    <term><literal>dir</literal></term>
 
-		<listitem>
-		  <para>Set the mode for the next plist
-		    entries.</para>
-		</listitem>
-	      </varlistentry>
+	    <listitem>
+	      <para>Register a directory to be created on install and
+		removed on deinstall.</para>
+	    </listitem>
+	  </varlistentry>
 
-	      <varlistentry>
-		<term><literal>setowner</literal></term>
+	  <varlistentry>
+	    <term><literal>dirrm</literal></term>
 
-		<listitem>
-		  <para>Set the owner for the next plist
-		    entries.</para>
-		</listitem>
-	      </varlistentry>
+	    <listitem>
+	      <para>Register a directory to be deleted on deinstall.
+		Deprecated.</para>
+	    </listitem>
+	  </varlistentry>
 
-	      <varlistentry>
-		<term><literal>setgroup</literal></term>
+	  <varlistentry>
+	    <term><literal>dirrmtry</literal></term>
 
-		<listitem>
-		  <para>Set the group for the next plist
-		    entries.</para>
-		</listitem>
-	      </varlistentry>
+	    <listitem>
+	      <para>Register a directory to try and deleted on
+		deinstall.  Deprecated.</para>
+	    </listitem>
+	  </varlistentry>
 
-	      <varlistentry>
-		<term><literal>comment</literal></term>
+	  <varlistentry>
+	    <term><literal>file</literal></term>
 
-		<listitem>
-		  <para>Does not do anything, equivalent to not
-		    entering an <literal>action</literal>
-		    section.</para>
-		</listitem>
-	      </varlistentry>
+	    <listitem>
+	      <para>Register a file.</para>
+	    </listitem>
+	  </varlistentry>
 
-	      <varlistentry>
-		<term><literal>ignore_next</literal></term>
+	  <varlistentry>
+	    <term><literal>setmode</literal></term>
 
-		<listitem>
-		  <para>Ignore the next entry in the plist.</para>
-		</listitem>
-	      </varlistentry>
-	    </variablelist>
-	  </listitem>
-	</varlistentry>
+	    <listitem>
+	      <para>Set the mode for the next plist entries.</para>
+	    </listitem>
+	  </varlistentry>
 
-	<varlistentry xml:id="plist-keywords-pre-post">
-	  <term><literal>pre-install</literal></term>
-	  <term><literal>post-install</literal></term>
-	  <term><literal>pre-deinstall</literal></term>
-	  <term><literal>post-deinstall</literal></term>
-	  <term><literal>pre-upgrade</literal></term>
-	  <term><literal>post-upgrade</literal></term>
+	  <varlistentry>
+	    <term><literal>setowner</literal></term>
 
-	  <listitem>
-	    <para>These keywords contains a &man.sh.1; script to be
-	      executed before or after installation, deinstallation,
-	      or upgrade of the package.  In addition to the usual
-	      <literal>@exec</literal>
-	      <literal>%<replaceable>foo</replaceable></literal>
-	      placeholders described in <xref
-		linkend="plist-keywords-base-exec"/>, there is a new
-	      one, <literal>%@</literal>, which represents the
-	      argument of the keyword.</para>
-	  </listitem>
-	</varlistentry>
-      </variablelist>
+	    <listitem>
+	      <para>Set the owner for the next plist entries.</para>
+	    </listitem>
+	  </varlistentry>
 
-      <example xml:id="plist-keywords-fc-example">
-	<title>Example of a <literal>@dirrmtryecho</literal>
-	  Keyword</title>
+	  <varlistentry>
+	    <term><literal>setgroup</literal></term>
 
-	<para>This keyword does two things, it adds a
-	  <literal>@dirrmtry
-	    <replaceable>directory</replaceable></literal> line to the
-	  packing list, and echoes the fact that the directory is
-	  removed when deinstalling the package.</para>
+	    <listitem>
+	      <para>Set the group for the next plist entries.</para>
+	    </listitem>
+	  </varlistentry>
 
-	<programlisting>actions: [dirrmtry]
+	  <varlistentry>
+	    <term><literal>comment</literal></term>
+
+	    <listitem>
+	      <para>Does not do anything, equivalent to not entering
+		an <literal>action</literal> section.</para>
+	    </listitem>
+	  </varlistentry>
+
+	  <varlistentry>
+	    <term><literal>ignore_next</literal></term>
+
+	    <listitem>
+	      <para>Ignore the next entry in the plist.</para>
+	    </listitem>
+	  </varlistentry>
+	</variablelist>
+      </sect3>
+
+      <sect3 xml:id="plist-keywords-arguments">
+	<title><literal>arguments</literal></title>
+
+	<para>If set to <literal>true</literal>, adds argument
+	  handling, splitting the whole line, <literal>%@</literal>,
+	  into numbered arguments, <literal>%1</literal>,
+	  <literal>%2</literal>, and so on.  For example, for this
+	  line:</para>
+
+	<programlisting>@foo some.content other.content</programlisting>
+
+	<para><literal>%1</literal> and <literal>%2</literal> will
+	  contain:</para>
+
+	<programlisting>some.content
+other.content</programlisting>
+
+	<para>It also affects how the <link
+	    linkend="plist-keywords-action"><literal>action</literal></link>
+	  entry works.  When there is more than one argument, the
+	  argument number must be specified.  For example:</para>
+
+	<programlisting>actions: [file(1)]</programlisting>
+      </sect3>
+
+      <sect3 xml:id="plist-keywords-pre-post">
+	<title><literal>pre-install</literal>,
+	  <literal>post-install</literal>,
+	  <literal>pre-deinstall</literal>,
+	  <literal>post-deinstall</literal>,
+	  <literal>pre-upgrade</literal>,
+	  <literal>post-upgrade</literal></title>
+
+	<para>These keywords contains a &man.sh.1; script to be
+	  executed before or after installation, deinstallation, or
+	  upgrade of the package.  In addition to the usual
+	  <literal>@exec</literal>
+	  <literal>%<replaceable>foo</replaceable></literal>
+	  placeholders described in <xref
+	    linkend="plist-keywords-base-exec"/>, there is a new one,
+	  <literal>%@</literal>, which represents the argument of the
+	  keyword.</para>
+      </sect3>
+
+      <sect3 xml:id="plist-keywords-examples">
+	<title>Custom Keyword Examples</title>
+
+	<example xml:id="plist-keywords-fc-example">
+	  <title>Example of a <literal>@dirrmtryecho</literal>
+	    Keyword</title>
+
+	  <para>This keyword does two things, it adds a
+	    <literal>@dirrmtry
+	      <replaceable>directory</replaceable></literal> line to
+	    the packing list, and echoes the fact that the directory
+	    is removed when deinstalling the package.</para>
+
+	  <programlisting>actions: [dirrmtry]
 post-deinstall: &lt;&lt;EOD
   echo "Directory %D/%@ removed."
 EOD</programlisting>
-      </example>
+	</example>
 
-      <example xml:id="plist-keywords-sample-example">
-	<title>Real Life Example, How <literal>@sample</literal>
-	  is Implemented</title>
+	<example xml:id="plist-keywords-sample-example">
+	  <title>Real Life Example, How <literal>@sample</literal> is
+	    Implemented</title>
 
-	<para>This keyword does three things, it adds the
-	  <replaceable>filename</replaceable> passed as an argument to
-	  <literal>@sample</literal> to the packing list, it adds to
-	  the <literal>post-install</literal> script instructions to
-	  copy the sample to the actual configuration file if it does
-	  not already exist, and it adds to the
-	  <literal>post-deinstall</literal> instructions to remove the
-	  configuration file if it has not been modified.</para>
+	  <para>This keyword does three things.  It adds the first
+	    <replaceable>filename</replaceable> passed as an argument
+	    to <literal>@sample</literal> to the packing list, it adds
+	    to the <literal>post-install</literal> script instructions
+	    to copy the sample to the actual configuration file if it
+	    does not already exist, and it adds to the
+	    <literal>post-deinstall</literal> instructions to remove
+	    the configuration file if it has not been modified.</para>
 
-	<programlisting>actions: [file]
+	  <programlisting>actions: [file(1)]
+arguments: true
 post-install: &lt;&lt;EOD
-  case "%@" in
-  /*) sample_file="%@" ;;
-  *) sample_file="%D/%@" ;;
+  case "%1" in
+  /*) sample_file="%1" ;;
+  *) sample_file="%D/%1" ;;
   esac
   target_file="${sample_file%.sample}"
+  set -- %@
+  if [ $# -eq 2 ]; then
+      target_file=${2}
+  fi
+  case "${target_file}" in
+  /*) target_file="${target_file}" ;;
+  *) target_file="%D/${target_file}" ;;
+  esac
   if ! [ -f "${target_file}" ]; then
-    /bin/cp -p "${sample_file}" "${target_file}"
+    /bin/cp -p "${sample_file}" "${target_file}" &amp;&amp; \
+      /bin/chmod u+w "${target_file}"
   fi
 EOD
 pre-deinstall: &lt;&lt;EOD
-  case "%@" in
-  /*) sample_file="%@" ;;
-  *) sample_file="%D/%@" ;;
+  case "%1" in
+  /*) sample_file="%1" ;;
+  *) sample_file="%D/%1" ;;
   esac
   target_file="${sample_file%.sample}"
+  set -- %@
+  if [ $# -eq 2 ]; then
+      set -- %@
+      target_file=${2}
+  fi
+  case "${target_file}" in
+  /*) target_file="${target_file}" ;;
+  *) target_file="%D/${target_file}" ;;
+  esac
   if cmp -s "${target_file}" "${sample_file}"; then
     rm -f "${target_file}"
   else
-    echo "You may need to manually remove ${target_file} if it's no longer needed."
+    echo "You may need to manually remove ${target_file} if it is no longer needed."
   fi
 EOD</programlisting>
-      </example>
+	</example>
+      </sect3>
     </sect2>
   </sect1>
 </chapter>

@@ -2,13 +2,13 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/uses/chapter.xml 47115 2015-07-27 15:00:46Z mat $
+     $FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/uses/chapter.xml 47543 2015-10-12 12:05:18Z mat $
 
 -->
 
 <!--
 
-  Document up-to date with r381632 revision of the ports tree.
+  Document up-to date with r398827 revision of the ports tree.
 
   This file documents the values of the USES make variable.  The
   format is easy to grasp from the already-added entries below (or use
@@ -220,7 +220,7 @@
 
     <para>Possible arguments: (none)</para>
 
-    <para> Include Common Platform Enumeration
+    <para>Include Common Platform Enumeration
       (<acronym>CPE</acronym>) information in package manifest as a
       <acronym>CPE</acronym> 2.3 formatted string.  See the <link
 	xlink:href="http://scap.nist.gov/specifications/cpe/"><acronym>CPE</acronym>
@@ -334,14 +334,16 @@
   <sect1 xml:id="uses-display">
     <title><literal>display</literal></title>
 
-    <para>Possible arguments: (none), ARGS</para>
+    <para>Possible arguments: (none),
+      <replaceable>ARGS</replaceable></para>
 
     <para>Set up a virtual display environment.  If the environment
       variable <varname>DISPLAY</varname> is not set, then
       <application>Xvfb</application> is added as a build dependency,
       and <varname>CONFIGURE_ENV</varname> is extended with the port
       number of the currently running instance of
-      <application>Xvfb</application>.  The <literal>ARGS</literal>
+      <application>Xvfb</application>.  The
+      <replaceable>ARGS</replaceable>
       parameter defaults to <literal>install</literal> and controls
       the phase around which to start and stop the virtual
       display.</para>
@@ -411,14 +413,15 @@
 
     <para>Changes some default behaviour of build systems to allow
       installing as a user.  See <link
-	xlink:href="http://fakeroot.alioth.debian.org/"/> for more
+	xlink:href="http://fakeroot.alioth.debian.org/"/>for more
       information on <command>fakeroot</command>.</para>
   </sect1>
 
   <sect1 xml:id="uses-fam">
     <title><literal>fam</literal></title>
 
-    <para>Possible arguments: (none), fam, gamin</para>
+    <para>Possible arguments: (none), <literal>fam</literal>,
+      <literal>gamin</literal></para>
 
     <para>Uses a File Alteration Monitor as a library dependency,
       either <package role="port">devel/fam</package> or <package
@@ -438,16 +441,24 @@
   <sect1 xml:id="uses-fonts">
     <title><literal>fonts</literal></title>
 
-    <para>Possible arguments: (none)</para>
+    <para>Possible arguments: (none), <literal>fc</literal>,
+      <literal>fcfontsdir</literal> (default),
+      <literal>fontsdir</literal>, <literal>none</literal></para>
 
-    <para>Adds a runtime dependency on tools needed to register fonts,
-      and add an <literal><link
+    <para>Adds a runtime dependency on tools needed to register fonts.
+      Depending on the argument, add a <literal><link
+	  linkend="plist-keywords-fc">@fc</link> ${FONTSDIR}</literal>
+      line, <literal><link
 	  linkend="plist-keywords-fcfontsdir">@fcfontsdir</link>
-	${FONTSDIR}</literal> para to the plist.
+	${FONTSDIR}</literal> line, <literal><link
+	  linkend="plist-keywords-fontsdir">@fontsdir</link>
+	${FONTSDIR}</literal> line, or no line if the argument is
+      <literal>none</literal>, to the plist.
       <varname>FONTSDIR</varname> defaults to
-      <filename>${PREFIX}/lib/X11/fonts/${FONTNAME}</filename> and
-      <varname>FONTNAME</varname> to
-      <literal>${PORTNAME}</literal>.</para>
+      <filename>${PREFIX}/share/fonts/${FONTNAME}</filename> and
+      <varname>FONTNAME</varname> to <literal>${PORTNAME}</literal>.
+      Add <literal>FONTSDIR</literal> to <varname>PLIST_SUB</varname>
+      and <varname>SUB_LIST</varname></para>
   </sect1>
 
   <sect1 xml:id="uses-fortran">
@@ -1108,7 +1119,7 @@ GSSAPI_NONE_CONFIGURE_ON=	--without-gssapi</programlisting>
     <para>Possible arguments: (none)</para>
 
     <para>Provide support for the use of <package
-      role="port">devel/scons</package></para>
+	role="port">devel/scons</package></para>
   </sect1>
 
   <sect1 xml:id="uses-shared-mime-info">
@@ -1226,6 +1237,18 @@ GSSAPI_NONE_CONFIGURE_ON=	--without-gssapi</programlisting>
 	  <application>Tk</application> C header files</para>
       </listitem>
     </itemizedlist>
+  </sect1>
+
+  <sect1 xml:id="uses-terminfo">
+    <title><literal>terminfo</literal></title>
+
+    <para>Possible arguments: (none)</para>
+
+    <para>Adds <link
+	linkend="plist-keywords-terminfo"><literal>@terminfo</literal></link>
+      to the <filename>plist</filename>.  Use when the port installs
+      <filename><replaceable>*</replaceable>.terminfo</filename> files
+      in <filename>${PREFIX}/share/misc</filename>.</para>
   </sect1>
 
   <sect1 xml:id="uses-tk">

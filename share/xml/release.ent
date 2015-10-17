@@ -1,4 +1,4 @@
-<!-- $FreeBSD: head/share/xml/release.ent 47218 2015-08-13 23:53:28Z gjb $ -->
+<!-- $FreeBSD: head/share/xml/release.ent 47524 2015-10-08 13:35:11Z gjb $ -->
 
 <!-- XXX rel.current and u.rel.* should be available in doc/ -->
 <!-- The currently released versions of FreeBSD.  This value is used to
@@ -34,13 +34,13 @@
       below to "IGNORE".  If we do, use "INCLUDE". -->
 
 <!-- Set to 'INCLUDE' when the schedule is available. -->
-<!ENTITY beta.upcoming "IGNORE">
-<!ENTITY % beta.upcoming "IGNORE">
+<!ENTITY beta.upcoming "INCLUDE">
+<!ENTITY % beta.upcoming "INCLUDE">
 
 <!-- Set to 'INCLUDE' when the installation images are available. -->
 <!ENTITY beta.testing "IGNORE">
 <!ENTITY % beta.testing "IGNORE">
-<!ENTITY betarel.current '10.2'>
+<!ENTITY betarel.current '10.3'>
 <!ENTITY betarel.vers 'RELEASE'>
 <!ENTITY u.betarel.schedule '&base;/releases/&betarel.current;R/schedule.html'>
 
@@ -48,13 +48,13 @@
       are having release candidates at the same time), do the same here.  -->
 
 <!-- Set to 'INCLUDE' when the schedule is available. -->
-<!ENTITY beta2.upcoming "IGNORE">
-<!ENTITY % beta2.upcoming "IGNORE">
+<!ENTITY beta2.upcoming "INCLUDE">
+<!ENTITY % beta2.upcoming "INCLUDE">
 
 <!-- Set to 'INCLUDE' when the installation images are available. -->
 <!ENTITY beta2.testing "IGNORE">
 <!ENTITY % beta2.testing "IGNORE">
-<!ENTITY betarel2.current '9.3'>
+<!ENTITY betarel2.current '11.0'>
 <!ENTITY betarel2.vers 'RELEASE'>
 <!ENTITY u.betarel2.schedule '&base;/releases/&betarel2.current;R/schedule.html'>
 
@@ -72,9 +72,9 @@
 <!ENTITY u.rel.signatures '&base;/releases/&rel.current;R/signatures.html'>
 
 <!-- Secondary "current release" entities -->
-<!ENTITY rel2.current.major '9'>
-<!ENTITY rel2.current '&rel2.current.major;.3'>
-<!ENTITY rel2.current.date 'July 2014'>
+<!ENTITY rel2.current.major '10'>
+<!ENTITY rel2.current '&rel2.current.major;.1'>
+<!ENTITY rel2.current.date 'November 2014'>
 
 <!-- URLs to information on the latest rel2ease -->
 <!ENTITY u.rel2.notes '&base;/releases/&rel2.current;R/relnotes.html'>
@@ -85,9 +85,9 @@
 <!ENTITY u.rel2.readme '&base;/releases/&rel2.current;R/readme.html'>
 
 <!-- Tertiary "current release" entities -->
-<!ENTITY rel3.current.major '8'>
-<!ENTITY rel3.current '8.4'>
-<!ENTITY rel3.current.date 'June 2013'>
+<!ENTITY rel3.current.major '9'>
+<!ENTITY rel3.current '&rel3.current.major;.3'>
+<!ENTITY rel3.current.date 'July 2014'>
 
 <!-- URLs to information on the latest release -->
 <!ENTITY u.rel3.notes '&base;/releases/&rel3.current;R/relnotes.html'>

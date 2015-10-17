@@ -2,7 +2,7 @@
 <!--
     The FreeBSD Documentation Project
 
-    $FreeBSD: head/en_US.ISO8859-1/books/handbook/jails/chapter.xml 47090 2015-07-26 09:00:57Z dru $
+    $FreeBSD: head/en_US.ISO8859-1/books/handbook/jails/chapter.xml 47486 2015-10-02 14:23:29Z dru $
 -->
 <chapter xmlns="http://docbook.org/ns/docbook"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
@@ -89,10 +89,9 @@
       allowed to perform operations to the system outside of the
       associated jail environment.</para>
 
-    <para>This chapter provides an overview of jail terminology are
-      how to use &os; jails.  Jails are a powerful tool for system
-      administrators, but their basic usage can also be useful for
-      advanced users.</para>
+    <para>This chapter provides an overview of the terminology and
+      commands for managing &os; jails.  Jails are a powerful tool for
+      both system administrators, and advanced users.</para>
 
     <para>After reading this chapter, you will know:</para>
 
@@ -222,25 +221,13 @@
       needs to be extracted, but a complete install can be performed
       when preferred.</para>
 
-    <para>To install just the base system, run the next command when
-      using &os;&nbsp;9.x or newer:</para>
+    <para>To install just the base system:</para>
 
     <screen>&prompt.root; <userinput>tar -xf /mnt/usr/freebsd_dist/base.txz -C $DESTDIR</userinput></screen>
 
-    <para>On &os; 8.x systems, use this command instead:</para>
-
-    <screen>&prompt.root; <userinput>/mnt/8.<replaceable>4</replaceable>-RELEASE/base/install.sh</userinput></screen>
-
-    <para>To install everything except the kernel, issue one of these
-      commands:</para>
-
-    <para>When using &os;&nbsp;9.x and newer:</para>
+    <para>To install everything except the kernel:</para>
 
     <screen>&prompt.root; <userinput>for <replaceable>sets</replaceable> in BASE PORTS; do tar -xf /mnt/FREEBSD_INSTALL/USR/FREEBSD_DIST/$<replaceable>sets</replaceable>.TXZ -C $DESTDIR ; done</userinput></screen>
-
-    <para>When using &os;&nbsp;8.x:</para>
-
-    <screen>&prompt.root; <userinput>cd /mnt/8.<replaceable>4</replaceable>-RELEASE; for <replaceable>dir</replaceable> in base catpages dict doc games info manpages ports; do (cd $<replaceable>dir</replaceable>; ./install.sh) ; done</userinput></screen>
 
     <para>The &man.jail.8; manual page explains the procedure for
       building a jail:</para>
@@ -1012,7 +999,7 @@ jail_www_devfs_enable="YES"</programlisting>
 	    loopback interface is created by adding an entry to
 	    <filename>/etc/rc.conf</filename>:</para>
 
-	  <programlisting>cloned_interfaces="${cloned_interfaces} lo1"</programlisting>
+	  <programlisting>cloned_interfaces="lo1"</programlisting>
 
 	  <para>The second loopback interface <literal>lo1</literal>
 	    will be created when the system starts.  It can also be
@@ -1488,7 +1475,7 @@ wwwserver-201407271153.13.tar.gz</screen>
 	<para>Create a cloned loopback interface by adding a line to
 	  <filename>/etc/rc.conf</filename>:</para>
 
-	<programlisting>cloned_interfaces="${cloned_interfaces} lo1"</programlisting>
+	<programlisting>cloned_interfaces="lo1"</programlisting>
 
 	<para>Immediately create the new loopback interface:</para>
 

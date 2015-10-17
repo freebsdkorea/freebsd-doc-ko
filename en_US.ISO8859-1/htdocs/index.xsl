@@ -4,7 +4,7 @@
 <!ENTITY title "The FreeBSD Project">
 ]>
 
-<!-- $FreeBSD: head/en_US.ISO8859-1/htdocs/index.xsl 47280 2015-08-19 03:34:09Z wblock $ -->
+<!-- $FreeBSD: head/en_US.ISO8859-1/htdocs/index.xsl 47418 2015-09-16 23:42:06Z gjb $ -->
 
 <xsl:stylesheet version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -102,7 +102,9 @@
 					<li>Production:&nbsp;<a
 				href="&u.rel.announce;">&rel.current;</a>,
 					<a
-				href="&u.rel2.announce;">&rel2.current;</a></li>
+				href="&u.rel2.announce;">&rel2.current;</a>,
+					<a
+				href="&u.rel3.announce;">&rel3.current;</a></li>
 			    <xsl:if test="'&beta.upcoming;' != 'IGNORE'">
 					<li>Upcoming: <a
 				href="&u.betarel.schedule;">&betarel.current;</a></li>

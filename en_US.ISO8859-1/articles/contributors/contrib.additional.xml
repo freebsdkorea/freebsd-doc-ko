@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!-- $FreeBSD: head/en_US.ISO8859-1/articles/contributors/contrib.additional.xml 47242 2015-08-15 18:22:24Z kwm $ -->
+<!-- $FreeBSD: head/en_US.ISO8859-1/articles/contributors/contrib.additional.xml 47491 2015-10-02 17:53:48Z pawel $ -->
 <!--
 	NOTE TO COMMITTERS: Contributors lists are sorted in alphabetical
 	order by first name.
@@ -6750,6 +6750,11 @@
     <listitem>
       <para>Maxim Dounin
 	<email>mdounin@mdounin.ru</email></para>
+    </listitem>
+
+    <listitem>
+      <para>Maxim Filimonov
+	<email>che@bein.link</email></para>
     </listitem>
 
     <listitem>

@@ -2,7 +2,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/disks/chapter.xml 47064 2015-07-24 17:06:50Z bhd $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/disks/chapter.xml 47488 2015-10-02 14:41:16Z dru $
 -->
 
 <chapter xmlns="http://docbook.org/ns/docbook"
@@ -653,14 +653,6 @@ cd0: Attempt to query device size failed: NOT READY, Medium not present - tray c
       <para>In &os;, <command>cdrecord</command> can be used to burn
 	<acronym>CD</acronym>s.  This command is installed with the
 	<package>sysutils/cdrtools</package> package or port.</para>
-
-      <note>
-	<para>&os; 8.x includes the built-in
-	  <command>burncd</command> utility for burning
-	  <acronym>CD</acronym>s using an <acronym>ATAPI</acronym>
-	  <acronym>CD</acronym> burner.  Refer to the manual page for
-	  <command>burncd</command> for usage examples.</para>
-      </note>
 
       <para>While <command>cdrecord</command> has many options, basic
 	usage is simple.  Specify the name of the
@@ -2905,8 +2897,9 @@ geli_da2_flags="-p -k /root/<replaceable>da2.key</replaceable>"</programlisting>
 /dev/ada0s1b.eli	none		swap	sw		0	0</programlisting>
 
       <para>By default, &man.geli.8; uses the <acronym>AES</acronym>
-	algorithm with a key length of 256 bits.  These defaults can
-	be altered in the options field in
+	algorithm with a key length of 128 bits.  Normally the default
+	settings will suffice.  If desired, these defaults can be
+	altered in the options field in
 	<filename>/etc/fstab</filename>.  The possible flags
 	are:</para>
 
@@ -3597,8 +3590,8 @@ esac</programlisting>
 	  changes to the data.  This problem must be corrected
 	  manually by the system administrator.</para>
 
-	<para>The administrator must decide which node has more
-	  important changes or merge them manually.  Then, let
+	<para>The administrator must either decide which node has more
+	  important changes, or perform the merge manually.  Then, let
 	  <acronym>HAST</acronym> perform full synchronization of the
 	  node which has the broken data.  To do this, issue these
 	  commands on the node which needs to be

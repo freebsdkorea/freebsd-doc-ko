@@ -1,0 +1,1204 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+  <info><title xmlns:xlink="http://www.w3.org/1999/xlink">Contributing to FreeBSD</title>
+    
+
+    <abstract xmlns:xlink="http://www.w3.org/1999/xlink">
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">This article describes the different ways in which an
+	individual or organization may contribute to the FreeBSD
+	Project.</para>
+    </abstract>
+
+    <authorgroup xmlns:xlink="http://www.w3.org/1999/xlink">
+      <author xmlns:xlink="http://www.w3.org/1999/xlink"><personname xmlns:xlink="http://www.w3.org/1999/xlink"><firstname xmlns:xlink="http://www.w3.org/1999/xlink">Jordan</firstname><surname xmlns:xlink="http://www.w3.org/1999/xlink">Hubbard</surname></personname></author>
+      <author xmlns:xlink="http://www.w3.org/1999/xlink"><personname xmlns:xlink="http://www.w3.org/1999/xlink"><firstname xmlns:xlink="http://www.w3.org/1999/xlink">Sam</firstname><surname xmlns:xlink="http://www.w3.org/1999/xlink">Lawrance</surname></personname></author>
+      <author xmlns:xlink="http://www.w3.org/1999/xlink"><personname xmlns:xlink="http://www.w3.org/1999/xlink"><firstname xmlns:xlink="http://www.w3.org/1999/xlink">Mark</firstname><surname xmlns:xlink="http://www.w3.org/1999/xlink">Linimon</surname></personname></author>
+    </authorgroup>
+
+    <legalnotice xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="trademarks" role="trademarks">
+      <para xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">FreeBSD is a registered trademark of
+  the FreeBSD Foundation.</para>
+      <para xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">IEEE, POSIX, and 802 are registered
+  trademarks of Institute of Electrical and Electronics Engineers,
+  Inc. in the United States.</para>
+      <para xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">Many of the designations used by
+  manufacturers and sellers to distinguish their products are claimed
+  as trademarks.  Where those designations appear in this document,
+  and the FreeBSD Project was aware of the trademark claim, the
+  designations have been followed by the <quote xmlns:xlink="http://www.w3.org/1999/xlink">&#8482;</quote> or the
+  <quote xmlns:xlink="http://www.w3.org/1999/xlink">®</quote> symbol.</para>
+    </legalnotice>
+
+    <pubdate xmlns:xlink="http://www.w3.org/1999/xlink">$FreeBSD: head/en_US.ISO8859-1/articles/contributing/article.xml 46486 2015-04-06 05:52:24Z eadler $</pubdate>
+
+    <releaseinfo xmlns:xlink="http://www.w3.org/1999/xlink">$FreeBSD: head/en_US.ISO8859-1/articles/contributing/article.xml 46486 2015-04-06 05:52:24Z eadler $</releaseinfo>
+  </info>
+
+  <indexterm xmlns:xlink="http://www.w3.org/1999/xlink"><primary xmlns:xlink="http://www.w3.org/1999/xlink">contributing</primary></indexterm>
+
+  <para xmlns:xlink="http://www.w3.org/1999/xlink">So you want to contribute to FreeBSD? That is great!  FreeBSD
+    <emphasis xmlns:xlink="http://www.w3.org/1999/xlink">relies</emphasis> on the contributions of its user base
+    to survive.  Your contributions are not only appreciated, they are
+    vital to FreeBSD's continued growth.</para>
+
+  <para xmlns:xlink="http://www.w3.org/1999/xlink">A large and growing number of international contributors, of
+    greatly varying ages and areas of technical expertise, develop
+    FreeBSD.  There is always more work to be done than there are people
+    available to do it, and more help is always appreciated.</para>
+
+  <para xmlns:xlink="http://www.w3.org/1999/xlink">As a volunteer, what you do is limited only by what you want
+    to do.  However, we do ask that you are aware of what other
+    members of the FreeBSD community will expect of you.  You may want
+    to take this into account before deciding to volunteer.</para>
+
+  <para xmlns:xlink="http://www.w3.org/1999/xlink">The FreeBSD project is responsible for an entire operating
+    system environment, rather than just a kernel or a few scattered
+    utilities.  As such, our <filename xmlns:xlink="http://www.w3.org/1999/xlink">TODO</filename> lists span a
+    very wide range of tasks: from documentation, beta testing and
+    presentation, to the system installer and highly specialized types
+    of kernel development.  People of any skill level, in almost any
+    area, can almost certainly help the project.</para>
+
+  <para xmlns:xlink="http://www.w3.org/1999/xlink">Commercial entities engaged in FreeBSD-related enterprises are
+    also encouraged to contact us.  Do you need a special extension to
+    make your product work? You will find us receptive to your
+    requests, given that they are not too outlandish.  Are you working
+    on a value-added product? Please let us know! We may be able to
+    work cooperatively on some aspect of it.  The free software world
+    is challenging many existing assumptions about how software is
+    developed, sold, and maintained, and we urge you to at least give
+    it a second look.</para>
+
+  <sect1 xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="contrib-what">
+    <title xmlns:xlink="http://www.w3.org/1999/xlink">What Is Needed</title>
+
+    <para xmlns:xlink="http://www.w3.org/1999/xlink">The following list of tasks and sub-projects represents
+      something of an amalgam of various <filename xmlns:xlink="http://www.w3.org/1999/xlink">TODO</filename>
+      lists and user requests.</para>
+
+    <sect2 xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="non-programmer-tasks">
+      <title xmlns:xlink="http://www.w3.org/1999/xlink">Ongoing Non-Programmer Tasks</title>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">Many people who are involved in FreeBSD are not
+	programmers.  The Project includes documentation writers, Web
+	designers, and support people.  All that these people need to
+	contribute is an investment of time and a willingness to
+	learn.</para>
+
+      <orderedlist xmlns:xlink="http://www.w3.org/1999/xlink">
+	<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">Read through the FAQ and Handbook periodically.  If
+	    anything is badly explained, out of date or even just
+	    completely wrong, let us know.  Even better, send us a fix
+	    (Docbook is not difficult to learn, but there is no
+	    objection to ASCII submissions).</para>
+	</listitem>
+
+	<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">Help translate FreeBSD documentation into your native
+	    language.  If documentation already exists for your
+	    language, you can help translate additional documents or
+	    verify that the translations are up-to-date.  First take a
+	    look at the <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.FreeBSD.org/doc/en_US.ISO8859-1/books/fdp-primer/translations.html">Translations
+	      FAQ</link> in the FreeBSD Documentation Project Primer.
+	    You are not committing yourself to translating every
+	    single FreeBSD document by doing this &#8212; as a
+	    volunteer, you can do as much or as little translation as
+	    you desire.  Once someone begins translating, others
+	    almost always join the effort.  If you only have the time
+	    or energy to translate one part of the documentation,
+	    please translate the installation instructions.</para>
+	</listitem>
+
+	<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">Read the <link xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-questions">FreeBSD general questions mailing list</link> occasionally (or
+	    even regularly).  It can be very satisfying to share your
+	    expertise and help people solve their problems; sometimes
+	    you may even learn something new yourself!  These forums
+	    can also be a source of ideas for things to work
+	    on.</para>
+	</listitem>
+      </orderedlist>
+    </sect2>
+
+    <sect2 xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ongoing-programmer-tasks">
+      <title xmlns:xlink="http://www.w3.org/1999/xlink">Ongoing Programmer Tasks</title>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">Most of the tasks listed here require either a
+	considerable investment of time, or an in-depth knowledge of
+	the FreeBSD kernel, or both.  However, there are also many
+	useful tasks which are suitable for
+	<quote xmlns:xlink="http://www.w3.org/1999/xlink">weekend hackers</quote>.</para>
+
+      <orderedlist xmlns:xlink="http://www.w3.org/1999/xlink">
+	<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">If you run FreeBSD-CURRENT and have a good Internet
+	    connection, there is a machine
+	    <systemitem xmlns:xlink="http://www.w3.org/1999/xlink" class="fqdomainname">current.FreeBSD.org</systemitem> which
+	    builds a full release once a day&#8212;every now and
+	    again, try to install the latest release from it and
+	    report any failures in the process.</para>
+	</listitem>
+
+	<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">Read the <link xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-bugs">FreeBSD problem reports mailing list</link>.  There might be a problem you can
+	    comment constructively on or with patches you can test.
+	    Or you could even try to fix one of the problems
+	    yourself.</para>
+	</listitem>
+
+	<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">If you know of any bug fixes which have been
+	    successfully applied to -CURRENT but have not been merged
+	    into -STABLE after a decent interval (normally a couple of
+	    weeks), send the committer a polite reminder.</para>
+	</listitem>
+
+	<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">Move contributed software to
+	    <filename xmlns:xlink="http://www.w3.org/1999/xlink">src/contrib</filename> in the
+	    source tree.</para>
+	</listitem>
+
+	<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">Make sure code in
+	    <filename xmlns:xlink="http://www.w3.org/1999/xlink">src/contrib</filename> is up
+	    to date.</para>
+	</listitem>
+
+	<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">Build the source tree (or just part of it) with extra
+	    warnings enabled and clean up the warnings.</para>
+	</listitem>
+
+	<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">Fix warnings for ports which do deprecated things like
+	    using <function xmlns:xlink="http://www.w3.org/1999/xlink">gets()</function> or including
+	    <filename xmlns:xlink="http://www.w3.org/1999/xlink">malloc.h</filename>.</para>
+	</listitem>
+
+	<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">If you have contributed any ports and you had to make
+	    FreeBSD-specific changes, send your patches back to the
+	    original authors (this will make your life easier when
+	    they bring out the next version).</para>
+	</listitem>
+
+	<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">Get copies of formal standards like <trademark xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" class="registered">POSIX</trademark>.
+	    Compare FreeBSD's behavior to that required by
+	    the standard.  If the behavior differs, particularly in
+	    subtle or obscure corners of the specification, send in a
+	    PR about it.  If you are able, figure out how to fix it
+	    and include a patch in the PR.  If you think the standard
+	    is wrong, ask the standards body to consider the
+	    question.</para>
+	</listitem>
+
+	<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">Suggest further tasks for this list!</para>
+	</listitem>
+      </orderedlist>
+    </sect2>
+
+    <sect2 xmlns:xlink="http://www.w3.org/1999/xlink">
+      <title xmlns:xlink="http://www.w3.org/1999/xlink">Work through the PR Database</title>
+
+      <indexterm xmlns:xlink="http://www.w3.org/1999/xlink">
+	<primary xmlns:xlink="http://www.w3.org/1999/xlink">problem reports database</primary>
+      </indexterm>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">The <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://bugs.FreeBSD.org/search/">FreeBSD
+	  PR list</link> shows all the current active problem reports
+	and requests for enhancement that have been submitted by
+	FreeBSD users.  The PR database includes both programmer and
+	non-programmer tasks.  Look through the open PRs, and see if
+	anything there takes your interest.  Some of these might be
+	very simple tasks that just need an extra pair of eyes to look
+	over them and confirm that the fix in the PR is a good one.
+	Others might be much more complex, or might not even have a
+	fix included at all.</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">Start with the PRs that have not been assigned to anyone
+	else.  If a PR is assigned to someone else, but it looks like
+	something you can handle, email the person it is assigned to
+	and ask if you can work on it&#8212;they might already have a
+	patch ready to be tested, or further ideas that you can
+	discuss with them.</para>
+    </sect2>
+
+    <sect2 xmlns:xlink="http://www.w3.org/1999/xlink">
+      <title xmlns:xlink="http://www.w3.org/1999/xlink">Ongoing Ports Tasks</title>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">The Ports Collection is a perpetual work in progress.  We
+	want to provide our users with an easy to use, up to date, high
+	quality repository of third party software.  We need people to
+	donate some of their time and effort to help us achieve this
+	goal.</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">Anyone can get involved, and there are lots of different
+	ways to do so.  Contributing to ports is an excellent way to
+	help <quote xmlns:xlink="http://www.w3.org/1999/xlink">give back</quote> something to the project.
+	Whether you are looking for an ongoing role, or a fun challenge
+	for a rainy day, we would love to have your help!</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">There are a number of easy ways you can contribute to
+	keeping the ports tree up to date and in good working
+	order:</para>
+
+      <itemizedlist xmlns:xlink="http://www.w3.org/1999/xlink">
+	<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">Find some cool or useful software and
+	    <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.FreeBSD.org/doc/en_US.ISO8859-1/books/porters-handbook">create a port</link>
+	    for it.</para>
+	</listitem>
+
+	<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">There are a large number of ports that have no
+	    maintainer.  Become a maintainer and
+	    <link xmlns:xlink="http://www.w3.org/1999/xlink" linkend="adopt-port">adopt a port</link>.</para>
+	</listitem>
+
+	<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">If you have created or adopted a port, be
+	    aware of <link xmlns:xlink="http://www.w3.org/1999/xlink" linkend="maintain-port">what you need to do
+	      as a maintainer</link>.</para>
+	</listitem>
+
+	<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">When you are looking for a quick challenge you
+	    could <link xmlns:xlink="http://www.w3.org/1999/xlink" linkend="fix-broken">fix a bug or a broken
+	      port</link>.</para>
+	</listitem>
+      </itemizedlist>
+    </sect2>
+
+    <sect2 xmlns:xlink="http://www.w3.org/1999/xlink">
+      <title xmlns:xlink="http://www.w3.org/1999/xlink">Pick one of the items from the Ideas page</title>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">The <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://wiki.freebsd.org/IdeasPage">FreeBSD
+	  list of projects and ideas for volunteers</link> is also
+	available for people willing to contribute to the FreeBSD
+	project.  The list is being regularly updated and contains
+	items for both programmers and non-programmers with
+	information about each project.</para>
+    </sect2>
+  </sect1>
+
+  <sect1 xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="contrib-how">
+    <title xmlns:xlink="http://www.w3.org/1999/xlink">How to Contribute</title>
+
+    <para xmlns:xlink="http://www.w3.org/1999/xlink">Contributions to the system generally fall into one or more
+      of the following 5 categories:</para>
+
+    <sect2 xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="contrib-general">
+      <title xmlns:xlink="http://www.w3.org/1999/xlink">Bug Reports and General Commentary</title>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">An idea or suggestion of <emphasis xmlns:xlink="http://www.w3.org/1999/xlink">general</emphasis>
+	technical interest should be mailed to the <link xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-hackers">FreeBSD technical discussions mailing list</link>.
+	Likewise, people with an interest in such things (and a
+	tolerance for a <emphasis xmlns:xlink="http://www.w3.org/1999/xlink">high</emphasis> volume of mail!) may
+	subscribe to the <link xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-hackers">FreeBSD technical discussions mailing list</link>.  See <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.FreeBSD.org/doc/en_US.ISO8859-1/books/handbook/eresources.html#ERESOURCES-MAIL">The
+	  FreeBSD Handbook</link> for more information about this and
+	other mailing lists.</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">If you find a bug or are submitting a specific change,
+	please report it using the <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://bugs.FreeBSD.org/submit/">bug submission form</link>.
+	Try to fill-in each field of the bug
+	report.  Unless they exceed 65KB, include any patches directly
+	in the report.  If the patch is suitable to be applied to the
+	source tree put <literal xmlns:xlink="http://www.w3.org/1999/xlink">[PATCH]</literal> in the synopsis of
+	the report.  When including patches,
+	<emphasis xmlns:xlink="http://www.w3.org/1999/xlink">do not</emphasis> use cut-and-paste because
+	cut-and-paste turns tabs into spaces and makes them unusable.
+	When patches are a lot larger than 20KB, consider compressing
+	them (eg. with <citerefentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"><refentrytitle xmlns:xlink="http://www.w3.org/1999/xlink">gzip</refentrytitle><manvolnum xmlns:xlink="http://www.w3.org/1999/xlink">1</manvolnum></citerefentry> or <citerefentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"><refentrytitle xmlns:xlink="http://www.w3.org/1999/xlink">bzip2</refentrytitle><manvolnum xmlns:xlink="http://www.w3.org/1999/xlink">1</manvolnum></citerefentry>) prior to
+	uploading them.</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">After filing a report, you should receive confirmation
+	along with a tracking number.  Keep this tracking number so
+	that you can update us with details about the problem.</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">See also <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.FreeBSD.org/doc/en_US.ISO8859-1/articles/problem-reports/article.html">this
+	  article</link> on how to write good problem
+	reports.</para>
+    </sect2>
+
+    <sect2 xmlns:xlink="http://www.w3.org/1999/xlink">
+      <title xmlns:xlink="http://www.w3.org/1999/xlink">Changes to the Documentation</title>
+
+      <indexterm xmlns:xlink="http://www.w3.org/1999/xlink">
+	<primary xmlns:xlink="http://www.w3.org/1999/xlink">documentation submissions</primary>
+      </indexterm>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">Changes to the documentation are overseen by the <link xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc">FreeBSD documentation project mailing list</link>.
+	Please look at the
+	<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.FreeBSD.org/doc/en_US.ISO8859-1/books/fdp-primer/index.html">FreeBSD
+	  Documentation Project Primer</link> for complete
+	instructions.  Send submissions and changes (even small ones
+	are welcome!) using the same method any other bug
+	report.</para>
+    </sect2>
+
+    <sect2 xmlns:xlink="http://www.w3.org/1999/xlink">
+      <title xmlns:xlink="http://www.w3.org/1999/xlink">Changes to Existing Source Code</title>
+
+      <indexterm xmlns:xlink="http://www.w3.org/1999/xlink"><primary xmlns:xlink="http://www.w3.org/1999/xlink">FreeBSD-CURRENT</primary></indexterm>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">An addition or change to the existing source code is a
+	somewhat trickier affair and depends a lot on how far out of
+	date you are with the current state of FreeBSD development.
+	There is a special on-going release of FreeBSD known as
+	<quote xmlns:xlink="http://www.w3.org/1999/xlink">FreeBSD-CURRENT</quote> which is made available in a
+	variety of ways for the convenience of developers working
+	actively on the system.  See <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.FreeBSD.org/doc/en_US.ISO8859-1/books/handbook/current-stable.html">The FreeBSD
+	  Handbook</link> for more information about getting and
+	using FreeBSD-CURRENT.</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">Working from older sources unfortunately means that your
+	changes may sometimes be too obsolete or too divergent for
+	easy re-integration into FreeBSD.  Chances of this can be
+	minimized somewhat by subscribing to the <link xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-announce">FreeBSD announcements mailing list</link> and the
+	<link xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-current">FreeBSD-CURRENT mailing list</link> lists, where discussions on the current state of
+	the system take place.</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">Assuming that you can manage to secure fairly up-to-date
+	sources to base your changes on, the next step is to produce a
+	set of diffs to send to the FreeBSD maintainers.  This is done
+	with the <citerefentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"><refentrytitle xmlns:xlink="http://www.w3.org/1999/xlink">diff</refentrytitle><manvolnum xmlns:xlink="http://www.w3.org/1999/xlink">1</manvolnum></citerefentry> command.</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">The preferred <citerefentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"><refentrytitle xmlns:xlink="http://www.w3.org/1999/xlink">diff</refentrytitle><manvolnum xmlns:xlink="http://www.w3.org/1999/xlink">1</manvolnum></citerefentry> format for submitting patches
+	is the unified output format generated by
+	<command xmlns:xlink="http://www.w3.org/1999/xlink">diff -u</command>.</para>
+
+      <indexterm xmlns:xlink="http://www.w3.org/1999/xlink">
+	<primary xmlns:xlink="http://www.w3.org/1999/xlink"><command xmlns:xlink="http://www.w3.org/1999/xlink">diff</command></primary>
+      </indexterm>
+
+      <screen xmlns:xlink="http://www.w3.org/1999/xlink"><prompt xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">%</prompt> <userinput xmlns:xlink="http://www.w3.org/1999/xlink">diff -u oldfile newfile</userinput></screen>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">or</para>
+
+      <screen xmlns:xlink="http://www.w3.org/1999/xlink"><prompt xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">%</prompt> <userinput xmlns:xlink="http://www.w3.org/1999/xlink">diff -u -r -N olddir newdir</userinput></screen>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">would generate a set of unified diffs for the given source
+	file or directory hierarchy.</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">See <citerefentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"><refentrytitle xmlns:xlink="http://www.w3.org/1999/xlink">diff</refentrytitle><manvolnum xmlns:xlink="http://www.w3.org/1999/xlink">1</manvolnum></citerefentry> for more information.</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">Once you have a set of diffs (which you may test with the
+	<citerefentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"><refentrytitle xmlns:xlink="http://www.w3.org/1999/xlink">patch</refentrytitle><manvolnum xmlns:xlink="http://www.w3.org/1999/xlink">1</manvolnum></citerefentry> command), you should submit them for inclusion
+	with FreeBSD as a bug report.
+	<emphasis xmlns:xlink="http://www.w3.org/1999/xlink">Do not</emphasis> just send the
+	diffs to the <link xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-hackers">FreeBSD technical discussions mailing list</link> or they will get lost! We greatly
+	appreciate your submission (this is a volunteer project!);
+	because we are busy, we may not be able to address it
+	immediately, but it will remain in the PR database until we
+	do.  Indicate your submission by including
+	<literal xmlns:xlink="http://www.w3.org/1999/xlink">[PATCH]</literal> in the synopsis of the
+	report.</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">If you feel it appropriate (e.g. you have added, deleted,
+	or renamed files), bundle your changes into a
+	<command xmlns:xlink="http://www.w3.org/1999/xlink">tar</command> file.
+	Archives created with <citerefentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"><refentrytitle xmlns:xlink="http://www.w3.org/1999/xlink">shar</refentrytitle><manvolnum xmlns:xlink="http://www.w3.org/1999/xlink">1</manvolnum></citerefentry> are also
+	welcome.</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">If your change is of a potentially sensitive nature, such
+	as if you are unsure of copyright issues governing its further
+	distribution then you should send it to Core Team <email xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">core@FreeBSD.org</email> directly
+	rather than submitting as a bug report.  The Core Team <email xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">core@FreeBSD.org</email>
+	reaches a much smaller group of people who do much of the
+	day-to-day work on FreeBSD.  Note that this group is also
+	<emphasis xmlns:xlink="http://www.w3.org/1999/xlink">very busy</emphasis> and so you should only send
+	mail to them where it is truly necessary.</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">Please refer to <citerefentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"><refentrytitle xmlns:xlink="http://www.w3.org/1999/xlink">intro</refentrytitle><manvolnum xmlns:xlink="http://www.w3.org/1999/xlink">9</manvolnum></citerefentry> and <citerefentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"><refentrytitle xmlns:xlink="http://www.w3.org/1999/xlink">style</refentrytitle><manvolnum xmlns:xlink="http://www.w3.org/1999/xlink">9</manvolnum></citerefentry> for
+	some information on coding style.  We would appreciate it if
+	you were at least aware of this information before submitting
+	code.</para>
+    </sect2>
+
+    <sect2 xmlns:xlink="http://www.w3.org/1999/xlink">
+      <title xmlns:xlink="http://www.w3.org/1999/xlink">New Code or Major Value-Added Packages</title>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">In the case of a significant contribution of a large body
+	work, or the addition of an important new feature to FreeBSD,
+	it becomes almost always necessary to either send changes as
+	tar files or upload them to a web or FTP site for
+	other people to access.  If you do not have access to a web or
+	FTP site, ask on an appropriate FreeBSD mailing list for
+	someone to host the changes for you.</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">When working with large amounts of code, the touchy
+	subject of copyrights also invariably comes up.  FreeBSD
+	prefers free software licenses such as BSD or ISC.
+	Copyleft licenses such as GPLv2 are sometimes permitted.  The
+	complete listing can be found on the <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.FreeBSD.org/internal/software-license.html">core team
+	licensing policy</link> page.</para>
+    </sect2>
+
+    <sect2 xmlns:xlink="http://www.w3.org/1999/xlink">
+      <title xmlns:xlink="http://www.w3.org/1999/xlink">Money or Hardware</title>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">We are always very happy to accept donations to further
+	the cause of the FreeBSD Project and, in a volunteer effort
+	like ours, a little can go a long way! Donations of hardware
+	are also very important to expanding our list of supported
+	peripherals since we generally lack the funds to buy such
+	items ourselves.</para>
+
+      <sect3 xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="donations">
+	<title xmlns:xlink="http://www.w3.org/1999/xlink">Donating Funds</title>
+
+	<para xmlns:xlink="http://www.w3.org/1999/xlink">The FreeBSD Foundation is a non-profit, tax-exempt
+	  foundation established to further the goals of the FreeBSD
+	  Project.  As a 501(c)3 entity, the Foundation is generally
+	  exempt from US federal income tax as well as Colorado State
+	  income tax.  Donations to a tax-exempt entity are often
+	  deductible from taxable federal income.</para>
+
+	<para xmlns:xlink="http://www.w3.org/1999/xlink">Donations may be sent in check form to:
+	  <address xmlns:xlink="http://www.w3.org/1999/xlink">
+	    The FreeBSD Foundation
+	    <street xmlns:xlink="http://www.w3.org/1999/xlink">P.O. Box 20247</street>,
+	    <city xmlns:xlink="http://www.w3.org/1999/xlink">Boulder</city>,
+	    <state xmlns:xlink="http://www.w3.org/1999/xlink">CO</state> <postcode xmlns:xlink="http://www.w3.org/1999/xlink">80308</postcode>
+	    <country xmlns:xlink="http://www.w3.org/1999/xlink">USA</country>
+	  </address></para>
+
+	<para xmlns:xlink="http://www.w3.org/1999/xlink">The FreeBSD Foundation is now able to accept donations
+	  through the web with PayPal.  To place a donation, please
+	  visit the Foundation
+	  <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.freebsdfoundation.org">web
+	    site</link>.</para>
+
+	<para xmlns:xlink="http://www.w3.org/1999/xlink">More information about the FreeBSD Foundation can be
+	  found in <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://people.FreeBSD.org/~jdp/foundation/announcement.html">The
+	    FreeBSD Foundation -- an Introduction</link>.  To contact
+	  the Foundation by email, write to
+	  <email xmlns:xlink="http://www.w3.org/1999/xlink">bod@FreeBSDFoundation.org</email>.</para>
+      </sect3>
+
+      <sect3 xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title xmlns:xlink="http://www.w3.org/1999/xlink">Donating Hardware</title>
+
+	<indexterm xmlns:xlink="http://www.w3.org/1999/xlink"><primary xmlns:xlink="http://www.w3.org/1999/xlink">donations</primary></indexterm>
+
+	<para xmlns:xlink="http://www.w3.org/1999/xlink">The FreeBSD Project happily accepts donations of
+	  hardware that it can find good use for.  If you are
+	  interested in donating hardware, please contact the
+	  <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.FreeBSD.org/donations/">Donations Liaison
+	    Office</link>.</para>
+      </sect3>
+    </sect2>
+  </sect1>
+
+  <sect1 xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ports-contributing">
+    <title xmlns:xlink="http://www.w3.org/1999/xlink">Contributing to ports</title>
+
+    <sect2 xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="adopt-port">
+      <title xmlns:xlink="http://www.w3.org/1999/xlink">Adopting an unmaintained port</title>
+
+      <sect3 xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title xmlns:xlink="http://www.w3.org/1999/xlink">Choosing an unmaintained port</title>
+
+	<para xmlns:xlink="http://www.w3.org/1999/xlink">Taking over maintainership of ports that are
+	  unmaintained is a great way to get involved.  Unmaintained
+	  ports are only updated and fixed when somebody volunteers to
+	  work on them.  There are a large number of unmaintained
+	  ports.  It is a good idea to start with adopting a port that
+	  you use regularly.</para>
+
+	<para xmlns:xlink="http://www.w3.org/1999/xlink">Unmaintained ports have their
+	  <varname xmlns:xlink="http://www.w3.org/1999/xlink">MAINTAINER</varname> set to
+	  <literal xmlns:xlink="http://www.w3.org/1999/xlink">ports@FreeBSD.org</literal>.  A list of unmaintained
+	  ports and their current errors and problem reports can be seen
+	  at the <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://portsmon.FreeBSD.org/portsconcordanceformaintainer.py?maintainer=ports%40FreeBSD.org">FreeBSD
+	    Ports Monitoring System</link>.</para>
+
+	<para xmlns:xlink="http://www.w3.org/1999/xlink">Some ports affect a large number of others due to
+	  dependencies and slave port relationships.  Generally, we
+	  want people to have some experience before they maintain such
+	  ports.</para>
+
+	<para xmlns:xlink="http://www.w3.org/1999/xlink">You can find out whether or not a port has dependencies
+	  or slave ports by looking at a master index of ports called
+	  <filename xmlns:xlink="http://www.w3.org/1999/xlink">INDEX</filename>.  (The name of the file varies
+	  by release of FreeBSD; for instance,
+	  <filename xmlns:xlink="http://www.w3.org/1999/xlink">INDEX-8</filename>.) Some ports have conditional
+	  dependencies that are not included in a default
+	  <filename xmlns:xlink="http://www.w3.org/1999/xlink">INDEX</filename> build.  We expect you to be able to
+	  recognize such ports by looking through other ports'
+	  <filename xmlns:xlink="http://www.w3.org/1999/xlink">Makefile</filename>s.</para>
+      </sect3>
+
+      <sect3 xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title xmlns:xlink="http://www.w3.org/1999/xlink">How to adopt the port</title>
+
+	<para xmlns:xlink="http://www.w3.org/1999/xlink">First make sure you understand your
+	  <link xmlns:xlink="http://www.w3.org/1999/xlink" linkend="maintain-port">responsibilities as a
+	    maintainer</link>.  Also read the
+	  <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.FreeBSD.org/doc/en_US.ISO8859-1/books/porters-handbook">Porter's
+	    Handbook</link>.  <emphasis xmlns:xlink="http://www.w3.org/1999/xlink">Please do not commit yourself
+	    to more than you feel you can comfortably
+	    handle.</emphasis></para>
+
+	<para xmlns:xlink="http://www.w3.org/1999/xlink">You may request maintainership of any unmaintained port
+	  as soon as you wish.  Simply set <varname xmlns:xlink="http://www.w3.org/1999/xlink">MAINTAINER</varname>
+	  to your own email address and send a PR (Problem Report) with
+	  the change.  If the port has build errors or needs updating,
+	  you may wish to include any other changes in the same PR.
+	  This will help because many committers are less willing to
+	  assign maintainership to someone who does not have a known
+	  track record with FreeBSD.  Submitting PRs that fix build errors
+	  or update ports are the best ways to establish one.</para>
+
+	<para xmlns:xlink="http://www.w3.org/1999/xlink">File your PR with category <literal xmlns:xlink="http://www.w3.org/1999/xlink">ports</literal> and
+	  class <literal xmlns:xlink="http://www.w3.org/1999/xlink">change-request</literal>.  A committer will
+	  examine your PR, commit the changes, and finally close the
+	  PR.  Sometimes this process can take a little while
+	  (committers are volunteers, too :).</para>
+      </sect3>
+    </sect2>
+
+    <sect2 xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="maintain-port">
+      <title xmlns:xlink="http://www.w3.org/1999/xlink">The challenge for port maintainers</title>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">This section will give you an idea of why ports need to be
+	maintained and outline the responsibilities of a port
+	maintainer.</para>
+
+      <sect3 xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="why-maintenance">
+	<title xmlns:xlink="http://www.w3.org/1999/xlink">Why ports require maintenance</title>
+
+	<para xmlns:xlink="http://www.w3.org/1999/xlink">Creating a port is a once-off task.  Ensuring that a
+	  port is up to date and continues to build and run requires
+	  an ongoing maintenance effort.  Maintainers are the people
+	  who dedicate some of their time to meeting these goals.</para>
+
+	<para xmlns:xlink="http://www.w3.org/1999/xlink">The foremost reason ports need maintenance is to bring
+	  the latest and greatest in third party software to the FreeBSD
+	  community.  An additional challenge is to keep individual
+	  ports working within the Ports Collection framework as it
+	  evolves.</para>
+
+	<para xmlns:xlink="http://www.w3.org/1999/xlink">As a maintainer, you will need to manage the following
+	  challenges:</para>
+
+	<itemizedlist xmlns:xlink="http://www.w3.org/1999/xlink">
+	  <listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	    <formalpara xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">New software versions and updates.</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">New versions and updates of existing ported
+		software become available all the time, and these need
+		to be incorporated into the Ports Collection in order
+		to provide up-to-date software.</para>
+	    </formalpara>
+	  </listitem>
+
+	  <listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	    <formalpara xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">Changes to dependencies.</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">If significant changes are made to the dependencies
+		of your port, it may need to be updated so that it will
+		continue to work correctly.</para>
+	    </formalpara>
+	  </listitem>
+
+	  <listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	    <formalpara xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">Changes affecting dependent ports.</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">If other ports depend on a port that you maintain,
+		changes to your port may require coordination with
+		other maintainers.</para>
+	    </formalpara>
+	  </listitem>
+
+	  <listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	    <formalpara xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">Interaction with other users, maintainers and
+		developers.</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">Part of being a maintainer is taking on a support
+		role.  You are not expected to provide general support
+		(but we welcome it if you choose to do so).  What you
+		should provide is a point of coordination for
+		FreeBSD-specific issues regarding your ports.</para>
+	    </formalpara>
+	  </listitem>
+
+	  <listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	    <formalpara xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">Bug hunting.</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">A port may be affected by bugs which are specific
+		to FreeBSD.  You will need to investigate, find, and fix
+		these bugs when they are reported.  Thoroughly testing
+		a port to identify problems before they make their way
+		into the Ports Collection is even better.</para>
+	    </formalpara>
+	  </listitem>
+
+	  <listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	    <formalpara xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">Changes to ports infrastructure and policy.</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">Occasionally the systems that are used to build
+		ports and packages are updated or a new recommendation
+		affecting the infrastructure is made.  You should be
+		aware of these changes in case your ports are affected
+		and require updating.</para>
+	    </formalpara>
+	  </listitem>
+
+	  <listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	    <formalpara xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">Changes to the base system.</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">FreeBSD is under constant development.  Changes to
+		software, libraries, the kernel or even policy changes
+		can cause flow-on change requirements to ports.</para>
+	    </formalpara>
+	  </listitem>
+	</itemizedlist>
+      </sect3>
+
+      <sect3 xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title xmlns:xlink="http://www.w3.org/1999/xlink">Maintainer responsibilities</title>
+
+	<sect4 xmlns:xlink="http://www.w3.org/1999/xlink">
+	  <title xmlns:xlink="http://www.w3.org/1999/xlink">Keep your ports up to date</title>
+
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">This section outlines the process to follow to keep your
+	    ports up to date.</para>
+
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">This is an overview.  More information about upgrading a
+	    port is available in the
+	    <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.FreeBSD.org/doc/en_US.ISO8859-1/books/porters-handbook">
+	      Porter's Handbook</link>.</para>
+
+	  <procedure xmlns:xlink="http://www.w3.org/1999/xlink">
+	    <step xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">Watch for updates</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">Monitor the upstream vendor for new versions,
+		updates and security fixes for the software.
+		Announcement mailing lists or news web pages are useful
+		for doing this.  Sometimes users will contact you and
+		ask when your port will be updated.  If you are busy
+		with other things or for any reason just cannot update
+		it at the moment, ask if they will help you by
+		submitting an update.</para>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">You may also receive automated email from the
+		<literal xmlns:xlink="http://www.w3.org/1999/xlink">FreeBSD Ports Version Check</literal> informing
+		you that a newer version of your port's distfile is
+		available.  More information about that system
+		(including how to stop future emails) will be provided
+		in the message.</para>
+	    </step>
+
+	    <step xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">Incorporate changes</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">When they become available, incorporate the changes
+		into the port.  You need to be able to generate a patch
+		between the original port and your updated port.</para>
+	    </step>
+
+	    <step xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">Review and test</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">Thoroughly review and test your changes:</para>
+
+	      <itemizedlist xmlns:xlink="http://www.w3.org/1999/xlink">
+		<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+		  <para xmlns:xlink="http://www.w3.org/1999/xlink">Build, install and test your port on as many
+		    platforms and architectures as you can.  It is
+		    common for a port to work on one branch or platform
+		    and fail on another.</para>
+		</listitem>
+
+		<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+		  <para xmlns:xlink="http://www.w3.org/1999/xlink">Make sure your port's dependencies are complete.
+		    The recommended way of doing this is by installing
+		    your own ports <application xmlns:xlink="http://www.w3.org/1999/xlink">tinderbox</application>.
+		    See <link xmlns:xlink="http://www.w3.org/1999/xlink" linkend="resources">resources</link>
+		    for more information.</para>
+		</listitem>
+
+		<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+		  <para xmlns:xlink="http://www.w3.org/1999/xlink">Check that the packing list is up to date.  This
+		    involves adding in any new files and directories and
+		    removing unused entries.</para>
+		</listitem>
+
+		<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+		  <para xmlns:xlink="http://www.w3.org/1999/xlink">Verify your port using <citerefentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" vendor="ports"><refentrytitle xmlns:xlink="http://www.w3.org/1999/xlink">portlint</refentrytitle><manvolnum xmlns:xlink="http://www.w3.org/1999/xlink">1</manvolnum></citerefentry> as a
+		    guide.  See <link xmlns:xlink="http://www.w3.org/1999/xlink" linkend="resources">resources</link> for important
+		    information about using
+		    <application xmlns:xlink="http://www.w3.org/1999/xlink">portlint</application>.</para>
+		</listitem>
+
+		<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+		  <para xmlns:xlink="http://www.w3.org/1999/xlink">Consider whether changes to your port might
+		    cause any other ports to break.  If this is the
+		    case, coordinate the changes with the maintainers of
+		    those ports.  This is especially important if your
+		    update changes the shared library version; in this
+		    case, at the very least, the dependent ports will
+		    need to get a <varname xmlns:xlink="http://www.w3.org/1999/xlink">PORTREVISION</varname> bump
+		    so that they will automatically be upgraded by
+		    automated tools such as
+		    <application xmlns:xlink="http://www.w3.org/1999/xlink">portmaster</application> or
+		    <citerefentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" vendor="ports"><refentrytitle xmlns:xlink="http://www.w3.org/1999/xlink">portupgrade</refentrytitle><manvolnum xmlns:xlink="http://www.w3.org/1999/xlink">1</manvolnum></citerefentry>.</para>
+		</listitem>
+	      </itemizedlist>
+	    </step>
+
+	    <step xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">Submit changes</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">Send your update by submitting a PR with an
+		explanation of the changes and a patch containing the
+		differences between the original port and the updated
+		one.  Please refer to <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.FreeBSD.org/doc/en_US.ISO8859-1/articles/problem-reports">Writing FreeBSD
+		  Problem Reports</link> for information on how to
+		write a really good PR.</para>
+
+	      <note xmlns:xlink="http://www.w3.org/1999/xlink">
+		<para xmlns:xlink="http://www.w3.org/1999/xlink">Please do not submit a <citerefentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"><refentrytitle xmlns:xlink="http://www.w3.org/1999/xlink">shar</refentrytitle><manvolnum xmlns:xlink="http://www.w3.org/1999/xlink">1</manvolnum></citerefentry> archive of the
+		  entire port; instead, use <citerefentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"><refentrytitle xmlns:xlink="http://www.w3.org/1999/xlink">diff</refentrytitle><manvolnum xmlns:xlink="http://www.w3.org/1999/xlink">1</manvolnum></citerefentry>
+		  <literal xmlns:xlink="http://www.w3.org/1999/xlink">-ruN</literal>.  In this way, committers can
+		  much more easily see exactly what changes are being
+		  made.  The Porter's Handbook section on <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.FreeBSD.org/doc/en_US.ISO8859-1/books/porters-handbook/port-upgrading.html">Upgrading</link>
+		  has more information.</para>
+	      </note>
+	    </step>
+
+	    <step xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">Wait</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">At some stage a committer will deal with your PR.
+		It may take minutes, or it may take weeks &#8212; so
+		please be patient.</para>
+	    </step>
+
+	    <step xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">Give feedback</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">If a committer finds a problem with your changes,
+		they will most likely refer it back to you.  A prompt
+		response will help get your PR committed faster, and
+		is better for maintaining a thread of conversation
+		when trying to resolve any problems.</para>
+	    </step>
+
+	    <step xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">And Finally</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">Your changes will be committed and your port will
+		have been updated.  The PR will then be closed by the
+		committer.  That's it!</para>
+	    </step>
+	  </procedure>
+	</sect4>
+
+	<sect4 xmlns:xlink="http://www.w3.org/1999/xlink">
+	  <title xmlns:xlink="http://www.w3.org/1999/xlink">Ensure your ports continue to build correctly</title>
+
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">This section is about discovering and fixing problems
+	    that stop your ports from building correctly.</para>
+
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">FreeBSD only guarantees that the Ports Collection works on
+	    the <literal xmlns:xlink="http://www.w3.org/1999/xlink">-STABLE</literal> branches.
+	    In
+	    theory, you should be able to get by with running the latest
+	    release of each stable branch (since the ABIs are not
+	    supposed to change) but if you can run the branch, that is
+	    even better.</para>
+
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">Since the majority of FreeBSD installations run on
+	    PC-compatible machines (what is termed the
+	    <literal xmlns:xlink="http://www.w3.org/1999/xlink">i386</literal> architecture), we expect you to keep
+	    the port working on that architecture.  We prefer that ports
+	    also work on the <literal xmlns:xlink="http://www.w3.org/1999/xlink">amd64</literal> architecture
+	    running native.  It is completely fair to ask for help if
+	    you do not have one of these machines.</para>
+
+	  <note xmlns:xlink="http://www.w3.org/1999/xlink">
+	    <para xmlns:xlink="http://www.w3.org/1999/xlink">The usual failure modes for
+	      non-<literal xmlns:xlink="http://www.w3.org/1999/xlink">x86</literal> machines are that the original
+	      programmers assumed that, for instance, pointers are
+	      <literal xmlns:xlink="http://www.w3.org/1999/xlink">int</literal>s, or that a relatively lax older
+	      <application xmlns:xlink="http://www.w3.org/1999/xlink">gcc</application> compiler was being used.
+	      More and more, application authors are reworking their
+	      code to remove these assumptions &#8212; but if the author
+	      is not actively maintaining their code, you may need to do
+	      this yourself.</para>
+	  </note>
+
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">These are the tasks you need to perform to ensure your
+	    port is able to be built:</para>
+
+	  <procedure xmlns:xlink="http://www.w3.org/1999/xlink">
+	    <step xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">Watch for build failures</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">Check your mail for mail from
+		<literal xmlns:xlink="http://www.w3.org/1999/xlink">pkg-fallout@FreeBSD.org</literal> 
+		and the <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://portscout.FreeBSD.org">distfiles scanner</link>
+		to see if any of the port which are failing to build
+		are out of date.</para>
+	    </step>
+
+	    <step xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">Collect information</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">Once you are aware of a problem, collect information
+		to help you fix it.  Build errors reported by
+		<literal xmlns:xlink="http://www.w3.org/1999/xlink">pkg-fallout</literal> are accompanied by logs
+		which will show you where the build failed.  If the
+		failure was reported to you by a user, ask them to send
+		you information which may help in diagnosing the
+		problem, such as:</para>
+
+	      <itemizedlist xmlns:xlink="http://www.w3.org/1999/xlink">
+		<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+		  <para xmlns:xlink="http://www.w3.org/1999/xlink">Build logs</para>
+		</listitem>
+
+		<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+		  <para xmlns:xlink="http://www.w3.org/1999/xlink">The commands and options used to build the
+		    port (including options set in
+		    <filename xmlns:xlink="http://www.w3.org/1999/xlink">/etc/make.conf</filename>)</para>
+		</listitem>
+
+		<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+		  <para xmlns:xlink="http://www.w3.org/1999/xlink">A list of packages installed on their system
+		    as shown by <citerefentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"><refentrytitle xmlns:xlink="http://www.w3.org/1999/xlink">pkg_info</refentrytitle><manvolnum xmlns:xlink="http://www.w3.org/1999/xlink">1</manvolnum></citerefentry></para>
+		</listitem>
+
+		<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+		  <para xmlns:xlink="http://www.w3.org/1999/xlink">The version of FreeBSD they are running as
+		    shown by <citerefentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"><refentrytitle xmlns:xlink="http://www.w3.org/1999/xlink">uname</refentrytitle><manvolnum xmlns:xlink="http://www.w3.org/1999/xlink">1</manvolnum></citerefentry><command xmlns:xlink="http://www.w3.org/1999/xlink"> -a</command></para>
+		</listitem>
+
+		<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+		  <para xmlns:xlink="http://www.w3.org/1999/xlink">When their ports collection was last
+		    updated</para>
+		</listitem>
+
+		<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+		  <para xmlns:xlink="http://www.w3.org/1999/xlink">When their ports tree and
+		  <filename xmlns:xlink="http://www.w3.org/1999/xlink">INDEX</filename> was last updated</para>
+		</listitem>
+	      </itemizedlist>
+	    </step>
+
+	    <step xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">Investigate and find a solution</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">Unfortunately there is no straightforward process to
+		follow to do this.  Remember, though: if you are stuck,
+		ask for help!  The <link xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports">FreeBSD ports mailing list</link> is a good place to start,
+		and the upstream developers are often very
+		helpful.</para>
+	    </step>
+
+	    <step xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">Submit changes</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">Just as with updating a port, you should now
+		incorporate changes, review and test, submit your
+		changes in a PR, and provide feedback if
+		required.</para>
+	    </step>
+
+	    <step xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">Send patches to upstream authors</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">In some cases, you will have to make patches to the
+		port to make it run on FreeBSD.  Some (but not all)
+		upstream authors will accept such patches back into
+		their code for the next release.  If so, this may even
+		help their users on other BSD-based systems as well and
+		perhaps save duplicated effort.  Please consider sending
+		any applicable patches to the authors as a
+		courtesy.</para>
+	    </step>
+	  </procedure>
+	</sect4>
+
+	<sect4 xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	  <title xmlns:xlink="http://www.w3.org/1999/xlink">Investigate bug reports and PRs related to your
+	    port</title>
+
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">This section is about discovering and fixing
+	    bugs.</para>
+
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">FreeBSD-specific bugs are generally caused by assumptions
+	    about the build and runtime environments that do not apply
+	    to FreeBSD.  You are less likely to encounter a problem of this
+	    type, but it can be more subtle and difficult to
+	    diagnose.</para>
+
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">These are the tasks you need to perform to ensure your
+	    port continues to work as intended:</para>
+
+	  <procedure xmlns:xlink="http://www.w3.org/1999/xlink">
+	    <step xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">Respond to bug reports</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">Bugs may be reported to you through email via the
+		<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://bugs.FreeBSD.org/search/">
+		Problem Report database</link>.  Bugs may also be
+		reported directly to you by users.</para>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">You should respond to PRs and other reports within
+		14 days, but please try not to take that long.  Try to
+		respond as soon as possible, even if it is just to say
+		you need some more time before you can work on the
+		PR.</para>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">If you have not responded after 14 days, any
+		committer may commit from a PR that you have not
+		responded to via a
+		<literal xmlns:xlink="http://www.w3.org/1999/xlink">maintainer-timeout</literal>.</para>
+	    </step>
+
+	    <step xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">Collect information</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">If the person reporting the bug has not also
+		provided a fix, you need to collect the information that
+		will allow you to generate one.</para>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">If the bug is reproducible, you can collect most of
+		the required information yourself.  If not, ask the
+		person who reported the bug to collect the information
+		for you, such as:</para>
+
+	      <itemizedlist xmlns:xlink="http://www.w3.org/1999/xlink">
+		<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+		  <para xmlns:xlink="http://www.w3.org/1999/xlink">A detailed description of their actions,
+		    expected program behavior and actual behavior</para>
+		</listitem>
+
+		<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+		  <para xmlns:xlink="http://www.w3.org/1999/xlink">Copies of input data used to trigger the
+		    bug</para>
+		</listitem>
+
+		<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+		  <para xmlns:xlink="http://www.w3.org/1999/xlink">Information about their build and execution
+		    environment &#8212; for example, a list of installed
+		    packages and the output of <citerefentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"><refentrytitle xmlns:xlink="http://www.w3.org/1999/xlink">env</refentrytitle><manvolnum xmlns:xlink="http://www.w3.org/1999/xlink">1</manvolnum></citerefentry></para>
+		</listitem>
+
+		<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+		  <para xmlns:xlink="http://www.w3.org/1999/xlink">Core dumps</para>
+		</listitem>
+
+		<listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+		  <para xmlns:xlink="http://www.w3.org/1999/xlink">Stack traces</para>
+		</listitem>
+	      </itemizedlist>
+	    </step>
+
+	    <step xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">Eliminate incorrect reports</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">Some bug reports may be incorrect.  For example,
+		the user may have simply misused the program; or their
+		installed packages may be out of date and require
+		updating.  Sometimes a reported bug is not specific to
+		FreeBSD.  In this case report the bug to the upstream
+		developers.  If the bug is within your capabilities to
+		fix, you can also patch the port so that the fix is
+		applied before the next upstream release.</para>
+	    </step>
+
+	    <step xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">Find a solution</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">As with build errors, you will need to sort out a
+		fix to the problem.  Again, remember to ask if you are
+		stuck!</para>
+	    </step>
+
+	    <step xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <title xmlns:xlink="http://www.w3.org/1999/xlink">Submit or approve changes</title>
+
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">Just as with updating a port, you should now
+		incorporate changes, review and test, and submit your
+		changes in a PR (or send a follow-up if a PR already
+		exists for the problem).  If another user has submitted
+		changes in the PR, you can also send a follow-up saying
+		whether or not you approve the changes.</para>
+	    </step>
+	  </procedure>
+	</sect4>
+
+	<sect4 xmlns:xlink="http://www.w3.org/1999/xlink">
+	  <title xmlns:xlink="http://www.w3.org/1999/xlink">Providing support</title>
+
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">Part of being a maintainer is providing support &#8212;
+	    not for the software in general &#8212; but for the port and
+	    any FreeBSD-specific quirks and problems.  Users may contact
+	    you with questions, suggestions, problems and patches.  Most
+	    of the time their correspondence will be specific to
+	    FreeBSD.</para>
+
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">Occasionally you may have to invoke your skills in
+	    diplomacy, and kindly point users seeking general support to
+	    the appropriate resources.  Less frequently you will
+	    encounter a person asking why the <literal xmlns:xlink="http://www.w3.org/1999/xlink">RPM</literal>s
+	    are not up to date or how can they get the software to run
+	    under Foo Linux.  Take the opportunity to tell them that
+	    your port is up to date (if it is, of course!), and suggest
+	    that they try FreeBSD.</para>
+
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">Sometimes users and developers will decide that you are
+	    a busy person whose time is valuable and do some of the work
+	    for you.  For example, they might:</para>
+
+	  <itemizedlist xmlns:xlink="http://www.w3.org/1999/xlink">
+	    <listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">submit a PR or send you patches to update your
+		port,</para>
+	    </listitem>
+
+	    <listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">investigate and perhaps provide a fix to a PR,
+		or</para>
+	    </listitem>
+
+	    <listitem xmlns:xlink="http://www.w3.org/1999/xlink">
+	      <para xmlns:xlink="http://www.w3.org/1999/xlink">otherwise submit changes to your port.</para>
+	    </listitem>
+	  </itemizedlist>
+
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">In these cases your main obligation is to respond in a
+	    timely manner.  Again, the timeout for non-responsive
+	    maintainers is 14 days.  After this period changes may be
+	    committed unapproved.  They have taken the trouble to do
+	    this for you; so please try to at least respond promptly.
+	    Then review, approve, modify or discuss their changes with
+	    them as soon as possible.</para>
+
+	  <para xmlns:xlink="http://www.w3.org/1999/xlink">If you can make them feel that their contribution is
+	    appreciated (and it should be) you will have a better chance
+	    persuading them to do more things for you in the future
+	    <!-- smiley -->:-).</para>
+	</sect4>
+      </sect3>
+    </sect2>
+
+    <sect2 xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fix-broken">
+      <title xmlns:xlink="http://www.w3.org/1999/xlink">Finding and fixing a broken port</title>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">There are two really good places to find a port that needs
+	some attention.</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">You can use the <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://bugs.freebsd.org/search">web
+	  interface</link> to the Problem Report database to search
+	through and view unresolved PRs.  The majority of ports PRs are
+	updates, but with a little searching and skimming over synopses
+	you should be able to find something interesting to work on (the
+	<literal xmlns:xlink="http://www.w3.org/1999/xlink">sw-bug</literal> class is a good place to
+	start).</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">The other place is the <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://portsmon.FreeBSD.org/">FreeBSD Ports Monitoring
+	  System</link>.  In particular look for unmaintained ports
+	with build errors and ports that are marked
+	<varname xmlns:xlink="http://www.w3.org/1999/xlink">BROKEN</varname>.  It is OK to send changes for a
+	maintained port as well, but remember to ask the maintainer in
+	case they are already working on the problem.</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">Once you have found a bug or problem, collect information,
+	investigate and fix!  If there is an existing PR, follow up to
+	that.  Otherwise create a new PR.  Your changes will be reviewed
+	and, if everything checks out, committed.</para>
+    </sect2>
+
+    <sect2 xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="mortal-coil">
+      <title xmlns:xlink="http://www.w3.org/1999/xlink">When to call it quits</title>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">As your interests and commitments change, you may find that
+	you no longer have time to continue some (or all) of your ports
+	contributions.  That is fine!  Please let us know if you are no
+	longer using a port or have otherwise lost time or interest in
+	being a maintainer.  In this way we can go ahead and allow other
+	people to try to work on existing problems with the port without
+	waiting for your response.  Remember, FreeBSD is a volunteer
+	project, so if maintaining a port is no fun anymore, it is
+	probably time to let someone else do it!</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">In any case, the Ports Management Team
+	(<literal xmlns:xlink="http://www.w3.org/1999/xlink">portmgr</literal>) reserves the right to reset your
+	maintainership if you have not actively maintained your port in
+	some time.  (Currently, this is set to 3 months.)  By this, we
+	mean that there are unresolved problems or pending updates that
+	have not been worked on during that time.</para>
+    </sect2>
+
+    <sect2 xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="resources">
+      <title xmlns:xlink="http://www.w3.org/1999/xlink">Resources for ports maintainers and contributors</title>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">The <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.FreeBSD.org/doc/en_US.ISO8859-1/books/porters-handbook">Porter's
+	  Handbook</link> is your hitchhiker's guide to the ports
+	system.  Keep it handy!</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink"><link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.FreeBSD.org/doc/en_US.ISO8859-1/articles/problem-reports">Writing FreeBSD
+	  Problem Reports</link> describes how to best formulate and
+	submit a PR.  In 2005 more than eleven thousand ports PRs were
+	submitted!  Following this article will greatly assist us in
+	reducing the time needed to handle your PRs.</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">The <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.FreeBSD.org/cgi/query-pr-summary.cgi?query">
+	  Problem Report database</link>.</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">The <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://portsmon.FreeBSD.org/">FreeBSD Ports
+	  Monitoring System</link> can show you cross-referenced
+	information about ports such as build errors and problem
+	reports.  If you are a maintainer you can use it to check on the
+	build status of your ports.  As a contributor you can use it to
+	find broken and unmaintained ports that need to be fixed.</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">The <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://portscout.FreeBSD.org">FreeBSD Ports
+	  distfile scanner</link> can show you ports for which the
+	distfiles are not fetchable.  You can check on your own ports or
+	use it to find ports that need their
+	<varname xmlns:xlink="http://www.w3.org/1999/xlink">MASTER_SITES</varname> updated.</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink"><package xmlns:xlink="http://www.w3.org/1999/xlink">ports-mgmt/poudriere</package> is the most
+	thorough way to test a port through the entire cycle of
+	installation, packaging, and deinstallation.
+	Documentation is located at the
+	<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://fossil.etoilebsd.net/poudriere/">poudriere home page</link></para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink"><citerefentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" vendor="ports"><refentrytitle xmlns:xlink="http://www.w3.org/1999/xlink">portlint</refentrytitle><manvolnum xmlns:xlink="http://www.w3.org/1999/xlink">1</manvolnum></citerefentry> is an application which can be used to
+	verify that your port conforms to many important stylistic and
+	functional guidelines.  <application xmlns:xlink="http://www.w3.org/1999/xlink">portlint</application> is a
+	simple heuristic application, so you should use it
+	<emphasis xmlns:xlink="http://www.w3.org/1999/xlink">only as a guide</emphasis>.  If
+	<application xmlns:xlink="http://www.w3.org/1999/xlink">portlint</application> suggests changes which seem
+	unreasonable, consult the <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.FreeBSD.org/doc/en_US.ISO8859-1/books/porters-handbook">Porter's Handbook</link>
+	or ask for advice.</para>
+
+      <para xmlns:xlink="http://www.w3.org/1999/xlink">The <link xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports">FreeBSD ports mailing list</link> is for general ports-related discussion.  It
+	is a good place to ask for help.  You can <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://lists.freebsd.org/mailman/listinfo">subscribe, or
+	  read and search the list archives</link>.  Reading the
+	archives of the <link xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports-bugs">FreeBSD ports bugs mailing list</link> and the <link xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://lists.FreeBSD.org/mailman/listinfo/cvs-ports">FreeBSD CVS ports commit list</link> may also be
+	of interest.</para>
+    </sect2>
+  </sect1>
+
+  <index xmlns:xlink="http://www.w3.org/1999/xlink"/>
+</article>
