@@ -1,4 +1,4 @@
-# $FreeBSD: head/en_US.ISO8859-1/htdocs/events/Makefile 46128 2014-12-31 10:00:44Z bz $
+# $FreeBSD: head/en_US.ISO8859-1/htdocs/events/Makefile 47936 2015-12-31 11:31:41Z bz $
 
 .if exists(../Makefile.conf)
 .include "../Makefile.conf"
@@ -11,9 +11,9 @@ SUBDIR=  2002
 SUBDIR+= 2003
 
 # The year the top level events.html file starts from:
-YEARSTART= 2015
+YEARSTART= 2016
 # Years to generate past events pages for and link from top level:
-PASTYEARS= 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003
+PASTYEARS= 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003
 
 DATA=	events.css
 INDEXLINK=	events.html

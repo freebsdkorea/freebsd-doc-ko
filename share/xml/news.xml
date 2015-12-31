@@ -25,11 +25,80 @@
 
 <news>
   <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">
-    $FreeBSD: head/share/xml/news.xml 47218 2015-08-13 23:53:28Z gjb $
+    $FreeBSD: head/share/xml/news.xml 47722 2015-11-01 16:53:49Z mmel $
   </cvs:keyword>
 
   <year>
     <name>2015</name>
+
+    <month>
+       <name>11</name>
+
+      <day>
+	<name>1</name>
+
+	<event>
+	  <p>New committer:
+	    <a href="mailto:mmel@FreeBSD.org">Michal Meloun</a> (src)</p>
+	</event>
+      </day>
+    </month>
+
+    <month>
+       <name>10</name>
+
+      <day>
+	<name>26</name>
+
+	<event>
+	  <p>New committer:
+	    <a href="mailto:jtl@FreeBSD.org">Jonathan T. Looney</a> (src)</p>
+	</event>
+      </day>
+
+      <day>
+	<name>25</name>
+
+	<event>
+	  <title>July&ndash;September Status Report</title>
+
+	  <p>The <a
+	    href="&enbase;/news/status/report-2015-07-2015-09.html">July&ndash;September,
+	      2015 Status Report</a> is now available.</p>
+	</event>
+      </day>
+
+      <day>
+         <name>23</name>
+
+         <event>
+           <p>New committer:
+             <a href="mailto:skra@FreeBSD.org">Svatopluk Kraus</a> (src)</p>
+         </event>
+      </day>
+
+       <day>
+         <name>21</name>
+
+         <event>
+           <p>New committer:
+             <a href="mailto:lidl@FreeBSD.org">Kurt Lidl</a> (src)</p>
+         </event>
+       </day>
+    </month>
+
+    <month>
+      <name>9</name>
+
+      <day>
+	<name>24</name>
+
+	<event>
+	  <p>New committer:
+	    <a href="mailto:avos@FreeBSD.org">Andriy Voskoboinyk</a> (src)</p>
+	 </event>
+       </day>
+    </month>
 
     <month>
       <name>8</name>

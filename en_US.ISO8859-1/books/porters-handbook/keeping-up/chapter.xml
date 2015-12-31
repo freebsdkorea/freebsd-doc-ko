@@ -2,7 +2,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/keeping-up/chapter.xml 45578 2014-09-09 15:40:40Z mat $
+     $FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/keeping-up/chapter.xml 47877 2015-12-17 01:46:51Z wblock $
 -->
 
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink=
@@ -40,9 +40,9 @@
 
     <para>FreshPorts also has a sanity test feature which
       automatically tests each commit to the &os; ports tree.  If
-      subscribed to this service, a committer will receive notifications
-      of any errors which FreshPorts detects during sanity testing of their
-      commits.</para>
+      subscribed to this service, a committer will receive
+      notifications of any errors which FreshPorts detects during
+      sanity testing of their commits.</para>
   </sect1>
 
   <sect1 xml:id="svnweb">

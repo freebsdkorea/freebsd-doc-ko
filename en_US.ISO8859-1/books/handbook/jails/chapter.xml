@@ -2,7 +2,7 @@
 <!--
     The FreeBSD Documentation Project
 
-    $FreeBSD: head/en_US.ISO8859-1/books/handbook/jails/chapter.xml 47486 2015-10-02 14:23:29Z dru $
+    $FreeBSD: head/en_US.ISO8859-1/books/handbook/jails/chapter.xml 47914 2015-12-28 16:56:33Z gjb $
 -->
 <chapter xmlns="http://docbook.org/ns/docbook"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
@@ -223,7 +223,7 @@
 
     <para>To install just the base system:</para>
 
-    <screen>&prompt.root; <userinput>tar -xf /mnt/usr/freebsd_dist/base.txz -C $DESTDIR</userinput></screen>
+    <screen>&prompt.root; <userinput>tar -xf /mnt/usr/freebsd-dist/base.txz -C $DESTDIR</userinput></screen>
 
     <para>To install everything except the kernel:</para>
 

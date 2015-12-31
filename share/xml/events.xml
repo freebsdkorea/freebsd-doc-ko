@@ -9,8 +9,12 @@
 
 <events xmlns:xi="http://www.w3.org/2001/XInclude">
     <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">
-      $FreeBSD: head/share/xml/events.xml 45913 2014-11-03 07:05:23Z gavin $
+      $FreeBSD: head/share/xml/events.xml 47761 2015-11-09 21:52:48Z allanjude $
     </cvs:keyword>
+
+  <xi:include
+    href="http://www.FreeBSD.org/XML/share/xml/events2016.xml"
+    xpointer="xpointer(//event)" />
 
   <xi:include
     href="http://www.FreeBSD.org/XML/share/xml/events2015.xml"

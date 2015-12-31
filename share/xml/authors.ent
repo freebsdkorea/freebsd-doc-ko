@@ -13,7 +13,7 @@
                  builds for the other languages, and we will poke fun of you
                  in public.
 
-     $FreeBSD: head/share/xml/authors.ent 47595 2015-10-16 14:32:43Z bjk $
+     $FreeBSD: head/share/xml/authors.ent 47722 2015-11-01 16:53:49Z mmel $
 -->
 
 <!-- FreeBSD Committers -->
@@ -1134,6 +1134,9 @@
 <!ENTITY a.jtc "J.T. Conklin">
 <!ENTITY a.jtc.email "&a.jtc; <email xmlns='http://docbook.org/ns/docbook'>jtc@FreeBSD.org</email>">
 
+<!ENTITY a.jtl "Jonathan T. Looney">
+<!ENTITY a.jtl.email "&a.jtl; <email xmlns='http://docbook.org/ns/docbook'>jtl@FreeBSD.org</email>">
+
 <!ENTITY a.julian "Julian Elischer">
 <!ENTITY a.julian.email "&a.julian; <email xmlns='http://docbook.org/ns/docbook'>julian@FreeBSD.org</email>">
 
@@ -1259,6 +1262,9 @@
 
 <!ENTITY a.lev "Lev Serebryakov">
 <!ENTITY a.lev.email "&a.lev; <email xmlns='http://docbook.org/ns/docbook'>lev@FreeBSD.org</email>">
+
+<!ENTITY a.lidl "Kurt Lidl">
+<!ENTITY a.lidl.email "&a.lidl; <email xmlns='http://docbook.org/ns/docbook'>lidl@FreeBSD.org</email>">
 
 <!ENTITY a.lile "Larry Lile">
 <!ENTITY a.lile.email "&a.lile; <email xmlns='http://docbook.org/ns/docbook'>lile@FreeBSD.org</email>">
@@ -1475,6 +1481,9 @@
 
 <!ENTITY a.mm "Martin Matuska">
 <!ENTITY a.mm.email "&a.mm; <email xmlns='http://docbook.org/ns/docbook'>mm@FreeBSD.org</email>">
+
+<!ENTITY a.mmel "Michal Meloun">
+<!ENTITY a.mmel.email "&a.mmel; <email xmlns='http://docbook.org/ns/docbook'>mmel@FreeBSD.org</email>">
 
 <!ENTITY a.mmoll "Michael Moll">
 <!ENTITY a.mmoll.email "&a.mmoll; <email xmlns='http://docbook.org/ns/docbook'>mmoll@FreeBSD.org</email>">
@@ -1985,6 +1994,9 @@
 
 <!ENTITY a.sjg "Simon J. Gerraty">
 <!ENTITY a.sjg.email "&a.sjg; <email xmlns='http://docbook.org/ns/docbook'>sjg@FreeBSD.org</email>">
+
+<!ENTITY a.skra "Svatopluk Kraus">
+<!ENTITY a.skra.email "&a.skra; <email xmlns='http://docbook.org/ns/docbook'>skra@FreeBSD.org</email>">
 
 <!ENTITY a.skreuzer "Steven Kreuzer">
 <!ENTITY a.skreuzer.email "&a.skreuzer; <email xmlns='http://docbook.org/ns/docbook'>skreuzer@FreeBSD.org</email>">

@@ -2,7 +2,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/testing/chapter.xml 45951 2014-11-07 22:06:52Z mat $
+     $FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/testing/chapter.xml 47724 2015-11-02 03:17:28Z gavin $
 -->
 <chapter xmlns="http://docbook.org/ns/docbook"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
@@ -312,7 +312,7 @@ BASEFS=/poudriere
 DISTFILES_CACHE=/usr/ports/distfiles
 RESOLV_CONF=/etc/resolv.conf
 FREEBSD_HOST=ftp://ftp.freebsd.org
-SVN_HOST=svn0.eu.FreeBSD.org</programlisting>
+SVN_HOST=svn.FreeBSD.org</programlisting>
 
       <variablelist>
 	<varlistentry>

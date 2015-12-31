@@ -1,7 +1,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/share/pgpkeys/pgpkeys-developers.xml 47143 2015-08-01 17:20:01Z junovitch $
+     $FreeBSD: head/share/pgpkeys/pgpkeys-developers.xml 47722 2015-11-01 16:53:49Z mmel $
 -->
 
     <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-ariff">
@@ -1031,6 +1031,11 @@
       &pgpkey.ak;
     </sect2>
 
+    <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-skra">
+      <title>&a.skra.email;</title>
+      &pgpkey.skra;
+    </sect2>
+
     <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-skreuzer">
       <title>&a.skreuzer.email;</title>
       &pgpkey.skreuzer;
@@ -1206,6 +1211,11 @@
       &pgpkey.ijliao;
     </sect2>
 
+    <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-lidl">
+      <title>&a.lidl.email;</title>
+      &pgpkey.lidl;
+    </sect2>
+
     <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-lulf">
       <title>&a.lulf.email;</title>
       &pgpkey.lulf;
@@ -1274,6 +1284,11 @@
     <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-scottl">
       <title>&a.scottl.email;</title>
       &pgpkey.scottl;
+    </sect2>
+
+    <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-jtl">
+      <title>&a.jtl.email;</title>
+      &pgpkey.jtl;
     </sect2>
 
     <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-rmacklem">
@@ -1346,14 +1361,19 @@
       &pgpkey.slm;
     </sect2>
 
-    <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-tmclaugh">
-      <title>&a.tmclaugh.email;</title>
-      &pgpkey.tmclaugh;
-    </sect2>
-
     <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-mckay">
       <title>&a.mckay.email;</title>
       &pgpkey.mckay;
+    </sect2>
+
+    <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-mckusick">
+      <title>&a.mckusick.email;</title>
+      &pgpkey.mckusick;
+    </sect2>
+
+    <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-tmclaugh">
+      <title>&a.tmclaugh.email;</title>
+      &pgpkey.tmclaugh;
     </sect2>
 
     <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-xmj">
@@ -1364,6 +1384,11 @@
     <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-jmelo">
       <title>&a.jmelo.email;</title>
       &pgpkey.jmelo;
+    </sect2>
+
+    <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-mmel">
+      <title>&a.mmel.email;</title>
+      &pgpkey.mmel;
     </sect2>
 
     <sect2 xmlns='http://docbook.org/ns/docbook' xml:id="pgpkey-jmmv">
@@ -2179,6 +2204,11 @@
     <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-ivoras">
       <title>&a.ivoras.email;</title>
       &pgpkey.ivoras;
+    </sect2>
+
+    <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-avos">
+      <title>&a.avos.email;</title>
+      &pgpkey.avos;
     </sect2>
 
     <sect2 xmlns="http://docbook.org/ns/docbook" xml:id="pgpkey-stefan">

@@ -2,7 +2,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/mail/chapter.xml 47505 2015-10-05 13:05:43Z dru $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/mail/chapter.xml 47633 2015-10-20 17:10:02Z bhd $
 -->
 <chapter xmlns="http://docbook.org/ns/docbook"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
@@ -359,7 +359,7 @@ FreeBSD.org mail is handled by 10 mx1.FreeBSD.org</screen>
 	    addresses can be found in the &os; sample configuration,
 	    <filename>/etc/mail/access.sample</filename>:</para>
 
-	  <programlisting># $FreeBSD: head/en_US.ISO8859-1/books/handbook/mail/chapter.xml 47505 2015-10-05 13:05:43Z dru $
+	  <programlisting># $FreeBSD: head/en_US.ISO8859-1/books/handbook/mail/chapter.xml 47633 2015-10-20 17:10:02Z bhd $
 #
 # Mail relay access control list.  Default is to reject mail unless the
 # destination is local, or listed in /etc/mail/local-host-names
@@ -690,7 +690,7 @@ daily_submit_queuerun="NO"</programlisting>
       <para>The default <filename>/etc/mail/mailer.conf</filename>
 	looks like this:</para>
 
-      <programlisting># $FreeBSD: head/en_US.ISO8859-1/books/handbook/mail/chapter.xml 47505 2015-10-05 13:05:43Z dru $
+      <programlisting># $FreeBSD: head/en_US.ISO8859-1/books/handbook/mail/chapter.xml 47633 2015-10-20 17:10:02Z bhd $
 #
 # Execute the "real" sendmail program, named /usr/libexec/sendmail/sendmail
 #
@@ -1128,7 +1128,7 @@ hostname=_HOSTNAME_</programlisting>
       <acronym>ISP</acronym>'s outgoing mail relay in place of
       <systemitem class="fqdomainname">mail.example.com</systemitem>.
       Some <acronym>ISP</acronym>s call this the <quote>outgoing mail
-	server</quote> or <quote>SMTP server</quote>).</para>
+	server</quote> or <quote>SMTP server</quote>.</para>
 
     <para>Make sure to disable <application>Sendmail</application>,
       including the outgoing mail service.  See <xref

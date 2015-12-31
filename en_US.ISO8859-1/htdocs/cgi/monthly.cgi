@@ -1,5 +1,5 @@
 #!/usr/bin/perl -w
-# $FreeBSD: head/en_US.ISO8859-1/htdocs/cgi/monthly.cgi 44121 2014-03-04 20:28:29Z pgj $
+# $FreeBSD: head/en_US.ISO8859-1/htdocs/cgi/monthly.cgi 47839 2015-12-10 04:44:48Z bjk $
 
 require "./cgi-style.pl";
 
@@ -53,7 +53,7 @@ sub xmltext
 {
 	my($Indent, @Text) = @_;
 
-	my $Spaces = " " x ($Indent*3);
+	my $Spaces = " " x ($Indent*2);
 
 	return map { "$Spaces$_\n" } @Text;
 }
@@ -241,7 +241,7 @@ print
 					 "COLS"   => 2,
 					 "NOSAVE" => 1},
 					TR(td("Url"),
-					   td("Description (optional)")),
+					   td("Description")),
 					@LinksTable)),
 
    h3("Present status:"),

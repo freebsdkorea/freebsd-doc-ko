@@ -12,7 +12,7 @@
   <head>
       <title>&title;</title>
 
-      <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">$FreeBSD: head/en_US.ISO8859-1/htdocs/administration.xml 47374 2015-09-05 21:01:25Z gjb $</cvs:keyword>
+      <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">$FreeBSD: head/en_US.ISO8859-1/htdocs/administration.xml 47676 2015-10-26 22:47:12Z gjb $</cvs:keyword>
     </head>
 
     <body class="navinclude.about">
@@ -370,7 +370,6 @@
     <li>&a.dhw.email;</li>
     <li>&a.gavin.email;</li>
     <li>&a.gjb.email;</li>
-    <li>&a.hiren.email;</li>
     <li>&a.peter.email; (Lead)</li>
     <li>&a.sbruno.email;</li>
     <li>&a.simon.email;</li>

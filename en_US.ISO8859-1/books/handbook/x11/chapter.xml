@@ -2,7 +2,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/x11/chapter.xml 47598 2015-10-16 19:05:52Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/x11/chapter.xml 47900 2015-12-21 15:38:24Z wblock $
 -->
 <chapter xmlns="http://docbook.org/ns/docbook"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
@@ -409,8 +409,14 @@
 
 	  <listitem>
 	    <para>3D acceleration is supported on most &intel;
-	      graphics, including IronLake, SandyBridge, and
-	      IvyBridge.</para>
+	      graphics up to Ivy Bridge (HD Graphics 2500, 4000, and
+	      P4000), including Iron Lake (HD Graphics) and
+	      Sandy Bridge (HD Graphics 2000).</para>
+
+	    <para>Driver name: <literal>intel</literal></para>
+
+	    <para>For reference, see <link
+	        xlink:href="https://en.wikipedia.org/wiki/List_of_Intel_graphics_processing_units"/>.</para>
 	  </listitem>
 	</varlistentry>
 
@@ -420,6 +426,11 @@
 	  <listitem>
 	    <para>2D and 3D acceleration is supported on Radeon
 	      cards up to and including the HD6000 series.</para>
+
+	    <para>Driver name: <literal>radeon</literal></para>
+
+	    <para>For reference, see <link
+	        xlink:href="https://en.wikipedia.org/wiki/List_of_AMD_graphics_processing_units"/>.</para>
 	  </listitem>
 	</varlistentry>
 
@@ -431,6 +442,9 @@
 	      <filename>x11</filename> category of the Ports
 	      Collection.  Install the driver that matches the video
 	      card.</para>
+
+	    <para>For reference, see <link
+	      xlink:href="https://en.wikipedia.org/wiki/List_of_Nvidia_graphics_processing_units"/>.</para>
 	  </listitem>
 	</varlistentry>
 
@@ -444,7 +458,7 @@
 	      &intel; and NVIDIA hardware.
 	      <emphasis>Switchable Graphics</emphasis> or
 	      <emphasis>Hybrid Graphics</emphasis> are a combination
-	      of &intel; and an &amd; Radeon
+	      of an &intel; or &amd; processor and an &amd; Radeon
 	      <acronym>GPU</acronym>.</para>
 
 	    <para>Implementations of these hybrid graphics systems
@@ -461,7 +475,12 @@
 	      driver.</para>
 
 	    <para><acronym>BIOS</acronym> settings depend on the model
-	      of computer.</para>
+	      of computer.  In some situations, both
+	      <acronym>GPU</acronym>s can be left enabled, but
+	      creating a configuration file that only uses the main
+	      <acronym>GPU</acronym> in the <literal>Device</literal>
+	      section is enough to make such a system
+	      functional.</para>
 	  </listitem>
 	</varlistentry>
 
@@ -486,6 +505,63 @@
 	    <para><package>x11-drivers/xf86-video-scfb</package> is a
 	      similar nonspecialized video driver that works on many
 	      <acronym>UEFI</acronym> and &arm; computers.</para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry xml:id="x-config-video-cards-file">
+	  <term>Setting the Video Driver in a File</term>
+
+	  <listitem>
+	    <para>To set the &intel; driver in a configuration
+	      file:</para>
+
+	    <example xml:id="x-config-video-cards-file-intel">
+	      <title>Select &intel; Video Driver in a File</title>
+
+	      <para><filename>/usr/local/etc/X11/xorg.conf.d/driver-intel.conf</filename></para>
+
+	      <programlisting>Section "Device"
+	Identifier "Card0"
+	Driver     "intel"
+	# BusID    "PCI:1:0:0"
+EndSection</programlisting>
+
+	      <para>If more than one video card is present, the
+		<literal>BusID</literal> identifier can be uncommented
+		and set to select the desired card.  A list of video
+		card bus <acronym>ID</acronym>s can be displayed with
+		<command>pciconf -lv | grep -B3
+		  display</command>.</para>
+	    </example>
+
+	    <para>To set the Radeon driver in a configuration
+	      file:</para>
+
+	    <example xml:id="x-config-video-cards-file-radeon">
+	      <title>Select Radeon Video Driver in a File</title>
+
+	      <para><filename>/usr/local/etc/X11/xorg.conf.d/driver-radeon.conf</filename></para>
+
+	      <programlisting>Section "Device"
+	Identifier "Card0"
+	Driver     "radeon"
+EndSection</programlisting>
+	    </example>
+
+	    <para>To set the <acronym>VESA</acronym> driver in a
+	      configuration file:</para>
+
+	    <example xml:id="x-config-video-cards-file-vesa">
+	      <title>Select <acronym>VESA</acronym> Video Driver in a
+		File</title>
+
+	      <para><filename>/usr/local/etc/X11/xorg.conf.d/driver-vesa.conf</filename></para>
+
+	      <programlisting>Section "Device"
+	Identifier "Card0"
+	Driver     "vesa"
+EndSection</programlisting>
+	    </example>
 	  </listitem>
 	</varlistentry>
       </variablelist>
@@ -614,7 +690,7 @@ DP1 disconnected (normal left inverted right x axis y axis)</screen>
 	Identifier "Screen0"
 	Device     "Card0"
 	SubSection "Display"
-		Modes "1024x768"
+	Modes      "1024x768"
 	EndSubSection
 EndSection</programlisting>
 	    </example>
@@ -711,22 +787,15 @@ EndSection</programlisting>
 	    Keyboard</term>
 
 	    <listitem>
-	      <para>A combination of keys is available to close the X
-		system.  This option is disabled by default because it
+	      <para>X can be closed with a combination of keys.
+		By default, that key combination is not set because it
 		conflicts with keyboard commands for some
 		applications.  Enabling this option requires changes
-		to both <literal>ServerLayout</literal> and keyboard
-		<literal>InputDevice</literal> sections:</para>
+		to the keyboard <literal>InputDevice</literal>
+		section:</para>
 
 	      <example>
 		<title>Enabling Keyboard Exit from X</title>
-
-		<para><filename>/usr/local/etc/X11/xorg.conf.d/serverlayout-enablezap.conf</filename></para>
-
-		<programlisting>Section "ServerLayout"
-	Identifier "EnableZap"
-	Option     "DontZap" "Off"
-EndSection</programlisting>
 
 		<para><filename>/usr/local/etc/X11/xorg.conf.d/keyboard-zap.conf</filename></para>
 
@@ -1582,7 +1651,7 @@ DisplayManager.requestPort:     0</screen>
 
       <programlisting>Section "Extensions"
     Option         "Composite" "Enable"
-    EndSection</programlisting>
+EndSection</programlisting>
 
       <para>Locate the <quote>Screen</quote> section which should look
 	similar to the one below:</para>
@@ -1597,7 +1666,7 @@ DisplayManager.requestPort:     0</screen>
 	<quote>Monitor</quote> will do):</para>
 
       <programlisting>DefaultDepth    24
-    Option         "AddARGBGLXVisuals" "True"</programlisting>
+Option         "AddARGBGLXVisuals" "True"</programlisting>
 
       <para>Locate the <quote>Subsection</quote> that refers to the
 	screen resolution that you wish to use.  For example, if you
@@ -1608,7 +1677,7 @@ DisplayManager.requestPort:     0</screen>
       <programlisting>SubSection     "Display"
     Viewport    0 0
     Modes      "1280x1024"
-    EndSubSection</programlisting>
+EndSubSection</programlisting>
 
       <para>A color depth of 24&nbsp;bits is needed for desktop
 	composition, change the above subsection to:</para>
@@ -1617,7 +1686,7 @@ DisplayManager.requestPort:     0</screen>
     Viewport    0 0
     Depth       24
     Modes      "1280x1024"
-    EndSubSection</programlisting>
+EndSubSection</programlisting>
 
       <para>Finally, confirm that the <quote>glx</quote> and
 	<quote>extmod</quote> modules are loaded in the
@@ -1633,8 +1702,8 @@ DisplayManager.requestPort:     0</screen>
 	root):</para>
 
       <screen>&prompt.root; <userinput>nvidia-xconfig --add-argb-glx-visuals</userinput>
-    &prompt.root; <userinput>nvidia-xconfig --composite</userinput>
-    &prompt.root; <userinput>nvidia-xconfig --depth=24</userinput></screen>
+&prompt.root; <userinput>nvidia-xconfig --composite</userinput>
+&prompt.root; <userinput>nvidia-xconfig --depth=24</userinput></screen>
     </sect2>
 
     <sect2 xml:id="compiz-fusion">
@@ -1650,7 +1719,7 @@ DisplayManager.requestPort:     0</screen>
 	normal user):</para>
 
       <screen>&prompt.user; <userinput>compiz --replace --sm-disable --ignore-desktop-hints ccp &amp;</userinput>
-    &prompt.user; <userinput>emerald --replace &amp;</userinput></screen>
+&prompt.user; <userinput>emerald --replace &amp;</userinput></screen>
 
       <para>Your screen will flicker for a few seconds, as your window
 	manager (e.g. <application>Metacity</application> if you are
@@ -1666,8 +1735,8 @@ DisplayManager.requestPort:     0</screen>
 	desktop):</para>
 
       <programlisting>#! /bin/sh
-    compiz --replace --sm-disable --ignore-desktop-hints ccp &amp;
-    emerald --replace &amp;</programlisting>
+compiz --replace --sm-disable --ignore-desktop-hints ccp &amp;
+emerald --replace &amp;</programlisting>
 
       <para>Save this in your home directory as, for example,
 	<filename>start-compiz</filename> and make it
@@ -2019,10 +2088,10 @@ EndSection</programlisting>
 		startup.  The most common would be:</para>
 
 	      <screen>(EE) NVIDIA(0):     Failed to initialize the GLX module; please check in your X
-    (EE) NVIDIA(0):     log file that the GLX module has been loaded in your X
-    (EE) NVIDIA(0):     server, and that the module is the NVIDIA GLX module.  If
-    (EE) NVIDIA(0):     you continue to encounter problems, Please try
-    (EE) NVIDIA(0):     reinstalling the NVIDIA driver.</screen>
+(EE) NVIDIA(0):     log file that the GLX module has been loaded in your X
+(EE) NVIDIA(0):     server, and that the module is the NVIDIA GLX module.  If
+(EE) NVIDIA(0):     you continue to encounter problems, Please try
+(EE) NVIDIA(0):     reinstalling the NVIDIA driver.</screen>
 
 	    <para>This is usually the case when you upgrade
 	      <application>&xorg;</application>.  You will need to

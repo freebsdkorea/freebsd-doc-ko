@@ -2,7 +2,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/virtualization/chapter.xml 47351 2015-09-02 23:12:13Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/virtualization/chapter.xml 47744 2015-11-05 15:49:40Z bcr $
 -->
 <chapter xmlns="http://docbook.org/ns/docbook"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
@@ -1273,8 +1273,9 @@ crw-------   1 root  wheel  0x1a1 Mar 17 12:19 otherguest</screen>
       <title>Persistent Configuration</title>
 
       <para>In order to configure the system to start
-	<application>bhyve</application> guests at boot time, add
-	the following entries to in the following files:</para>
+	<application>bhyve</application> guests at boot time, the
+	following configurations must be made in the specified
+	files:</para>
 
       <procedure>
 	<step>

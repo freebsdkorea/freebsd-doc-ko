@@ -18,7 +18,7 @@
     <head>
       <title>&title;</title>
 
-      <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">$FreeBSD: head/en_US.ISO8859-1/htdocs/docproj/current.xml 46792 2015-06-09 12:41:12Z ryusuke $</cvs:keyword>
+      <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">$FreeBSD: head/en_US.ISO8859-1/htdocs/docproj/current.xml 47800 2015-11-25 01:53:10Z wblock $</cvs:keyword>
     </head>
 
     <body class="navinclude.docs">
@@ -84,7 +84,7 @@
       task is highly encouraged to carefully read through the existing
       (print-output) index, and to have read the Chicago Manual of
       Style or other style books that deal with indexing.  Please see
-      the CVS history of some of the chapter.xml files to see some of
+      the SVN history of some of the chapter.xml files to see some of
       the indexing errors that have been corrected in the past.
       It is imperative to view the PostScript version of the Handbook
       after making any changes to indexterms as many errors, such as

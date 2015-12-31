@@ -7,7 +7,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>&title;</title>
-    <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">$FreeBSD: head/en_US.ISO8859-1/htdocs/news/status/howto.xml 44118 2014-03-04 19:25:22Z pgj $</cvs:keyword>
+    <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">$FreeBSD: head/en_US.ISO8859-1/htdocs/news/status/howto.xml 47800 2015-11-25 01:53:10Z wblock $</cvs:keyword>
   </head>
 
   <body class="navinclude.about">
@@ -66,7 +66,7 @@ Yoyodyne's range Frobnicator of network interfaces.</pre>
     knows what exciting new features the T800 brings.  This is unlikely.
     It is far more likely that they have vaguely heard of whatever you
     have imported (especially into the ports tree: remember that there
-    are 20,000 other things there too...).  List some of the new
+    are over 20,000 other things there too...).  List some of the new
     features, or bug fixes.  Tell them why it is a good thing that we
     have the new version.</p>
 

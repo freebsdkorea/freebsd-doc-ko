@@ -8,12 +8,12 @@
 <head>
       <title>&title;</title>
 
-      <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">$FreeBSD: head/en_US.ISO8859-1/htdocs/copyright/freebsd-license.xml 46130 2014-12-31 12:43:28Z cperciva $</cvs:keyword>
+      <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">$FreeBSD: head/en_US.ISO8859-1/htdocs/copyright/freebsd-license.xml 47936 2015-12-31 11:31:41Z bz $</cvs:keyword>
     </head>
 
     <body class="navinclude.about">
 
-    <p>Copyright 1992-2015
+    <p>Copyright 1992-2016
       The FreeBSD Project.
       All rights reserved.</p>
 

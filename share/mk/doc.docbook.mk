@@ -1,5 +1,5 @@
 #
-# $FreeBSD: head/share/mk/doc.docbook.mk 47599 2015-10-16 22:30:02Z wblock $
+# $FreeBSD: head/share/mk/doc.docbook.mk 47714 2015-10-31 17:45:11Z wblock $
 #
 # This include file <doc.docbook.mk> handles building and installing of
 # DocBook documentation in the FreeBSD Documentation Project.
@@ -278,24 +278,36 @@ TRAN_DIR?=	${MASTERDOC:H}
 EN_DIR?=	${TRAN_DIR:S/${LANGCODE}/en_US.ISO8859-1/}
 PO_LANG?=	${LANGCODE:C/\..*$//}
 PO_CHARSET?=	${LANGCODE:tl:C/^.*\.//:S/^iso/iso-/:S/utf-8/UTF-8/}
-EN_XMLLINT?=	${XMLLINT:S/${PO_LANG}/en_US/g}
 CLEANFILES+=	${DOC}.translate.xml ${PO_LANG}.mo
 
+PO_CATALOG_FILES=	file://${EN_DIR}/catalog-cwd.xml \
+                        file://${EN_DIR:H:H}/share/xml/catalog.xml \
+                        file://${DOC_PREFIX}/share/xml/catalog.xml \
+                        file://${LOCALBASE}/share/xml/catalog
+.if defined(EXTRA_CATALOGS)
+PO_CATALOG_FILES+=     ${EXTRA_CATALOGS}
+.endif
+PO_XMLLINT=	env XML_CATALOG_FILES="${PO_CATALOG_FILES}" ${PREFIX}/bin/xmllint
+
 # fix settings in PO file
-POSET_CMD=	${SED} -i '' -e '1s,^,\#$$FreeBSD: head/share/mk/doc.docbook.mk 47599 2015-10-16 22:30:02Z wblock $$\${.newline},' \
+POSET_CMD=	${SED} -i '' -e '1s,^,\#$$FreeBSD: head/share/mk/doc.docbook.mk 47714 2015-10-31 17:45:11Z wblock $$\${.newline},' \
 			     -e 's,^\(\"Language-Team:.*\\n\"\),\1\${.newline}\"Language: ${PO_LANG}\\n\",' \
 			     -e 's,^\"Content-Type: text/plain; charset=.*\\n,\"Content-Type: text/plain; charset=${PO_CHARSET}\\n,'
 
 .if ${.TARGETS:Mpo} || ${.TARGETS:Mtran}
-${DOC}.translate.xml:
+
+MASTER_SRCS!=	${MAKE} -C ${EN_DIR} -V SRCS
+EN_SRCS=	${MASTER_SRCS:S,^,${EN_DIR}/,g}
+
+${DOC}.translate.xml:	${EN_SRCS}
 	@if [ "${TRAN_DIR}" == "${EN_DIR}" ]; then \
 		${ECHO} "build PO file in a non-English dir" ; \
 		exit 1 ; \
 	 fi
 	# normalize the English original into a single file
-	@${EN_XMLLINT} --nonet --noent --valid --xinclude ${MASTERDOC_EN} > ${.TARGET}.tmp
+	@${PO_XMLLINT} --nonet --noent --valid --xinclude ${MASTERDOC_EN} > ${.TARGET}.tmp
 	# remove redundant namespace attributes
-	@${EN_XMLLINT} --nsclean ${.TARGET}.tmp > ${.TARGET}
+	@${PO_XMLLINT} --nsclean ${.TARGET}.tmp > ${.TARGET}
 	@${RM} ${.TARGET}.tmp
 
 po: ${PO_LANG}.po

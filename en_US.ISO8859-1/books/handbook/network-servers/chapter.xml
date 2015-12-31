@@ -2,7 +2,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/network-servers/chapter.xml 47550 2015-10-14 00:16:22Z junovitch $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/network-servers/chapter.xml 47889 2015-12-19 00:44:24Z bjk $
 -->
 <chapter xmlns="http://docbook.org/ns/docbook"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
@@ -664,7 +664,7 @@ server-program-arguments</programlisting>
 	the subdirectories, but will permit the client to mount the
 	directories that are required as needed.</para>
 
-      <programlisting>/home  -alldirs  10.0.0.2 10.0.0.3 10.0.0.4</programlisting>
+      <programlisting>/usr/home  -alldirs  10.0.0.2 10.0.0.3 10.0.0.4</programlisting>
 
       <para>This next example exports <filename>/a</filename> so that
 	two clients from different domains may access that file

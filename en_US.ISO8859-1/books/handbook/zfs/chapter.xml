@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!--
      The FreeBSD Documentation Project
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/zfs/chapter.xml 46625 2015-04-29 21:59:52Z delphij $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/zfs/chapter.xml 47795 2015-11-21 12:43:33Z bhd $
 -->
 
 <chapter xmlns="http://docbook.org/ns/docbook"
@@ -1732,7 +1732,7 @@ mypool/var/tmp        152K  93.2G   152K  /var/tmp</screen>
 	datasets, then the parent cannot be destroyed.  To destroy a
 	dataset and all of its children, use <option>-r</option> to
 	recursively destroy the dataset and all of its children.
-	Use <option>-n</option> <option>-v</option>to list datasets
+	Use <option>-n</option> <option>-v</option> to list datasets
 	and snapshots that would be destroyed by this operation, but
 	do not actually destroy anything.  Space that would be
 	reclaimed by destruction of snapshots is also shown.</para>
@@ -2005,7 +2005,7 @@ mypool/usr/home@my_recursive_snapshot      0      -   184K  -</screen>
 	  snapshot:</para>
 
 	<screen>&prompt.root; <userinput>cp <replaceable>/etc/passwd</replaceable> <replaceable>/var/tmp</replaceable></userinput>
-&prompt.root; zfs snapshot <replaceable>mypool/var/tmp</replaceable>@<replaceable>after_cp</replaceable>
+&prompt.root; <userinput>zfs snapshot <replaceable>mypool/var/tmp</replaceable>@<replaceable>after_cp</replaceable></userinput>
 &prompt.root; <userinput>zfs list -rt all <replaceable>mypool/var/tmp</replaceable></userinput>
 NAME                                   USED  AVAIL  REFER  MOUNTPOINT
 mypool/var/tmp                         206K  93.2G   118K  /var/tmp

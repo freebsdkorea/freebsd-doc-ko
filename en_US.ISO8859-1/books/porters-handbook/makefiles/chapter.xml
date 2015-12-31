@@ -2,7 +2,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/makefiles/chapter.xml 47503 2015-10-05 12:45:39Z amdmi3 $
+     $FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/makefiles/chapter.xml 47743 2015-11-05 12:53:27Z mat $
 -->
 <chapter xmlns="http://docbook.org/ns/docbook"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
@@ -4963,8 +4963,8 @@ PORTVERSION=	1.0</programlisting>
 	<para>Because <varname>WRKDIR</varname> is the only directory
 	  that is supposed to be writable during the build, and is
 	  used to store many files recording the status of the build,
-	  it is always better to force extraction into a subdirectory
-	  anyway.</para>
+	  the port's extraction will be forced into a
+	  subdirectory.</para>
       </note>
     </sect2>
   </sect1>

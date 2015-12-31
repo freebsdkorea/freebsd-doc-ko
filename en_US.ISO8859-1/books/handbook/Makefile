@@ -1,5 +1,5 @@
 #
-# $FreeBSD: head/en_US.ISO8859-1/books/handbook/Makefile 47551 2015-10-14 04:10:21Z bjk $
+# $FreeBSD: head/en_US.ISO8859-1/books/handbook/Makefile 47683 2015-10-27 13:11:32Z wblock $
 #
 # Build the FreeBSD Handbook.
 #
@@ -29,6 +29,12 @@ IMAGES_EN+= advanced-networking/natd.eps
 IMAGES_EN+= advanced-networking/net-routing.pic
 IMAGES_EN+= advanced-networking/pxe-nfs.png
 IMAGES_EN+= advanced-networking/static-routes.pic
+IMAGES_EN+= basics/disk-layout.eps
+IMAGES_EN+= basics/example-dir1.eps
+IMAGES_EN+= basics/example-dir2.eps
+IMAGES_EN+= basics/example-dir3.eps
+IMAGES_EN+= basics/example-dir4.eps
+IMAGES_EN+= basics/example-dir5.eps
 IMAGES_EN+= bsdinstall/bsdinstall-adduser1.png
 IMAGES_EN+= bsdinstall/bsdinstall-adduser2.png
 IMAGES_EN+= bsdinstall/bsdinstall-adduser3.png
@@ -93,11 +99,6 @@ IMAGES_EN+= mail/pine2.scr
 IMAGES_EN+= mail/pine3.scr
 IMAGES_EN+= mail/pine4.scr
 IMAGES_EN+= mail/pine5.scr
-IMAGES_EN+= install/example-dir1.eps
-IMAGES_EN+= install/example-dir2.eps
-IMAGES_EN+= install/example-dir3.eps
-IMAGES_EN+= install/example-dir4.eps
-IMAGES_EN+= install/example-dir5.eps
 IMAGES_EN+= security/ipsec-network.pic
 IMAGES_EN+= security/ipsec-crypt-pkt.pic
 IMAGES_EN+= security/ipsec-encap-pkt.pic

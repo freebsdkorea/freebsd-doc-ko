@@ -1,5 +1,5 @@
 # doc.xml.mk
-# $FreeBSD: head/share/mk/doc.xml.mk 46901 2015-06-30 14:47:21Z wblock $
+# $FreeBSD: head/share/mk/doc.xml.mk 47936 2015-12-31 11:31:41Z bz $
 
 XML_CATALOG_FILES=	file://${.OBJDIR}/catalog-cwd.xml \
 			file://${DOC_PREFIX}/${LANGCODE}/share/xml/catalog.xml \
@@ -184,7 +184,7 @@ _PARAMS.events=		--param events.xml-master "'${XML_EVENTS_EVENTS_MASTER}'" \
 			--param events.xml "'${XML_EVENTS_EVENTS}'"
 XML_EVENTS_EVENTS_MASTER=${DOC_PREFIX}/share/xml/events.xml
 XML_EVENTS_EVENTS_MASTER_SUBFILES=
-.for Y in 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015
+.for Y in 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016
 XML_EVENTS_EVENTS_MASTER_SUBFILES+=	${DOC_PREFIX}/share/xml/events${Y}.xml
 .endfor
 .if exists(${DOC_PREFIX}/${LANGCODE}/share/xml/events.xml)
@@ -193,7 +193,7 @@ XML_EVENTS_EVENTS=	${DOC_PREFIX}/${LANGCODE}/share/xml/events.xml
 XML_EVENTS_EVENTS=	${XML_EVENTS_EVENTS_MASTER}
 .endif
 XML_EVENTS_EVENTS_SUBFILES=
-.for Y in 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015
+.for Y in 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016
 .if exists(${DOC_PREFIX}/${LANGCODE}/share/xml/events${Y}.xml)
 XML_EVENTS_EVENTS_SUBFILES+=	${DOC_PREFIX}/${LANGCODE}/share/xml/events${Y}.xml
 .endif

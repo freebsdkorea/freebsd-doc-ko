@@ -1,11 +1,43 @@
 <?xml version="1.0"?>
 <advisories>
     <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">
-      $FreeBSD: head/share/xml/advisories.xml 47456 2015-09-29 18:14:20Z delphij $
+      $FreeBSD: head/share/xml/advisories.xml 47870 2015-12-16 06:31:36Z delphij $
     </cvs:keyword>
 
   <year>
     <name>2015</name>
+
+    <month>
+      <name>12</name>
+
+      <day>
+        <name>16</name>
+
+        <advisory>
+          <name>FreeBSD-SA-15:27.bind</name>
+        </advisory>
+      </day>
+
+      <day>
+        <name>6</name>
+
+        <advisory>
+          <name>FreeBSD-SA-15:26.openssl</name>
+        </advisory>
+      </day>
+    </month>
+
+    <month>
+      <name>10</name>
+
+      <day>
+        <name>26</name>
+
+        <advisory>
+          <name>FreeBSD-SA-15:25.ntp</name>
+        </advisory>
+      </day>
+    </month>
 
     <month>
       <name>9</name>

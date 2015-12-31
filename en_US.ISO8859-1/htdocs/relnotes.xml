@@ -8,7 +8,7 @@
     <head>
       <title>&title;</title>
 
-      <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">$FreeBSD: head/en_US.ISO8859-1/htdocs/relnotes.xml 44106 2014-03-03 12:20:40Z brueffer $</cvs:keyword>
+      <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">$FreeBSD: head/en_US.ISO8859-1/htdocs/relnotes.xml 47800 2015-11-25 01:53:10Z wblock $</cvs:keyword>
     </head>
 
     <body class="navinclude.about">
@@ -100,6 +100,7 @@
       <li><a href="&base;/relnotes/9-STABLE/errata/index.html">Errata</a></li>
     </ul>
 
+<!-- note: not found as of 20151112
     <h2>Other Sites</h2>
 
     <p>Single-file HTML, PDF, and text renderings of the release
@@ -108,6 +109,7 @@
       href="http://people.FreeBSD.org/~bmah/relnotes/">Release
       Documentation Snapshot Site</a>.  The renderings on this page
       are updated at irregular, but frequent intervals.</p>
+-->
 
   </body>
 </html>

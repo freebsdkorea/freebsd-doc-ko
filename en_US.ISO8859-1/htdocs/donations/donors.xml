@@ -9,7 +9,7 @@
 <head>
       <title>&title;</title>
 
-      <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">$FreeBSD: head/en_US.ISO8859-1/htdocs/donations/donors.xml 46264 2015-02-10 14:59:26Z skreuzer $</cvs:keyword>
+      <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">$FreeBSD: head/en_US.ISO8859-1/htdocs/donations/donors.xml 47762 2015-11-10 15:06:09Z gahr $</cvs:keyword>
     </head>
 
     <body class="navinclude.about">
@@ -2999,6 +2999,13 @@
       <td> <tt>Xin Xu &lt;railwaycat@gmail.com&gt;</tt> </td>
       <td> 15 inch MacBook Pro </td>
       <td> jmg </td>
+      <td> received </td>
+  </tr>
+
+  <tr>
+      <td> <tt>Paul Demers &lt;paulmdemers@gmail.com&gt;</tt> </td>
+      <td> Shuttle SX58J3 machine</td>
+      <td> jmmv </td>
       <td> received </td>
   </tr>
 </table>

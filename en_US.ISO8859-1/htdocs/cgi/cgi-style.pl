@@ -1,4 +1,4 @@
-# $FreeBSD: head/en_US.ISO8859-1/htdocs/cgi/cgi-style.pl 46874 2015-06-27 02:36:16Z peter $
+# $FreeBSD: head/en_US.ISO8859-1/htdocs/cgi/cgi-style.pl 47936 2015-12-31 11:31:41Z bz $
 #
 # Perl routines to encapsulate various elements of HTML page style.
 
@@ -238,7 +238,7 @@ sub html_footer {
     return qq`
 	</div>
         <div id="footer">
-          <a href="$hsty_base/copyright/">Legal Notices</a> | &copy; 1995-2015
+          <a href="$hsty_base/copyright/">Legal Notices</a> | &copy; 1995-2016
           The FreeBSD Project. All rights reserved.<br />
 	  <address>$hsty_author<br />$hsty_date</address>
         </div>

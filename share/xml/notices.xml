@@ -1,11 +1,27 @@
 <?xml version="1.0"?>
 <advisories>
     <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">
-      $FreeBSD: head/share/xml/notices.xml 47415 2015-09-16 21:14:16Z delphij $
+      $FreeBSD: head/share/xml/notices.xml 47736 2015-11-04 11:52:12Z glebius $
     </cvs:keyword>
 
   <year>
     <name>2015</name>
+
+    <month>
+      <name>11</name>
+
+      <day>
+        <name>4</name>
+
+        <notice>
+          <name>FreeBSD-EN-15:20.vm</name>
+        </notice>
+
+        <notice>
+          <name>FreeBSD-EN-15:19.kqueue</name>
+        </notice>
+      </day>
+    </month>
 
     <month>
       <name>9</name>

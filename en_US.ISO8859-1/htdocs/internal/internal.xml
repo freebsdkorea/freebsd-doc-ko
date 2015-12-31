@@ -8,7 +8,7 @@
 <head>
       <title>&title;</title>
 
-      <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">$FreeBSD: head/en_US.ISO8859-1/htdocs/internal/internal.xml 45555 2014-09-06 18:25:48Z gavin $</cvs:keyword>
+      <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">$FreeBSD: head/en_US.ISO8859-1/htdocs/internal/internal.xml 47800 2015-11-25 01:53:10Z wblock $</cvs:keyword>
     </head>
 
     <body class="navinclude.docs">
@@ -19,9 +19,9 @@ the FreeBSD project itself, as viewed separately from the codebase.</p>
 <h2>Projects</h2>
 
 <p>There are various
-<a href="../projects/projects.html">
-projects which lie outside the mainstream development path</a>,
-in which a number of groups are working on the 'cutting edge'
+projects which lie
+<a href="../projects/projects.html">outside the mainstream development path</a>.
+A number of groups are working on the 'cutting edge'
 to expand FreeBSD's range of capabilities in new directions.</p>
 
 <p>Here is an overview of the

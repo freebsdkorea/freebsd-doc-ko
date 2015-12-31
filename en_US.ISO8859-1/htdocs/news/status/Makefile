@@ -1,4 +1,4 @@
-# $FreeBSD: head/en_US.ISO8859-1/htdocs/news/status/Makefile 47459 2015-09-30 14:55:27Z gjb $
+# $FreeBSD: head/en_US.ISO8859-1/htdocs/news/status/Makefile 47917 2015-12-29 05:06:40Z bjk $
 
 .if exists(../Makefile.conf)
 .include "../Makefile.conf"
@@ -71,6 +71,7 @@ XMLDOCS+=	report-2014-10-2014-12
 XMLDOCS+=	report-2015-01-2015-03
 XMLDOCS+=	report-2015-04-2015-06
 XMLDOCS+=	report-2015-07-2015-09
+XMLDOCS+=	report-2015-10-2015-12
 
 XSLT.DEFAULT=	report.xsl
 

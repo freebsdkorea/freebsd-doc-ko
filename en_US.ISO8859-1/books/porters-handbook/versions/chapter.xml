@@ -2,7 +2,7 @@
 
 <!--
      The FreeBSD Documentation Project
-     $FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/versions/chapter.xml 47593 2015-10-16 08:58:28Z mav $
+     $FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/versions/chapter.xml 47934 2015-12-30 23:39:44Z allanjude $
 -->
 
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink=
@@ -4227,8 +4227,8 @@
 	  <entry>Re-factor auto-quirk.  9.0-RELEASE.</entry>
 	</row>
 
-	<!-- Note: at one point 900045 was documented as follows, even though
-	it was never committed:
+	<!-- Note: at one point 900045 was documented as follows, even
+	  though it was never committed:
 	<row>
 	  <entry>900045</entry>
 	  <entry>Oct 13, 2011</entry>
@@ -5955,7 +5955,7 @@
 	  <entry>October 5, 2015</entry>
 	  <entry>11.0-CURRENT after upgrading clang, llvm, lldb,
 	    compiler-rt and libc++ to 3.7.0 (rev
-	    <revnumber>288943</revnumber>).</entry> 
+	    <revnumber>288943</revnumber>).</entry>
 	</row>
 
 	<row>
@@ -5965,6 +5965,48 @@
 	    send/receive (rev <revnumber>r289362</revnumber>).</entry>
 	</row>
 
+	<row>
+	  <entry>1100085</entry>
+	  <entry>October 30, 2015</entry>
+	  <entry>11.0-CURRENT after import of OpenSSL 1.0.2d (rev
+	    <revnumber>290207</revnumber>).</entry>
+	</row>
+
+	<row>
+	  <entry>1100088</entry>
+	  <entry>November 7, 2015</entry>
+	  <entry>11.0-CURRENT after string collation and locales
+	    rework (rev <revnumber>290495</revnumber>).</entry>
+	</row>
+
+	<row>
+	  <entry>1100089</entry>
+	  <entry>November 7, 2015</entry>
+	  <entry>11.0-CURRENT after API change to
+	    &man.sysctl.add.oid.9; (rev <revnumber>290475</revnumber>
+	    and <revnumber>r290505</revnumber>).</entry>
+	</row>
+
+	<row>
+	  <entry>1100090</entry>
+	  <entry>November 10, 2015</entry>
+	  <entry>11.0-CURRENT after API change to callout_stop macro;
+	    (rev <revnumber>290664</revnumber>).</entry>
+	</row>
+
+	<row>
+	  <entry>1100092</entry>
+	  <entry>December 19, 2015</entry>
+	  <entry>11.0-CURRENT after removal of vm_pageout_grow_cache
+	    (rev <revnumber>292469</revnumber>).</entry>
+	</row>
+
+	<row>
+	  <entry>1100093</entry>
+	  <entry>December 30, 2015</entry>
+	  <entry>11.0-CURRENT after removal of sys/crypto/sha2.h
+	    (rev <revnumber>292782</revnumber>).</entry>
+	</row>
       </tbody>
     </tgroup>
   </table>
@@ -5976,8 +6018,7 @@
       change it to a more straightforward major/minor system starting
       from 2.2.  This is because the parallel development on several
       branches made it infeasible to classify the releases merely by
-      their real release dates.  Do
-      not worry about old -CURRENTs; they are listed here just
-      for reference.</para>
+      their real release dates.  Do not worry about old -CURRENTs;
+      they are listed here just for reference.</para>
   </note>
 </chapter>
