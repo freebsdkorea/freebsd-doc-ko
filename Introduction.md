@@ -50,8 +50,11 @@ A. [PO Translation의 Quick Start](http://wonkity.com/~wblock/tmp/translation/po
 
 ### 한국 사용자와 관련된 모임
 
-* 페이스북 그룹: https://www.facebook.com/groups/kr.freebsd/
-* Slack: https://kr-bsd.slack.com/
-* github: https://github.com/kr-bsd
+* https://www.facebook.com/groups/freebsdkorea/
+* http://www.freebsd-ko.org/
+* https://kr-bsd.slack.com/
+* https://github.com/kr-bsd
+
+* freenode irc #freebsd-ko
 
 FreeBSD 홈페이지에 안내되어 있는 kr.freebsd.org는 현재 운영되고 있지 않습니다.
