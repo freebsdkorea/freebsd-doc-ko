@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE article PUBLIC "-//FreeBSD//DTD DocBook XML V5.0-Based Extension//EN" "http://www.FreeBSD.org/XML/share/xml/freebsd50.dtd">
-<!-- $FreeBSD: head/en_US.ISO8859-1/articles/explaining-bsd/article.xml 46457 2015-04-04 04:48:42Z eadler $ -->
+<!-- $FreeBSD: head/en_US.ISO8859-1/articles/explaining-bsd/article.xml 47686 2015-10-27 19:02:46Z rene $ -->
 <!-- The FreeBSD Documentation Project -->
 <article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
   <info><title>Explaining BSD</title>
@@ -51,9 +51,9 @@
   <quote>®</quote> symbol.</para>
     </legalnotice>
 
-    <pubdate>$FreeBSD: head/en_US.ISO8859-1/articles/explaining-bsd/article.xml 46457 2015-04-04 04:48:42Z eadler $</pubdate>
+    <pubdate>$FreeBSD: head/en_US.ISO8859-1/articles/explaining-bsd/article.xml 47686 2015-10-27 19:02:46Z rene $</pubdate>
 
-    <releaseinfo>$FreeBSD: head/en_US.ISO8859-1/articles/explaining-bsd/article.xml 46457 2015-04-04 04:48:42Z eadler $</releaseinfo>
+    <releaseinfo>$FreeBSD: head/en_US.ISO8859-1/articles/explaining-bsd/article.xml 47686 2015-10-27 19:02:46Z rene $</releaseinfo>
 
     <abstract>
       <para>In the open source world, the word <quote>Linux</quote> is almost
@@ -234,7 +234,7 @@
 	  the vendor of BSD/386, alleging that the product contained
 	  AT&amp;T-copyrighted code.  The case was settled out of court in
 	  1994, but the spectre of the litigation continues to haunt people.
-	  As recently as March 2000 an article published on the web claimed
+	  In March 2000 an article published on the web claimed
 	  that the court case had been <quote>recently settled</quote>.</para>
 
 	<para>One detail that the lawsuit did clarify is the naming: in the
@@ -244,15 +244,6 @@
 	  references in book titles to <quote>the 4.3BSD <trademark class="registered">UNIX</trademark> operating
 	    system</quote> and <quote>the 4.4BSD operating
 	    system</quote>.</para>
-      </listitem>
-
-      <listitem>
-	<para>There is a perception that the BSD projects are fragmented and
-	  belligerent.  The
-	  <link xlink:href="http://interactive.wsj.com/bin/login?Tag=/&amp;URI=/archive/retrieve.cgi%253Fid%253DSB952470579348918651.djm&amp;">Wall Street
-	    Journal</link> spoke of <quote>balkanization</quote> of the
-	  BSD projects.  Like the law suit, this perception bases mainly
-	  on ancient history.</para>
       </listitem>
     </orderedlist>
   </sect1>
@@ -285,10 +276,10 @@
 
       <para>The BSD kernels are developed and updated following the Open
 	Source development model.  Each project maintains a publicly
-	accessible <emphasis>source tree</emphasis> under the
-	<link xlink:href="http://www.cvshome.org/">Concurrent Versions
-	  System</link> (CVS), which contains all source files for the
-	project, including documentation and other incidental files.  CVS
+	accessible <emphasis>source tree</emphasis> under
+	<link xlink:href="https://subversion.apache.org/">Subversion</link>
+	(SVN), which contains all source files for the
+	project, including documentation and other incidental files.  SVN
 	allows users to <quote>check out</quote> (in other words, to
 	extract a copy of) any desired version of the system.</para>
 
@@ -363,10 +354,10 @@
 	</listitem>
 
 	<listitem>
-	  <para>As a result of the formalized maintenance of a single CVS
+	  <para>As a result of the formalized maintenance of a single SVN
 	    source tree, BSD development is clear, and it is possible to
 	    access any version of the system by release number or by date.
-	    CVS also allows incremental updates to the system: for example,
+	    SVN also allows incremental updates to the system: for example,
 	    the FreeBSD repository is updated about 100 times a day.  Most of
 	    these changes are small.</para>
 	</listitem>
@@ -405,11 +396,12 @@
 
 	<listitem>
 	  <para>As bugs are found in a RELEASE version, they are fixed, and
-	    the fixes are added to the CVS tree.  In FreeBSD, the resultant
+	    the fixes are added to the SVN tree.  In FreeBSD, the resultant
 	    version is called the <firstterm>STABLE</firstterm> version, while in NetBSD and OpenBSD
 	    it continues to be called the RELEASE version.  Smaller new
 	    features can also be added to this branch after a period of test
-	    in the CURRENT branch.</para>
+	    in the CURRENT branch.  Security and other important bug fixes
+    	    are also applied to all supported RELEASE versions.</para>
 	</listitem>
       </orderedlist>
 

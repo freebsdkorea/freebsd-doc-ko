@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE article PUBLIC "-//FreeBSD//DTD DocBook XML V5.0-Based Extension//EN" "http://www.FreeBSD.org/XML/share/xml/freebsd50.dtd">
-<!-- $FreeBSD: head/en_US.ISO8859-1/articles/explaining-bsd/article.xml 46457 2015-04-04 04:48:42Z eadler $ -->
+<!-- $FreeBSD: head/en_US.ISO8859-1/articles/explaining-bsd/article.xml 47686 2015-10-27 19:02:46Z rene $ -->
 <!-- The FreeBSD Documentation Project -->
 <article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:lang="ko_KR">
   <info><title>BSD에 대한 설명</title>
@@ -21,53 +21,33 @@
       <para>Many of the designations used by manufacturers and sellers to distinguish their products are claimed as trademarks. Where those designations appear in this document, and the FreeBSD Project was aware of the trademark claim, the designations have been followed by the <quote>™</quote> or the <quote>®</quote> symbol.</para>
     </legalnotice>
 
-    <pubdate>$FreeBSD$</pubdate>
+    <pubdate xml:lang="en">$FreeBSD: head/en_US.ISO8859-1/articles/explaining-bsd/article.xml 47686 2015-10-27 19:02:46Z rene $</pubdate>
 
-    <releaseinfo>$FreeBSD$</releaseinfo>
+    <releaseinfo xml:lang="en">$FreeBSD: head/en_US.ISO8859-1/articles/explaining-bsd/article.xml 47686 2015-10-27 19:02:46Z rene $</releaseinfo>
 
     <abstract>
-      <para>오픈 소스의 세계에서, <quote>리눅스</quote>라는 단어는 <quote>운영체제</quote>라는 단어와 거의 동의어입니다.  하지만 리눅스가 유일한 오픈 소스 <trademark class="registered">UNIX</trademark> 운영체제인 것은 아닙니다.  <link xlink:href="http://www.leb.net/hzo/ioscount/data/r.9904.txt">Internet Operating System Counter</link>에 따르면, 1999년 4월을 기준으로 전세계에서 네트워크에 연결된 컴퓨터의 31.3%가 리눅스를 구동시켰습니다.  14.6%는 BSD <trademark class="registered">UNIX</trademark>를 구동시켰습니다.  <link xlink:href="http://www.yahoo.com/">Yahoo!</link>와 같은 세계 최대 규모의 웹 관리 중 일부는 BSD를 통해 이루어집니다.  1999년을 기준으로 세계에서 가장 활발한 FTP 서버(지금은 중단되었습니다)였던 <link xlink:href="ftp://ftp.cdrom.com/">ftp.cdrom.com</link>는 하루 1.4 TB의 데이터를 전송하기 위해 BSD를 사용했었습니다.  이것이 틈새 시장이 아닌 것은 분명합니다: BSD는 잘 유지되어 온 비밀입니다.</para>
+      <para>오픈 소스의 세계에서, <quote>리눅스</quote>라는 단어는 <quote>운영체제</quote>라는 단어와 거의 동의어입니다.  하지만 리눅스가 유일한 오픈 소스 <trademark class="registered">UNIX</trademark> 운영체제인 것은 아닙니다.  <link xlink:href="http://www.leb.net/hzo/ioscount/data/r.9904.txt">Internet Operating System Counter</link>에 따르면, 1999년 4월을 기준으로 네트워크에 연결된 전세계의 컴퓨터들 중 31.3%가 리눅스를 구동시켰습니다.  14.6%는 BSD <trademark class="registered">UNIX</trademark>를 구동시켰습니다.  <link xlink:href="http://www.yahoo.com/">Yahoo!</link>와 같은 세계 최대 규모의 웹 관리 중 일부는 BSD를 통해 이루어집니다.  1999년을 기준으로 세계에서 가장 활발한 FTP 서버(지금은 중단되었습니다)였던 <link xlink:href="ftp://ftp.cdrom.com/">ftp.cdrom.com</link>는 하루 1.4 TB의 데이터를 전송하기 위해 BSD를 사용했었습니다.  이것이 틈새 시장이 아닌 것은 분명합니다: BSD는 잘 유지되어 온 비밀입니다.</para>
 
       <para>무엇이 비밀이라는 뜻일까요?  왜 BSD는 잘 알려져 있지 않을까요?  이 보고서는 이러한 의문과 다른 몇몇의 질문에 대한 것입니다.</para>
 
       <para>이 보고서 전반에 걸쳐, BSD와 리눅스의 차이점은 <emphasis>이렇게</emphasis> 표기될 것입니다.</para>
     </abstract>
-  
-    <db:othercredit xmlns:db="http://docbook.org/ns/docbook" class="translator">
-      <db:personname>
-        <db:firstname>Hoyoung Kim</db:firstname>
-      </db:personname>
-      <db:email>trig4800@gmail.com</db:email>
-    </db:othercredit>
-    <db:copyright xmlns:db="http://docbook.org/ns/docbook">
-      
-        <db:year>2015</db:year>
-      
-      <db:holder>Hoyoung Kim</db:holder>
-    </db:copyright>
   </info>
 
   <sect1 xml:id="what-is-bsd">
     <title>BSD는 무엇일까요?</title>
 
-    <para xml:lang="en">BSD stands for <quote>Berkeley Software Distribution</quote>.  It is
-      the name of distributions of source code from the University of
-      California, Berkeley, which were originally extensions to AT&amp;T's
-      Research <trademark class="registered">UNIX</trademark> operating system.  Several open source operating system
-      projects are based on a release of this source code known as
-      4.4BSD-Lite.  In addition, they comprise a number of packages from other
-      Open Source projects, including notably the GNU project.  The overall
-      operating system comprises:</para>
+    <para>BSD는 <quote>Berkeley Software Distribution</quote>을 나타냅니다.  이는 AT&amp;T의 Research <trademark class="registered">UNIX</trademark> 운영체제의 확장판이었던, University of California, Berkeley의 소스 코드 배포판의 이름입니다.  몇몇 오픈 소스 운영체제들은 4.4BSD-Lite라고 알려진 이 소스 코드 릴리즈에 기반을 두고 있습니다.  게다가, 그 운영체제들은 GNU 프로젝트를 비롯한 다른 오픈 소스 프로젝트들로부터 가져온 많은 패키지들도 포함합니다.  전체적인 운영체제는 다음으로 구성되어 있습니다:</para>
 
     <itemizedlist>
       <listitem>
-	<para>BSD 커널은 프로세스 스케줄링, 메모리 관리, symmetric multi-processing (SMP), 장치 드라이버 등을 제어합니다.</para>
+	<para>프로세스 스케줄링, 메모리 관리, 대칭형 다중 처리 (SMP), 장치 드라이버 등을 제어하는 BSD 커널.</para>
 
 	<para><emphasis>리눅스 커널과는 다르게, 서로 다른 기능을 가진 몇몇의 BSD 커널들이 존재합니다.</emphasis></para>
       </listitem>
 
       <listitem>
-	<para>C 라이브러리는 시스템의 기반 API입니다.</para>
+	<para>시스템의 기반 API인 C 라이브러리.</para>
 
 	<para><emphasis>BSD C 라이브러리는 GNU 프로젝트가 아니라 Berkeley의 코드를 기반으로 합니다.</emphasis></para>
       </listitem>
@@ -95,28 +75,15 @@
 
     <para>BSD 운영체제는 클론이 아니라, AT&amp;T의 Research <trademark class="registered">UNIX</trademark> 운영체제(이는 현대의 <trademark class="registered">UNIX</trademark> System V의 조상이기도 합니다)의 오픈 소스 파생본입니다.  여러분은 이 사실에 놀랄지도 모릅니다.  AT&amp;T는 그 코드를 오픈 소스로 공개한 적이 없는데 어떻게 그런 일이 일어날 수 있었을까요?</para>
 
-    <para>AT&amp;T <trademark class="registered">UNIX</trademark>가 오픈 소스가 아니라는 것과, 상표권의 관점에서 BSD가 엄밀히는 <trademark class="registered">UNIX</trademark>가 <emphasis>아니라는</emphasis> 것은 사실입니다.  하지만 한편으로는, AT&amp;T는 Computer Sciences Research Group (CSRG) of the University of California in Berkeley, CA 등의 다른 프로젝트로부터 소스를 가져와 사용했습니다.  1976년부터, CSRG는 <emphasis>Berkeley Software Distribution</emphasis> 또는 <emphasis>BSD</emphasis>라고 불린 그들의 소프트웨어 테이프를 배포하기 시작했습니다.</para>
+    <para>AT&amp;T <trademark class="registered">UNIX</trademark>가 오픈 소스가 아니라는 것과, 상표권의 관점에서 BSD가 엄밀히는 <trademark class="registered">UNIX</trademark>가 <emphasis>아니라는</emphasis> 것은 사실입니다.  하지만 한편으로는, AT&amp;T는 캘리포니아에 있는 University of California, Berkeley에 속한 Computer Sciences Research Group (CSRG) 등의 다른 프로젝트로부터 소스를 가져와 사용했습니다.  1976년부터, CSRG는 <emphasis>Berkeley Software Distribution</emphasis> 또는 <emphasis>BSD</emphasis>라고 불린 그들의 소프트웨어 테이프를 배포하기 시작했습니다.</para>
 
-    <para>최초의 BSD 릴리즈는 대체로 사용자 프로그램들로 구성되어 있었지만, Defense Advanced Research Projects Agency(DARPA)가 그들의 네트워크인 ARPANET에서 사용하는 통신 프로토콜을 개선하기 위해 CSRG와 계약을 맺은 이후로 그 구성은 극적으로 변화했습니다.  The new protocols were known as the <emphasis>Internet Protocols</emphasis>, later <emphasis>TCP/IP</emphasis> after the most important protocols.  그 프로토콜의 구현이 최초로 널리 배포된 것은 1982년에 4.2BSD에 포함된 것이었습니다.</para>
+    <para>최초의 BSD 릴리즈는 대체로 사용자 프로그램들로 구성되어 있었지만, 그 구성은 Defense Advanced Research Projects Agency(DARPA)가 그들의 네트워크인 ARPANET에서 사용하는 통신 프로토콜을 개선하기 위해 CSRG와 계약을 맺은 이후 극적으로 변화했습니다.  The new protocols were known as the <emphasis>Internet Protocols</emphasis>, later <emphasis>TCP/IP</emphasis> after the most important protocols.  그 프로토콜의 구현이 최초로 널리 배포된 것은 1982년에 4.2BSD에 포함된 것이었습니다.</para>
 
     <para>1980년대에, 많은 수의 새로운 워크스테이션 회사들이 갑자기 나타났습니다.  대다수는 그들만의 운영체제를 개발하는 것보다 <trademark class="registered">UNIX</trademark>를 라이선스받는 것을 선호했습니다.  특히, Sun Microsystems는 <trademark>SunOS</trademark>라고 불리는 <trademark class="registered">UNIX</trademark>를 라이선스했고 4.2BSD를 구현했습니다.  AT&amp;T가 <trademark class="registered">UNIX</trademark>를 상업적으로 판매하도록 허가받았을 때, 그들은 System III라고 불리는 구현을 바닥부터 시작했고, 곧 System V로 발전했습니다.  System V 코드는 네트워킹을 포함하지 않았기 때문에, 모든 구현은 TCP/IP 소프트웨어 및 <emphasis>csh</emphasis> 쉘이나 <emphasis>vi</emphasis> 에디터와 같은 추가적인 BSD 소프트웨어들을 포함했습니다.  이러한 기능 향상은 일괄적으로 <emphasis>Berkeley Extensions</emphasis>로 알려졌습니다.</para>
 
     <para>BSD 테이프는 AT&amp;T 소스 코드를 포함했기 때문에 <trademark class="registered">UNIX</trademark> 소스 라이선스가 필요했습니다.  1990년에, CSRG의 재정은 바닥나고 있었고, 폐쇄를 앞두고 있었습니다.  모임의 일부 회원들은 오픈 소스였던 BSD 코드를 AT&amp;T의 상업 코드 없이 릴리즈하기로 결정했습니다.  이는 마침내 <emphasis>Net/2</emphasis>라고 알려진 <emphasis>Networking Tape 2</emphasis>가 되었습니다.  Net/2는 완전한 운영체제가 아니었습니다: 커널 코드의 약 20% 정도가 부족했습니다.  CSRG 회원의 한 명이었던 William F. Jolitz는 부족했던 코드를 작성했고 1992년 초에 <emphasis>386BSD</emphasis>라는 이름으로 배포했습니다.  같은 시기에, 전 CSRG 회원들로 구성된 모임이 <link xlink:href="http://www.bsdi.com/">Berkeley Software Design Inc.</link>라는 상업 회사를 조직했고, 386BSD와 같은 코드 기반을 가지는 운영체제 <link xlink:href="http://www.bsdi.com/">BSD/386</link>의 베타 버전을 릴리즈했습니다.  이 운영체제의 이름은 나중에 BSD/OS로 바뀌었습니다.</para>
 
-    <para xml:lang="en">386BSD never became a stable operating system.  Instead, two other
-      projects split off from it in 1993:
-      <link xlink:href="http://www.NetBSD.org/">NetBSD</link> and
-      <link xlink:href="@@URL_RELPREFIX@@/index.html">FreeBSD</link>.  The two projects
-      originally diverged due to differences in patience waiting for
-      improvements to 386BSD: the NetBSD people started early in the year,
-      and the first version of FreeBSD was not ready until the end of the
-      year.  In the meantime, the code base had diverged sufficiently to
-      make it difficult to merge.  In addition, the projects had different
-      aims, as we will see below.  In 1996,
-      <link xlink:href="http://www.OpenBSD.org/">OpenBSD</link> split off from
-	NetBSD, and in 2003,
-      <link xlink:href="http://www.dragonflybsd.org/">DragonFlyBSD</link> split
-	off from FreeBSD.</para>
+    <para>386BSD는 안정적인 운영체제가 되지는 못했습니다.  그 대신, 1993년에 그로부터 두 개의 다른 프로젝트가 파생되었습니다: <link xlink:href="http://www.NetBSD.org/">NetBSD</link>와 <link xlink:href="@@URL_RELPREFIX@@/index.html">FreeBSD</link>가 그것입니다.  두 프로젝트는 386BSD의 개선을 기다리는 인내심의 차이에서 갈라졌습니다: NetBSD의 사람들은 새해 일찍 작업에 착수했고, FreeBSD의 첫 버전은 연말까지 준비되지 않았습니다.  한편, 둘의 코드베이스는 다시 합쳐지기 어려울 정도로 크게 갈라졌습니다.  게다가, 각 프로젝트는 서로 다른 목표를 가지고 있었습니다(이에 대해서는 나중에 다룰 것입니다).  1996년에, NetBSD로부터 <link xlink:href="http://www.OpenBSD.org/">OpenBSD</link>가 갈라져 나왔고, 2003년에는 FreeBSD로부터 <link xlink:href="http://www.dragonflybsd.org/">DragonFlyBSD</link>가 갈라져 나왔습니다.</para>
   </sect1>
 
   <sect1 xml:id="why-is-bsd-not-better-known">
@@ -140,17 +107,7 @@
       <listitem>
 	<para>1992년에, AT&amp;T는 BSD/386의 공급자인 <link xlink:href="http://www.bsdi.com/">BSDI</link>를 고소했는데, 해당 제품이 AT&amp;T가 저작권을 가지고 있는 코드를 포함하고 있다는 것이 그 이유였습니다.  The case was settled out of court in 1994, but the spectre of the litigation continues to haunt people.  As recently as March 2000 an article published on the web claimed that the court case had been <quote>recenntly settled</quote>.</para>
 
-	<para xml:lang="en">One detail that the lawsuit did clarify is the naming: in the
-	  1980s, BSD was known as <quote>BSD <trademark class="registered">UNIX</trademark></quote>.  With the
-	  elimination of the last vestige of AT&amp;T code from BSD, it
-	  also lost the right to the name <trademark class="registered">UNIX</trademark>.  Thus you will see
-	  references in book titles to <quote>the 4.3BSD <trademark class="registered">UNIX</trademark> operating
-	    system</quote> and <quote>the 4.4BSD operating
-	    system</quote>.</para>
-      </listitem>
-
-      <listitem>
-	<para>BSD 프로젝트들은 파편화되어 있고 서로에게 적대적이라는 인식이 있습니다.  <link xlink:href="http://interactive.wsj.com/bin/login?Tag=/&amp;URI=/archive/retrieve.cgi%253Fid%253DSB952470579348918651.djm&amp;">Wall Street Journal</link>은 BSD 프로젝트의 <quote>소국 분할 정책</quote>에 대해서 다루었습니다.  소송에서의 경우와 마찬가지로, 이러한 인식은 주로 아주 오래 전의 사건에 바탕을 두고 있습니다.</para>
+	<para>소송에서 분명해진 한 가지 요소는 바로 이름입니다: 1980년대에, BSD는 <quote>BSD <trademark class="registered">UNIX</trademark></quote>라고 알려져 있었습니다.  BSD에서 AT&amp;T 코드의 마지막 흔적까지 제거했기 때문에, 그것은 <trademark class="registered">UNIX</trademark>라는 이름에 대한 권리 역시 잃었습니다.  그렇기 때문에 여러분은 책 제목 등에서 <quote>4.3BSD <trademark class="registered">UNIX</trademark> 운영체제</quote> 그리고 <quote>4.4BSD 운영체제</quote>와 같은 표현을 찾아볼 수 있을 것입니다.</para>
       </listitem>
     </orderedlist>
   </sect1>
@@ -241,10 +198,7 @@
 
       <itemizedlist>
 	<listitem>
-	  <para xml:lang="en">FreeBSD aims for high performance and ease of use by
-	    end users, and is a favourite of web content providers.  It runs
-	    on a <link xlink:href="@@URL_RELPREFIX@@/platforms/">number of platforms</link>
-	    and has significantly more users than the other projects.</para>
+	  <para>FreeBSD는 높은 성능 그리고 end user가 손쉽게 사용하는 것을 추구하며, 웹 컨텐츠 제공자들이 선호합니다.  FreeBSD는 <link xlink:href="@@URL_RELPREFIX@@/platforms/">다양한 플랫폼</link>에서 작동될 수 있으며 다른 프로젝트에 비해 현저히 많은 사용자를 가지고 있습니다.</para>
 	</listitem>
 
 	<listitem>
@@ -326,11 +280,7 @@
 
       <para>BSDi / <link xlink:href="http://www.freebsdmall.com">FreeBSD Mall, Inc.</link>는 거의 10년 동안 FreeBSD에 대한 지원 계약을 제공해 오고 있습니다.</para>
 
-      <para xml:lang="en">In addition, each of the projects has a list of consultants for
-	hire:
-	<link xlink:href="@@URL_RELPREFIX@@/commercial/consult_bycat.html">FreeBSD</link>,
-	<link xlink:href="http://www.netbsd.org/gallery/consultants.html">NetBSD</link>,
-	and <link xlink:href="http://www.openbsd.org/support.html">OpenBSD</link>.</para>
+      <para>더불어, 각 프로젝트는 고용에 대한 상담의 목록을 가지고 있습니다: <link xlink:href="@@URL_RELPREFIX@@/commercial/consult_bycat.html">FreeBSD</link>, <link xlink:href="http://www.netbsd.org/gallery/consultants.html">NetBSD</link>, 그리고 <link xlink:href="http://www.openbsd.org/support.html">OpenBSD</link>.</para>
     </sect2>
   </sect1>
 </article>
