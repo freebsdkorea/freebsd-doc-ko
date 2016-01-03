@@ -9,16 +9,16 @@
     <author><personname><firstname>Greg</firstname><surname>Lehey</surname></personname><affiliation> <address><email>grog@FreeBSD.org</email></address> </affiliation></author>
 
     <legalnotice xml:id="trademarks" role="trademarks">
-      <para>FreeBSD is a registered trademark of the FreeBSD Foundation.</para>
-      <para>AMD, AMD Athlon, AMD Opteron, AMD Phenom, AMD Sempron, AMD Turion, Athlon, Élan, Opteron, and PCnet are trademarks of Advanced Micro Devices, Inc.</para>
-      <para>Apple, AirPort, FireWire, iMac, iPhone, iPad, Mac, Macintosh, Mac OS, Quicktime, and TrueType are trademarks of Apple Inc., registered in the U.S. and other countries.</para>
-      <para>Intel, Celeron, Centrino, Core, EtherExpress, i386, i486, Itanium, Pentium, and Xeon are trademarks or registered trademarks of Intel Corporation or its subsidiaries in the United States and other countries.</para>
-      <para>Linux is a registered trademark of Linus Torvalds.</para>
-      <para>Motif, OSF/1, and UNIX are registered trademarks and IT DialTone and The Open Group are trademarks of The Open Group in the United States and other countries.</para>
-      <para>SPARC, SPARC64, and UltraSPARC are trademarks of SPARC International, Inc in the United States and other countries. SPARC International, Inc owns all of the SPARC trademarks and under licensing agreements allows the proper use of these trademarks by its members.</para>
-      <para>Sun, Sun Microsystems, Java, Java Virtual Machine, JDK, JRE, JSP, JVM, Netra, OpenJDK, Solaris, StarOffice, SunOS and VirtualBox are trademarks or registered trademarks of Sun Microsystems, Inc. in the United States and other countries.</para>
-      <para>UNIX is a registered trademark of The Open Group in the United States and other countries.</para>
-      <para>Many of the designations used by manufacturers and sellers to distinguish their products are claimed as trademarks. Where those designations appear in this document, and the FreeBSD Project was aware of the trademark claim, the designations have been followed by the <quote>™</quote> or the <quote>®</quote> symbol.</para>
+      <para>FreeBSD는 FreeBSD 재단의 등록 상표입니다.</para>
+      <para>AMD, AMD Athlon, AMD Opteron, AMD Phenom, AMD Sempron, AMD Turion, Athlon, Élan, Opteron, 그리고 PCnet은 Advanced Micro Devices, Inc.의 상표입니다.</para>
+      <para>Apple, AirPort, FireWire, iMac, iPhone, iPad, Mac, Macintosh, Mac OS, Quicktime, 그리고 TrueType은 미국 및 그 이외의 국가에서 등록된, Apple Inc.의 상표입니다.</para>
+      <para>Intel, Celeron, Centrino, Core, EtherExpress, i386, i486, Itanium, Pentium, 그리고 Xeon은 미국 및 그 이외의 국가에서 Intel Corporation 혹은 그 자회사의 상표 또는 등록 상표입니다.</para>
+      <para>Linux는 Linus Torvalds의 등록 상표입니다.</para>
+      <para>Motif, OSF/1, 그리고 UNIX는 미국 및 그 이외의 국가에서 The Open Group의 등록 상표입니다.  IT DialTone과 The Open Group은 미국 및 그 이외의 국가에서 The Open Group의 상표입니다.</para>
+      <para>SPARC, SPARC64, 그리고 UltraSPARC는 미국 및 그 이외의 국가에서 SPARC International, Inc의 상표입니다. SPARC International, Inc는 SPARC 상표 모두를 소유하고 있으며 라이선스 협약 하에 계약자는 이 상표들의 적절한 사용을 허가받습니다.</para>
+      <para>Sun, Sun Microsystems, Java, Java Virtual Machine, JDK, JRE, JSP, JVM, Netra, OpenJDK, Solaris, StarOffice, SunOS 그리고 VirtualBox는 미국 및 그 이외의 국가에서 Sun Microsystems, Inc.의 상표 또는 등록 상표입니다.</para>
+      <para>UNIX는 미국 및 그 이외의 국가들에서 등록된 The Open Group의 등록 상표입니다.</para>
+      <para>생산자 및 판매자들이 그들의 제품을 구별하기 위해 사용하는 많은 표기들은 상표권으로 보호받습니다. 이 문서에 그런 표기들이 나타날 때, FreeBSD 프로젝트는 그러한 상표권에 대해 알고 있기 때문에, 해당 표기 뒤에 <quote>™</quote> 또는 <quote>®</quote> 기호를 사용합니다.</para>
     </legalnotice>
 
     <pubdate xml:lang="en">$FreeBSD: head/en_US.ISO8859-1/articles/explaining-bsd/article.xml 47686 2015-10-27 19:02:46Z rene $</pubdate>
@@ -26,7 +26,7 @@
     <releaseinfo xml:lang="en">$FreeBSD: head/en_US.ISO8859-1/articles/explaining-bsd/article.xml 47686 2015-10-27 19:02:46Z rene $</releaseinfo>
 
     <abstract>
-      <para>오픈 소스의 세계에서, <quote>리눅스</quote>라는 단어는 <quote>운영체제</quote>라는 단어와 거의 동의어입니다.  하지만 리눅스가 유일한 오픈 소스 <trademark class="registered">UNIX</trademark> 운영체제인 것은 아닙니다.  <link xlink:href="http://www.leb.net/hzo/ioscount/data/r.9904.txt">Internet Operating System Counter</link>에 따르면, 1999년 4월을 기준으로 네트워크에 연결된 전세계의 컴퓨터들 중 31.3%가 리눅스를 구동시켰습니다.  14.6%는 BSD <trademark class="registered">UNIX</trademark>를 구동시켰습니다.  <link xlink:href="http://www.yahoo.com/">Yahoo!</link>와 같은 세계 최대 규모의 웹 관리 중 일부는 BSD를 통해 이루어집니다.  1999년을 기준으로 세계에서 가장 활발한 FTP 서버(지금은 중단되었습니다)였던 <link xlink:href="ftp://ftp.cdrom.com/">ftp.cdrom.com</link>는 하루 1.4 TB의 데이터를 전송하기 위해 BSD를 사용했었습니다.  이것이 틈새 시장이 아닌 것은 분명합니다: BSD는 잘 유지되어 온 비밀입니다.</para>
+      <para>오픈 소스의 세계에서, <quote>리눅스</quote>라는 단어는 <quote>운영체제</quote>라는 단어와 거의 동의어입니다.  하지만 리눅스만이 유일한 오픈 소스 <trademark class="registered">UNIX</trademark> 운영체제인 것은 아닙니다.  <link xlink:href="http://www.leb.net/hzo/ioscount/data/r.9904.txt">Internet Operating System Counter</link>에 따르면, 1999년 4월을 기준으로 네트워크에 연결된 전세계의 컴퓨터들 중 31.3%가 리눅스를 구동시켰습니다.  14.6%는 BSD <trademark class="registered">UNIX</trademark>를 구동시켰습니다.  <link xlink:href="http://www.yahoo.com/">Yahoo!</link>와 같은 세계 최대 규모의 웹 관리 중 일부는 BSD를 통해 이루어집니다.  1999년을 기준으로 세계에서 가장 활발한 FTP 서버(지금은 중단되었습니다)였던 <link xlink:href="ftp://ftp.cdrom.com/">ftp.cdrom.com</link>는 하루 1.4 TB의 데이터를 전송하기 위해 BSD를 사용했었습니다.  이것이 틈새 시장이 아닌 것은 분명합니다: BSD는 잘 유지되어 온 비밀입니다.</para>
 
       <para>무엇이 비밀이라는 뜻일까요?  왜 BSD는 잘 알려져 있지 않을까요?  이 보고서는 이러한 의문과 다른 몇몇의 질문에 대한 것입니다.</para>
 
@@ -59,7 +59,7 @@
       </listitem>
 
       <listitem>
-	<para>X Window 시스템은 그래픽 디스플레이를 제어합니다.</para>
+	<para>그래픽 디스플레이를 제어하는 X Window 시스템.</para>
 
 	<para>대다수의 BSD에서 사용하는 X Window 시스템은 <link xlink:href="http://www.X.org/">X.Org project</link>에 의해 관리됩니다.  FreeBSD는 사용자가 <application>Gnome</application>, <application>KDE</application>, 또는 <application>Xfce</application>와 같은 데스크탑 환경 및 <application>Openbox</application>, <application>Fluxbox</application>, 또는 <application>Awesome</application>과 같은 가벼운 window manager를 선택해서 사용하는 것을 허용합니다.</para>
       </listitem>
@@ -77,9 +77,9 @@
 
     <para>AT&amp;T <trademark class="registered">UNIX</trademark>가 오픈 소스가 아니라는 것과, 상표권의 관점에서 BSD가 엄밀히는 <trademark class="registered">UNIX</trademark>가 <emphasis>아니라는</emphasis> 것은 사실입니다.  하지만 한편으로는, AT&amp;T는 캘리포니아에 있는 University of California, Berkeley에 속한 Computer Sciences Research Group (CSRG) 등의 다른 프로젝트로부터 소스를 가져와 사용했습니다.  1976년부터, CSRG는 <emphasis>Berkeley Software Distribution</emphasis> 또는 <emphasis>BSD</emphasis>라고 불린 그들의 소프트웨어 테이프를 배포하기 시작했습니다.</para>
 
-    <para>최초의 BSD 릴리즈는 대체로 사용자 프로그램들로 구성되어 있었지만, 그 구성은 Defense Advanced Research Projects Agency(DARPA)가 그들의 네트워크인 ARPANET에서 사용하는 통신 프로토콜을 개선하기 위해 CSRG와 계약을 맺은 이후 극적으로 변화했습니다.  The new protocols were known as the <emphasis>Internet Protocols</emphasis>, later <emphasis>TCP/IP</emphasis> after the most important protocols.  그 프로토콜의 구현이 최초로 널리 배포된 것은 1982년에 4.2BSD에 포함된 것이었습니다.</para>
+    <para>최초의 BSD 릴리즈는 대체로 사용자 프로그램들로 구성되어 있었지만, 그 구성은 Defense Advanced Research Projects Agency(DARPA)가 그들의 네트워크인 ARPANET에서 사용하는 통신 프로토콜을 개선하기 위해 CSRG와 계약을 맺은 이후 극적으로 변화했습니다.  새로운 프로토콜들은 <emphasis>Internet Protocols</emphasis>라고 알려졌으며, 가장 중요한 프로토콜들인 <emphasis>TCP/IP</emphasis>의 구성 요소가 되었습니다.  그 프로토콜의 구현이 최초로 널리 배포된 것은 1982년에 4.2BSD에 포함된 것이었습니다.</para>
 
-    <para>1980년대에, 많은 수의 새로운 워크스테이션 회사들이 갑자기 나타났습니다.  대다수는 그들만의 운영체제를 개발하는 것보다 <trademark class="registered">UNIX</trademark>를 라이선스받는 것을 선호했습니다.  특히, Sun Microsystems는 <trademark>SunOS</trademark>라고 불리는 <trademark class="registered">UNIX</trademark>를 라이선스했고 4.2BSD를 구현했습니다.  AT&amp;T가 <trademark class="registered">UNIX</trademark>를 상업적으로 판매하도록 허가받았을 때, 그들은 System III라고 불리는 구현을 바닥부터 시작했고, 곧 System V로 발전했습니다.  System V 코드는 네트워킹을 포함하지 않았기 때문에, 모든 구현은 TCP/IP 소프트웨어 및 <emphasis>csh</emphasis> 쉘이나 <emphasis>vi</emphasis> 에디터와 같은 추가적인 BSD 소프트웨어들을 포함했습니다.  이러한 기능 향상은 일괄적으로 <emphasis>Berkeley Extensions</emphasis>로 알려졌습니다.</para>
+    <para>1980년대에, 많은 수의 새로운 워크스테이션 회사들이 갑자기 나타났습니다.  대다수는 그들만의 운영체제를 개발하는 것보다 <trademark class="registered">UNIX</trademark>를 라이선스받는 것을 선호했습니다.  특히 Sun Microsystems는 <trademark class="registered">UNIX</trademark>를 라이선스받아서 <trademark>SunOS</trademark>라고 불리는, 4.2BSD의 한 버전을 만들었습니다.  AT&amp;T가 <trademark class="registered">UNIX</trademark>를 상업적으로 판매하도록 허가받았을 때, 그들은 System III라고 불리는 구현을 바닥부터 시작했고, 이는 곧 System V로 발전했습니다.  System V 코드는 네트워킹을 포함하지 않았기 때문에, 모든 구현은 TCP/IP 소프트웨어 및 <emphasis>csh</emphasis> 쉘이나 <emphasis>vi</emphasis> 에디터와 같은 추가적인 BSD 소프트웨어들을 포함했습니다.  이러한 기능 향상은 일괄적으로 <emphasis>Berkeley Extensions</emphasis>로 알려졌습니다.</para>
 
     <para>BSD 테이프는 AT&amp;T 소스 코드를 포함했기 때문에 <trademark class="registered">UNIX</trademark> 소스 라이선스가 필요했습니다.  1990년에, CSRG의 재정은 바닥나고 있었고, 폐쇄를 앞두고 있었습니다.  모임의 일부 회원들은 오픈 소스였던 BSD 코드를 AT&amp;T의 상업 코드 없이 릴리즈하기로 결정했습니다.  이는 마침내 <emphasis>Net/2</emphasis>라고 알려진 <emphasis>Networking Tape 2</emphasis>가 되었습니다.  Net/2는 완전한 운영체제가 아니었습니다: 커널 코드의 약 20% 정도가 부족했습니다.  CSRG 회원의 한 명이었던 William F. Jolitz는 부족했던 코드를 작성했고 1992년 초에 <emphasis>386BSD</emphasis>라는 이름으로 배포했습니다.  같은 시기에, 전 CSRG 회원들로 구성된 모임이 <link xlink:href="http://www.bsdi.com/">Berkeley Software Design Inc.</link>라는 상업 회사를 조직했고, 386BSD와 같은 코드 기반을 가지는 운영체제 <link xlink:href="http://www.bsdi.com/">BSD/386</link>의 베타 버전을 릴리즈했습니다.  이 운영체제의 이름은 나중에 BSD/OS로 바뀌었습니다.</para>
 
@@ -93,11 +93,11 @@
 
     <orderedlist>
       <listitem>
-	<para>BSD 개발자들은 대개 홍보하는 것보다 코드를 개선하는 일에 더 관심이 많습니다.</para>
+	<para>BSD 개발자들은 대개 홍보하는 일보다 코드를 개선하는 일에 더 관심이 많습니다.</para>
       </listitem>
 
       <listitem>
-	<para>리눅스 인기의 많은 부분은 언론 또는 리눅스 서비스를 제공하는 회사 등 리눅스 프로젝트 외부의 요인에 의한 것입니다.  최근까지, 오픈 소스 BSD는 그러한 지원자들이 없었습니다.</para>
+	<para>리눅스 인기의 많은 부분은 언론 또는 리눅스 서비스를 제공하는 회사 등 리눅스 프로젝트 외부의 요인에 의한 것입니다.  최근까지, 오픈 소스 BSD는 그러한 후원자들이 없었습니다.</para>
       </listitem>
 
       <listitem>
@@ -105,7 +105,7 @@
       </listitem>
 
       <listitem>
-	<para>1992년에, AT&amp;T는 BSD/386의 공급자인 <link xlink:href="http://www.bsdi.com/">BSDI</link>를 고소했는데, 해당 제품이 AT&amp;T가 저작권을 가지고 있는 코드를 포함하고 있다는 것이 그 이유였습니다.  The case was settled out of court in 1994, but the spectre of the litigation continues to haunt people.  As recently as March 2000 an article published on the web claimed that the court case had been <quote>recenntly settled</quote>.</para>
+	<para>1992년에, AT&amp;T는 BSD/386의 공급자인 <link xlink:href="http://www.bsdi.com/">BSDI</link>를 고소했는데, 해당 제품이 AT&amp;T가 저작권을 가지고 있는 코드를 포함하고 있다는 것이 그 이유였습니다.  1994년에 그 소송은 타협을 보기로 합의하는 것으로 일단락되었지만, 그 소송의 유령은 사람들을 계속 괴롭혔습니다.  2000년 3월에 들어 웹에 게시된 글은 해당 소송 사건이 <quote>최근에 해결되었다</quote>고 주장했습니다.</para>
 
 	<para>소송에서 분명해진 한 가지 요소는 바로 이름입니다: 1980년대에, BSD는 <quote>BSD <trademark class="registered">UNIX</trademark></quote>라고 알려져 있었습니다.  BSD에서 AT&amp;T 코드의 마지막 흔적까지 제거했기 때문에, 그것은 <trademark class="registered">UNIX</trademark>라는 이름에 대한 권리 역시 잃었습니다.  그렇기 때문에 여러분은 책 제목 등에서 <quote>4.3BSD <trademark class="registered">UNIX</trademark> 운영체제</quote> 그리고 <quote>4.4BSD 운영체제</quote>와 같은 표현을 찾아볼 수 있을 것입니다.</para>
       </listitem>
@@ -126,23 +126,23 @@
     <sect2>
       <title>BSD는 어떻게 개발되고 업데이트되나요?</title>
 
-      <para>BSD 커널은 다음의 오픈 소스 개발 모델에 따라 개발되고 업데이트됩니다.  각 프로젝트는 <link xlink:href="http://www.cvshome.org/">Concurrent Versions System</link>(CVS)를 통한 공개 <emphasis>소스 트리</emphasis>를 유지합니다.  여기에는 문서 및 다른 부가적인 파일들을 포함한 프로젝트의 모든 소스 파일들이 포함되어 있습니다.  CVS는 사용자들이 시스템의 원하는 버전을 <quote>check out</quote> (다시 말하면, 복사본을 추출)하는 것을 허용합니다.</para>
+      <para>BSD 커널은 다음의 오픈 소스 개발 모델에 따라 개발되고 업데이트됩니다.  각 프로젝트는 <link xlink:href="https://subversion.apache.org/">Subversion</link> (SVN)을 통한 공개 <emphasis>소스 트리</emphasis>를 유지합니다.  여기에는 문서 및 다른 부가적인 파일들을 포함한 프로젝트의 모든 소스 파일들이 포함되어 있습니다.  SVN은 사용자들이 시스템의 원하는 버전을 <quote>check out</quote> (다시 말하면, 복사본을 추출)하는 것을 허용합니다.</para>
 
       <para>전세계의 많은 개발자들이 BSD의 개선에 기여하고 있습니다.  이들은 세 가지 분류로 나뉘어질 수 있습니다:</para>
 
       <itemizedlist>
 	<listitem>
-	  <para><firstterm>Contributors</firstterm>는 코드 또는 문서를 작성합니다.  이들은 소스 트리에 직접 commit(코드를 추가)하는 것은 허용되지 않습니다.  그들의 코드를 시스템에 포함시키기 위해서는, 먼저 <emphasis>committer</emphasis>로 알려진, 등록된 개발자에 의해 검토받아야 합니다.</para>
+	  <para><firstterm>공헌자</firstterm>들은 코드 또는 문서를 작성합니다.  이들은 소스 트리에 직접 커밋(코드를 추가)하는 것은 허용되지 않습니다.  그들의 코드를 시스템에 포함시키기 위해서는, 먼저 <emphasis>커미터</emphasis>로 알려진, 등록된 개발자에 의해 검토받아야 합니다.</para>
 	</listitem>
 
 	<listitem>
-	  <para><firstterm>Committers</firstterm>는 소스 트리에 쓰기 권한을 가진 개발자입니다.  committer가 되기 위해서, 개인은 그들이 활동하고 있는 영역에 대한 능력을 보여 주어야 합니다.</para>
+	  <para><firstterm>커미터</firstterm>들은 소스 트리에 쓰기 권한을 가진 개발자입니다.  커미터가 되기 위해서, 개인은 그들이 활동하고 있는 영역에 대한 능력을 보여 주어야 합니다.</para>
 
-	  <para>소스 트리에 수정 사항을 commit하기 전에 허가를 받아야 하는지는 committer 개인의 재량입니다.  일반적으로, 숙련된 committer는 명백해 보이는 수정에 대해서는 다른 사람과 의견을 조율하지 않고 commit할 수 있습니다.  예를 들어, documentation project committer는 오타나 문법 오류 등을 수정할 때 검토받을 필요가 없습니다.  한편, 많은 부분을 또는 복잡하게 수정하는 개발자는 commit하기 전에 그들의 수정을 제출해서 검토받아야 합니다.  극단적인 경우에, Principal Architect와 같은 권한을 가진 core team member가 수정한 내용을 트리에서 제거할 것(<firstterm>backing out</firstterm>이라고 부릅니다)을 요청할 수도 있습니다.  모든 committer들은 각각의 commit에 대한 메일을 받게 되므로, 비밀리에 commit하는 것은 불가능합니다.</para>
+	  <para>소스 트리에 수정 사항을 커밋하기 전에 허가를 받아야 하는지는 커미터 개인의 재량입니다.  일반적으로, 숙련된 커미터는 명백해 보이는 수정에 대해서는 다른 사람과 의견을 조율하지 않고 커밋할 수 있습니다.  예를 들어, documentation project 커미터는 오타나 문법 오류 등을 수정할 때 검토받을 필요가 없습니다.  한편, 많은 부분을 또는 복잡하게 수정하는 개발자는 커밋하기 전에 그들의 수정을 제출해서 검토받아야 합니다.  극단적인 경우에, Principal Architect와 같은 권한을 가진 코어 팀 구성원이 수정한 내용을 트리에서 제거할 것(<firstterm>backing out</firstterm>이라고 부릅니다)을 요청할 수도 있습니다.  모든 커미터들은 각각의 커밋에 대한 메일을 받게 되므로, 비밀리에 커밋하는 것은 불가능합니다.</para>
 	</listitem>
 
 	<listitem>
-	  <para><firstterm>Core team</firstterm>.  FreeBSD와 NetBSD는 각각 프로젝트를 관리하는 core team을 가지고 있습니다.  The core teams developed in the course of the projects, and their role is not always well-defined.  core team member가 되기 위해서 개발자일 필요는 없지만, 그런 경우가 일반적입니다.  The rules for the core team vary from one project to the oter, but in genral they have more say in the direction of the project than non-core team members have.</para>
+	  <para><firstterm>코어 팀</firstterm>.  FreeBSD와 NetBSD는 각각 프로젝트를 관리하는 코어 팀을 가지고 있습니다.  코어 팀은 프로젝트의 진행 도중에 만들어졌고, 그들의 역할은 항상 잘 정의되어 있지는 않습니다.  코어 팀 구성원이 되기 위해서 개발자일 필요는 없지만, 그런 경우가 일반적입니다.  코어 팀에 대한 규칙은 프로젝트마다 다르지만, 일반적으로 그들은 프로젝트의 진행 방향에 대해 다른 이들보다 큰 영향력이 있습니다.</para>
 	</listitem>
       </itemizedlist>
 
@@ -162,7 +162,7 @@
 	</listitem>
 
 	<listitem>
-	  <para>하나의 공식 CVS 소스 트리를 관리하는 결과로, BSD의 개발은 명확하게 이루어지고 있으며, 릴리즈 넘버 혹은 날짜를 통해 시스템의 어떤 버전에라도 접근할 수 있습니다.  CVS는 또한 시스템의 증분 업데이트를 지원합니다: 예를 들어, FreeBSD 저장소는 하루에 약 100회 업데이트됩니다.  이러한 수정 사항의 대부분은 작은 것들입니다.</para>
+	  <para>하나의 공식 SVN 소스 트리를 관리하는 결과로, BSD의 개발은 명확하게 이루어지고 있으며, 릴리즈 넘버 혹은 날짜를 통해 시스템의 어떤 버전에라도 접근할 수 있습니다.  SVN은 또한 시스템의 증분 업데이트를 지원합니다: 예를 들어, FreeBSD 저장소는 하루에 약 100회 업데이트됩니다.  이러한 수정 사항의 대부분은 작은 것들입니다.</para>
 	</listitem>
       </orderedlist>
     </sect2>
@@ -182,7 +182,7 @@
 	</listitem>
 
 	<listitem>
-	  <para>REALEASE 버전에서 버그가 발견되면, 그것들은 고쳐지고, 고쳐진 내용은 CVS 트리에 반영됩니다.  FreeBSD의 경우, 그 결과적인 버전은 <firstterm>STABLE</firstterm> 버전이라고 부르고, NetBSD와 OpenBSD의 경우 계속 RELEASE 버전이라고 부릅니다.  CURRENT 가지에서 일정 기간 테스트된 이후에 작은 새 기능들이 이 가지에 추가될 수도 있습니다.</para>
+	  <para>REALEASE 버전에서 버그가 발견되면, 그것들은 고쳐지고, 고쳐진 내용은 SVN 트리에 반영됩니다.  FreeBSD의 경우, 그 결과적인 버전은 <firstterm>STABLE</firstterm> 버전이라고 부르고, NetBSD와 OpenBSD의 경우 계속 RELEASE 버전이라고 부릅니다.  CURRENT 가지에서 일정 기간 테스트된 이후에 작은 새 기능들이 이 가지에 추가될 수도 있습니다.</para>
 	</listitem>
       </orderedlist>
 
@@ -250,7 +250,7 @@
 
       <itemizedlist>
 	<listitem>
-	  <para><quote>If it ain't broke, don't fix it</quote>: 만일 여러분이 오픈 소스 운영체제를 사용하고 있고, 이에 대해 만족하고 있다면, 아마 굳이 그걸 바꾸어야 할 이유는 없을 겁니다.</para>
+	  <para><quote>망가지지 않았다면, 고치지 마라</quote>: 만일 여러분이 오픈 소스 운영체제를 사용하고 있고, 이에 대해 만족하고 있다면, 아마 굳이 그걸 바꾸어야 할 이유는 없을 겁니다.</para>
 	</listitem>
 
 	<listitem>
@@ -270,7 +270,7 @@
 	</listitem>
 
 	<listitem>
-	  <para>리눅스는 BSD 바이너리를 실행할 수 없는 반면, BSD는 대부분의 리눅스 바이너리를 실행할 수 있습니다.  많은 BSD 구현들은 다른 <trademark class="registered">UNIX</trademark> 계열 시스템의 바이너리 또한 실행할 수 있습니다.  As a result, BSD may present an easier migration route from other systems than Linux would.</para>
+	  <para>리눅스는 BSD 바이너리를 실행할 수 없는 반면, BSD는 대부분의 리눅스 바이너리를 실행할 수 있습니다.  많은 BSD 구현들은 다른 <trademark class="registered">UNIX</trademark> 계열 시스템의 바이너리 또한 실행할 수 있습니다.  결과적으로, 다른 시스템에서 BSD로 마이그레이션하는 것은 리눅스로 하는 것보다 수월할 수 있습니다.</para>
 	</listitem>
       </itemizedlist>
     </sect2>

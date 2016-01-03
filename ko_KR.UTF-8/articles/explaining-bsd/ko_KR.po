@@ -1,15 +1,16 @@
+# $FreeBSD$
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2016-01-01 23:26+0900\n"
-"PO-Revision-Date: 2016-01-01 23:22+0900\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"POT-Creation-Date: 2016-01-04 06:30+0900\n"
+"PO-Revision-Date: 2016-01-04 05:41+0900\n"
+"Last-Translator: Hoyoung Kim <trig4800@gmail.com>\n"
+"Language-Team: 한국어 <>\n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.4\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -39,7 +40,7 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:14
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
-msgstr "FreeBSD is a registered trademark of the FreeBSD Foundation."
+msgstr "FreeBSD는 FreeBSD 재단의 등록 상표입니다."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:16
@@ -48,7 +49,7 @@ msgid ""
 "Élan, Opteron, and PCnet are trademarks of Advanced Micro Devices, Inc."
 msgstr ""
 "AMD, AMD Athlon, AMD Opteron, AMD Phenom, AMD Sempron, AMD Turion, Athlon, "
-"Élan, Opteron, and PCnet are trademarks of Advanced Micro Devices, Inc."
+"Élan, Opteron, 그리고 PCnet은 Advanced Micro Devices, Inc.의 상표입니다."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:19
@@ -58,8 +59,8 @@ msgid ""
 "and other countries."
 msgstr ""
 "Apple, AirPort, FireWire, iMac, iPhone, iPad, Mac, Macintosh, Mac OS, "
-"Quicktime, and TrueType are trademarks of Apple Inc., registered in the U.S. "
-"and other countries."
+"Quicktime, 그리고 TrueType은 미국 및 그 이외의 국가에서 등록된, Apple Inc.의 "
+"상표입니다."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:24
@@ -69,13 +70,13 @@ msgid ""
 "subsidiaries in the United States and other countries."
 msgstr ""
 "Intel, Celeron, Centrino, Core, EtherExpress, i386, i486, Itanium, Pentium, "
-"and Xeon are trademarks or registered trademarks of Intel Corporation or its "
-"subsidiaries in the United States and other countries."
+"그리고 Xeon은 미국 및 그 이외의 국가에서 Intel Corporation 혹은 그 자회사의 "
+"상표 또는 등록 상표입니다."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:28
 msgid "Linux is a registered trademark of Linus Torvalds."
-msgstr "Linux is a registered trademark of Linus Torvalds."
+msgstr "Linux는 Linus Torvalds의 등록 상표입니다."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:30
@@ -84,9 +85,9 @@ msgid ""
 "Open Group are trademarks of The Open Group in the United States and other "
 "countries."
 msgstr ""
-"Motif, OSF/1, and UNIX are registered trademarks and IT DialTone and The "
-"Open Group are trademarks of The Open Group in the United States and other "
-"countries."
+"Motif, OSF/1, 그리고 UNIX는 미국 및 그 이외의 국가에서 The Open Group의 등록 "
+"상표입니다.  IT DialTone과 The Open Group은 미국 및 그 이외의 국가에서 The "
+"Open Group의 상표입니다."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:34
@@ -96,10 +97,10 @@ msgid ""
 "the SPARC trademarks and under licensing agreements allows the proper use of "
 "these trademarks by its members."
 msgstr ""
-"SPARC, SPARC64, and UltraSPARC are trademarks of SPARC International, Inc in "
-"the United States and other countries. SPARC International, Inc owns all of "
-"the SPARC trademarks and under licensing agreements allows the proper use of "
-"these trademarks by its members."
+"SPARC, SPARC64, 그리고 UltraSPARC는 미국 및 그 이외의 국가에서 SPARC "
+"International, Inc의 상표입니다. SPARC International, Inc는 SPARC 상표 모두"
+"를 소유하고 있으며 라이선스 협약 하에 계약자는 이 상표들의 적절한 사용을 허가"
+"받습니다."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:39
@@ -110,9 +111,8 @@ msgid ""
 "other countries."
 msgstr ""
 "Sun, Sun Microsystems, Java, Java Virtual Machine, JDK, JRE, JSP, JVM, "
-"Netra, OpenJDK, Solaris, StarOffice, SunOS and VirtualBox are trademarks or "
-"registered trademarks of Sun Microsystems, Inc. in the United States and "
-"other countries."
+"Netra, OpenJDK, Solaris, StarOffice, SunOS 그리고 VirtualBox는 미국 및 그 이"
+"외의 국가에서 Sun Microsystems, Inc.의 상표 또는 등록 상표입니다."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:44
@@ -120,8 +120,7 @@ msgid ""
 "UNIX is a registered trademark of The Open Group in the United States and "
 "other countries."
 msgstr ""
-"UNIX is a registered trademark of The Open Group in the United States and "
-"other countries."
+"UNIX는 미국 및 그 이외의 국가들에서 등록된 The Open Group의 등록 상표입니다."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:46
@@ -132,11 +131,10 @@ msgid ""
 "designations have been followed by the <quote>™</quote> or the <quote>®</"
 "quote> symbol."
 msgstr ""
-"Many of the designations used by manufacturers and sellers to distinguish "
-"their products are claimed as trademarks. Where those designations appear in "
-"this document, and the FreeBSD Project was aware of the trademark claim, the "
-"designations have been followed by the <quote>™</quote> or the <quote>®</"
-"quote> symbol."
+"생산자 및 판매자들이 그들의 제품을 구별하기 위해 사용하는 많은 표기들은 상표"
+"권으로 보호받습니다. 이 문서에 그런 표기들이 나타날 때, FreeBSD 프로젝트는 그"
+"러한 상표권에 대해 알고 있기 때문에, 해당 표기 뒤에 <quote>™</quote> 또는 "
+"<quote>®</quote> 기호를 사용합니다."
 
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
@@ -162,7 +160,7 @@ msgid ""
 "of data a day. Clearly this is not a niche market: BSD is a well-kept secret."
 msgstr ""
 "오픈 소스의 세계에서, <quote>리눅스</quote>라는 단어는 <quote>운영체제</"
-"quote>라는 단어와 거의 동의어입니다.  하지만 리눅스가 유일한 오픈 소스 "
+"quote>라는 단어와 거의 동의어입니다.  하지만 리눅스만이 유일한 오픈 소스 "
 "<trademark class=\"registered\">UNIX</trademark> 운영체제인 것은 아닙니다.  "
 "<link xlink:href=\"http://www.leb.net/hzo/ioscount/data/r.9904.txt"
 "\">Internet Operating System Counter</link>에 따르면, 1999년 4월을 기준으로 "
@@ -267,7 +265,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: article.translate.xml:116
 msgid "The X Window system, which handles graphical display."
-msgstr "X Window 시스템은 그래픽 디스플레이를 제어합니다."
+msgstr "그래픽 디스플레이를 제어하는 X Window 시스템."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:118
@@ -348,9 +346,9 @@ msgstr ""
 "최초의 BSD 릴리즈는 대체로 사용자 프로그램들로 구성되어 있었지만, 그 구성은 "
 "Defense Advanced Research Projects Agency(DARPA)가 그들의 네트워크인 ARPANET"
 "에서 사용하는 통신 프로토콜을 개선하기 위해 CSRG와 계약을 맺은 이후 극적으로 "
-"변화했습니다.  The new protocols were known as the <emphasis>Internet "
-"Protocols</emphasis>, later <emphasis>TCP/IP</emphasis> after the most "
-"important protocols.  그 프로토콜의 구현이 최초로 널리 배포된 것은 1982년에 "
+"변화했습니다.  새로운 프로토콜들은 <emphasis>Internet Protocols</emphasis>라"
+"고 알려졌으며, 가장 중요한 프로토콜들인 <emphasis>TCP/IP</emphasis>의 구성 요"
+"소가 되었습니다.  그 프로토콜의 구현이 최초로 널리 배포된 것은 1982년에 "
 "4.2BSD에 포함된 것이었습니다."
 
 #. (itstool) path: sect1/para
@@ -372,15 +370,16 @@ msgid ""
 msgstr ""
 "1980년대에, 많은 수의 새로운 워크스테이션 회사들이 갑자기 나타났습니다.  대다"
 "수는 그들만의 운영체제를 개발하는 것보다 <trademark class=\"registered"
-"\">UNIX</trademark>를 라이선스받는 것을 선호했습니다.  특히, Sun Microsystems"
-"는 <trademark>SunOS</trademark>라고 불리는 <trademark class=\"registered"
-"\">UNIX</trademark>를 라이선스했고 4.2BSD를 구현했습니다.  AT&amp;T가 "
-"<trademark class=\"registered\">UNIX</trademark>를 상업적으로 판매하도록 허가"
-"받았을 때, 그들은 System III라고 불리는 구현을 바닥부터 시작했고, 곧 System V"
-"로 발전했습니다.  System V 코드는 네트워킹을 포함하지 않았기 때문에, 모든 구"
-"현은 TCP/IP 소프트웨어 및 <emphasis>csh</emphasis> 쉘이나 <emphasis>vi</"
-"emphasis> 에디터와 같은 추가적인 BSD 소프트웨어들을 포함했습니다.  이러한 기"
-"능 향상은 일괄적으로 <emphasis>Berkeley Extensions</emphasis>로 알려졌습니다."
+"\">UNIX</trademark>를 라이선스받는 것을 선호했습니다.  특히 Sun Microsystems"
+"는 <trademark class=\"registered\">UNIX</trademark>를 라이선스받아서 "
+"<trademark>SunOS</trademark>라고 불리는, 4.2BSD의 한 버전을 만들었습니다.  "
+"AT&amp;T가 <trademark class=\"registered\">UNIX</trademark>를 상업적으로 판매"
+"하도록 허가받았을 때, 그들은 System III라고 불리는 구현을 바닥부터 시작했고, "
+"이는 곧 System V로 발전했습니다.  System V 코드는 네트워킹을 포함하지 않았기 "
+"때문에, 모든 구현은 TCP/IP 소프트웨어 및 <emphasis>csh</emphasis> 쉘이나 "
+"<emphasis>vi</emphasis> 에디터와 같은 추가적인 BSD 소프트웨어들을 포함했습니"
+"다.  이러한 기능 향상은 일괄적으로 <emphasis>Berkeley Extensions</emphasis>"
+"로 알려졌습니다."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:175
@@ -457,7 +456,7 @@ msgid ""
 "The BSD developers are often more interested in polishing their code than "
 "marketing it."
 msgstr ""
-"BSD 개발자들은 대개 홍보하는 것보다 코드를 개선하는 일에 더 관심이 많습니다."
+"BSD 개발자들은 대개 홍보하는 일보다 코드를 개선하는 일에 더 관심이 많습니다."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:219
@@ -467,7 +466,7 @@ msgid ""
 "recently, the open source BSDs had no such proponents."
 msgstr ""
 "리눅스 인기의 많은 부분은 언론 또는 리눅스 서비스를 제공하는 회사 등 리눅스 "
-"프로젝트 외부의 요인에 의한 것입니다.  최근까지, 오픈 소스 BSD는 그러한 지원"
+"프로젝트 외부의 요인에 의한 것입니다.  최근까지, 오픈 소스 BSD는 그러한 후원"
 "자들이 없었습니다."
 
 #. (itstool) path: listitem/para
@@ -493,10 +492,10 @@ msgid ""
 msgstr ""
 "1992년에, AT&amp;T는 BSD/386의 공급자인 <link xlink:href=\"http://www.bsdi."
 "com/\">BSDI</link>를 고소했는데, 해당 제품이 AT&amp;T가 저작권을 가지고 있는 "
-"코드를 포함하고 있다는 것이 그 이유였습니다.  The case was settled out of "
-"court in 1994, but the spectre of the litigation continues to haunt people.  "
-"As recently as March 2000 an article published on the web claimed that the "
-"court case had been <quote>recenntly settled</quote>."
+"코드를 포함하고 있다는 것이 그 이유였습니다.  1994년에 그 소송은 타협을 보기"
+"로 합의하는 것으로 일단락되었지만, 그 소송의 유령은 사람들을 계속 괴롭혔습니"
+"다.  2000년 3월에 들어 웹에 게시된 글은 해당 소송 사건이 <quote>최근에 해결되"
+"었다</quote>고 주장했습니다."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:240
@@ -577,11 +576,11 @@ msgid ""
 "desired version of the system."
 msgstr ""
 "BSD 커널은 다음의 오픈 소스 개발 모델에 따라 개발되고 업데이트됩니다.  각 프"
-"로젝트는 <link xlink:href=\"http://www.cvshome.org/\">Concurrent Versions "
-"System</link>(CVS)를 통한 공개 <emphasis>소스 트리</emphasis>를 유지합니다.  "
-"여기에는 문서 및 다른 부가적인 파일들을 포함한 프로젝트의 모든 소스 파일들이 "
-"포함되어 있습니다.  CVS는 사용자들이 시스템의 원하는 버전을 <quote>check "
-"out</quote> (다시 말하면, 복사본을 추출)하는 것을 허용합니다."
+"로젝트는 <link xlink:href=\"https://subversion.apache.org/\">Subversion</"
+"link> (SVN)을 통한 공개 <emphasis>소스 트리</emphasis>를 유지합니다.  여기에"
+"는 문서 및 다른 부가적인 파일들을 포함한 프로젝트의 모든 소스 파일들이 포함되"
+"어 있습니다.  SVN은 사용자들이 시스템의 원하는 버전을 <quote>check out</"
+"quote> (다시 말하면, 복사본을 추출)하는 것을 허용합니다."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:286
@@ -600,10 +599,10 @@ msgid ""
 "their code to be included in the system, it must be reviewed and checked in "
 "by a registered developer, known as a <emphasis>committer</emphasis>."
 msgstr ""
-"<firstterm>Contributors</firstterm>는 코드 또는 문서를 작성합니다.  이들은 소"
-"스 트리에 직접 commit(코드를 추가)하는 것은 허용되지 않습니다.  그들의 코드"
-"를 시스템에 포함시키기 위해서는, 먼저 <emphasis>committer</emphasis>로 알려"
-"진, 등록된 개발자에 의해 검토받아야 합니다."
+"<firstterm>공헌자</firstterm>들은 코드 또는 문서를 작성합니다.  이들은 소스 "
+"트리에 직접 커밋(코드를 추가)하는 것은 허용되지 않습니다.  그들의 코드를 시스"
+"템에 포함시키기 위해서는, 먼저 <emphasis>커미터</emphasis>로 알려진, 등록된 "
+"개발자에 의해 검토받아야 합니다."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:299
@@ -612,9 +611,9 @@ msgid ""
 "source tree. In order to become a committer, an individual must show ability "
 "in the area in which they are active."
 msgstr ""
-"<firstterm>Committers</firstterm>는 소스 트리에 쓰기 권한을 가진 개발자입니"
-"다.  committer가 되기 위해서, 개인은 그들이 활동하고 있는 영역에 대한 능력을 "
-"보여 주어야 합니다."
+"<firstterm>커미터</firstterm>들은 소스 트리에 쓰기 권한을 가진 개발자입니"
+"다.  커미터가 되기 위해서, 개인은 그들이 활동하고 있는 영역에 대한 능력을 보"
+"여 주어야 합니다."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:304
@@ -631,16 +630,16 @@ msgid ""
 "firstterm>. All committers receive mail describing each individual commit, "
 "so it is not possible to commit secretly."
 msgstr ""
-"소스 트리에 수정 사항을 commit하기 전에 허가를 받아야 하는지는 committer 개인"
-"의 재량입니다.  일반적으로, 숙련된 committer는 명백해 보이는 수정에 대해서는 "
-"다른 사람과 의견을 조율하지 않고 commit할 수 있습니다.  예를 들어, "
-"documentation project committer는 오타나 문법 오류 등을 수정할 때 검토받을 필"
-"요가 없습니다.  한편, 많은 부분을 또는 복잡하게 수정하는 개발자는 commit하기 "
-"전에 그들의 수정을 제출해서 검토받아야 합니다.  극단적인 경우에, Principal "
-"Architect와 같은 권한을 가진 core team member가 수정한 내용을 트리에서 제거"
-"할 것(<firstterm>backing out</firstterm>이라고 부릅니다)을 요청할 수도 있습니"
-"다.  모든 committer들은 각각의 commit에 대한 메일을 받게 되므로, 비밀리에 "
-"commit하는 것은 불가능합니다."
+"소스 트리에 수정 사항을 커밋하기 전에 허가를 받아야 하는지는 커미터 개인의 재"
+"량입니다.  일반적으로, 숙련된 커미터는 명백해 보이는 수정에 대해서는 다른 사"
+"람과 의견을 조율하지 않고 커밋할 수 있습니다.  예를 들어, documentation "
+"project 커미터는 오타나 문법 오류 등을 수정할 때 검토받을 필요가 없습니다.  "
+"한편, 많은 부분을 또는 복잡하게 수정하는 개발자는 커밋하기 전에 그들의 수정"
+"을 제출해서 검토받아야 합니다.  극단적인 경우에, Principal Architect와 같은 "
+"권한을 가진 코어 팀 구성원이 수정한 내용을 트리에서 제거할 것"
+"(<firstterm>backing out</firstterm>이라고 부릅니다)을 요청할 수도 있습니다.  "
+"모든 커미터들은 각각의 커밋에 대한 메일을 받게 되므로, 비밀리에 커밋하는 것"
+"은 불가능합니다."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:321
@@ -653,12 +652,12 @@ msgid ""
 "general they have more say in the direction of the project than non-core "
 "team members have."
 msgstr ""
-"<firstterm>Core team</firstterm>.  FreeBSD와 NetBSD는 각각 프로젝트를 관리하"
-"는 core team을 가지고 있습니다.  The core teams developed in the course of "
-"the projects, and their role is not always well-defined.  core team member가 "
-"되기 위해서 개발자일 필요는 없지만, 그런 경우가 일반적입니다.  The rules for "
-"the core team vary from one project to the oter, but in genral they have "
-"more say in the direction of the project than non-core team members have."
+"<firstterm>코어 팀</firstterm>.  FreeBSD와 NetBSD는 각각 프로젝트를 관리하는 "
+"코어 팀을 가지고 있습니다.  코어 팀은 프로젝트의 진행 도중에 만들어졌고, 그들"
+"의 역할은 항상 잘 정의되어 있지는 않습니다.  코어 팀 구성원이 되기 위해서 개"
+"발자일 필요는 없지만, 그런 경우가 일반적입니다.  코어 팀에 대한 규칙은 프로젝"
+"트마다 다르지만, 일반적으로 그들은 프로젝트의 진행 방향에 대해 다른 이들보다 "
+"큰 영향력이 있습니다."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:332
@@ -710,9 +709,9 @@ msgid ""
 "system: for example, the FreeBSD repository is updated about 100 times a "
 "day. Most of these changes are small."
 msgstr ""
-"하나의 공식 CVS 소스 트리를 관리하는 결과로, BSD의 개발은 명확하게 이루어지"
+"하나의 공식 SVN 소스 트리를 관리하는 결과로, BSD의 개발은 명확하게 이루어지"
 "고 있으며, 릴리즈 넘버 혹은 날짜를 통해 시스템의 어떤 버전에라도 접근할 수 있"
-"습니다.  CVS는 또한 시스템의 증분 업데이트를 지원합니다: 예를 들어, FreeBSD "
+"습니다.  SVN은 또한 시스템의 증분 업데이트를 지원합니다: 예를 들어, FreeBSD "
 "저장소는 하루에 약 100회 업데이트됩니다.  이러한 수정 사항의 대부분은 작은 것"
 "들입니다."
 
@@ -780,7 +779,7 @@ msgid ""
 "and other important bug fixes are also applied to all supported RELEASE "
 "versions."
 msgstr ""
-"REALEASE 버전에서 버그가 발견되면, 그것들은 고쳐지고, 고쳐진 내용은 CVS 트리"
+"REALEASE 버전에서 버그가 발견되면, 그것들은 고쳐지고, 고쳐진 내용은 SVN 트리"
 "에 반영됩니다.  FreeBSD의 경우, 그 결과적인 버전은 <firstterm>STABLE</"
 "firstterm> 버전이라고 부르고, NetBSD와 OpenBSD의 경우 계속 RELEASE 버전이라"
 "고 부릅니다.  CURRENT 가지에서 일정 기간 테스트된 이후에 작은 새 기능들이 이 "
@@ -1034,9 +1033,9 @@ msgid ""
 "source operating system, and you are happy with it, there is probably no "
 "good reason to change."
 msgstr ""
-"<quote>If it ain't broke, don't fix it</quote>: 만일 여러분이 오픈 소스 운영"
-"체제를 사용하고 있고, 이에 대해 만족하고 있다면, 아마 굳이 그걸 바꾸어야 할 "
-"이유는 없을 겁니다."
+"<quote>망가지지 않았다면, 고치지 마라</quote>: 만일 여러분이 오픈 소스 운영체"
+"제를 사용하고 있고, 이에 대해 만족하고 있다면, 아마 굳이 그걸 바꾸어야 할 이"
+"유는 없을 겁니다."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:550
@@ -1088,9 +1087,9 @@ msgid ""
 msgstr ""
 "리눅스는 BSD 바이너리를 실행할 수 없는 반면, BSD는 대부분의 리눅스 바이너리"
 "를 실행할 수 있습니다.  많은 BSD 구현들은 다른 <trademark class=\"registered"
-"\">UNIX</trademark> 계열 시스템의 바이너리 또한 실행할 수 있습니다.  As a "
-"result, BSD may present an easier migration route from other systems than "
-"Linux would."
+"\">UNIX</trademark> 계열 시스템의 바이너리 또한 실행할 수 있습니다.  결과적으"
+"로, 다른 시스템에서 BSD로 마이그레이션하는 것은 리눅스로 하는 것보다 수월할 "
+"수 있습니다."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:584
