@@ -39,6 +39,11 @@ FreeBSD는 영문 그대로 표기하고 '프리비에스디' 등의 한글 표�
 * bug report(s) -> 버그 보고
 
 ### C
+* commit -> 커밋
+* committer -> 커미터
+* contributor -> 공헌자
+* Core Team -> 코어 팀
+
 ### D
 ### E
 ### F
@@ -56,6 +61,10 @@ FreeBSD는 영문 그대로 표기하고 '프리비에스디' 등의 한글 표�
 ### N
 ### O
 ### P
+* port(s) -> 포트
+* ports tree -> 포트 트리
+* The Ports Collection -> 포트 컬렉션
+
 ### Q
 ### R
 ### S
