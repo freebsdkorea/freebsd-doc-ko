@@ -1,6 +1,9 @@
 # $FreeBSD: head/en_US.ISO8859-1/books/Makefile 40258 2012-12-03 16:27:42Z eadler $
 
-SUBDIR= faq
+SUBDIR = developers-handbook
+SUBDIR+= faq
+SUBDIR+= fdp-primer
+SUBDIR+= porters-handbook
 
 ROOT_SYMLINKS= faq
 
