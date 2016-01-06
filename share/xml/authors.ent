@@ -13,7 +13,7 @@
                  builds for the other languages, and we will poke fun of you
                  in public.
 
-     $FreeBSD: head/share/xml/authors.ent 47722 2015-11-01 16:53:49Z mmel $
+     $FreeBSD: head/share/xml/authors.ent 47945 2016-01-02 21:26:15Z eadler $
 -->
 
 <!-- FreeBSD Committers -->
@@ -2411,5 +2411,6 @@
 
 <!-- FreeBSD Security Officer -->
 <!ENTITY a.so '&a.delphij;'>
+<!ENTITY a.so.email '&a.delphij.email;'>
 
 <!ENTITY a.so-team '&a.mnag;, &a.remko;, &a.gnn;, &a.simon;, &a.philip;, &a.cperciva;, &a.csjp;, &a.des;, &a.rwatson;, &a.bz;'>

@@ -2,7 +2,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/introduction/chapter.xml 47745 2015-11-06 03:13:54Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/introduction/chapter.xml 47949 2016-01-04 13:39:02Z oshogbo $
 -->
 <chapter xmlns="http://docbook.org/ns/docbook"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
@@ -660,7 +660,7 @@
 	</listitem>
 
 	<listitem>
-	  <para><link xlink:href="http://wheelsystems.com/en/">Wheel
+	  <para><link xlink:href="http://wheelsystems.com/">Wheel
 	      Systems</link>
 	    <indexterm>
 	      <primary>Wheel Systems</primary>

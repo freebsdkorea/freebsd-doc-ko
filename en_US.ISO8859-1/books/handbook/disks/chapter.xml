@@ -2,7 +2,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/disks/chapter.xml 47846 2015-12-13 09:45:24Z trasz $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/disks/chapter.xml 47952 2016-01-04 22:04:12Z wblock $
 -->
 
 <chapter xmlns="http://docbook.org/ns/docbook"
@@ -135,10 +135,12 @@
     </note>
 
     <para>The partition scheme is created, and then a single partition
-      is added:</para>
+      is added.  To improve performance on newer disks with larger
+      hardware block sizes, the partition is aligned to one megabyte
+      boundaries:</para>
 
     <screen>&prompt.root; <userinput>gpart create -s GPT ada1</userinput>
-&prompt.root; <userinput>gpart add -t freebsd-ufs ada1</userinput></screen>
+&prompt.root; <userinput>gpart add -t freebsd-ufs -a 1M ada1</userinput></screen>
 
     <para>Depending on use, several smaller partitions may be desired.
       See &man.gpart.8; for options to create partitions smaller than

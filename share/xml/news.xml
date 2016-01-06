@@ -25,9 +25,27 @@
 
 <news>
   <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">
-    $FreeBSD: head/share/xml/news.xml 47722 2015-11-01 16:53:49Z mmel $
+    $FreeBSD: head/share/xml/news.xml 47946 2016-01-03 10:36:29Z matthew $
   </cvs:keyword>
 
+  <year>
+    <name>2016</name>
+
+    <month>
+      <name>1</name>
+
+      <day>
+	<name>3</name>
+
+	<event>
+	  <p>The &os; Core team has released an
+	    <a href="&lists.announce;/2016-January/001691.html">Initial Statement</a>
+	    about harassment in the &os; Community</p>
+	</event>
+      </day>
+    </month>
+  </year>
+  
   <year>
     <name>2015</name>
 

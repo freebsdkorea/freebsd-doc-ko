@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <!DOCTYPE entries PUBLIC "-//FreeBSD//DTD FreeBSD XML Database for Commercial Gallery//EN"
                          "http://www.FreeBSD.org/XML/share/xml/gallery.dtd">
-<!-- $FreeBSD: head/share/xml/commercial.software.xml 47149 2015-08-02 19:25:30Z rene $ -->
+<!-- $FreeBSD: head/share/xml/commercial.software.xml 47956 2016-01-06 15:03:34Z wblock $ -->
 
 <entries>
     <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">
-      $FreeBSD: head/share/xml/commercial.software.xml 47149 2015-08-02 19:25:30Z rene $
+      $FreeBSD: head/share/xml/commercial.software.xml 47956 2016-01-06 15:03:34Z wblock $
     </cvs:keyword>
 
   <categories>
@@ -917,6 +917,20 @@
       eligible to obtain Perforce licenses gratis. Perforce Software can be
       reached at <a href="mailto:info@perforce.com">info@perforce.com</a>
       or +1-510-864-7400.
+    </description>
+  </entry>
+
+  <entry id="pfSense" category="SECURITY">
+    <name>pfSense</name>
+    <url>https://www.pfsense.org/</url>
+    <description>
+      The <a href="https://www.pfsense.org">pfSense project</a> is a
+      free network firewall distribution based on the FreeBSD
+      operating system with a custom kernel and including third party
+      free software packages for additional functionality.  pfSense
+      software, with the help of the package system, is able to
+      provide the same or more functionality as more common commercial
+      firewalls, without any of the artificial limitations.
     </description>
   </entry>
 

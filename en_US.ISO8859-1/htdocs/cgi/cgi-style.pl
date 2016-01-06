@@ -1,4 +1,4 @@
-# $FreeBSD: head/en_US.ISO8859-1/htdocs/cgi/cgi-style.pl 47936 2015-12-31 11:31:41Z bz $
+# $FreeBSD: head/en_US.ISO8859-1/htdocs/cgi/cgi-style.pl 47947 2016-01-03 16:46:47Z allanjude $
 #
 # Perl routines to encapsulate various elements of HTML page style.
 
@@ -160,7 +160,7 @@ $i_topbar = qq`
 		<ul>
 		  <li><a href="$hsty_base/commercial/commercial.html">Vendors</a></li>
 		  <li><a href="//security.FreeBSD.org/">Security Information</a></li>
-		  <li><a href="https://bugs.freebsd.org/bugzilla/search/">Bug Reports</a></li>
+		  <li><a href="https://bugs.freebsd.org/search/">Bug Reports</a></li>
 		  <li><a href="$hsty_base/support.html">Submit Bug-report</a></li>
 		</ul>
 	      </li>

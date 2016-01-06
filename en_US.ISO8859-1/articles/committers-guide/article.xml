@@ -45,9 +45,9 @@
       &tm-attrib.general;
     </legalnotice>
 
-    <pubdate>$FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 47876 2015-12-17 01:45:07Z wblock $</pubdate>
+    <pubdate>$FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 47945 2016-01-02 21:26:15Z eadler $</pubdate>
 
-    <releaseinfo>$FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 47876 2015-12-17 01:45:07Z wblock $</releaseinfo>
+    <releaseinfo>$FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 47945 2016-01-02 21:26:15Z eadler $</releaseinfo>
 
     <abstract>
       <para>This document provides information for the &os;
@@ -2988,10 +2988,10 @@ Relnotes:           yes</programlisting>
       </varlistentry>
 
       <varlistentry>
-	<term>&a.des.email;</term>
+	<term>&a.so.email;</term>
 
 	<listitem>
-	  <para>Dag-Erling is the
+	  <para>&a.so; is the
 	    <link xlink:href="&url.base;/security/">&os; Security
 	      Officer</link> and oversees the
 	    &a.security-officer;.</para>
@@ -4726,7 +4726,7 @@ Index: 2015Q1/security/rubygem-sshkit/Makefile
 --- 2015Q1/security/rubygem-sshkit/Makefile     (revision 380443)
 +++ 2015Q1/security/rubygem-sshkit/Makefile     (working copy)
 @@ -2,7 +2,7 @@
- # $FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 47876 2015-12-17 01:45:07Z wblock $
+ # $FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 47945 2016-01-02 21:26:15Z eadler $
 
  PORTNAME=      sshkit
 -PORTVERSION=   1.6.1

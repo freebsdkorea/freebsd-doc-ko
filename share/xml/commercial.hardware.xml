@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <!DOCTYPE entries PUBLIC "-//FreeBSD//DTD FreeBSD XML Database for Commercial Gallery//EN"
                          "http://www.FreeBSD.org/XML/share/xml/gallery.dtd">
-<!-- $FreeBSD: head/share/xml/commercial.hardware.xml 43181 2013-11-13 06:10:37Z hrs $ -->
+<!-- $FreeBSD: head/share/xml/commercial.hardware.xml 47956 2016-01-06 15:03:34Z wblock $ -->
 
 <entries>
     <cvs:keyword xmlns:cvs="http://www.FreeBSD.org/XML/CVS">
-      $FreeBSD: head/share/xml/commercial.hardware.xml 43181 2013-11-13 06:10:37Z hrs $
+      $FreeBSD: head/share/xml/commercial.hardware.xml 47956 2016-01-06 15:03:34Z wblock $
     </cvs:keyword>
 
   <entry id="ABMX">
@@ -387,6 +387,23 @@
       family of 2/4/8 serial port cards features custom ASIC design, speeds
       up to 921.6Kbps, surge protection, independent and
       software-configurable I/O ports and IRQs.
+    </description>
+  </entry>
+
+  <entry id="Netgate">
+    <name>Netgate</name>
+    <url>http://store.netgate.com/</url>
+    <description>
+      Netgate is a high quality communications appliance manufacturer
+      that designs highly configurable computers engineered for
+      low-power, high-throughput, dependable deployments.  We offer
+      quick deployment with off-the-shelf systems, specialized custom
+      product solutions and an end-to-end OEM service program for
+      large customers.
+
+      <p>Netgate directly supports Open Source software and Open
+	Source hardware projects by providing management, engineering
+	and support resources for the pfSense project.</p>
     </description>
   </entry>
 

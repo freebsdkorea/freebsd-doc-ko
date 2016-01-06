@@ -21,7 +21,7 @@
      lexicographical order by the entity (i.e., the dots used in place of
      special characters should not be expanded when comparing).
 
-     $FreeBSD: head/share/xml/man-refs.ent 47507 2015-10-05 13:27:01Z gjb $
+     $FreeBSD: head/share/xml/man-refs.ent 47951 2016-01-04 18:32:11Z brueffer $
 -->
 
 <!ENTITY man...1 "<citerefentry xmlns='http://docbook.org/ns/docbook'><refentrytitle>[</refentrytitle><manvolnum>1</manvolnum></citerefentry>">
@@ -4683,6 +4683,8 @@
 <!ENTITY man.rsu.4 "<citerefentry xmlns='http://docbook.org/ns/docbook'><refentrytitle>rsu</refentrytitle><manvolnum>4</manvolnum></citerefentry>">
 <!ENTITY man.rsufw.4 "<citerefentry xmlns='http://docbook.org/ns/docbook'><refentrytitle>rsufw</refentrytitle><manvolnum>4</manvolnum></citerefentry>">
 <!ENTITY man.rtc.4 "<citerefentry xmlns='http://docbook.org/ns/docbook'><refentrytitle>rtc</refentrytitle><manvolnum>4</manvolnum></citerefentry>">
+<!ENTITY man.rtwn.4 "<citerefentry xmlns='http://docbook.org/ns/docbook'><refentrytitle>rtwn</refentrytitle><manvolnum>4</manvolnum></citerefentry>">
+<!ENTITY man.rtwnfw.4 "<citerefentry xmlns='http://docbook.org/ns/docbook'><refentrytitle>rtwnfw</refentrytitle><manvolnum>4</manvolnum></citerefentry>">
 <!ENTITY man.rue.4 "<citerefentry xmlns='http://docbook.org/ns/docbook'><refentrytitle>rue</refentrytitle><manvolnum>4</manvolnum></citerefentry>">
 <!ENTITY man.rum.4 "<citerefentry xmlns='http://docbook.org/ns/docbook'><refentrytitle>rum</refentrytitle><manvolnum>4</manvolnum></citerefentry>">
 <!ENTITY man.run.4 "<citerefentry xmlns='http://docbook.org/ns/docbook'><refentrytitle>run</refentrytitle><manvolnum>4</manvolnum></citerefentry>">
