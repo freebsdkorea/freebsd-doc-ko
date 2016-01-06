@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2016-01-06 04:59+0900\n"
-"PO-Revision-Date: 2016-01-06 05:07+0900\n"
+"PO-Revision-Date: 2016-01-06 06:43+0900\n"
 "Last-Translator: Hoyoung Kim <trig4800@gmail.com>\n"
 "Language-Team: 한국어 <>\n"
 "Language: ko_KR\n"
@@ -18,12 +18,12 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr ""
+msgstr "번역자 정보"
 
 #. (itstool) path: info/title
 #: book.translate.xml:62
 msgid "FreeBSD Documentation Project Primer for New Contributors"
-msgstr ""
+msgstr "FreeBSD 문서 프로젝트의 새로운 공헌자를 위한 지침서"
 
 #. (itstool) path: info/author
 #: book.translate.xml:66
@@ -46,12 +46,12 @@ msgstr ""
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/books/fdp-primer/book.xml 47339 2015-09-02 "
 "20:30:53Z wblock $"
-msgstr ""
+msgstr "&dollar;FreeBSD&dollar;"
 
 #. (itstool) path: legalnotice/title
 #: book.translate.xml:95
 msgid "Copyright"
-msgstr ""
+msgstr "저작권"
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:97
@@ -130,7 +130,7 @@ msgstr "서문"
 #. (itstool) path: sect1/title
 #: book.translate.xml:155
 msgid "Shell Prompts"
-msgstr ""
+msgstr "쉘 프롬프트"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:157
@@ -146,22 +146,22 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:165
 msgid "User"
-msgstr ""
+msgstr "사용자"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:166
 msgid "Prompt"
-msgstr ""
+msgstr "프롬프트"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:172
 msgid "Normal user"
-msgstr ""
+msgstr "일반 사용자"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:173 book.translate.xml:4371
 msgid "<prompt>%</prompt>"
-msgstr ""
+msgstr "<prompt>%</prompt>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:177
@@ -171,22 +171,22 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:178 book.translate.xml:4364
 msgid "<prompt>#</prompt>"
-msgstr ""
+msgstr "<prompt>#</prompt>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:186
 msgid "Typographic Conventions"
-msgstr ""
+msgstr "인쇄상의 관습"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:188
 msgid "This table describes the typographic conventions used in this book."
-msgstr ""
+msgstr "이 표는 이 책에서 사용되는 인쇄상의 관습에 대해 설명합니다."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:195
 msgid "Meaning"
-msgstr ""
+msgstr "의미"
 
 #. (itstool) path: row/entry
 #. (itstool) path: sect2/title
@@ -198,7 +198,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:202
 msgid "The names of commands."
-msgstr ""
+msgstr "명령어의 이름"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:203
@@ -208,7 +208,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:208
 msgid "The names of files."
-msgstr ""
+msgstr "파일의 이름"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:209
@@ -224,7 +224,7 @@ msgstr ""
 #: book.translate.xml:214
 #, no-wrap
 msgid "You have mail."
-msgstr ""
+msgstr "You have mail."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:218
@@ -264,12 +264,12 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:237
 msgid "Emphasis."
-msgstr ""
+msgstr "강조."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:238
 msgid "The user <emphasis>must</emphasis> do this."
-msgstr ""
+msgstr "사용자는 <emphasis>반드시</emphasis> 이 지침을 따라야 합니다."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:243
@@ -286,12 +286,13 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:252
 msgid "Environment variables."
-msgstr ""
+msgstr "환경변수"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:253
 msgid "<envar>$HOME</envar> is set to the user's home directory."
 msgstr ""
+"<envar>$HOME</envar>은 사용자의 홈 디렉토리를 설정하기 위해 사용됩니다."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:262
@@ -425,6 +426,7 @@ msgid ""
 "The <acronym>FDP</acronym> is responsible for four categories of FreeBSD "
 "documentation."
 msgstr ""
+"<acronym>FDP</acronym>은 FreeBSD 문서의 네 가지 부분을 책임지고 있습니다."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:391
@@ -604,7 +606,7 @@ msgstr ""
 #. (itstool) path: step/para
 #: book.translate.xml:515
 msgid "After editing, check for problems by running:"
-msgstr ""
+msgstr "편집 이후에, 다음을 통해 문제점이 있는지 확인해 주세요:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:517
@@ -683,7 +685,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:610
 msgid "Required Tools"
-msgstr ""
+msgstr "필수적인 도구들"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:612
@@ -751,7 +753,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:668
 msgid "Optional Tools"
-msgstr ""
+msgstr "선택적인 도구들"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:670
@@ -9380,7 +9382,7 @@ msgstr ""
 #. (itstool) path: procedure/title
 #: book.translate.xml:7371
 msgid "Initial Setup"
-msgstr ""
+msgstr "초기 설정"
 
 #. (itstool) path: procedure/para
 #: book.translate.xml:7373
@@ -9389,6 +9391,8 @@ msgid ""
 "<filename>Makefile</filename> must be created or copied from the English "
 "original:"
 msgstr ""
+"새로운 번역이 처음 만들어질 때, 디렉토리 구조 및 <filename>Makefile</"
+"filename>는 새로 생성되거나 또는 영어 원본으로부터 복사되어야 합니다:"
 
 #. (itstool) path: step/para
 #: book.translate.xml:7378
