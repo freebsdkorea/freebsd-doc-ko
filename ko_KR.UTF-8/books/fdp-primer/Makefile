@@ -29,7 +29,6 @@ IMAGES_LIB+=	callouts/4.png
 IMAGES_LIB+=	callouts/5.png
 
 # Entities
-SRCS+= chapters.ent
 
 URL_RELPREFIX?=	../../../..
 DOC_PREFIX?=	${.CURDIR}/../../..

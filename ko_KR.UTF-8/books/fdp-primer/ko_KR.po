@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-01-06 04:59+0900\n"
-"PO-Revision-Date: 2016-01-06 06:43+0900\n"
+"POT-Creation-Date: 2016-01-07 09:02+0900\n"
+"PO-Revision-Date: 2016-01-07 05:37+0900\n"
 "Last-Translator: Hoyoung Kim <trig4800@gmail.com>\n"
 "Language-Team: 한국어 <>\n"
 "Language: ko_KR\n"
@@ -28,7 +28,7 @@ msgstr "FreeBSD 문서 프로젝트의 새로운 공헌자를 위한 지침서"
 #. (itstool) path: info/author
 #: book.translate.xml:66
 msgid "<orgname>The FreeBSD Documentation Project</orgname>"
-msgstr ""
+msgstr "<orgname>The FreeBSD Documentation Project</orgname>"
 
 #. (itstool) path: info/copyright
 #: book.translate.xml:68
@@ -39,6 +39,11 @@ msgid ""
 "<year>2010</year> <year>2011</year> <year>2012</year> <year>2013</year> "
 "<year>2014</year> <holder role=\"mailto:doceng@FreeBSD.org\">DocEng</holder>"
 msgstr ""
+"<year>1998</year> <year>1999</year> <year>2000</year> <year>2001</year> "
+"<year>2002</year> <year>2003</year> <year>2004</year> <year>2005</year> "
+"<year>2006</year> <year>2007</year> <year>2008</year> <year>2009</year> "
+"<year>2010</year> <year>2011</year> <year>2012</year> <year>2013</year> "
+"<year>2014</year> <holder role=\"mailto:doceng@FreeBSD.org\">DocEng</holder>"
 
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
@@ -166,7 +171,7 @@ msgstr "<prompt>%</prompt>"
 #. (itstool) path: row/entry
 #: book.translate.xml:177
 msgid "<systemitem class=\"username\">root</systemitem>"
-msgstr ""
+msgstr "<systemitem class=\"username\">root</systemitem>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:178 book.translate.xml:4364
@@ -193,7 +198,7 @@ msgstr "의미"
 #. (itstool) path: appendix/title
 #: book.translate.xml:196 book.translate.xml:4871 book.translate.xml:9072
 msgid "Examples"
-msgstr ""
+msgstr "예시"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:202
@@ -203,7 +208,7 @@ msgstr "명령어의 이름"
 #. (itstool) path: row/entry
 #: book.translate.xml:203
 msgid "Use <command>ls -l</command> to list all files."
-msgstr ""
+msgstr "모든 파일들을 나열하기 위해 <command>ls -l</command>을 사용하세요."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:208
@@ -213,12 +218,12 @@ msgstr "파일의 이름"
 #. (itstool) path: row/entry
 #: book.translate.xml:209
 msgid "Edit <filename>.login</filename>."
-msgstr ""
+msgstr "<filename>.login</filename>을 편집하세요."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:213
 msgid "On-screen computer output."
-msgstr ""
+msgstr "컴퓨터 스크린에 나타나는 출력."
 
 #. (itstool) path: entry/screen
 #: book.translate.xml:214
@@ -230,6 +235,7 @@ msgstr "You have mail."
 #: book.translate.xml:218
 msgid "What the user types, contrasted with on-screen computer output."
 msgstr ""
+"사용자가 입력하는 내용. (이는 컴퓨터 스크린에 나타나는 출력과는 구분됩니다)"
 
 #. (itstool) path: entry/screen
 #: book.translate.xml:221
@@ -238,11 +244,13 @@ msgid ""
 "<prompt>%</prompt> <userinput>date +\"The time is %H:%M\"</userinput>\n"
 "The time is 09:18"
 msgstr ""
+"<prompt>%</prompt> <userinput>date +\"The time is %H:%M\"</userinput>\n"
+"The time is 09:18"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:226
 msgid "Manual page references."
-msgstr ""
+msgstr "manual page 참조."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:227
@@ -250,16 +258,20 @@ msgid ""
 "Use <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> to change user identity."
 msgstr ""
+"사용자 신원을 변경하기 위해서는 <citerefentry><refentrytitle>su</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>를 사용하세요."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:231
 msgid "User and group names."
-msgstr ""
+msgstr "사용자 및 그룹의 이름들."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:232
 msgid "Only <systemitem class=\"username\">root</systemitem> can do this."
 msgstr ""
+"오직 <systemitem class=\"username\">root</systemitem>만이 이것을 할 수 있습니"
+"다."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:237
@@ -274,7 +286,7 @@ msgstr "사용자는 <emphasis>반드시</emphasis> 이 지침을 따라야 합�
 #. (itstool) path: row/entry
 #: book.translate.xml:243
 msgid "Text that the user is expected to replace with the actual text."
-msgstr ""
+msgstr "필요한 텍스트를 사용자가 대입해야 하는 부분."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:246
@@ -282,6 +294,8 @@ msgid ""
 "To search for a keyword in the manual pages, type <command>man -k "
 "<replaceable>keyword</replaceable></command>"
 msgstr ""
+"manual page에서 키워드를 검색하려면, command>man -k <replaceable>keyword</"
+"replaceable></command>를 입력하세요."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:252
@@ -372,6 +386,9 @@ msgid ""
 "Quality documentation is crucial to the success of FreeBSD, and we value "
 "your contributions very highly."
 msgstr ""
+"FreeBSD 문서화 프로젝트(FreeBSD Documentation Project, <acronym>FDP</"
+"acronym>)에 오신 것을 환영합니다.  양질의 문서는 FreeBSD의 성공에 중요한 요소"
+"로 작용하며, 우리는 여러분의 공헌을 매우 가치있게 받아들이고 있습니다."
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:353
@@ -380,6 +397,9 @@ msgid ""
 "write and submit documentation, and how to effectively use the available "
 "tools."
 msgstr ""
+"이 문서는 <acronym>FDP</acronym>가 어떻게 구성되어 있는지, 문서를 어떻게 작성"
+"하고 제출하는지, 그리고 주어진 도구들을 어떻게 효과적으로 사용하는지에 대해 "
+"설명하고 있습니다."
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:357
@@ -387,38 +407,41 @@ msgid ""
 "Everyone is welcome to contribute to the <acronym>FDP</acronym>. Willingness "
 "to contribute is the only membership requirement."
 msgstr ""
+"<acronym>FDP</acronym>에 공헌하고 싶은 사람은 누구나 환영합니다.  공헌하고자 "
+"하는 의지만 있으면 됩니다."
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:361
 msgid "This primer shows how to:"
-msgstr ""
+msgstr "이 지침서는 다음과 같은 일을 하는 방법들을 보여줍니다:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:365
 msgid ""
 "Identify which parts of FreeBSD are maintained by the <acronym>FDP</acronym>."
 msgstr ""
+"FreeBSD의 어떤 부분이 <acronym>FDP</acronym>에 의해 유지되는지 확인하기."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:370
 msgid "Install the required documentation tools and files."
-msgstr ""
+msgstr "필요한 문서 도구와 파일들을 설치하기."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:374
 msgid "Make changes to the documentation."
-msgstr ""
+msgstr "문서 편집하기."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:378
 msgid ""
 "Submit changes back for review and inclusion in the FreeBSD documentation."
-msgstr ""
+msgstr "편집한 내용의 검토를 위해 이를 제출하고 FreeBSD 문서에 적용시키기."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:384
 msgid "The FreeBSD Documentation Set"
-msgstr ""
+msgstr "FreeBSD 문서 모음"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:386
@@ -549,7 +572,7 @@ msgstr ""
 #: book.translate.xml:473 book.translate.xml:798
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>svn checkout https://svn.FreeBSD.org/doc/head <replaceable>~/doc</replaceable></userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>svn checkout https://svn.FreeBSD.org/doc/head <replaceable>~/doc</replaceable></userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:477
@@ -612,7 +635,7 @@ msgstr "편집 이후에, 다음을 통해 문제점이 있는지 확인해 주�
 #: book.translate.xml:517
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>igor -R filename.xml | less -RS</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>igor -R filename.xml | less -RS</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:519
@@ -646,6 +669,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>cd ~/doc</userinput>\n"
 "<prompt>%</prompt> <userinput>svn diff &gt; <replaceable>bsdinstall</replaceable>.diff.txt</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd ~/doc</userinput>\n"
+"<prompt>%</prompt> <userinput>svn diff &gt; <replaceable>bsdinstall</replaceable>.diff.txt</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:543
@@ -946,7 +971,7 @@ msgstr ""
 #: book.translate.xml:839
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>svn revert chapter.xml</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>svn revert chapter.xml</userinput>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:843
@@ -970,6 +995,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>cd <replaceable>~/doc</replaceable></userinput>\n"
 "<prompt>%</prompt> <userinput>svn diff &gt; <replaceable>doc-fix-spelling.diff</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd <replaceable>~/doc</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>svn diff &gt; <replaceable>doc-fix-spelling.diff</replaceable></userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:855
@@ -1004,6 +1031,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>cd <replaceable>~/doc</replaceable></userinput>\n"
 "<prompt>%</prompt> <userinput>svn diff <replaceable>disks/chapter.xml printers/chapter.xml</replaceable> &gt; <replaceable>disks-printers.diff</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd <replaceable>~/doc</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>svn diff <replaceable>disks/chapter.xml printers/chapter.xml</replaceable> &gt; <replaceable>disks-printers.diff</replaceable></userinput>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:877
@@ -1597,6 +1626,8 @@ msgstr ""
 #: book.translate.xml:1364
 msgid "These <filename>Makefile</filename>s usually take the form of:"
 msgstr ""
+"이러한 <filename>Makefile</filename>들은 대체로 다음의 형식으로 되어 있습니"
+"다:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1367
@@ -1610,6 +1641,13 @@ msgid ""
 "DOC_PREFIX?= ${.CURDIR}/..\n"
 ".include \"${DOC_PREFIX}/share/mk/doc.project.mk\""
 msgstr ""
+"SUBDIR =articles\n"
+"SUBDIR+=books\n"
+"\n"
+"COMPAT_SYMLINK = en\n"
+"\n"
+"DOC_PREFIX?= ${.CURDIR}/..\n"
+".include \"${DOC_PREFIX}/share/mk/doc.project.mk\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1375
@@ -8694,7 +8732,7 @@ msgstr ""
 #. (itstool) path: chapter/title
 #: book.translate.xml:6875
 msgid "Translations"
-msgstr ""
+msgstr "번역"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:6877
@@ -8702,6 +8740,8 @@ msgid ""
 "This is the FAQ for people translating the FreeBSD documentation (FAQ, "
 "Handbook, tutorials, manual pages, and others) to different languages."
 msgstr ""
+"이것은 FreeBSD 문서(FAQ, 핸드북, 튜토리얼, manual page 등)를 다른 언어로 번역"
+"하는 사람들을 위한 FAQ입니다."
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:6881
@@ -8722,7 +8762,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:6892
 msgid "What do <phrase>i18n</phrase> and <phrase>l10n</phrase> mean?"
-msgstr ""
+msgstr "<phrase>i18n</phrase>과 <phrase>l10n</phrase>은 무엇을 의미하나요?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6897
@@ -8731,6 +8771,9 @@ msgid ""
 "<phrase>l10n</phrase> means <phrase>localization</phrase>. They are just a "
 "convenient shorthand."
 msgstr ""
+"<phrase>i18n</phrase>은 <phrase>internationalization</phrase>(국제화)을, "
+"<phrase>l10n</phrase>은 <phrase>localization</phrase>(현지화)을 의미합니다.  "
+"이들은 그냥 편의를 위해 속기로 쓴 것입니다."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6902
@@ -8743,7 +8786,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:6911
 msgid "Is there a mailing list for translators?"
-msgstr ""
+msgstr "번역자들을 위한 메일링 리스트가 있나요?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6915
@@ -8759,7 +8802,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:6927
 msgid "Are more translators needed?"
-msgstr ""
+msgstr "더 많은 번역자들이 필요한가요?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6931
@@ -8777,7 +8820,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:6943
 msgid "What languages do I need to know?"
-msgstr ""
+msgstr "어떤 언어를 알아야 하나요?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6947
@@ -8796,7 +8839,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:6959
 msgid "What software do I need to know?"
-msgstr ""
+msgstr "어떤 소프트웨어를 알아야 하나요?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6963
@@ -8810,7 +8853,7 @@ msgstr ""
 #: book.translate.xml:6967
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>svn checkout https://svn.FreeBSD.org/doc/head/ head</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>svn checkout https://svn.FreeBSD.org/doc/head/ head</userinput>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6969
@@ -9318,7 +9361,7 @@ msgstr ""
 #. (itstool) path: chapter/title
 #: book.translate.xml:7323
 msgid "<acronym>PO</acronym> Translations"
-msgstr ""
+msgstr "<acronym>PO</acronym> 번역"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7328
@@ -9362,7 +9405,7 @@ msgstr ""
 #. (itstool) path: procedure/title
 #: book.translate.xml:7358
 msgid "Install a <acronym>PO</acronym> Editor"
-msgstr ""
+msgstr "<acronym>PO</acronym> 에디터 설치하기"
 
 #. (itstool) path: step/para
 #: book.translate.xml:7361
@@ -9370,6 +9413,8 @@ msgid ""
 "A <acronym>PO</acronym> editor is needed to edit translation files. This "
 "example uses <package role=\"ports\">editors/poedit</package>."
 msgstr ""
+"번역 파일을 편집하기 위해서는 <acronym>PO</acronym> 에디터가 필요합니다.  이 "
+"예시에서는 <package role=\"ports\">editors/poedit</package>를 사용합니다."
 
 #. (itstool) path: step/screen
 #: book.translate.xml:7365
@@ -9378,6 +9423,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/editors/poedit</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/editors/poedit</userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: procedure/title
 #: book.translate.xml:7371
@@ -9494,6 +9541,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>cd ~/doc/es_ES.ISO8859-1/articles/leap-seconds/</userinput>\n"
 "<prompt>%</prompt> <userinput>make tran</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd ~/doc/es_ES.ISO8859-1/articles/leap-seconds/</userinput>\n"
+"<prompt>%</prompt> <userinput>make tran</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:7441
@@ -9517,6 +9566,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>make FORMATS=html</userinput>\n"
 "<prompt>%</prompt> <userinput>firefox article.html</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>make FORMATS=html</userinput>\n"
+"<prompt>%</prompt> <userinput>firefox article.html</userinput>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:7459

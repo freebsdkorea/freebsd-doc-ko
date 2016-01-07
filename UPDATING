@@ -1,0 +1,10 @@
+en_US.ISO8859-1과 share 디렉토리를 업데이트할 때는 다음에 유의해 주세요:
+
+en_US.ISO8859-1 디렉토리를 전부 삭제하고 official doc tree에서 새로 붙여넣기합니다.
+그 이후 최상위 디렉토리에서 아래 명령어를 실행해 주어야 합니다:
+
+% cd en_US.ISO8859-1/books/handbook/
+% make mirrors.lastmod.inc mirrors.xml.ftp.inc mirrors.xml.ftp.index.inc eresources.xml.www.inc eresources.xml.www.index.inc
+
+이는 핸드북의 PO 파일 생성에 필요한 과정으로, 자세한 사항은 freebsd-translators 메일링 리스트의 2016-01-07일자 스레드에 있습니다.
+조만간 자동 업데이트 스크립트를 작성해 두겠습니다.

@@ -165,10 +165,9 @@ IMAGES_LIB+= callouts/15.png
 #
 
 # XML content
-SRCS+= book.xml
+SRCS= book.xml
 
 # Entities
-SRCS+= chapters.ent
 
 SYMLINKS=	${DESTDIR} index.html handbook.html
 
@@ -206,11 +205,5 @@ PARAMS.eresources-index+=	--param 'type' "'www'" \
 PARAMS.eresources+=	--param 'type' "'www'" \
 			--param 'proto' "'http'" \
 			--param 'target' "'handbook/eresources/chapter.xml'"
-
-SRCS+=		mirrors.lastmod.inc \
-		mirrors.xml.ftp.inc \
-		mirrors.xml.ftp.index.inc \
-		eresources.xml.www.inc \
-		eresources.xml.www.index.inc
 
 .include "${DOC_PREFIX}/share/mk/doc.project.mk"
