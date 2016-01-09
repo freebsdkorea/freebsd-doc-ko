@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2016-01-07 09:02+0900\n"
-"PO-Revision-Date: 2016-01-07 05:37+0900\n"
+"PO-Revision-Date: 2016-01-08 03:05+0900\n"
 "Last-Translator: Hoyoung Kim <trig4800@gmail.com>\n"
 "Language-Team: 한국어 <>\n"
 "Language: ko_KR\n"
@@ -558,6 +558,9 @@ msgid ""
 "port installs all of the software needed to edit and build FreeBSD "
 "documentation."
 msgstr ""
+"<package>textproc/docproj</package> 패키지 또는 포트를 설치하세요.  이 메타-"
+"포트는 FreeBSD 문서를 편집하고 빌드하는 데 필요한 모든 소프트웨어를 설치합니"
+"다."
 
 #. (itstool) path: step/para
 #: book.translate.xml:468
@@ -610,7 +613,7 @@ msgstr ""
 #: book.translate.xml:501
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>svn up <replaceable>~/doc</replaceable></userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>svn up <replaceable>~/doc</replaceable></userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:505
@@ -618,6 +621,8 @@ msgid ""
 "Edit the documentation files that require changes. If a file needs major "
 "changes, consult the mailing list for input."
 msgstr ""
+"수정을 필요로 하는 문서 파일들을 편집하세요.  주요한 수정이 필요한 파일이 있"
+"다면, 메일링 리스트에서 먼저 논의하세요."
 
 #. (itstool) path: step/para
 #: book.translate.xml:509
@@ -795,7 +800,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:679
 msgid "<application>Vim</application> (<package>editors/vim</package>)"
-msgstr ""
+msgstr "<application>Vim</application> (<package>editors/vim</package>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:683
@@ -916,7 +921,7 @@ msgstr ""
 #: book.translate.xml:803
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>svn checkout https://svn.FreeBSD.org/base/head <replaceable>~/src</replaceable></userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>svn checkout https://svn.FreeBSD.org/base/head <replaceable>~/src</replaceable></userinput>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:807
@@ -939,7 +944,7 @@ msgstr ""
 #: book.translate.xml:818
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>svn update <replaceable>~/doc</replaceable></userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>svn update <replaceable>~/doc</replaceable></userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:820
@@ -1431,6 +1436,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>cd ~/doc/en_US.ISO8859-1/books/handbook</userinput>\n"
 "<prompt>%</prompt> <userinput>make -V KNOWN_FORMATS</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd ~/doc/en_US.ISO8859-1/books/handbook</userinput>\n"
+"<prompt>%</prompt> <userinput>make -V KNOWN_FORMATS</userinput>"
 
 #. (itstool) path: table/title
 #: book.translate.xml:1243
@@ -3827,7 +3834,7 @@ msgstr ""
 #: book.translate.xml:2979
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>xmllint --noent --dropdtd example.xml &gt; example.html</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>xmllint --noent --dropdtd example.xml &gt; example.html</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:2981
@@ -7857,7 +7864,7 @@ msgstr ""
 #: book.translate.xml:6167
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>man <replaceable>command</replaceable></userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>man <replaceable>command</replaceable></userinput>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:6170
@@ -8066,7 +8073,7 @@ msgstr ""
 #: book.translate.xml:6325
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput><command>vidcontrol -p</command> &lt; <filename><replaceable>/dev/ttyv0</replaceable></filename> &gt; <filename><replaceable>shot.scr</replaceable></filename></userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput><command>vidcontrol -p</command> &lt; <filename><replaceable>/dev/ttyv0</replaceable></filename> &gt; <filename><replaceable>shot.scr</replaceable></filename></userinput>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6327
@@ -8815,7 +8822,7 @@ msgstr ""
 #. (itstool) path: answer/para
 #: book.translate.xml:6936
 msgid "You do not have to be a professional translator to be able to help."
-msgstr ""
+msgstr "여러분은 도움을 주기 위해서 전문 번역가가 되어야 할 필요는 없습니다."
 
 #. (itstool) path: question/para
 #: book.translate.xml:6943
@@ -9393,6 +9400,9 @@ msgid ""
 "<prompt>#</prompt> <userinput>make config</userinput>\n"
 "<prompt>#</prompt> <userinput>make clean deinstall install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/textproc/docproj</userinput>\n"
+"<prompt>#</prompt> <userinput>make config</userinput>\n"
+"<prompt>#</prompt> <userinput>make clean deinstall install clean</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7353
@@ -9471,6 +9481,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn cp ~/doc/en_US.ISO8859-1/articles/leap-seconds/Makefile \\\n"
 "    ~/doc/es_ES.ISO8859-1/articles/leap-seconds/</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn cp ~/doc/en_US.ISO8859-1/articles/leap-seconds/Makefile \\\n"
+"    ~/doc/es_ES.ISO8859-1/articles/leap-seconds/</userinput>"
 
 #. (itstool) path: procedure/title
 #: book.translate.xml:7399
@@ -9500,6 +9512,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>cd ~/doc/es_ES.ISO8859-1/articles/leap-seconds/</userinput>\n"
 "<prompt>%</prompt> <userinput>make po</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd ~/doc/es_ES.ISO8859-1/articles/leap-seconds/</userinput>\n"
+"<prompt>%</prompt> <userinput>make po</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:7417
@@ -9522,7 +9536,7 @@ msgstr ""
 #: book.translate.xml:7428 book.translate.xml:7892
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>poedit es_ES.po</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>poedit es_ES.po</userinput>"
 
 #. (itstool) path: procedure/title
 #: book.translate.xml:7433
@@ -9594,12 +9608,12 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7477
 msgid "Language"
-msgstr ""
+msgstr "언어"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7478
 msgid "Region"
-msgstr ""
+msgstr "지역"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7479
@@ -9619,29 +9633,29 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7487
 msgid "English"
-msgstr ""
+msgstr "영어"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7488
 msgid "United States"
-msgstr ""
+msgstr "미국"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7489
 msgid "<filename>en_US.ISO8859-1</filename>"
-msgstr ""
+msgstr "<filename>en_US.ISO8859-1</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7490
 msgid "<filename>en_US.po</filename>"
-msgstr ""
+msgstr "<filename>en_US.po</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7491 book.translate.xml:7507 book.translate.xml:7515
 #: book.translate.xml:7531 book.translate.xml:7539 book.translate.xml:7587
 #: book.translate.xml:7595 book.translate.xml:7611
 msgid "<acronym>ISO</acronym> 8859-1"
-msgstr ""
+msgstr "<acronym>ISO</acronym> 8859-1"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7495
@@ -9651,23 +9665,23 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7496
 msgid "Bangladesh"
-msgstr ""
+msgstr "방글라데시"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7497
 msgid "<filename>bn_BD.UTF-8</filename>"
-msgstr ""
+msgstr "<filename>bn_BD.UTF-8</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7498
 msgid "<filename>bn_BD.po</filename>"
-msgstr ""
+msgstr "<filename>bn_BD.po</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7499 book.translate.xml:7571 book.translate.xml:7579
 #: book.translate.xml:7643 book.translate.xml:7651
 msgid "<acronym>UTF</acronym>-8"
-msgstr ""
+msgstr "<acronym>UTF</acronym>-8"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7503
@@ -9682,12 +9696,12 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7505
 msgid "<filename>da_DK.ISO8859-1</filename>"
-msgstr ""
+msgstr "<filename>da_DK.ISO8859-1</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7506
 msgid "<filename>da_DK.po</filename>"
-msgstr ""
+msgstr "<filename>da_DK.po</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7511
@@ -9697,17 +9711,17 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7512
 msgid "Germany"
-msgstr ""
+msgstr "독일"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7513
 msgid "<filename>de_DE.ISO8859-1</filename>"
-msgstr ""
+msgstr "<filename>de_DE.ISO8859-1</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7514
 msgid "<filename>de_DE.po</filename>"
-msgstr ""
+msgstr "<filename>de_DE.po</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7519
@@ -9717,22 +9731,22 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7520
 msgid "Greece"
-msgstr ""
+msgstr "그리스"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7521
 msgid "<filename>el_GR.ISO8859-7</filename>"
-msgstr ""
+msgstr "<filename>el_GR.ISO8859-7</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7522
 msgid "<filename>el_GR.po</filename>"
-msgstr ""
+msgstr "<filename>el_GR.po</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7523
 msgid "<acronym>ISO</acronym> 8859-7"
-msgstr ""
+msgstr "<acronym>ISO</acronym> 8859-7"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7527
@@ -9747,12 +9761,12 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7529
 msgid "<filename>es_ES.ISO8859-1</filename>"
-msgstr ""
+msgstr "<filename>es_ES.ISO8859-1</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7530
 msgid "<filename>es_ES.po</filename>"
-msgstr ""
+msgstr "<filename>es_ES.po</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7535
@@ -9762,17 +9776,17 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7536
 msgid "France"
-msgstr ""
+msgstr "프랑스"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7537
 msgid "<filename>fr_FR.ISO8859-1</filename>"
-msgstr ""
+msgstr "<filename>fr_FR.ISO8859-1</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7538
 msgid "<filename>fr_FR.po</filename>"
-msgstr ""
+msgstr "<filename>fr_FR.po</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7543
@@ -9787,17 +9801,17 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7545
 msgid "<filename>hu_HU.ISO8859-2</filename>"
-msgstr ""
+msgstr "<filename>hu_HU.ISO8859-2</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7546
 msgid "<filename>hu_HU.po</filename>"
-msgstr ""
+msgstr "<filename>hu_HU.po</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7547 book.translate.xml:7603 book.translate.xml:7627
 msgid "<acronym>ISO</acronym> 8859-2"
-msgstr ""
+msgstr "<acronym>ISO</acronym> 8859-2"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7551
@@ -9807,22 +9821,22 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7552
 msgid "Italy"
-msgstr ""
+msgstr "이탈리아"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7553
 msgid "<filename>it_IT.ISO8859-15</filename>"
-msgstr ""
+msgstr "<filename>it_IT.ISO8859-15</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7554
 msgid "<filename>it_IT.po</filename>"
-msgstr ""
+msgstr "<filename>it_IT.po</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7555
 msgid "<acronym>ISO</acronym> 8859-15"
-msgstr ""
+msgstr "<acronym>ISO</acronym> 8859-15"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7559
@@ -9832,22 +9846,22 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7560
 msgid "Japan"
-msgstr ""
+msgstr "일본"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7561
 msgid "<filename>ja_JP.eucJP</filename>"
-msgstr ""
+msgstr "<filename>ja_JP.eucJP</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7562
 msgid "<filename>ja_JP.po</filename>"
-msgstr ""
+msgstr "<filename>ja_JP.po</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7563
 msgid "<acronym>EUC</acronym> JP"
-msgstr ""
+msgstr "<acronym>EUC</acronym> JP"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7567
@@ -9862,12 +9876,12 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7569
 msgid "<filename>ko_KR.UTF-8</filename>"
-msgstr ""
+msgstr "<filename>ko_KR.UTF-8</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7570
 msgid "<filename>ko_KR.po</filename>"
-msgstr ""
+msgstr "<filename>ko_KR.po</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7575
@@ -9882,12 +9896,12 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7577
 msgid "<filename>mn_MN.UTF-8</filename>"
-msgstr ""
+msgstr "<filename>mn_MN.UTF-8</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7578
 msgid "<filename>mn_MN.po</filename>"
-msgstr ""
+msgstr "<filename>mn_MN.po</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7583
@@ -9902,12 +9916,12 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7585
 msgid "<filename>nl_NL.ISO8859-1</filename>"
-msgstr ""
+msgstr "<filename>nl_NL.ISO8859-1</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7586
 msgid "<filename>nl_NL.po</filename>"
-msgstr ""
+msgstr "<filename>nl_NL.po</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7591
@@ -9917,17 +9931,17 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7592
 msgid "Norway"
-msgstr ""
+msgstr "노르웨이"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7593
 msgid "<filename>no_NO.ISO8859-1</filename>"
-msgstr ""
+msgstr "<filename>no_NO.ISO8859-1</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7594
 msgid "<filename>no_NO.po</filename>"
-msgstr ""
+msgstr "<filename>no_NO.po</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7599
@@ -9942,12 +9956,12 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7601
 msgid "<filename>pl_PL.ISO8859-2</filename>"
-msgstr ""
+msgstr "<filename>pl_PL.ISO8859-2</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7602
 msgid "<filename>pl_PL.po</filename>"
-msgstr ""
+msgstr "<filename>pl_PL.po</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7607
@@ -9957,17 +9971,17 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7608
 msgid "Brazil"
-msgstr ""
+msgstr "브라질"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7609
 msgid "<filename>pt_BR.ISO8859-1</filename>"
-msgstr ""
+msgstr "<filename>pt_BR.ISO8859-1</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7610
 msgid "<filename>pt_BR.po</filename>"
-msgstr ""
+msgstr "<filename>pt_BR.po</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7615
@@ -9977,22 +9991,22 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7616
 msgid "Russia"
-msgstr ""
+msgstr "러시아"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7617
 msgid "<filename>ru_RU.KOI8-R</filename>"
-msgstr ""
+msgstr "<filename>ru_RU.KOI8-R</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7618
 msgid "<filename>ru_RU.po</filename>"
-msgstr ""
+msgstr "<filename>ru_RU.po</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7619
 msgid "<acronym>KOI</acronym>8-R"
-msgstr ""
+msgstr "<acronym>KOI</acronym>8-R"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7623
@@ -10007,12 +10021,12 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7625
 msgid "<filename>sr_YU.ISO8859-2</filename>"
-msgstr ""
+msgstr "<filename>sr_YU.ISO8859-2</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7626
 msgid "<filename>sr_YU.po</filename>"
-msgstr ""
+msgstr "<filename>sr_YU.po</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7631
@@ -10022,22 +10036,22 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7632
 msgid "Turkey"
-msgstr ""
+msgstr "터키"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7633
 msgid "<filename>tr_TR.ISO8859-9</filename>"
-msgstr ""
+msgstr "<filename>tr_TR.ISO8859-9</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7634
 msgid "<filename>tr_TR.po</filename>"
-msgstr ""
+msgstr "<filename>tr_TR.po</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7635
 msgid "<acronym>ISO</acronym> 8859-9"
-msgstr ""
+msgstr "<acronym>ISO</acronym> 8859-9"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7639 book.translate.xml:7647
@@ -10047,17 +10061,17 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7640
 msgid "China"
-msgstr ""
+msgstr "중국"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7641
 msgid "<filename>zh_CN.UTF-8</filename>"
-msgstr ""
+msgstr "<filename>zh_CN.UTF-8</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7642
 msgid "<filename>zh_CN.po</filename>"
-msgstr ""
+msgstr "<filename>zh_CN.po</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7648
@@ -10067,12 +10081,12 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7649
 msgid "<filename>zh_TW.UTF-8</filename>"
-msgstr ""
+msgstr "<filename>zh_TW.UTF-8</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7650
 msgid "<filename>zh_TW.po</filename>"
-msgstr ""
+msgstr "<filename>zh_TW.po</filename>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7657
@@ -10153,6 +10167,9 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn mkdir porters-handbook</userinput>\n"
 "A         porters-handbook"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd ~/doc/es_ES.ISO8859-1/books/</userinput>\n"
+"<prompt>%</prompt> <userinput>svn mkdir porters-handbook</userinput>\n"
+"A         porters-handbook"
 
 #. (itstool) path: step/para
 #: book.translate.xml:7715
@@ -10167,6 +10184,9 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn cp ~/doc/en_US.ISO8859-1/books/porters-handbook/Makefile .</userinput>\n"
 "A         Makefile"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd ~/doc/es_ES.ISO8859-1/books/porters-handbook</userinput>\n"
+"<prompt>%</prompt> <userinput>svn cp ~/doc/en_US.ISO8859-1/books/porters-handbook/Makefile .</userinput>\n"
+"A         Makefile"
 
 #. (itstool) path: step/para
 #: book.translate.xml:7722
@@ -10225,6 +10245,51 @@ msgid ""
 "\n"
 ".include \"${DOC_PREFIX}/share/mk/doc.project.mk\""
 msgstr ""
+"#\n"
+"# $FreeBSD$\n"
+"#\n"
+"# Build the FreeBSD Porter's Handbook.\n"
+"#\n"
+"\n"
+"MAINTAINER=doc@FreeBSD.org\n"
+"\n"
+"DOC?= book\n"
+"\n"
+"FORMATS?= html-split\n"
+"\n"
+"INSTALL_COMPRESSED?= gz\n"
+"INSTALL_ONLY_COMPRESSED?=\n"
+"\n"
+"# XML content\n"
+"SRCS=  book.xml\n"
+"\n"
+"# Images from the cross-document image library\n"
+"IMAGES_LIB+=    callouts/1.png\n"
+"IMAGES_LIB+=    callouts/2.png\n"
+"IMAGES_LIB+=    callouts/3.png\n"
+"IMAGES_LIB+=    callouts/4.png\n"
+"IMAGES_LIB+=    callouts/5.png\n"
+"IMAGES_LIB+=    callouts/6.png\n"
+"IMAGES_LIB+=    callouts/7.png\n"
+"IMAGES_LIB+=    callouts/8.png\n"
+"IMAGES_LIB+=    callouts/9.png\n"
+"IMAGES_LIB+=    callouts/10.png\n"
+"IMAGES_LIB+=    callouts/11.png\n"
+"IMAGES_LIB+=    callouts/12.png\n"
+"IMAGES_LIB+=    callouts/13.png\n"
+"IMAGES_LIB+=    callouts/14.png\n"
+"IMAGES_LIB+=    callouts/15.png\n"
+"IMAGES_LIB+=    callouts/16.png\n"
+"IMAGES_LIB+=    callouts/17.png\n"
+"IMAGES_LIB+=    callouts/18.png\n"
+"IMAGES_LIB+=    callouts/19.png\n"
+"IMAGES_LIB+=    callouts/20.png\n"
+"IMAGES_LIB+=    callouts/21.png\n"
+"\n"
+"URL_RELPREFIX?= ../../../..\n"
+"DOC_PREFIX?= ${.CURDIR}/../../..\n"
+"\n"
+".include \"${DOC_PREFIX}/share/mk/doc.project.mk\""
 
 #. (itstool) path: step/para
 #: book.translate.xml:7772
@@ -10264,6 +10329,9 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn mkdir pgpkeys</userinput>\n"
 "A         pgpkeys"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd ~/doc/fr_FR.ISO8859-1/articles/</userinput>\n"
+"<prompt>%</prompt> <userinput>svn mkdir pgpkeys</userinput>\n"
+"A         pgpkeys"
 
 #. (itstool) path: step/para
 #: book.translate.xml:7800
@@ -10278,6 +10346,9 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn cp ~/doc/en_US.ISO8859-1/articles/pgpkeys/Makefile .</userinput>\n"
 "A         Makefile"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd ~/doc/fr_FR.ISO8859-1/articles/pgpkeys</userinput>\n"
+"<prompt>%</prompt> <userinput>svn cp ~/doc/en_US.ISO8859-1/articles/pgpkeys/Makefile .</userinput>\n"
+"A         Makefile"
 
 #. (itstool) path: step/para
 #: book.translate.xml:7807
@@ -10315,6 +10386,27 @@ msgid ""
 "\n"
 ".include \"${DOC_PREFIX}/share/mk/doc.project.mk\""
 msgstr ""
+"#\n"
+"# $FreeBSD$\n"
+"#\n"
+"# Article: PGP Keys\n"
+"\n"
+"DOC?= article\n"
+"\n"
+"FORMATS?= html\n"
+"WITH_ARTICLE_TOC?= YES\n"
+"\n"
+"INSTALL_COMPRESSED?= gz\n"
+"INSTALL_ONLY_COMPRESSED?=\n"
+"\n"
+"SRCS=   article.xml\n"
+"\n"
+"# To build with just key fingerprints, set FINGERPRINTS_ONLY.\n"
+"\n"
+"URL_RELPREFIX?= ../../../..\n"
+"DOC_PREFIX?=    ${.CURDIR}/../../..\n"
+"\n"
+".include \"${DOC_PREFIX}/share/mk/doc.project.mk\""
 
 #. (itstool) path: step/para
 #: book.translate.xml:7836
@@ -10390,6 +10482,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>cd ~/doc/es_ES.ISO8859-1/books/porters-handbook</userinput>\n"
 "<prompt>%</prompt> <userinput>make po</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd ~/doc/es_ES.ISO8859-1/books/porters-handbook</userinput>\n"
+"<prompt>%</prompt> <userinput>make po</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:7889
@@ -10675,6 +10769,13 @@ msgid ""
 "A         article.xml\n"
 "A         es_ES.po"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd ~/doc/es_ES.ISO8859-1/articles/nanobsd/</userinput>\n"
+"<prompt>%</prompt> <userinput>ls</userinput>\n"
+"Makefile\tarticle.xml\tes_ES.po\n"
+"<prompt>%</prompt> <userinput>svn add Makefile article.xml es_ES.po</userinput>\n"
+"A         Makefile\n"
+"A         article.xml\n"
+"A         es_ES.po"
 
 #. (itstool) path: step/para
 #: book.translate.xml:8135
@@ -10694,6 +10795,10 @@ msgid ""
 "property 'svn:keywords' set on 'article.xml'\n"
 "property 'svn:keywords' set on 'es_ES.po'"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn propset svn:keywords FreeBSD=%H Makefile article.xml es_ES.po</userinput>\n"
+"property 'svn:keywords' set on 'Makefile'\n"
+"property 'svn:keywords' set on 'article.xml'\n"
+"property 'svn:keywords' set on 'es_ES.po'"
 
 #. (itstool) path: step/para
 #: book.translate.xml:8149
@@ -11529,7 +11634,7 @@ msgstr ""
 #. (itstool) path: chapter/title
 #: book.translate.xml:8790
 msgid "Editor Configuration"
-msgstr ""
+msgstr "에디터 설정"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:8792
@@ -11542,7 +11647,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:8797
 msgid "<application>Vim</application>"
-msgstr ""
+msgstr "<application>Vim</application>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8799
@@ -11604,6 +11709,44 @@ msgid ""
 "    return 0\n"
 "endfunction \" Set_SGML()"
 msgstr ""
+"if has(\"autocmd\")\n"
+"    au BufNewFile,BufRead *.sgml,*.ent,*.xsl,*.xml call Set_SGML()\n"
+"    au BufNewFile,BufRead *.[1-9] call ShowSpecial()\n"
+"endif \" has(autocmd)\n"
+"\n"
+"function Set_Highlights()\n"
+"    \"match ExtraWhitespace /^\\s* \\s*\\|\\s\\+$/\n"
+"    highlight default link OverLength ErrorMsg\n"
+"    match OverLength /\\%71v.\\+/\n"
+"    return 0\n"
+"endfunction\n"
+"\n"
+"function ShowSpecial()\n"
+"    setlocal list listchars=tab:&gt;&gt;,trail:*,eol:$\n"
+"    hi def link nontext ErrorMsg\n"
+"    return 0\n"
+"endfunction \" ShowSpecial()\n"
+"\n"
+"function Set_SGML()\n"
+"    setlocal number\n"
+"    syn match sgmlSpecial \"&amp;[^;]*;\"\n"
+"    setlocal syntax=sgml\n"
+"    setlocal filetype=xml\n"
+"    setlocal shiftwidth=2\n"
+"    setlocal textwidth=70\n"
+"    setlocal tabstop=8\n"
+"    setlocal softtabstop=2\n"
+"    setlocal formatprg=\"fmt -p\"\n"
+"    setlocal autoindent\n"
+"    setlocal smartindent\n"
+"    \" Rewrap paragraphs\n"
+"    noremap P gqj\n"
+"    \" Replace spaces with tabs\n"
+"    noremap T :s/        /\\t/&lt;CR&gt;\n"
+"    call ShowSpecial()\n"
+"    call Set_Highlights()\n"
+"    return 0\n"
+"endfunction \" Set_SGML()"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:8849 book.translate.xml:8907
@@ -11621,7 +11764,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:8858
 msgid "<application>Emacs</application>"
-msgstr ""
+msgstr "<application>Emacs</application>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8860
@@ -11629,6 +11772,8 @@ msgid ""
 "Install from <package>editors/emacs</package> or <package>editors/xemacs</"
 "package>."
 msgstr ""
+"<package>editors/emacs</package> 또는 <package>editors/xemacs</package>로부"
+"터 설치할 수 있습니다."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8864
@@ -11639,7 +11784,7 @@ msgstr ""
 #: book.translate.xml:8867
 #, no-wrap
 msgid "(add-hook 'nxml-mode-hook 'turn-on-auto-fill)"
-msgstr ""
+msgstr "(add-hook 'nxml-mode-hook 'turn-on-auto-fill)"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:8871
@@ -11688,6 +11833,18 @@ msgid ""
 "# lines longer than 70 characters\n"
 "color ,yellow \"^(.{71})|(TAB.{63})|(TAB{2}.{55})|(TAB{3}.{47}).+$\""
 msgstr ""
+"syntax \"xml\" \"\\.([jrs]html?|xml|xslt?)$\"\n"
+"# trailing whitespace\n"
+"color ,blue \"[[:space:]]+$\"\n"
+"# multiples of eight spaces at the start a line\n"
+"# (after zero or more tabs) should be a tab\n"
+"color ,blue \"^([TAB]*[ ]{8})+\"\n"
+"# tabs after spaces\n"
+"color ,yellow \"( )+TAB\"\n"
+"# highlight indents that have an odd number of spaces\n"
+"color ,red \"^(([ ]{2})+|(TAB+))*[ ]{1}[^ ]{1}\"\n"
+"# lines longer than 70 characters\n"
+"color ,yellow \"^(.{71})|(TAB.{63})|(TAB{2}.{55})|(TAB{3}.{47}).+$\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8901
@@ -11698,7 +11855,7 @@ msgstr ""
 #: book.translate.xml:8903
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>perl -i'' -pe 's/TAB/\\t/g' ~/.nanorc</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>perl -i'' -pe 's/TAB/\\t/g' ~/.nanorc</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8909
@@ -11709,7 +11866,7 @@ msgstr ""
 #: book.translate.xml:8912
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>nano -AKipwz -r 70 -T8 <replaceable>chapter.xml</replaceable></userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>nano -AKipwz -r 70 -T8 <replaceable>chapter.xml</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8914
@@ -11723,7 +11880,7 @@ msgstr ""
 #: book.translate.xml:8918
 #, no-wrap
 msgid "alias nano \"nano -AKipwz -r 70 -T8\""
-msgstr ""
+msgstr "alias nano \"nano -AKipwz -r 70 -T8\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8920
@@ -11734,7 +11891,7 @@ msgstr ""
 #: book.translate.xml:8923
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>nano <replaceable>chapter.xml</replaceable></userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>nano <replaceable>chapter.xml</replaceable></userinput>"
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:8961
