@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-01-07 09:02+0900\n"
-"PO-Revision-Date: 2016-01-17 12:15+0900\n"
+"PO-Revision-Date: 2016-01-18 06:09+0900\n"
 "Last-Translator: Hoyoung Kim <trig4800@gmail.com>\n"
 "Language-Team: 한국어 <>\n"
 "Language: ko_KR\n"
@@ -49,7 +49,7 @@ msgstr "저작권"
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:97
 msgid "Redistribution and use in source (XML DocBook) and 'compiled' forms (XML, HTML, PDF, PostScript, RTF and so forth) with or without modification, are permitted provided that the following conditions are met:"
-msgstr ""
+msgstr "소스(XML DocBook) 및 '컴파일된' 형식들(XML, HTML, PDF, PostScript, RTF 등)은 편집 여부와 관계없이, 다음 조건 하에서라면 자유롭게 재배포 및 사용이 가능합니다:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:104
@@ -289,12 +289,12 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:304
 msgid "Acknowledgments"
-msgstr ""
+msgstr "감사의 말"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:306
 msgid "My thanks to Sue Blake, Patrick Durusau, Jon Hamilton, Peter Flynn, and Christopher Maden, who took the time to read early drafts of this document and offer many valuable comments and criticisms."
-msgstr ""
+msgstr "시간을 내서 이 문서에 대한 초기 원고를 읽어주고 소중한 의견과 비판을 많이 제공해준 Sue Blake, Patrick Durusau, Jon Hamilton, Peter Flynn, 그리고 Christopher Maden에게 감사를 표합니다."
 
 #. (itstool) path: chapter/title
 #. (itstool) path: sect1/title
@@ -413,6 +413,8 @@ msgid ""
 "Some preparatory steps must be taken before editing the FreeBSD documentation. First, subscribe to the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc\">FreeBSD documentation project mailing list</link>. Some team members also interact on the <literal>#bsddocs</literal> <acronym>IRC</acronym> channel on <link xlink:href=\"http://www.efnet.org/\">EFnet</link>. These people can help "
 "with questions or problems involving the documentation."
 msgstr ""
+"FreeBSD 문서를 편집하기에 앞서 약간의 준비 과정이 필요합니다.  우선, <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc\">FreeBSD 문서 프로젝트 메일링 리스트</link>를 구독해 주세요.  팀 구성원 중 일부는 <link xlink:href=\"http://www.efnet.org/\">EFnet</link>의 <literal>#bsddocs</literal> <acronym>IRC</acronym> 채널에서도 의사소통합니다.  이 사람들은 문서와 관련된 질문 및 문제 해결을 도와"
+"줄 수 있습니다."
 
 #. (itstool) path: step/para
 #: book.translate.xml:461
@@ -434,7 +436,7 @@ msgstr "<prompt>%</prompt> <userinput>svn checkout https://svn.FreeBSD.org/doc/h
 #. (itstool) path: step/para
 #: book.translate.xml:477
 msgid "Configure the text editor:"
-msgstr ""
+msgstr "텍스트 편집기를 설정하세요:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:481
@@ -528,7 +530,7 @@ msgstr ""
 #. (itstool) path: chapter/title
 #: book.translate.xml:600
 msgid "Tools"
-msgstr ""
+msgstr "도구들"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:602
@@ -543,7 +545,7 @@ msgstr "필수적인 도구들"
 #. (itstool) path: sect1/para
 #: book.translate.xml:612
 msgid "Install <package>textproc/docproj</package> from the Ports Collection. This <emphasis>meta-port</emphasis> installs all the applications required to do useful work with the FreeBSD documentation. Some further notes on particular components are given below."
-msgstr ""
+msgstr "포트 컬렉션으로부터 <package>textproc/docproj</package>를 설치하세요.  이 <emphasis>메타-포트</emphasis>는 FreeBSD 문서로 유용한 작업을 하기 위해 필요한 모든 응용 프로그램들을 설치합니다.  특정 구성 요소들에 대한 자세한 설명은 아래에 주어져 있습니다."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:620
@@ -593,7 +595,7 @@ msgstr "선택적인 도구들"
 #. (itstool) path: sect1/para
 #: book.translate.xml:670
 msgid "These applications are not required, but can make working on the documentation easier or add capabilities."
-msgstr "이 애플리케이션들은 꼭 필요한 것은 아니지만, 문서를 더 쉽게 다룰 수 있도록 해 주거나 기능을 추가해 줍니다."
+msgstr "이 응용 프로그램들은 꼭 필요한 것은 아니지만, 문서를 더 쉽게 다룰 수 있도록 해 주거나 기능을 추가해 줍니다."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:674
@@ -3049,7 +3051,7 @@ msgstr ""
 #: book.translate.xml:3147 book.translate.xml:3208
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>xmllint --dropdtd --noent example.xml &gt; example.html</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>xmllint --dropdtd --noent example.xml &gt; example.html</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:3151 book.translate.xml:3212
@@ -5475,6 +5477,16 @@ msgid ""
 "<prompt>#</prompt> <userinput>cat foo2</userinput>\n"
 "This is the file called 'foo2'"
 msgstr ""
+"<prompt>%</prompt> <userinput>ls -1</userinput>\n"
+"foo1\n"
+"foo2\n"
+"foo3\n"
+"<prompt>%</prompt> <userinput>ls -1 | grep foo2</userinput>\n"
+"foo2\n"
+"<prompt>%</prompt> <userinput>su</userinput>\n"
+"<prompt>Password: </prompt>\n"
+"<prompt>#</prompt> <userinput>cat foo2</userinput>\n"
+"This is the file called 'foo2'"
 
 #. (itstool) path: note/para
 #: book.translate.xml:5450
@@ -6989,7 +7001,7 @@ msgstr ""
 #: book.translate.xml:6990
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>svn diff -r<replaceable>33733</replaceable>:<replaceable>33734</replaceable> en_US.ISO8859-1/books/fdp-primer/book.xml</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>svn diff -r<replaceable>33733</replaceable>:<replaceable>33734</replaceable> en_US.ISO8859-1/books/fdp-primer/book.xml</userinput>"
 
 #. (itstool) path: question/para
 #: book.translate.xml:6996

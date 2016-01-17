@@ -1,4 +1,4 @@
-# freebsd-doc-kr
+# freebsd-doc-ko
 
 ## 개요
 
