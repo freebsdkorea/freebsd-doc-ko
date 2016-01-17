@@ -6,7 +6,7 @@ FreeBSD 한국어 문서 프로젝트(The FreeBSD Korean Documentation Project)�
 
 ## 한국어 문서 읽기
 
-* [압축 파일](ftp://ftp.freebsd.org/pub/FreeBSD/doc/ko_KR.UTF-8/)
+* 압축 파일: ftp://ftp.freebsd.org/pub/FreeBSD/doc/ko_KR.UTF-8/
 * [FreeBSD 포트 misc/freebsd-doc-kr](https://svnweb.freebsd.org/ports/head/misc/freebsd-doc-ko/)
 * [XML 소스](https://svnweb.freebsd.org/doc/head/ko_KR.UTF-8/)
 
