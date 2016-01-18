@@ -42,8 +42,8 @@ FreeBSD는 영문 그대로 표기하고 '프리비에스디' 등의 한글 표�
 #### application -> 응용 프로그램
 Windows 및 OS X에서 'application'이 '응용 프로그램'으로 번역된 것을
 참조했습니다.  '애플리케이션'도 맞는 표현이지만, '어플리케이션'은 틀린
-표현임을 유의해
-주세요(https://twitter.com/urimal365/status/379787018982543360).
+표현임을 유의해 주세요.
+[참고](https://twitter.com/urimal365/status/379787018982543360)
 
 ### B
 * bug report(s) -> 버그 보고
@@ -68,6 +68,12 @@ Windows 및 OS X에서 'application'이 '응용 프로그램'으로 번역된 �
 * license -> 라이선스
 
 ### M
+
+#### manual page(s), man page(s) -> 매뉴얼 페이지
+유닉스 계열 환경에서 '매뉴얼 페이지'는 한글로도 자연스럽게 사용되는
+표현이라고 판단되어 '설명서', '안내서' 등으로 번역하지 않고 그대로
+표기했습니다.  [참고](https://ko.wikipedia.org/wiki/Man_page)
+
 ### N
 ### O
 ### P

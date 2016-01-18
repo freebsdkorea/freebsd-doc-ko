@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-01-07 09:02+0900\n"
-"PO-Revision-Date: 2016-01-18 06:09+0900\n"
+"PO-Revision-Date: 2016-01-18 10:42+0900\n"
 "Last-Translator: Hoyoung Kim <trig4800@gmail.com>\n"
 "Language-Team: 한국어 <>\n"
 "Language: ko_KR\n"
@@ -424,7 +424,7 @@ msgstr "<package>textproc/docproj</package> 패키지 또는 포트를 설치하
 #. (itstool) path: step/para
 #: book.translate.xml:468
 msgid "Install a local working copy of the documentation from the FreeBSD repository in <filename>~/doc</filename> (see <xref linkend=\"working-copy\"/>)."
-msgstr ""
+msgstr "FreeBSD 저장소로부터 문서의 로컬 작업 사본을 <filename>~/doc</filename>에 가져오세요 (<xref linkend=\"working-copy\"/>를 참고하세요)."
 
 #. (itstool) path: step/screen
 #. (itstool) path: sect1/screen
@@ -456,12 +456,12 @@ msgstr ""
 #. (itstool) path: step/para
 #: book.translate.xml:494
 msgid "Specific editor configurations are listed in <xref linkend=\"editor-config\"/>."
-msgstr ""
+msgstr "구체적인 편집기 설정은 <xref linkend=\"editor-config\"/>에 나와 있습니다."
 
 #. (itstool) path: step/para
 #: book.translate.xml:499
 msgid "Update the local working copy:"
-msgstr ""
+msgstr "로컬 작업 사본을 업데이트하세요:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:501
@@ -493,7 +493,7 @@ msgstr "<prompt>%</prompt> <userinput>igor -R filename.xml | less -RS</userinput
 #. (itstool) path: step/para
 #: book.translate.xml:519
 msgid "Review the output and edit the file to fix any problems shown, then rerun the command to find any remaining problems. Repeat until all of the errors are resolved."
-msgstr ""
+msgstr "출력 결과를 검토하고 나타난 문제점을 해결하기 위해 파일을 편집한 뒤, 남아 있는 문제점들을 찾기 위해 명령어를 다시 실행하세요.  모든 오류들이 해결될 때까지 이 작업을 반복하세요."
 
 #. (itstool) path: step/para
 #: book.translate.xml:526
@@ -518,7 +518,7 @@ msgstr ""
 #. (itstool) path: step/para
 #: book.translate.xml:543
 msgid "Give the diff file a descriptive name. In the example above, changes have been made to the <filename>bsdinstall</filename> portion of the Handbook."
-msgstr ""
+msgstr "diff 파일에 그 내용을 잘 설명할 수 있는 이름을 붙여 주세요.  위의 예시의 경우, 편집은 핸드북의 <filename>bsdinstall</filename> 부분에서 이루어졌습니다."
 
 #. (itstool) path: step/para
 #: book.translate.xml:550
@@ -653,6 +653,8 @@ msgid ""
 "FreeBSD documentation is not just books and articles. Manual pages for all the commands and configuration files are also part of the documentation, and part of the <acronym>FDP</acronym>'s territory. Two repositories are involved: <literal>doc</literal> for the books and articles, and <literal>base</literal> for the operating system and manual pages. To edit manual pages, the <literal>base</literal> "
 "repository must be checked out separately."
 msgstr ""
+"FreeBSD 문서는 단지 책과 기사들만을 의미하지는 않습니다.  모든 명령어에 대한 매뉴얼 페이지 그리고 설정 파일들 역시 문서의 일부이며, <acronym>FDP</acronym>가 담당하는 영역의 일부이기도 합니다.  두 개의 저장소가 관련되어 있습니다: 책과 기사들을 위한 <literal>doc</literal>과, 운영체제 및 매뉴얼 페이지들을 위한 <literal>base</literal>가 그것들입니다.  매뉴얼 페이지를 편집하기 위해서는, <literal>base</literal> 저장"
+"소를 별도로 체크아웃해야 합니다."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:769
@@ -695,7 +697,7 @@ msgstr "<prompt>%</prompt> <userinput>svn checkout https://svn.FreeBSD.org/base/
 #. (itstool) path: sect1/title
 #: book.translate.xml:807
 msgid "Updating a Working Copy"
-msgstr ""
+msgstr "작업 사본 업데이트하기"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:809
@@ -718,7 +720,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:830
 msgid "Reverting Changes"
-msgstr ""
+msgstr "변경 사항 되돌리기"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:832
@@ -6904,7 +6906,7 @@ msgstr ""
 #. (itstool) path: chapter/para
 #: book.translate.xml:6887
 msgid "The FAQ is maintained by the Documentation Engineering Team <email>doceng@FreeBSD.org</email>."
-msgstr ""
+msgstr "이 FAQ는 문서 엔지니어링 팀 <email>doceng@FreeBSD.org</email>에 의해 유지되고 있습니다."
 
 #. (itstool) path: question/para
 #: book.translate.xml:6892
@@ -6959,7 +6961,7 @@ msgstr ""
 #. (itstool) path: answer/para
 #: book.translate.xml:6951
 msgid "English is not strictly necessary. For example, you could do a Hungarian translation of the FAQ from the Spanish translation."
-msgstr ""
+msgstr "영어는 반드시 필요한 것은 아닙니다.  예를 들어, 여러분은 FAQ의 스페인어 번역본을 헝가리어로 번역할 수도 있습니다."
 
 #. (itstool) path: question/para
 #: book.translate.xml:6959
