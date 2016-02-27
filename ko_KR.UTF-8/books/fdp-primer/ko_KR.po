@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-01-07 09:02+0900\n"
-"PO-Revision-Date: 2016-02-27 23:44+0900\n"
+"PO-Revision-Date: 2016-02-28 00:14+0900\n"
 "Last-Translator: Hoyoung Kim <trig4800@gmail.com>\n"
 "Language-Team: 한국어 <>\n"
 "Language: ko_KR\n"
@@ -18,7 +18,10 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "번역자 정보"
+msgstr ""
+"번역자 정보 : \n"
+"Hoyoung Kim <trig4800@gmail.com>, 2015 \n"
+"Youngsuk Kim <joseph942010@gmail.com>, 2016"
 
 #. (itstool) path: info/title
 #: book.translate.xml:62
@@ -54,7 +57,7 @@ msgstr "소스(XML DocBook) 및 '컴파일된' 형식들(XML, HTML, PDF, PostScr
 #. (itstool) path: listitem/para
 #: book.translate.xml:104
 msgid "Redistributions of source code (XML DocBook) must retain the above copyright notice, this list of conditions and the following disclaimer as the first lines of this file unmodified."
-msgstr ""
+msgstr "소스 코드(XML DocBook)를 재배포하는 경우 저작권 공지(이 문서의 맨 처음에 등장하는 조건들 및 뒤따르는 권리 부인 성명이 수정되지 않은 그대로)를 반드시 포함하여야 합니다. "
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:110
@@ -1136,7 +1139,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:1279
 msgid "The default output format can vary by document, but is usually <literal>html-split</literal>. Other formats are chosen by setting <varname>FORMATS</varname> to a specific value. Multiple output formats can be created at a single time by setting <varname>FORMATS</varname> to a list of formats."
-msgstr ""
+msgstr "기본 출력 형식은 문서마다 다를 수 있지만 주로 <literal>html-split</literal> 형식입니다. 다른 형식들은 <varname>FORMATS</varname> 변수를 특정 값으로 지정하여 선택할 수 있습니다. <varname>FORMATS</varname> 을 여러 형식들로 구성된 리스트로 설정함으로써 한 번에 여러 출력 형식이 생성되도록 할 수 있습니다."
 
 #. (itstool) path: example/title
 #: book.translate.xml:1286
