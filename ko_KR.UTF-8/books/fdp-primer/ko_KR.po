@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-01-07 09:02+0900\n"
-"PO-Revision-Date: 2016-01-18 10:42+0900\n"
+"PO-Revision-Date: 2016-02-27 23:44+0900\n"
 "Last-Translator: Hoyoung Kim <trig4800@gmail.com>\n"
 "Language-Team: 한국어 <>\n"
 "Language: ko_KR\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.8.7\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -659,12 +659,12 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:769
 msgid "Repositories may contain multiple versions of documentation and source code. New modifications are almost always made only to the latest version, called <literal>head</literal>."
-msgstr ""
+msgstr "Repository(저장소)들은 여러 버전의 documentation 및 소스 코드를 가지고 있을 수 있습니다. 새로운 수정 작업은 <literal>head</literal>라고 불리는 최신 버전에만 거의 항상 적용됩니다. "
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:775
 msgid "Choosing a Directory"
-msgstr ""
+msgstr "디렉토리 선택하기"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:777
@@ -672,6 +672,8 @@ msgid ""
 "FreeBSD documentation is traditionally stored in <filename>/usr/doc/</filename>, and system source code with manual pages in <filename>/usr/src/</filename>. These directory trees are relocatable, and users may want to put the working copies in other locations to avoid interfering with existing information in the main directories. The examples that follow use <filename>~/doc</filename> and <filename>~/src</"
 "filename>, both subdirectories of the user's home directory."
 msgstr ""
+"전통적으로, FreeBSD documentation은 <filename>/usr/doc</filename>에 저장되고, 시스템 소스코드와 매뉴얼 페이지들은 <filename>/usr/src/</filename>에 저장됩니다. 이런 디렉토리 트리는 변경이 가능한데, 사용자들 또한 작업중인 복사본이 메인 디렉토리 내 정보들과 충돌하는 것을 원치 않기에 복사본을 다른 위치들로 옮기고 싶어할 것입니다. 이 뒤에 따라오는 예제들에서는 사용자 홈 디렉토리의 하위 디렉토리인 <filename>~/doc</"
+"filename>와 <filename>~/src</filename>을 사용합니다."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:790
@@ -796,27 +798,27 @@ msgstr ""
 #. (itstool) path: chapter/para
 #: book.translate.xml:922
 msgid "Files and directories in the <filename>doc/</filename> tree follow a structure meant to:"
-msgstr ""
+msgstr "<filename>doc/</filename> 내의 파일들과 디렉토리들은 아래와 같은 목적들을 위한 구조를 따릅니다:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:928
 msgid "Make it easy to automate converting the document to other formats."
-msgstr ""
+msgstr "문서들을 다른 형식(포맷)으로 변환하는 과정의 자동화를 편리하도록 ."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:933
 msgid "Promote consistency between the different documentation organizations, to make it easier to switch between working on different documents."
-msgstr ""
+msgstr "서로 다른 문서화 기관 간의 일관성을 유지한다.(작업할 문서가 기존 작업하던 문서와 다른 기관의 것이 되어도 불편하지 않도록 하기 위해)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:939
 msgid "Make it easy to decide where in the tree new documentation should be placed."
-msgstr ""
+msgstr "tree의 어느 부분에 새 documentation이 삽입되어야 하는지 쉽게 결정할 수 있도록 한다."
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:944
 msgid "In addition, the documentation tree must accommodate documents in many different languages and encodings. It is important that the documentation tree structure does not enforce any particular defaults or cultural preferences."
-msgstr ""
+msgstr "게다가, documentation tree는 서로 다른 언어 및 인코딩 방식을 수용할 수 있어야 한다. documentation tree의 구조가 어떠한 형식도 기본 형식(default)으로서 강요해서는 안된다."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:950
@@ -915,7 +917,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:1065
 msgid "This section contains specific notes about particular documents managed by the FDP."
-msgstr ""
+msgstr "이 섹션은 FDP에서 관리되는 특정 문서들에 대한 세세한 기록(note)들을 보유합니다."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1069
