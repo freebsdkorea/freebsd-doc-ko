@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-01-07 09:02+0900\n"
-"PO-Revision-Date: 2016-02-28 00:14+0900\n"
+"PO-Revision-Date: 2016-03-01 17:05+0900\n"
 "Last-Translator: Hoyoung Kim <trig4800@gmail.com>\n"
 "Language-Team: 한국어 <>\n"
 "Language: ko_KR\n"
@@ -62,7 +62,7 @@ msgstr "소스 코드(XML DocBook)를 재배포하는 경우 저작권 공지(�
 #. (itstool) path: listitem/para
 #: book.translate.xml:110
 msgid "Redistributions in compiled form (transformed to other DTDs, converted to PDF, PostScript, RTF and other formats) must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution."
-msgstr ""
+msgstr "컴파일된 형태의 재배포(다른 DTD 형식으로의 변환, PDF 변환, PostScript, RTF 등의 형식으로의 변환)의 경우 반드시 상단의 저작권 안내문을 포함하고 표기하여야 한다."
 
 #. (itstool) path: important/para
 #: book.translate.xml:119
@@ -454,7 +454,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:489
 msgid "Replace each group of 8 leading spaces with a single tab."
-msgstr ""
+msgstr "선행하는 8개의 연속 공백마다 하나의 탭으로 대체합니다. "
 
 #. (itstool) path: step/para
 #: book.translate.xml:494
@@ -538,7 +538,7 @@ msgstr "도구들"
 #. (itstool) path: chapter/para
 #: book.translate.xml:602
 msgid "Several software tools are used to manage the FreeBSD documentation and render it to different output formats. Some of these tools are required and must be installed before working through the examples in the following chapters. Some are optional, adding capabilities or making the job of creating documentation less demanding."
-msgstr ""
+msgstr "FreeBSD 문서를 관리하고 다른 출력 형식으로의 변환을 위해 몇 가지 소프트웨어 도구들이 사용됩니다. "
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:610
@@ -558,7 +558,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:623
 msgid "FreeBSD documentation uses several Document Type Definitions (<acronym>DTD</acronym>s) and sets of <acronym>XML</acronym> entities. These are all installed by the <package>textproc/docproj</package> port."
-msgstr ""
+msgstr "FreeBSD 문서는 몇 가지 문서 형식 정의(<acronym>DTD</acronym>) 들 및 <acronym>XML</acronym> 개체 집합들을 사용합니다. 이들은 모두 <package>textproc/docproj</package> 포트를 통해 설치됩니다. "
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:631
@@ -686,7 +686,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:792
 msgid "A download of a working copy from the repository is called a <emphasis>checkout</emphasis>, and done with <command>svn checkout</command>. This example checks out a copy of the latest version (<literal>head</literal>) of the main documentation tree:"
-msgstr ""
+msgstr "저장소에서의 작업 복사본을 다운로드 한 것을 <emphasis>checkout</emphasis>이라고 하고, <command>svn checkout</command> 을 통해 이뤄집니다. 이 예시는 \v메인 문서 트리의 최신 버전 복사본을 'check out' 합니다. "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:800
@@ -831,22 +831,22 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:953
 msgid "There are two types of directory under <filename>doc/</filename>, each with very specific directory names and meanings."
-msgstr ""
+msgstr "<filename>doc</filename> 아래에는 두 가지 종류의 디렉토리가 있는데, 각각은 굉장히 자세한 디렉토리 이름 및 뜻을 가집니다."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:961 book.translate.xml:1015
 msgid "Directory"
-msgstr ""
+msgstr "디렉토리"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:962 book.translate.xml:1016
 msgid "Usage"
-msgstr ""
+msgstr "사용처"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:968
 msgid "<filename>share</filename>"
-msgstr ""
+msgstr "<filename>share</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:971
@@ -865,7 +865,7 @@ msgstr ""
 msgid ""
 "One directory exists for each available translation and encoding of the documentation, for example <filename>en_US.ISO8859-1/</filename> and <filename>zh_TW.UTF-8/</filename>. The names are long, but by fully specifying the language and encoding we prevent any future headaches when a translation team wants to provide documentation in the same language but in more than one encoding. This also avoids problems "
 "that might be caused by a future switch to Unicode."
-msgstr ""
+msgstr "문서의 이용 가능한 번역 + 인코딩 하나마다 디렉토리가 존재합니다 (예시 : <filename>en_US.ISO8859-1/</filename> , <filename>zh_TW.UTF-8/</filename>). 이름들이 길어보일 수 있겠지만, 언어 및 인코딩에 대해 완전하게 명시함으로써 미래에 번역 팀이 문서를  같은 언어 및 여러 인코딩으로 제공하려고 할 때 혼란스럽지 않도록 해줍니다. "
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1003
@@ -1072,7 +1072,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:1243
 msgid "Common Output Formats"
-msgstr ""
+msgstr "일반적인 결과 형식"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1248
@@ -1082,24 +1082,24 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:1249
 msgid "File Type"
-msgstr ""
+msgstr "파일 "
 
 #. (itstool) path: row/entry
 #. (itstool) path: segmentedlist/segtitle
 #: book.translate.xml:1250 book.translate.xml:7224
 msgid "Description"
-msgstr ""
+msgstr "설명"
 
 #. (itstool) path: row/entry
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:1256 book.translate.xml:2485
 msgid "<literal>html</literal>"
-msgstr ""
+msgstr "<literal>html</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1257
 msgid "<acronym>HTML</acronym>, one file"
-msgstr ""
+msgstr "<acronym>HTML</acronym>, 단일 파일"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1258
@@ -1144,7 +1144,7 @@ msgstr "기본 출력 형식은 문서마다 다를 수 있지만 주로 <litera
 #. (itstool) path: example/title
 #: book.translate.xml:1286
 msgid "Build a Single HTML Output File"
-msgstr ""
+msgstr "단일 HTML 출력 파일 빌드하기"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:1288
@@ -1170,17 +1170,17 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:1302
 msgid "The FreeBSD Documentation Build Toolset"
-msgstr ""
+msgstr "FreeBSD 문서 빌드 도구 모음"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1304
 msgid "These are the tools used to build and install the <acronym>FDP</acronym> documentation."
-msgstr ""
+msgstr "이들은 <acronym>FDP</acronym> 문서를 설치하고 빌드하기 위한 도구들입니다. "
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1309
 msgid "The primary build tool is <citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></citerefentry>, specifically <application>Berkeley Make</application>."
-msgstr ""
+msgstr "주요 빌드 툴로는 <citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></citerefentry>, 그 중에서도 특히 <application>Berkeley Make</application>를 주로 사용합니다. "
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1314
@@ -1305,7 +1305,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:1426
 msgid "Here is an example:"
-msgstr ""
+msgstr "여기 예시가 있습니다 :"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1428
@@ -1416,7 +1416,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:1525
 msgid "<varname>DOCFORMAT</varname> and <varname>MAINTAINER</varname> are assigned default values, if these are not set by the document make file."
-msgstr ""
+msgstr "<varname>DOCFORMAT</varname> 와 <varname></varname> 는 문서의 make file에 의해 설정되지 않는 한 기본으로 할당되는 값들입니다. "
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1529
