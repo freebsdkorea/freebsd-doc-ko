@@ -1,3 +1,5 @@
+# 이 프로젝트는 현재 더 이상 업데이트되고 있지 않습니다. [Korea FreeBSD Users Group](https://www.kr.freebsd.org)를 방문해 주세요.
+
 # freebsd-doc-ko
 
 ## 개요
@@ -31,5 +33,3 @@ FreeBSD 한국어 문서 프로젝트(The FreeBSD Korean Documentation Project)�
 * https://kr-bsd.slack.com/
 * https://github.com/kr-bsd
 * freenode irc #freebsd-ko
-
-FreeBSD 홈페이지에 안내되어 있는 kr.freebsd.org는 현재 운영되고 있지 않습니다.
